@@ -7,7 +7,11 @@
   <a href="https://skills.sh/hmmhmmhm/align.md/align"><img src="https://skills.sh/b/hmmhmmhm/align.md" alt="Available on skills.sh"></a>
 </p>
 
-Give your agent a shared understanding of what a good outcome means. ALIGN.md captures your goals, priorities, trade-offs, and preferences, then keeps them aligned as the project evolves, so you spend less time repeating context or correcting avoidable misunderstandings.
+An agent can follow instructions and still make choices you would not make. ALIGN.md captures the judgment behind your expectations: what matters most, which trade-offs are acceptable, and what a good outcome means to you.
+
+Harnesses manage execution. AGENTS.md provides project working instructions. ALIGN.md keeps your evolving goals, priorities, and preferences in a dedicated agreement that AGENTS.md references. These expectations could live alongside other instructions, but separating them makes changes easier to notice, discuss, and track as your thinking evolves.
+
+This supports continuous self-alignment: the agent checks its decisions and recent work against the agreement, corrects drift within the agreed scope, and raises meaningful gaps when your intent is unclear. The agreement changes when you express or confirm a lasting change. With a shared basis for judgment, the agent can work more independently while you spend less time repeating expectations and correcting avoidable misunderstandings.
 
 ## Install the skill
 
