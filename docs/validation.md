@@ -40,9 +40,18 @@ the acting agent before it runs.
 
 ## Limits and follow-up
 
-These are single-run behavioral observations. The fixtures were isolated, but
-cases within each evaluator shared an agent session. They are not statistical
-benchmarks or independent cold-start trials for every model and client.
+Three additional requests ran in separate fresh Codex CLI sessions using the
+installed skill: saving explicitly confirmed criteria, questioning an inherited
+prototype, and implementing a page in a later session without an alignment
+request. The last session read the resulting agreement, kept accounts and
+payments out of scope, marked unconfirmed access information, and preserved
+both agreement files byte-for-byte. See the [requests and evidence](../tests/cold-cli-results.md).
+
+These are single-run behavioral observations. In the original evaluator runs,
+the fixtures were isolated but cases within each evaluator shared an agent
+session. The additional CLI runs used fresh sessions with the existing local
+configuration. Neither set is a statistical benchmark or evidence for every
+model and client.
 Two fixtures supplied synthetic confirmation times explicitly; their results
 verify handling of user-provided times, not independent clock accuracy.
 
