@@ -14,18 +14,18 @@ Do not describe a pending or unverified listing as published.
 
 ## Service status
 
-Checked on 2026-10-12. Publication checks are in progress.
+Checked on 2026-10-12. Public listings below were opened and matched to this repository.
 
 | Service | Route | Current evidence |
 | --- | --- | --- |
-| GitHub | Public source and release | Source repository is public; first skill release is being prepared. |
-| [skills.sh](https://skills.sh/docs/faq) | Installation telemetry and directory indexing | Local installation verified; remote install and listing check pending. |
-| [askill](https://askill.sh/submit) | Submit GitHub URL | Submission form is available; submission pending public skill source. |
-| [OpenAgentSkill](https://www.openagentskill.com/submit) | Public submission queue | Submission form is available; submission pending public skill source. |
-| [Agent Skill Hub](https://doc.agentskillhub.dev/guide/publishing) | GitHub import API | Documented import route found; live import pending. |
+| GitHub | Public source and release | Public source and the installable skill are available. See [releases](https://github.com/hmmhmmhm/align.md/releases). |
+| [skills.sh](https://skills.sh/docs/faq) | Installation telemetry and directory indexing | Public [skill page](https://skills.sh/hmmhmmhm/align.md/align) verified. One real remote installation succeeded for Codex, Claude Code, and Cursor in a test project. |
+| [askill](https://askill.sh/submit) | Submit GitHub URL | Submitted and indexed one skill. Public [listing](https://askill.sh/skills/704509) verified. |
+| [OpenAgentSkill](https://www.openagentskill.com/submit) | Public submission queue | Submission accepted and marked public. [Listing](https://www.openagentskill.com/skills/hmmhmmhm-align-md-align) verified; static checks passed, not AI-reviewed. |
+| [Agent Skill Hub](https://doc.agentskillhub.dev/guide/publishing) | GitHub import API | Imported as `hmmhmmhm/align`, version `2026.10.12`. Public [record](https://agentskillhub.dev/api/v1/u/hmmhmmhm/skills/align) and search for `ALIGN.md` verified. Source commit: `86e1ecc`. |
 | [SkillsMP](https://skillsmp.com/about) | Public GitHub indexing | Public indexing documented; no self-service submission route found in the inspected site and documentation. Listing unverified. |
 | [Skills Directory](https://skillsdir.dev/add) | GitHub issue submission | The site's linked repository and issue template both return 404. Submission currently unavailable. |
-| [ClawHub](https://docs.openclaw.ai/clawhub) | Authenticated skill publication | Publishing requires a registry session; authentication status and publication pending. |
+| [ClawHub](https://docs.openclaw.ai/clawhub) | Authenticated skill publication | No authenticated registry session. Device authorization requested from the owner; publishing remains pending. |
 
 ## Maintaining distribution
 

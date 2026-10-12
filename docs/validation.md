@@ -6,9 +6,9 @@ agent behavior; they do not claim that every supported client behaves identicall
 ## Package checks
 
 - The Skill Creator validator accepted the skill frontmatter and structure.
-- The skills CLI 1.7.2 discovered one skill named `align` from the local source.
+- The skills CLI 1.7.2 discovered one skill named `align` from the local source and public GitHub source.
 - A project-scoped installation for Codex, Claude Code, and Cursor succeeded
-  in an isolated test directory. The installed skill and license were checked
+  from both sources in isolated test directories. The installed skill and license were checked
   against the source. These are installation checks, not runtime tests of all
   three client applications.
 - The distributable skill contains its MIT license and optional Codex UI metadata.

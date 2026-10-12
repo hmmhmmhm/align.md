@@ -4,6 +4,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
   <a href="https://github.com/hmmhmmhm/align.md/stargazers"><img src="https://img.shields.io/github/stars/hmmhmmhm/align.md?style=flat&amp;logo=github" alt="GitHub stars"></a>
   <a href="#copy-the-prompt"><img src="https://img.shields.io/badge/Format-Markdown-222222.svg?logo=markdown" alt="Format: Markdown"></a>
+  <a href="https://skills.sh/hmmhmmhm/align.md/align"><img src="https://skills.sh/b/hmmhmmhm/align.md" alt="Available on skills.sh"></a>
 </p>
 
 Give your agent a shared understanding of what a good outcome means. ALIGN.md captures your goals, priorities, trade-offs, and preferences, then keeps them aligned as the project evolves, so you spend less time repeating context or correcting avoidable misunderstandings.
