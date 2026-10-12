@@ -7,17 +7,17 @@
   <a href="https://skills.sh/hmmhmmhm/align.md/align"><img src="https://skills.sh/b/hmmhmmhm/align.md" alt="Available on skills.sh"></a>
 </p>
 
-## A shared basis for judgment
+## Define what good means
 
-An agent can follow instructions and still make choices you would not make. ALIGN.md captures the judgment behind your expectations: what matters most, which trade-offs are acceptable, and what a good outcome means to you.
+**Give your agent a clear basis for judgment.** ALIGN.md captures your goals, priorities, and acceptable trade-offs, reducing repeated explanations and avoidable misunderstandings.
 
-## A dedicated agreement
+## Keep expectations separate
 
-Harnesses manage execution. AGENTS.md provides project working instructions. ALIGN.md keeps your evolving goals, priorities, and preferences in a dedicated agreement that AGENTS.md references. These expectations could live alongside other instructions, but separating them makes changes easier to notice, discuss, and track as your thinking evolves.
+**Keep changing expectations easy to review and track.** Harnesses manage execution. AGENTS.md guides project work. ALIGN.md holds your current agreement, referenced from AGENTS.md and tracked through Git when available.
 
 ## Continuous self-alignment
 
-This supports continuous self-alignment: the agent checks its decisions and recent work against the agreement, corrects drift within the agreed scope, and raises meaningful gaps when your intent is unclear. The agreement changes when you express or confirm a lasting change. With a shared basis for judgment, the agent can work more independently while you spend less time repeating expectations and correcting avoidable misunderstandings.
+**The agent checks its work against your agreement.** It corrects drift within the agreed scope and asks when your intent is unclear. Lasting changes to the agreement follow your explicit direction or confirmation.
 
 ## Install the skill
 
