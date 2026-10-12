@@ -1,6 +1,12 @@
-# ALIGN.md
+<h1 align="center">ALIGN.md</h1>
 
-Give your agent a shared understanding of what a good outcome means. ALIGN.md captures your goals, priorities, trade-offs, and preferences, then keeps them aligned as the project evolves—so you spend less time repeating context or correcting avoidable misunderstandings.
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
+  <a href="https://github.com/hmmhmmhm/align.md/stargazers"><img src="https://img.shields.io/github/stars/hmmhmmhm/align.md?style=flat&amp;logo=github" alt="GitHub stars"></a>
+  <a href="#copy-the-prompt"><img src="https://img.shields.io/badge/Format-Markdown-222222.svg?logo=markdown" alt="Format: Markdown"></a>
+</p>
+
+Give your agent a shared understanding of what a good outcome means. ALIGN.md captures your goals, priorities, trade-offs, and preferences, then keeps them aligned as the project evolves, so you spend less time repeating context or correcting avoidable misunderstandings.
 
 ## Copy the prompt
 
@@ -16,7 +22,7 @@ Create ALIGN.md at the project root to align my expectations with the agent's de
   - Work already underway: summarize the existing documentation and implementation, then clarify what to keep or change. Do not assume the current implementation reflects my intentions or preferences.
 
 [Initial agreement and documentation]
-1. Ask 1–3 related questions at a time, starting with the most consequential unresolved matters. Use examples or options to clarify abstract expectations and trade-offs. Distinguish assumptions from open questions. Do not ask again about something I have already answered or made clear in the current request.
+1. Ask 1-3 related questions at a time, starting with the most consequential unresolved matters. Use examples or options to clarify abstract expectations and trade-offs. Distinguish assumptions from open questions. Do not ask again about something I have already answered or made clear in the current request.
 2. Once the essentials are clear, present a concise draft. Refine it until I confirm it is sufficient, then save it. Do not prolong the conversation just to fill every category. Distinguish requirements from default preferences, and briefly explain the reasoning behind important criteria.
 3. Preserve existing files and instructions, changing only what is needed; create missing files. In AGENTS.md, instruct agents to read ALIGN.md at the start of work and apply it when defining scope, making key decisions, and reviewing results. Also record the ongoing alignment rules below in AGENTS.md.
 
@@ -29,3 +35,7 @@ Create ALIGN.md at the project root to align my expectations with the agent's de
 
 Start with a brief summary of your understanding. Ask the most important questions if any remain; otherwise, proceed without unnecessary reconfirmation.
 ```
+
+## License
+
+[MIT](LICENSE). Copyright (c) 2026 hmmhmmhm.
