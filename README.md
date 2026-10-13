@@ -15,13 +15,25 @@
 
 **Give your agent a clear basis for judgment.** ALIGN.md captures your goals, priorities, and acceptable trade-offs, reducing repeated explanations and avoidable misunderstandings.
 
+<p align="center">
+  <img src="assets/define-what-good-means.png" alt="Several paths converge on a shared reference point" width="100%">
+</p>
+
 ## Keep expectations separate
 
 **Keep changing expectations easy to review and track.** Harnesses manage execution. AGENTS.md guides project work. ALIGN.md holds your current agreement, referenced from AGENTS.md and tracked through Git when available.
 
+<p align="center">
+  <img src="assets/keep-expectations-separate.png" alt="Three distinct connected panels represent execution, instructions, and expectations" width="100%">
+</p>
+
 ## Continuous self-alignment
 
 **The agent checks its work against your agreement.** It corrects drift within the agreed scope and asks when your intent is unclear. Lasting changes to the agreement follow your explicit direction or confirmation.
+
+<p align="center">
+  <img src="assets/continuous-self-alignment.png" alt="A path gradually corrects its deviations from a steady reference line" width="100%">
+</p>
 
 ## Install the skill
 
