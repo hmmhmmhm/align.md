@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/align-header.png" alt="ALIGN.md on a yellow and cyan background with a connected node diagram" width="100%">
+</p>
+
 <h1 align="center">ALIGN.md</h1>
 
 <p align="center">
@@ -63,3 +67,7 @@ Start with a brief summary of your understanding. Ask the most important questio
 ## License
 
 [MIT](LICENSE). Copyright (c) 2026 hmmhmmhm.
+
+<p align="center">
+  <img src="assets/align-footer.png" alt="ALIGN.md on a green background with overlapping coordinate grids" width="100%">
+</p>
