@@ -1,0 +1,5 @@
+{
+  "name": "align-md",
+  "owner": {"name": "hmmhmmhm"},
+  "plugins": [{"name": "align", "source": "./", "description": "Ongoing personal alignment for project decisions", "version": "0.2.0"}]
+}

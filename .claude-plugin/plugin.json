@@ -1,0 +1,11 @@
+{
+  "name": "align",
+  "version": "0.2.0",
+  "description": "Keep project decisions aligned with personal criteria through an ongoing align skill.",
+  "author": {"name": "hmmhmmhm"},
+  "homepage": "https://github.com/hmmhmmhm/align.md",
+  "repository": "https://github.com/hmmhmmhm/align.md",
+  "license": "MIT",
+  "skills": "./skills/",
+  "hooks": "./claude-hooks/hooks.json"
+}

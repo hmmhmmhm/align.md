@@ -73,7 +73,39 @@ implying a full review.
 - Write repository documentation in English.
 - Do not use em dashes or emoji.
 - Keep the README brief, with a centered title, useful badges,
-  and a copyable prompt.
+  and a copyable installation request.
 - Publish the project publicly under the MIT License.
+
+## Maintained Skill and Recurring Use
+
+User-requested scope update recorded: 2026-10-14 (Asia/Seoul).
+This is a partial update, not a full reconfirmation.
+
+Distribute the alignment method as a maintained skill. README and site copy
+should guide users to install it, rather than preserving a standalone interview
+prompt. Support native plugin updates where verified and a user-authorized,
+targeted refresh at alignment-session start elsewhere. Keep method updates
+separate from personal criteria and never promise universal background updates.
+
+Suggest focused alignment after consequential judgment mismatches, repeated
+corrections that reveal missing criteria, and when users are unsure of direction.
+Before long autonomous runs, propose hypothetical scenarios for uncovered
+trade-offs and stopping boundaries. Fix clear errors without an interview.
+Make reflection an available habit, without imposing diaries or reminders.
+
+Check the primary CLI at setup and whether it is the current client. Keep its
+native instruction file canonical, safely linking other compatible entrypoints
+when needed. Preserve distinct and nested instructions. Record the skill's
+invocation and update policy in project ALIGN.md documents.
+
+## Revisit Alignment
+
+Primary client: Codex. Canonical instruction file: AGENTS.md.
+Use `$align`, or ask “Use the align skill to review this project's ALIGN.md.”
+This development repository discovers its local skill through
+`.agents/skills/align`, linked to `skills/align`. Method changes are maintained
+in this repository's Git history; do not install a second plugin copy here or
+automatically pull over local development changes.
+Source and user installation guide: https://github.com/hmmhmmhm/align.md .
 
 Last aligned: 2026-10-12 09:24 (Asia/Seoul).

@@ -7,13 +7,13 @@
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
   <a href="https://github.com/hmmhmmhm/align.md/stargazers"><img src="https://img.shields.io/github/stars/hmmhmmhm/align.md?style=flat&amp;logo=github" alt="GitHub stars"></a>
-  <a href="#copy-the-prompt"><img src="https://img.shields.io/badge/Format-Markdown-222222.svg?logo=markdown" alt="Format: Markdown"></a>
+  <a href="#install-align"><img src="https://img.shields.io/badge/Format-Markdown-222222.svg?logo=markdown" alt="Format: Markdown"></a>
   <a href="https://skills.sh/hmmhmmhm/align.md/align"><img src="https://skills.sh/b/hmmhmmhm/align.md" alt="Available on skills.sh"></a>
 </p>
 
 ## Define what good means
 
-**Give your agent a clear basis for judgment.** ALIGN.md captures your goals, priorities, and acceptable trade-offs, reducing repeated explanations and avoidable misunderstandings.
+ALIGN.md records the goals and trade-offs you want your agent to use. The **align** skill helps you agree on those criteria and revisit them as the work changes.
 
 <p align="center">
   <img src="assets/define-what-good-means.png" alt="Several paths converge on a shared reference point" width="100%">
@@ -21,7 +21,7 @@
 
 ## Keep expectations separate
 
-**Keep changing expectations easy to review and track.** Harnesses manage execution. AGENTS.md guides project work. ALIGN.md holds your current agreement, referenced from AGENTS.md and tracked through Git when available.
+Keep personal criteria in ALIGN.md and the reusable alignment method in the skill. Connect the agreement through your primary agent instruction file, such as AGENTS.md or CLAUDE.md. Use Git history when available. Updating the skill never rewrites your agreement.
 
 <p align="center">
   <img src="assets/keep-expectations-separate.png" alt="Three distinct connected panels represent execution, instructions, and expectations" width="100%">
@@ -29,52 +29,39 @@
 
 ## Continuous self-alignment
 
-**The agent checks its work against your agreement.** It corrects drift within the agreed scope and asks when your intent is unclear. Lasting changes to the agreement follow your explicit direction or confirmation.
+Return to alignment when an important decision misses your intent, repeated corrections reveal a missing criterion, or you are unsure what to do next. Before a long autonomous run, rehearse a few hypothetical choices. Clear errors get fixed directly; settled questions stay settled.
 
 <p align="center">
   <img src="assets/continuous-self-alignment.png" alt="A path gradually corrects its deviations from a steady reference line" width="100%">
 </p>
 
-## Install the skill
+## Install align
+
+Paste this request into your agent. It sets up the maintained skill and an update
+policy, then connects it to your project.
+
+```text
+Set up the maintained align skill from https://github.com/hmmhmmhm/align.md for this project. Read its current installation guide, check the existing installation and agent instructions, and use the supported installation route for my primary CLI. Ask which CLI I mainly use, and whether it is this one, only if that is unclear.
+
+Enable supported automatic method updates. If the client has no native auto-update option, use a targeted update at the start of each alignment session, preserving the installation scope. Keep a working installed version when offline. Explain which update mode is active; do not add a scheduler or update unrelated packages.
+
+Use the skill to establish or review ALIGN.md and connect the primary instruction file to it. Preserve existing rules and distinct files; propose safe links for any other clients I use. Record the invocation and update policy in ALIGN.md. Reuse clear answers, and suggest a focused alignment check after important judgment mismatches, before untested long autonomous work, or when I am unsure of the next direction. Method updates must never rewrite my personal criteria or count as agreement.
+```
+
+Or install the portable skill directly:
 
 ```sh
 npx skills add hmmhmmhm/align.md --skill align
 ```
 
-Then ask your agent: **Use the align skill to establish or review this project's ALIGN.md with me.**
+Then ask: **Use the align skill to set up ongoing alignment for this project.**
 
-The skill supports new and existing projects. It connects the agreement to agent instructions; installation alone does not guarantee automatic execution on every task.
+Native plugin installation is available for Codex and Claude Code. Claude Code
+can update this marketplace automatically when enabled. Other routes can use a
+user-authorized update at the start of an alignment session. No background
+updater or universal automatic activation is assumed.
 
-[Usage and installation](docs/usage.md) · [Validation](docs/validation.md) · [Distribution status](docs/distribution.md)
-
-## Copy the prompt
-
-Paste this into your agent's chat in any new or existing project.
-
-```text
-Create ALIGN.md at the project root to align my expectations with the agent's decision-making. Capture the project's direction, success criteria, scope, priorities, constraints, preferences, things to avoid, and the boundaries between autonomous decisions and decisions that need my input. Keep detailed task lists elsewhere.
-
-[Where to start]
-- If ALIGN.md exists, review the existing agreements and changes since the last alignment.
-- Otherwise, adapt to the project's stage:
-  - Before work begins: clarify the purpose, intended users, desired outcomes, and constraints. Avoid committing to implementation choices prematurely.
-  - Work already underway: summarize the existing documentation and implementation, then clarify what to keep or change. Do not assume the current implementation reflects my intentions or preferences.
-
-[Initial agreement and documentation]
-1. Ask 1-3 related questions at a time, starting with the most consequential unresolved matters. Use examples or options to clarify abstract expectations and trade-offs. Distinguish assumptions from open questions. Do not ask again about something I have already answered or made clear in the current request.
-2. Once the essentials are clear, present a concise draft. Refine it until I confirm it is sufficient, then save it. Do not prolong the conversation just to fill every category. Distinguish requirements from default preferences, and briefly explain the reasoning behind important criteria.
-3. Preserve existing files and instructions, changing only what is needed; create missing files. In AGENTS.md, instruct agents to read ALIGN.md at the start of work and apply it when defining scope, making key decisions, and reviewing results. Also record the ongoing alignment rules below in AGENTS.md. If the target agent uses a different instruction entrypoint, connect it with a minimal reference when authorized; do not assume AGENTS.md is automatically loaded by every agent.
-
-[Ongoing alignment]
-- Check whether the project uses Git. Keep only current criteria in ALIGN.md and use Git history for previous versions. If Git or its history is unavailable, explain the limitation without initializing Git or creating an alternative history file.
-- At the start of work, review available change history and conversations for inconsistencies with ALIGN.md or potential new principles and preferences since the last alignment. Do not revisit previously reviewed matters or repeat questions without new evidence.
-- Only raise meaningful inconsistencies or candidates for new guidance. Briefly explain the evidence, propose a concrete revision, and ask whether it should become a lasting criterion only if my intent is not already clear. If records are insufficient, state the limitation and ask only what is needed for the current decision.
-- Make adjustments autonomously within existing agreements. Ask before changing goals, scope, priorities, or important constraints only when my intent is unclear. Do not seek approval again for changes I have explicitly requested. Continue work that does not depend on an unresolved decision.
-- If my current explicit request conflicts with ALIGN.md, follow the applicable instruction hierarchy. Do not turn a one-off exception into a permanent preference. Update the document when my intent to make a lasting change is clear. Never rewrite agreements to justify your own choices or results.
-- End ALIGN.md with "Last aligned: YYYY-MM-DD HH:mm (time zone)". This records when I confirmed and agreed to the document's expectations and criteria. Do not update it merely because the document was read, edited, or automatically reviewed. If only specific items were agreed upon, record their confirmation times separately instead of implying that the entire document was reconfirmed.
-
-Start with a brief summary of your understanding. Ask the most important questions if any remain; otherwise, proceed without unnecessary reconfirmation.
-```
+[Installation and updates](docs/usage.md) · [Validation](docs/validation.md) · [Distribution](docs/distribution.md)
 
 ## License
 

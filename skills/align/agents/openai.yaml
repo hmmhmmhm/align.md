@@ -1,4 +1,6 @@
 interface:
   display_name: "ALIGN.md"
-  short_description: "Align project decisions with the user's expectations"
-  default_prompt: "Use $align to establish or review this project's ALIGN.md with me."
+  short_description: "Keep project decisions aligned with your judgment"
+  default_prompt: "Use $align to review our criteria and clarify the next important decision."
+policy:
+  allow_implicit_invocation: true

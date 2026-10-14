@@ -1,0 +1,3 @@
+#!/bin/sh
+# Static reminder only: no project reads, networking, writes, or self-update.
+printf '%s\n' '{"hookSpecificOutput":{"hookEventName":"SessionStart","additionalContext":"Read the project ALIGN.md when present and apply its current criteria. Use the installed align skill (/align:align) for consequential judgment mismatches, repeated corrections that expose missing criteria, unclear direction, or untested boundaries before long autonomous work. Offer a brief review only when relevant. Fix clear errors directly, reuse existing answers, and do not repeat resolved or declined questions. Skill updates never change personal criteria or confirm agreement. If alignment is absent, suggest setup when relevant without blocking unrelated routine work."}}'

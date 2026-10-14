@@ -1,6 +1,7 @@
 # Validation
 
-Checked on 2026-10-12. These checks distinguish package installation from
+Initial checks: 2026-10-12. Maintained-skill checks: 2026-10-14.
+These checks distinguish package installation from
 agent behavior; they do not claim that every supported client behaves identically.
 
 ## Package checks
@@ -62,3 +63,26 @@ footer label stable when the document body is translated.
 Future corrections should follow observed failures or user feedback. Recheck
 affected behavior when changing the skill, rather than expanding instructions
 for hypothetical cases.
+
+## Maintained-skill checks (0.2.0)
+
+- Skill Creator validation passed.
+- Eleven Python checks passed for conflict refusal, byte-preserving instruction
+  edits, relative links, idempotency, version consistency, and static hook output.
+- The skills CLI 1.7.2 installed the complete revised skill from local source into
+  an isolated Codex project. Its command help confirms named, scope-specific
+  updates. Installation alone does not demonstrate automatic invocation.
+- Codex plugin command syntax was checked against the installed CLI. Native
+  plugin manifests and declared paths were checked locally. Native installation,
+  Claude SessionStart delivery, and automatic refresh were not exercised in real
+  client sessions for this release.
+
+Two independent acting agents completed six additional isolated scenarios.
+They preserved distinct client instructions, kept rehearsals hypothetical,
+clarified an uncertain direction, fixed a known violation without an interview,
+kept a one-off exception temporary, and saved an explicit lasting change without
+reconfirming the full agreement. These are single-run observations, not a
+reliability benchmark. See [requests and results](../tests/recurring-results.md).
+
+One ambiguity was corrected: a narrow criterion update must not expand into
+installation questions just because the document lacks a revisit section.

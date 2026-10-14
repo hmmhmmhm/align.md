@@ -1,0 +1,10 @@
+{
+  "name": "align-md",
+  "interface": {"displayName": "ALIGN.md"},
+  "plugins": [{
+    "name": "align-md",
+    "source": {"source": "local", "path": "./"},
+    "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+    "category": "Productivity"
+  }]
+}

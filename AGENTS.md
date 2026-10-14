@@ -1,40 +1,30 @@
 # Agent Instructions
 
-## Apply the Project's Alignment
+Codex is the primary client for this repository. Keep AGENTS.md as the
+canonical project instruction file. Read ALIGN.md before making decisions.
 
-Read [ALIGN.md](ALIGN.md) at the start of work. Apply its current
-criteria when defining scope, making key decisions, and reviewing
-results. Keep project expectations in ALIGN.md rather than duplicating
-them here.
+<!-- align:begin -->
+## Ongoing personal alignment
 
-Follow the applicable instruction hierarchy. If a current explicit
-user request conflicts with ALIGN.md, distinguish a task-specific
-exception from a lasting change. Ask only when that distinction
-materially affects the work and the user's intent is unclear.
+Read `ALIGN.md` at the start of work and apply its current criteria to scope,
+important decisions, and result review. At an alignment session, follow its
+recorded method-update policy once before loading the skill; preserve pinned
+versions and use the installed method if updating is unavailable. Do not poll
+for updates on every task. Use the installed **align** skill for
+focused clarification when important judgment diverges, repeated corrections
+suggest a missing criterion, the user is unsure of the next direction, or a long
+autonomous run has untested boundaries. Offer hypothetical rehearsal for the
+last case; do not execute scenarios or launch a loop as part of the rehearsal.
 
-## Review and Maintain Alignment
+Reuse existing answers. Fix clear execution errors directly. Ask only about
+consequential uncertainty, continue independent work, and do not reopen a declined
+or resolved review without new evidence. A new method version does not change
+the user's agreement. Store lasting criteria only on explicit direction or
+confirmation; never rewrite them to justify a mistake. Preserve `Last aligned`
+unless the user confirms the whole document. Keep current criteria in ALIGN.md
+and use Git history when available. Do not initialize Git or create another log.
 
-1. Check whether the project uses Git. Review available changes and
-   decisions since the last alignment, including relevant uncommitted
-   work and conversation context. Use Git history when available;
-   explain material gaps instead of inventing missing context.
-2. Raise only meaningful inconsistencies or potential new criteria.
-   Present the evidence and a concrete proposed revision. Ask whether
-   it should become a lasting criterion only if the user's intent
-   is not already clear. Do not repeat resolved questions without
-   new evidence.
-3. Work autonomously within existing agreements. Seek clarification
-   before changing goals, scope, priorities, or important constraints
-   when intent is unclear, and continue independent work while waiting.
-4. Update ALIGN.md when the user clearly requests or confirms a lasting
-   change. Keep only current criteria and use Git history for previous
-   versions. Do not create a separate alignment log or initialize Git
-   without a user request.
-5. Update the final `Last aligned` timestamp only after the user confirms
-   the full document. Use `YYYY-MM-DD HH:mm (time zone)`. For partial
-   confirmations, annotate the affected criteria with their confirmation
-   times without advancing the full-document timestamp. Reading, editing,
-   or automatically reviewing the document does not constitute agreement.
-
-Never change alignment criteria merely to justify the agent's choices
-or completed work.
+If the skill is unavailable, apply ALIGN.md and suggest installing it from
+https://github.com/hmmhmmhm/align.md. Missing installation alone does not block
+routine work. Follow the applicable instruction hierarchy and permissions.
+<!-- align:end -->

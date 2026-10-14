@@ -14,11 +14,14 @@ Do not describe a pending or unverified listing as published.
 
 ## Service status
 
-Checked on 2026-10-12. Public listings below were opened and matched to this repository.
+Directory evidence was checked on 2026-10-12. Those listings matched this
+repository at that time; their current package versions have not been rechecked.
+The maintained source now includes native Codex and Claude Code marketplaces.
+These custom marketplaces are separate from official platform directory listings.
 
 | Service | Route | Current evidence |
 | --- | --- | --- |
-| GitHub | Public source and release | Public source and the installable skill are available. [v0.1.0](https://github.com/hmmhmmhm/align.md/releases/tag/v0.1.0) is public with a skill ZIP and SHA-256 checksum. |
+| GitHub | Public source and release | Public source and the installable skill are available. Release packages include a skill ZIP and SHA-256 checksum. See the [latest release](https://github.com/hmmhmmhm/align.md/releases/latest). |
 | [skills.sh](https://skills.sh/docs/faq) | Installation telemetry and directory indexing | Public [skill page](https://skills.sh/hmmhmmhm/align.md/align) verified. One real remote installation succeeded for Codex, Claude Code, and Cursor in a test project. |
 | [askill](https://askill.sh/submit) | Submit GitHub URL | Submitted and indexed one skill. Public [listing](https://askill.sh/skills/704509) verified. |
 | [OpenAgentSkill](https://www.openagentskill.com/submit) | Public submission queue | Submission accepted and marked public. [Listing](https://www.openagentskill.com/skills/hmmhmmhm-align-md-align) verified; static checks passed, not AI-reviewed. |
@@ -36,6 +39,12 @@ describes installing directory skills and publishing within an organization.
 It does not establish an open, public self-service listing route for this skill.
 Do not treat a personal installation or an organization-only publication as
 public distribution. No official Claude directory listing is claimed.
+
+## Native installation and updates
+
+Use the [installation guide](usage.md) for the Codex plugin, Claude Code plugin,
+or portable skills CLI. A plugin version is the alignment method version, not
+the project agreement version. Directory snapshots may lag behind GitHub.
 
 ## Maintaining distribution
 
