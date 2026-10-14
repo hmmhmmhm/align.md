@@ -72,6 +72,9 @@ for hypothetical cases.
 - The skills CLI 1.7.2 installed the complete revised skill from local source into
   an isolated Codex project. Its command help confirms named, scope-specific
   updates. Installation alone does not demonstrate automatic invocation.
+- A project-scoped copy of the earlier GitHub installation was upgraded with
+  `npx skills update align -p`. All revised skill files matched the published
+  source; a separate personal ALIGN.md remained byte-for-byte unchanged.
 - Codex plugin command syntax was checked against the installed CLI. Native
   plugin manifests and declared paths were checked locally. Native installation,
   Claude SessionStart delivery, and automatic refresh were not exercised in real
