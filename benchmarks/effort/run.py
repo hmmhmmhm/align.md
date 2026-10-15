@@ -123,7 +123,7 @@ def run_trajectory(case, arm, repeat, args, doc):
     ident = f'{case["id"]}__{arm}__r{repeat}'
     raw = args.private_output / 'raw' / ident
     raw.mkdir(parents=True)
-    runtime = Path(tempfile.mkdtemp(prefix='effort-', dir=args.private_output)).resolve()
+    runtime = create_runtime()
     home = runtime / 'home'
     codex_home = home / '.codex'
     codex_home.mkdir(parents=True)
@@ -287,6 +287,28 @@ def smoke_document(doc):
             'provided_preferences': ['tone'], 'required_questions': []}]}]}
 
 
+def create_runtime():
+    # Keep actor context outside the log destination's ancestor instructions.
+    return Path(tempfile.mkdtemp(prefix='effort-', dir='/tmp')).resolve()
+
+
+def verify_archive(archive, sources):
+    actual = {str(p.relative_to(archive)): legacy.digest(p.read_bytes()) for p in archive.rglob('*') if p.is_file()}
+    if actual != sources or any(p.is_symlink() for p in archive.rglob('*')):
+        raise RuntimeError('Source archive differs from frozen manifest; publication withheld.')
+    return actual
+
+
+def attach_verified_archive(archive, staging, sources):
+    verify_archive(archive, sources)
+    target = staging / 'source-snapshot'
+    shutil.copytree(archive, target)
+    verify_archive(target, sources)
+    legacy.write_json(staging / 'source-archive-verification.json', {
+        'matches_manifest': True, 'source_files': sources,
+        'privacy_scope': 'Source archive excluded from runtime privacy scan; byte hashes match the already public committed source manifest.'})
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--cases', type=Path, default=HERE / 'cases.json')
@@ -311,7 +333,7 @@ def main():
     source_hash = legacy.digest(json.dumps(sources, sort_keys=True))
     order = [(c, a, r) for c in doc['cases'] for r in range(1, doc['protocol']['repetitions'] + 1) for a in ('A', 'B', 'C')]
     random.Random(doc['protocol']['seed']).shuffle(order)
-    manifest = {'schema_version': 1, 'non_scored_smoke': args.smoke, 'created_at': datetime.now(timezone.utc).isoformat(), 'source_files': sources, 'source_digest': source_hash, 'preregistered_commit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip(), 'cli_sha256': legacy.digest(args.codex.read_bytes()), 'model': args.model, 'reasoning_effort': 'medium', 'cli_version': subprocess.check_output([str(args.codex), '--version'], text=True).strip(), 'workers': args.workers, 'retry_policy': 'none', 'seed': doc['protocol']['seed'], 'ordered_trials': [f'{c["id"]}__{a}__r{r}' for c, a, r in order], 'timeout_seconds_per_turn': args.timeout, 'config_flags': legacy.config_flags('medium'), 'measurement': 'Scripted intervention and text proxies, not observed human time.', 'isolation': 'Fresh HOME/CODEX_HOME per trajectory, auth-only symlink, cold conversation per episode, retained workspace for every condition. Sandbox permits outside reads; oracle is not given to actor.'}
+    manifest = {'schema_version': 1, 'non_scored_smoke': args.smoke, 'created_at': datetime.now(timezone.utc).isoformat(), 'source_files': sources, 'source_digest': source_hash, 'preregistered_commit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip(), 'cli_sha256': legacy.digest(args.codex.read_bytes()), 'model': args.model, 'reasoning_effort': 'medium', 'cli_version': subprocess.check_output([str(args.codex), '--version'], text=True).strip(), 'workers': args.workers, 'retry_policy': 'none', 'seed': doc['protocol']['seed'], 'ordered_trials': [f'{c["id"]}__{a}__r{r}' for c, a, r in order], 'timeout_seconds_per_turn': args.timeout, 'config_flags': legacy.config_flags('medium'), 'privacy_scope': 'Runtime evidence is scanned before publication. The already public committed source archive is separately verified against every manifest hash before and after attachment.', 'measurement': 'Scripted intervention and text proxies, not observed human time.', 'isolation': 'Fresh HOME/CODEX_HOME per trajectory, auth-only symlink, cold conversation per episode, retained workspace for every condition. Sandbox permits outside reads; oracle is not given to actor.'}
     if args.manifest_only:
         print(json.dumps(manifest, indent=2))
         return
@@ -329,10 +351,12 @@ def main():
     args.staging = args.private_output / 'publication-stage'
     args.staging.mkdir()
     legacy.write_json(args.staging / 'manifest.json', manifest)
+    archive = args.private_output / 'source-snapshot'
     for relative in sources:
-        target = args.staging / 'source-snapshot' / relative
+        target = archive / relative
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(ROOT / relative, target)
+    verify_archive(archive, sources)
     outcomes = []
     started = time.monotonic()
     with concurrent.futures.ThreadPoolExecutor(max_workers=args.workers) as pool:
@@ -345,9 +369,10 @@ def main():
             legacy.write_json(args.staging / 'outcomes.json', outcomes)
     legacy.write_json(args.staging / 'completion.json', {'finished_at': datetime.now(timezone.utc).isoformat(), 'wall_seconds': round(time.monotonic() - started, 3), 'planned_trajectories': len(order), 'recorded_outcomes': len(outcomes)})
     legacy.write_json(args.staging / 'source-verification.json', {'matches_start': source_manifest(args.cases) == sources})
-    audit = subprocess.run(['python3', str(ROOT / 'benchmarks/reporting/audit_privacy.py'), str(args.staging), '--private-raw', str(args.private_output / 'raw'), '--auth', str(args.auth)], capture_output=True, text=True)
+    audit = subprocess.run(['python3', '-B', str(ROOT / 'benchmarks/reporting/audit_privacy.py'), str(args.staging), '--private-raw', str(args.private_output / 'raw'), '--auth', str(args.auth)], capture_output=True, text=True)
     if audit.returncode:
         raise SystemExit('Privacy audit failed; publication withheld in private staging.')
+    attach_verified_archive(archive, args.staging, sources)
     shutil.copytree(args.staging, args.output)
     print(json.dumps({'published': True, 'planned': len(order), 'completed': sum(o['status'] == 'completed' for o in outcomes)}))
 

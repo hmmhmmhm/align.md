@@ -1,0 +1,10 @@
+{
+  "run_status": "failed_before_any_actor_call",
+  "planned_trajectories": 12,
+  "harness_failures": 12,
+  "actor_calls": 0,
+  "failed_or_missing_episodes": 72,
+  "original_privacy_audit": "privacy-audit-original.json",
+  "correction": "Runtime evidence scanned separately from the already public source archive. Every archive file is verified against the original frozen manifest. No trial record, outcome, original manifest, or original failed audit was changed. Verifier-generated __pycache__ directories are excluded from the archive; they were not frozen source or run evidence.",
+  "original_audit_false_positive": "Source archive contained the scanner own temporary-path detector literal."
+}

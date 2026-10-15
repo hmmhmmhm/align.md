@@ -1,0 +1,50 @@
+[
+  {
+    "id": "notice__B__r2",
+    "status": "harness_failure"
+  },
+  {
+    "id": "software__B__r2",
+    "status": "harness_failure"
+  },
+  {
+    "id": "notice__B__r1",
+    "status": "harness_failure"
+  },
+  {
+    "id": "notice__C__r1",
+    "status": "harness_failure"
+  },
+  {
+    "id": "software__A__r1",
+    "status": "harness_failure"
+  },
+  {
+    "id": "notice__C__r2",
+    "status": "harness_failure"
+  },
+  {
+    "id": "notice__A__r1",
+    "status": "harness_failure"
+  },
+  {
+    "id": "software__A__r2",
+    "status": "harness_failure"
+  },
+  {
+    "id": "software__C__r1",
+    "status": "harness_failure"
+  },
+  {
+    "id": "software__B__r1",
+    "status": "harness_failure"
+  },
+  {
+    "id": "notice__A__r2",
+    "status": "harness_failure"
+  },
+  {
+    "id": "software__C__r2",
+    "status": "harness_failure"
+  }
+]

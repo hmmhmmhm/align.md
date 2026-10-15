@@ -6,6 +6,7 @@ import gzip
 import json
 from pathlib import Path
 import random
+import sys
 import tempfile
 import run
 
@@ -127,6 +128,8 @@ def replay(row, case, doc, frozen):
     metrics = frozen.usage_metrics(turns)
     metrics.update(intervention_turns=len(replies), preference_units=sum(len(r['preference_units']) for r in replies) + sum(len(e['provided_preferences']) for e in episodes), repeated_preference_units=sum(r['repeated_preference_units'] for r in replies), passed_episodes=sum(e['passed'] for e in episodes), planned_episodes=len(stages), provided_preference_units=sum(len(e['provided_preferences']) for e in episodes), off_interface_audit_turns=len(pending), setup_intervention_turns=sum(r['episode'] == 'setup' for r in replies), task_intervention_turns=sum(r['episode'] != 'setup' for r in replies))
     require(all(row['metrics'].get(k) == v for k, v in metrics.items()), 'metric mismatch')
+    for key in ('actor_turns', 'user_characters', 'assistant_characters'):
+        metrics.setdefault(key, 0)
     for phase in ('setup', 'task'):
         phase_episodes = [e for e in episodes if (e['id'] == 'setup') == (phase == 'setup')]
         metrics[phase + '_preference_units'] = sum(e['_derived']['preference_units'] for e in phase_episodes)
@@ -153,12 +156,25 @@ def verify(root):
         path = snapshot / relative
         if not path.is_file() or not path.resolve().is_relative_to(snapshot.resolve()) or run.legacy.digest(path.read_bytes()) != expected:
             errors.append('Frozen source missing or changed: ' + relative)
+    archived_files = {str(p.relative_to(snapshot)) for p in snapshot.rglob('*') if p.is_file()}
+    if archived_files != set(manifest['source_files']):
+        errors.append('Frozen source archive inventory differs from manifest')
+    receipt_path = root / 'source-archive-verification.json'
+    if manifest.get('privacy_scope') or receipt_path.exists():
+        receipt = read('source-archive-verification.json')
+        if not receipt.get('matches_manifest') or receipt.get('source_files') != manifest['source_files']:
+            errors.append('Source archive receipt mismatch')
     if run.legacy.digest(json.dumps(manifest['source_files'], sort_keys=True)) != manifest['source_digest']:
         errors.append('Source digest mismatch')
     # Do not import altered archived Python. Only the hash-verified frozen helpers run.
     if errors:
         return {'verified': False, 'errors': errors, 'favorable_effort_claim_permitted': False}
-    frozen = run.load('frozen_effort_run', snapshot / 'benchmarks/effort/run.py')
+    bytecode_setting = sys.dont_write_bytecode
+    sys.dont_write_bytecode = True
+    try:
+        frozen = run.load('frozen_effort_run', snapshot / 'benchmarks/effort/run.py')
+    finally:
+        sys.dont_write_bytecode = bytecode_setting
     doc = json.loads((snapshot / 'benchmarks/effort/cases.json').read_text())
     if manifest.get('non_scored_smoke'):
         doc = frozen.smoke_document(doc)

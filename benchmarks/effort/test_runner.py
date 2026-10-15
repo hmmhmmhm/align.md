@@ -3,6 +3,8 @@
 import json
 from pathlib import Path
 import tempfile
+import shutil
+import subprocess
 import unittest
 from unittest.mock import patch
 from types import SimpleNamespace
@@ -43,6 +45,35 @@ class RouterTests(unittest.TestCase):
         self.assertFalse(run.json_equal({'days': 14.0}, {'days': 14}))
         self.assertFalse(run.json_equal({'x': True}, {'x': 1}))
         self.assertTrue(run.json_equal({'a': 1, 'b': 2}, {'b': 2, 'a': 1}))
+
+    def test_runtime_is_outside_instruction_bearing_log_destination(self):
+        with tempfile.TemporaryDirectory() as temp:
+            log_parent = Path(temp)
+            (log_parent / 'AGENTS.md').write_text('Host instructions must not enter actor context.')
+            runtime = run.create_runtime()
+            try:
+                self.assertFalse(runtime.is_relative_to(log_parent))
+                self.assertEqual(runtime.parent, Path('/tmp').resolve())
+                self.assertEqual(runtime.stat().st_mode & 0o777, 0o700)
+            finally:
+                shutil.rmtree(runtime)
+
+    def test_public_source_literals_excluded_only_with_verified_hashes(self):
+        with tempfile.TemporaryDirectory() as temp:
+            base = Path(temp)
+            archive, stage = base / 'archive', base / 'stage'
+            archive.mkdir(); stage.mkdir()
+            (archive / 'scanner.py').write_text('PATH_PROBE = "/var/folders/"')
+            sources = {'scanner.py': run.legacy.digest((archive / 'scanner.py').read_bytes())}
+            auth = base / 'auth.json'; auth.write_text('{}')
+            (stage / 'manifest.json').write_text('{}')
+            audit = subprocess.run(['python3', '-B', str(run.ROOT / 'benchmarks/reporting/audit_privacy.py'), str(stage), '--private-raw', str(base / 'raw'), '--auth', str(auth)], capture_output=True)
+            self.assertEqual(audit.returncode, 0)
+            run.attach_verified_archive(archive, stage, sources)
+            self.assertTrue(json.loads((stage / 'source-archive-verification.json').read_text())['matches_manifest'])
+            (archive / 'scanner.py').write_text('tampered')
+            with self.assertRaises(RuntimeError):
+                run.verify_archive(archive, sources)
 
     def test_manifest_hashes_imports(self):
         sources = run.source_manifest(run.HERE / 'cases.json')

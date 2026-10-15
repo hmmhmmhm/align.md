@@ -80,6 +80,18 @@ class ReplayTests(unittest.TestCase):
         row['episodes'][0]['answered_questions'] = []
         self.assertTrue(self.replay(row, case, doc)[1])
 
+    def test_preflight_failure_keeps_all_planned_episodes(self):
+        row, case, doc = fixture()
+        row.update(status='harness_failure', turns=[], episodes=[], interventions=[],
+                   session_contexts=[], resolved_models=[], metrics={})
+        derived, _, _ = self.replay(row, case, doc)
+        row['metrics'] = derived['metrics']
+        derived, errors, _ = self.replay(row, case, doc)
+        self.assertEqual(errors, [])
+        self.assertEqual(derived['metrics']['actor_turns'], 0)
+        self.assertEqual(derived['metrics']['failed_or_missing_episodes'], 2)
+        self.assertEqual(derived['metrics']['passed_episodes'], 0)
+
     def test_nonfinal_prose_always_needs_audit(self):
         row, case, doc = fixture()
         turn = row['turns'][0]

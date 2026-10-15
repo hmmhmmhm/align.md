@@ -1,0 +1,25 @@
+{
+  "id": "notice__C__r1",
+  "case_id": "notice",
+  "arm": "C",
+  "repeat": 1,
+  "status": "harness_failure",
+  "turns": [],
+  "episodes": [],
+  "interventions": [],
+  "error": "RuntimeError: ancestor_instructions",
+  "session_contexts": [],
+  "resolved_models": [],
+  "model_verified": false,
+  "metrics": {
+    "intervention_turns": 0,
+    "preference_units": 0,
+    "repeated_preference_units": 0,
+    "passed_episodes": 0,
+    "planned_episodes": 6,
+    "provided_preference_units": 0,
+    "off_interface_audit_turns": 0,
+    "setup_intervention_turns": 0,
+    "task_intervention_turns": 0
+  }
+}
