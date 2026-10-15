@@ -1,12 +1,12 @@
 <p align="center">
-  <a href="../../README.md" lang="en">English</a> · <a href="ko.md" lang="ko">한국어</a> · <strong lang="ja">日本語</strong>
-</p>
-
-<p align="center">
   <img src="../../assets/align-header.png" alt="黄色と水色の背景に、線でつながった点とALIGN.mdのタイトル" width="100%">
 </p>
 
 <h1 align="center">ALIGN.md</h1>
+
+<p align="center">
+  <a href="../../README.md" lang="en">English</a> · <a href="ko.md" lang="ko">한국어</a> · <strong lang="ja">日本語</strong>
+</p>
 
 <p align="center">
   <a href="../../LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="ライセンス: MIT"></a>

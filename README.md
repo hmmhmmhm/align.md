@@ -1,12 +1,12 @@
 <p align="center">
-  <strong lang="en">English</strong> · <a href="docs/translated-readme/ko.md" lang="ko">한국어</a> · <a href="docs/translated-readme/ja.md" lang="ja">日本語</a>
-</p>
-
-<p align="center">
   <img src="assets/align-header.png" alt="ALIGN.md on a yellow and cyan background with a connected node diagram" width="100%">
 </p>
 
 <h1 align="center">ALIGN.md</h1>
+
+<p align="center">
+  <strong lang="en">English</strong> · <a href="docs/translated-readme/ko.md" lang="ko">한국어</a> · <a href="docs/translated-readme/ja.md" lang="ja">日本語</a>
+</p>
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>

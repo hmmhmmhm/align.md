@@ -1,12 +1,12 @@
 <p align="center">
-  <a href="../../README.md" lang="en">English</a> · <strong lang="ko">한국어</strong> · <a href="ja.md" lang="ja">日本語</a>
-</p>
-
-<p align="center">
   <img src="../../assets/align-header.png" alt="노란색과 하늘색 배경에 연결된 점과 ALIGN.md 제목" width="100%">
 </p>
 
 <h1 align="center">ALIGN.md</h1>
+
+<p align="center">
+  <a href="../../README.md" lang="en">English</a> · <strong lang="ko">한국어</strong> · <a href="ja.md" lang="ja">日本語</a>
+</p>
 
 <p align="center">
   <a href="../../LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="라이선스: MIT"></a>
