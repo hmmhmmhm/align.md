@@ -31,6 +31,14 @@ Keep personal criteria in ALIGN.md and the reusable alignment method in the skil
   <img src="assets/keep-expectations-separate.png" alt="Three distinct connected panels represent execution, instructions, and expectations" width="100%">
 </p>
 
+## Fewer follow-up questions
+
+Across 12 synthetic tasks, an agent starting with generic instructions needed nine clarification replies. With confirmed preferences already in ALIGN.md and the align skill available, it needed none. Both conditions met the final criteria on all 12 tasks. The chart also includes four assumed setup replies for the ALIGN condition. [Results and method](RETENTION_BENCHMARK.md).
+
+<p align="center">
+  <a href="RETENTION_BENCHMARK.md"><img src="assets/benchmarks/retention-comparison.svg" alt="Synthetic benchmark: nine task replies with generic instructions versus zero with saved preferences and align; four assumed setup replies included separately; final fit 12 of 12 in both conditions" width="100%"></a>
+</p>
+
 ## Continuous self-alignment
 
 Return to alignment when an important decision misses your intent, repeated corrections reveal a missing criterion, or you are unsure what to do next. You can also review selected PR feedback and accessible project conversations to find recurring criteria, called taste invariants, with their scope and exceptions. Choose recent or full history after seeing the estimated time. Before a long autonomous run, rehearse a few hypothetical choices. Clear errors get fixed directly; settled questions stay settled.

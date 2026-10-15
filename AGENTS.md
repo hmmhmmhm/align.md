@@ -3,6 +3,19 @@
 Codex is the primary client for this repository. Keep AGENTS.md as the
 canonical project instruction file. Read ALIGN.md before making decisions.
 
+## README language consistency
+
+`README.md` is the English source of truth for all translations in
+`docs/translated-readme/`. When any version changes, review every language
+version and update all affected translations in the same change.
+
+Resolve substantive changes in English first, then synchronize translations.
+Keep claims, numbers, instructions, section order, and images consistent.
+Adapt wording naturally and preserve working relative links. Language-only
+wording fixes do not require unnecessary edits to other versions.
+
+Apply the appropriate humanizer skill when editing each language.
+
 <!-- align:begin -->
 ## Ongoing personal alignment
 
