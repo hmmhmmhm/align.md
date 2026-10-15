@@ -22,6 +22,16 @@ interview. Repeated mistakes may justify checking whether criteria, instruction
 loading, missing context, or execution caused the problem. Do not make the user
 answer for the agent's failure or manufacture new preferences from error counts.
 
+## When earlier decisions can clarify a criterion
+
+Use [history review](history.md) when the user wants to learn from previous work,
+or offer it once when repeated consequential corrections suggest an unstated
+criterion. Explain the available PR and conversation sources, recent/full scope
+and estimated time before collecting. Look for taste invariants with a defined
+scope, supporting evidence and counterexamples. Apply already confirmed criteria;
+ask only about inferred or conflicting ones. A missed instruction still needs a
+repair, not another preference interview.
+
 ## Before a long autonomous loop
 
 Read existing permission, scope, budget, checkpoint and stopping agreements.

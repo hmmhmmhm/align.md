@@ -1,8 +1,10 @@
 {
   "name": "align-md",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Keep project decisions aligned with personal criteria through an ongoing align skill.",
-  "author": {"name": "hmmhmmhm"},
+  "author": {
+    "name": "hmmhmmhm"
+  },
   "homepage": "https://github.com/hmmhmmhm/align.md",
   "repository": "https://github.com/hmmhmmhm/align.md",
   "license": "MIT",

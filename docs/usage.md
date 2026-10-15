@@ -155,3 +155,27 @@ uninstalling should not remove your agreement or unrelated instructions.
 - [Claude plugin updates](https://code.claude.com/docs/en/discover-plugins#keep-plugins-updated)
 - [Claude plugin versions](https://code.claude.com/docs/en/plugins-reference#version)
 - [skills CLI](https://github.com/vercel-labs/skills)
+
+
+## Learn from earlier feedback
+
+Ask: "Use align to find recurring criteria in my recent PR feedback and this
+project's available conversations. Show the scope and estimated time first."
+You can also choose the full PR history, a date range, selected transcripts or
+no history. The agent offers sources it can actually access and asks once for
+the scope. Codex and Claude logs are optional; availability and formats vary.
+
+The skill looks for taste invariants: criteria that remain consistent across
+observed situations. It checks the context and exceptions before proposing a
+lasting rule. Team requirements, assistant suggestions and one-off corrections
+are not automatically personal preferences. Confirmed criteria guide later work;
+new evidence can change them.
+
+Python helpers provide metadata-only planning, paginated PR collection, resumable
+PR scans and project-scoped JSONL parsing. They make no model calls. The agent
+reviews the evidence and proposes changes for confirmation. Time estimates show
+their assumptions and are refined from actual volume and processing speed.
+Raw evidence stays in a chosen private working file outside Git. It is not added
+to ALIGN.md or published with the skill.
+
+See [history review and collector commands](../skills/align/references/history.md).

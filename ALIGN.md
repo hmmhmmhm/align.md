@@ -98,6 +98,21 @@ native instruction file canonical, safely linking other compatible entrypoints
 when needed. Preserve distinct and nested instructions. Record the skill's
 invocation and update policy in project ALIGN.md documents.
 
+## History-informed alignment
+
+User-confirmed scope update: 2026-10-15 (Asia/Seoul). Partial confirmation only.
+
+Support full paginated PR feedback collection and recent-first review. Offer
+accessible project conversations, including supported Codex and Claude records,
+as optional evidence. Show sources, scope and estimated retrieval/analysis time
+before collection; reuse the user's choice and refine estimates as work proceeds.
+
+Use taste invariants during self-alignment: scoped, revisable criteria supported
+by the user's decisions across situations. Examine exceptions and conflicting
+evidence. Do not infer immutable personality traits, treat team feedback as
+personal consent, or promote repetition into an agreement. Keep the maintained
+method in the skill and confirmed current criteria in ALIGN.md.
+
 ## Revisit Alignment
 
 Primary client: Codex. Canonical instruction file: AGENTS.md.

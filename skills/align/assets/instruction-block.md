@@ -11,6 +11,10 @@ suggest a missing criterion, the user is unsure of the next direction, or a long
 autonomous run has untested boundaries. Offer hypothetical rehearsal for the
 last case; do not execute scenarios or launch a loop as part of the rehearsal.
 
+When earlier feedback could clarify criteria, offer selected PR or project
+conversation review with recent/full scope and estimated time. Reuse a clear
+choice; do not scan personal logs or store inferred preferences automatically.
+
 Reuse existing answers. Fix clear execution errors directly. Ask only about
 consequential uncertainty, continue independent work, and do not reopen a declined
 or resolved review without new evidence. A new method version does not change

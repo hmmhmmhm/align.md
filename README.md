@@ -29,7 +29,7 @@ Keep personal criteria in ALIGN.md and the reusable alignment method in the skil
 
 ## Continuous self-alignment
 
-Return to alignment when an important decision misses your intent, repeated corrections reveal a missing criterion, or you are unsure what to do next. Before a long autonomous run, rehearse a few hypothetical choices. Clear errors get fixed directly; settled questions stay settled.
+Return to alignment when an important decision misses your intent, repeated corrections reveal a missing criterion, or you are unsure what to do next. You can also review selected PR feedback and accessible project conversations to find recurring criteria, called taste invariants, with their scope and exceptions. Choose recent or full history after seeing the estimated time. Before a long autonomous run, rehearse a few hypothetical choices. Clear errors get fixed directly; settled questions stay settled.
 
 <p align="center">
   <img src="assets/continuous-self-alignment.png" alt="A path gradually corrects its deviations from a steady reference line" width="100%">

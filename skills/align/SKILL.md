@@ -1,9 +1,9 @@
 ---
 name: align
-description: Establish and maintain personal project alignment in ALIGN.md. Use when goals or priorities are unclear, important decisions diverge from the user's expectations, repeated corrections expose a missing criterion, or a long autonomous run needs judgment calibration. Apply existing agreements without reopening routine decisions.
+description: Establish and maintain personal project alignment in ALIGN.md, including selected PR or conversation history review for scoped taste invariants. Use when goals or priorities are unclear, important decisions diverge from the user's expectations, repeated corrections expose a missing criterion, or a long autonomous run needs judgment calibration. Apply existing agreements without reopening routine decisions.
 license: MIT
 metadata:
-  version: "0.2.0"
+  version: "0.3.0"
 ---
 
 # Align
@@ -44,6 +44,20 @@ Inspect the actual instruction entrypoints before proposing any changes.
 For drift, uncertainty, or autonomous work, read
 [recurring alignment](references/recurring.md). A suggestion is not a new
 scheduled task or permission to run unattended.
+
+## Learn from selected history
+
+When earlier feedback could reduce the user's effort, offer the optional
+[history review](references/history.md). Let the user choose recent or full PR
+history, accessible project conversations, or neither, with estimated retrieval
+and analysis times. Reuse a clear choice; never scan all personal logs by default.
+
+Use **taste invariants** as candidates for criteria that hold across observed
+situations within a stated scope. Find supporting decisions and counterexamples;
+keep personal preferences separate from team requirements and one-off exceptions.
+Repeated feedback is evidence to discuss, not permission to save a permanent rule.
+Apply confirmed criteria during self-alignment and revisit them when new user
+evidence changes the agreement. Do not claim a personality trait is immutable.
 
 ## Agree through conversation
 

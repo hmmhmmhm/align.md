@@ -96,3 +96,23 @@ reliability benchmark. See [requests and results](../tests/recurring-results.md)
 
 One ambiguity was corrected: a narrow criterion update must not expand into
 installation questions just because the document lacks a revisit section.
+
+
+## History review, 0.3.0
+
+The history collectors have 19 synthetic unit/integration checks covering full
+selection beyond 1,000 PRs, endpoint pagination, exact bot exclusions, short
+feedback, quota stops, interruption/resumption, scoped transcript parsing,
+unsupported formats, duplicate records and private output locations. These run
+with the existing package checks through `python3 -m unittest discover -s tests`.
+
+An independent Astra code review found stale project-context inheritance and
+silent unsupported-message omissions. The parser now resets uncertain context,
+reports partial coverage and has regression fixtures for those cases, including
+falsy malformed payloads. A read-only metadata plan was also checked against
+this repository's GitHub API; it had zero PRs at validation time. Full collection
+and conversation parsing were tested with fixtures, not personal logs.
+
+These checks establish collector behavior. They do not measure preference
+inference accuracy, real-world time savings, or compatibility with every client
+transcript version. Analysis speed defaults remain disclosed assumptions.

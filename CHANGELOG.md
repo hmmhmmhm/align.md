@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.0
+
+- Add optional recent/full PR and project conversation review with disclosed time estimates.
+- Collect paginated PR feedback with partial coverage reports and resumption.
+- Parse selected Codex and Claude JSONL text while retaining project boundaries.
+- Use scoped, revisable taste invariants to propose criteria from evidence, with
+  counterexamples and confirmation before inferred criteria become agreements.
+
 ## 0.2.0
 
 - Make align a maintained practice with focused review after consequential drift,
