@@ -1,0 +1,75 @@
+{
+  "policy_version": 1,
+  "processed_at": "2026-10-15T00:19:53.686980+00:00",
+  "policy": "Remove complete private Reasoning/reasoning and analysis-channel records, including nested event payloads, and all encrypted_content fields. Apply the same removal to embedded Codex stdout JSONL. Preserve observable prompts, context, actions, tool outputs, assistant replies, and token usage. Original changed files remain in the private backup; actor and judge raw evidence remains separate.",
+  "script_sha256": "0e271b1e17b8761178b2ec6ddf452d72e98660db051f13b9c8234d9b811462bb",
+  "counts": {
+    "private_reasoning_records": 14,
+    "encrypted_content_fields": 7
+  },
+  "files": [
+    {
+      "file": "session-traces/judge-1__case-04/rollout-2026-10-15T09-12-56-01a13ce7-a23c-7553-9b0c-cace9a5b68af.jsonl.gz",
+      "original_sha256": "a72c4f7b79bfe1626c9c78ab22ff0ef23a0b4c852affbb861df4a8ee03421cfd",
+      "published_sha256": "3d074aac336b0c3b33e58cbbcc90f94e125e47c43e00d2bc24c50183aa4779d3",
+      "removed": {
+        "private_reasoning_records": 2,
+        "encrypted_content_fields": 1
+      }
+    },
+    {
+      "file": "session-traces/judge-1__case-06/rollout-2026-10-15T09-13-04-01a13ce7-c1aa-77a1-b84b-5f8bbd0c504d.jsonl.gz",
+      "original_sha256": "8058ad1878727032a7bbf4c85e06b3fc71a9925fc573cbba9b64d809fb859605",
+      "published_sha256": "695de87ae253eed191b9ee1b37b1f9a93ff06ff6d4b592fbfd866a63d1cea2e9",
+      "removed": {
+        "private_reasoning_records": 2,
+        "encrypted_content_fields": 1
+      }
+    },
+    {
+      "file": "session-traces/judge-1__case-09/rollout-2026-10-15T09-14-08-01a13ce8-beb7-7f41-8442-74f970c65afe.jsonl.gz",
+      "original_sha256": "b63f2f9ea504b6eea28db05bfd210bfba3f9cbdc2e5a6e0c5082f81e876a2c76",
+      "published_sha256": "db287c49ab41cd81ccde3eec534fabf93b21e8cc1a644e08f0854427e8e33e32",
+      "removed": {
+        "private_reasoning_records": 2,
+        "encrypted_content_fields": 1
+      }
+    },
+    {
+      "file": "session-traces/judge-1__case-12/rollout-2026-10-15T09-14-41-01a13ce9-3f7b-7c73-b817-241e95e66daf.jsonl.gz",
+      "original_sha256": "8c9a4e24d9d3805a78c934df96a9011c27b8120cddf355f3a45e04f170f5c59b",
+      "published_sha256": "903b8975691cc0b73056f44b11a871ef99cdb852664f31c8b93270349ddc5515",
+      "removed": {
+        "private_reasoning_records": 2,
+        "encrypted_content_fields": 1
+      }
+    },
+    {
+      "file": "session-traces/judge-2__case-04/rollout-2026-10-15T09-15-26-01a13ce9-e9f4-7852-a66a-d1be8198a45d.jsonl.gz",
+      "original_sha256": "cbeddf06b872d522bce0c673ecae2abd09172a168a6e78c9e5afb413d8090e8f",
+      "published_sha256": "60540013c882bf549792249dcaba37ce200d14794e47ead2c35e54d20c6eb904",
+      "removed": {
+        "private_reasoning_records": 2,
+        "encrypted_content_fields": 1
+      }
+    },
+    {
+      "file": "session-traces/judge-2__case-06/rollout-2026-10-15T09-16-19-01a13cea-bdac-77c2-9211-2788ccbc2ffd.jsonl.gz",
+      "original_sha256": "912591f0fb2723c7dad1cd73b3dceb42590f198f50b779956e75acb8ae8383fe",
+      "published_sha256": "8da1e7fbab3d90b3895e3ecb74f050e821b43cd6a6cc40a2155e39d719b694b6",
+      "removed": {
+        "private_reasoning_records": 2,
+        "encrypted_content_fields": 1
+      }
+    },
+    {
+      "file": "session-traces/judge-2__case-12/rollout-2026-10-15T09-17-28-01a13ceb-c8f4-7120-a091-867368220337.jsonl.gz",
+      "original_sha256": "5276ea0561b632c18dd38f7c688e6a59af0d4abfce89f608f4c66ad167f26244",
+      "published_sha256": "65a6f5a00daa879618e2bac50fde03921546b4b20e7e9540e663a50870997edb",
+      "removed": {
+        "private_reasoning_records": 2,
+        "encrypted_content_fields": 1
+      }
+    }
+  ]
+}

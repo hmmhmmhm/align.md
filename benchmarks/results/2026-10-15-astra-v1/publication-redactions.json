@@ -1,0 +1,219 @@
+{
+  "policy_version": 1,
+  "processed_at": "2026-10-15T00:02:37.600691+00:00",
+  "policy": "Remove complete private Reasoning/reasoning and analysis-channel records, including nested event payloads, and all encrypted_content fields. Apply the same removal to embedded Codex stdout JSONL. Preserve observable prompts, context, actions, tool outputs, assistant replies, and token usage. Original changed files remain in the private backup; actor and judge raw evidence remains separate.",
+  "script_sha256": "0e271b1e17b8761178b2ec6ddf452d72e98660db051f13b9c8234d9b811462bb",
+  "counts": {
+    "private_reasoning_records": 46,
+    "encrypted_content_fields": 23
+  },
+  "files": [
+    {
+      "file": "session-traces/04__A__r1/rollout-2026-10-15T09-01-59-01a13cdd-9d42-7fc2-982f-520a8c7cb33f.jsonl.gz",
+      "original_sha256": "8f3c21f7d72b06663dde70208153b1be3b0f43df7b2cf224e596afddedf16e8a",
+      "published_sha256": "a69621b4440d7ea5774d09de1ec7253430f06d6205bea7f54908e28ee490952c",
+      "removed": {
+        "private_reasoning_records": 2,
+        "encrypted_content_fields": 1
+      }
+    },
+    {
+      "file": "session-traces/04__A__r2/rollout-2026-10-15T08-55-21-01a13cd7-8e03-7ba1-85f6-90e96865f9a3.jsonl.gz",
+      "original_sha256": "2dac9cbc6cec09d0d75c70831817a16f22adf7cc0a275b1ee6a8b88ba377a0b7",
+      "published_sha256": "818ceb46911d2925b3a8cea8f36bc7ff4182cd553f3ad58ca7af750da5b5202c",
+      "removed": {
+        "private_reasoning_records": 2,
+        "encrypted_content_fields": 1
+      }
+    },
+    {
+      "file": "session-traces/04__A__r3/rollout-2026-10-15T08-59-50-01a13cdb-a52e-7f82-b2b8-0c3a47fbbb7a.jsonl.gz",
+      "original_sha256": "738c4be9ba6733241fb97f678a0d1a267ca4f4a1d967857361f39fcde7f20cb9",
+      "published_sha256": "85c666053addea4219d66facb8d0b9c0dc1219462d2cb4ff0cab565ad10a18eb",
+      "removed": {
+        "private_reasoning_records": 2,
+        "encrypted_content_fields": 1
+      }
+    },
+    {
+      "file": "session-traces/04__B__r1/rollout-2026-10-15T08-58-40-01a13cda-974f-7f40-ae1d-87d793623e99.jsonl.gz",
+      "original_sha256": "0b1d9a4e6ab8a791da6f7d18de9ded3a4a3d18b233b4402cd1a0599921fa94a7",
+      "published_sha256": "e4df769baa31f4cb2c40c7790ae5af35e7e6e11d7e20774922536974aedb52ec",
+      "removed": {
+        "private_reasoning_records": 2,
+        "encrypted_content_fields": 1
+      }
+    },
+    {
+      "file": "session-traces/04__B__r2/rollout-2026-10-15T08-51-09-01a13cd3-b38e-7880-a0db-7745525236c8.jsonl.gz",
+      "original_sha256": "aa686b6cd4ea887a836253db109a36c9426658cc3089e67c665cd4a61393531b",
+      "published_sha256": "bcf329900b8167e4ed253dd8943fde633db5899140df2db36a68608f8564fe27",
+      "removed": {
+        "private_reasoning_records": 2,
+        "encrypted_content_fields": 1
+      }
+    },
+    {
+      "file": "session-traces/04__B__r3/rollout-2026-10-15T08-52-41-01a13cd5-198c-7341-afa9-a491fc236a7c.jsonl.gz",
+      "original_sha256": "31b825992c56d76d7cd8d2f72414bb92589be71c616bc36ca8d2d3368e25daa9",
+      "published_sha256": "38b2cd467b82137aef96432a5639dcb0e143d78dd962507f64374fcba994b82f",
+      "removed": {
+        "private_reasoning_records": 2,
+        "encrypted_content_fields": 1
+      }
+    },
+    {
+      "file": "session-traces/04__C__r1/rollout-2026-10-15T08-50-11-01a13cd2-d2ad-70d0-9cc1-9f70a87a1f7f.jsonl.gz",
+      "original_sha256": "deef2a12fb1ed7232791625e9f3c491d5482c3f5ab3f4463254d9e9c2b7e10a6",
+      "published_sha256": "a75916a161442e055f65c430814d6f06a47d213a0396a0c97aaa3c0cae3fad89",
+      "removed": {
+        "private_reasoning_records": 2,
+        "encrypted_content_fields": 1
+      }
+    },
+    {
+      "file": "session-traces/04__C__r2/rollout-2026-10-15T08-58-59-01a13cda-dfca-7b80-98a4-faede60c46c5.jsonl.gz",
+      "original_sha256": "9c7af32bfac8b92bdac53456cb28d55d6fd65adb3651bfb7d40875d7439f47a7",
+      "published_sha256": "6c3faa014e12c67fb79c6f186f3812b6187cb80eddcc4d3cdf9511eb223dc3b8",
+      "removed": {
+        "private_reasoning_records": 2,
+        "encrypted_content_fields": 1
+      }
+    },
+    {
+      "file": "session-traces/04__C__r3/rollout-2026-10-15T08-55-18-01a13cd7-8222-7b52-b163-db301d5d3d1f.jsonl.gz",
+      "original_sha256": "e1fb719635360ddcaeca3478f4656fa9acc22207f2b71a63151eb1d31d93036c",
+      "published_sha256": "515af4ee724071a941c3acec93bb9de5c1f5a628b1f33261de2d7b52bc2ccb64",
+      "removed": {
+        "private_reasoning_records": 2,
+        "encrypted_content_fields": 1
+      }
+    },
+    {
+      "file": "session-traces/05__B__r1/rollout-2026-10-15T08-48-08-01a13cd0-efd0-7813-95c3-5a9787adb4e6.jsonl.gz",
+      "original_sha256": "dc4ca08b334066a599dfd5231c5660039127e8a768c94258c14afe3763254e35",
+      "published_sha256": "14e9decaa3877130eb1d18ac9cbe60072e03e6ed091cbc40a368f83a856e7ec4",
+      "removed": {
+        "private_reasoning_records": 2,
+        "encrypted_content_fields": 1
+      }
+    },
+    {
+      "file": "session-traces/05__C__r1/rollout-2026-10-15T08-53-31-01a13cd5-dd18-7513-92fc-00da3f9bd700.jsonl.gz",
+      "original_sha256": "fd412efb7c86f68e7188178c1cdc989a51be38020f6edac46e25651fc0e4026c",
+      "published_sha256": "0eebcaf4f993d6cc89587b8ee3f526f4cd67de2e13b2e9850a940fa3a5c9ed62",
+      "removed": {
+        "private_reasoning_records": 2,
+        "encrypted_content_fields": 1
+      }
+    },
+    {
+      "file": "session-traces/05__C__r2/rollout-2026-10-15T08-52-51-01a13cd5-437a-7f71-858a-071c917c4cdc.jsonl.gz",
+      "original_sha256": "2210661777bb69715470e7a4da7ad23ec80476763d176cdf86364ac766f7c8ab",
+      "published_sha256": "1b53fdb43a3846b9d33ddbdf7c727a88eefb9dfc48efe8a99932e039c9be2f64",
+      "removed": {
+        "private_reasoning_records": 2,
+        "encrypted_content_fields": 1
+      }
+    },
+    {
+      "file": "session-traces/05__C__r3/rollout-2026-10-15T08-58-46-01a13cda-ace3-7cc2-af4e-c192a3c27312.jsonl.gz",
+      "original_sha256": "d3fb4a1d34fde455e3fd69987046d240d254dd406bd383b747715873c0cca830",
+      "published_sha256": "d17f3cc438ed402faac13357897bc6cda82bc8641d6ad2ea902ec811a48593d5",
+      "removed": {
+        "private_reasoning_records": 2,
+        "encrypted_content_fields": 1
+      }
+    },
+    {
+      "file": "session-traces/06__B__r3/rollout-2026-10-15T09-00-42-01a13cdc-722c-78e3-abab-456311ea4b4f.jsonl.gz",
+      "original_sha256": "ddd7d28b3d81c9ea6733151a939bea49d045ff5e9725924347282bf9301711d9",
+      "published_sha256": "bf20e0ae91121d4bb5ad9d2f9bade9cd01bb2f17197e1e569aa8d100cc1d9ca6",
+      "removed": {
+        "private_reasoning_records": 2,
+        "encrypted_content_fields": 1
+      }
+    },
+    {
+      "file": "session-traces/08__A__r1/rollout-2026-10-15T08-59-37-01a13cdb-7291-78b2-a636-ab4358a70dd6.jsonl.gz",
+      "original_sha256": "9c1551c9f3d3a5c2e741e7c86099e7135906467df7f3774feae910e3984f43ee",
+      "published_sha256": "3ea4cd8ebb2c0224ccd985794740e2d83b999bf26318eeaeac100a5ae767eecc",
+      "removed": {
+        "private_reasoning_records": 2,
+        "encrypted_content_fields": 1
+      }
+    },
+    {
+      "file": "session-traces/08__A__r2/rollout-2026-10-15T08-50-28-01a13cd3-1476-76e2-bcfd-cdb07796c4df.jsonl.gz",
+      "original_sha256": "e152eec691a530bed6e275135768262604e04c77044961279784e1cd5d16423b",
+      "published_sha256": "aa7ca9691158c306865f317e6160018e63ab1296ae52dc983d714e93225d48f1",
+      "removed": {
+        "private_reasoning_records": 2,
+        "encrypted_content_fields": 1
+      }
+    },
+    {
+      "file": "session-traces/08__A__r3/rollout-2026-10-15T08-51-57-01a13cd4-6eae-7ba1-a003-16979d1e0914.jsonl.gz",
+      "original_sha256": "fe22a8e601dc6245d4326fb6393ec5826306b32a066eb3a47888da705d1e3b97",
+      "published_sha256": "1c8d6aaf8f2ad48d53e805098a133143eb028164b57a5d5d4d5d1b4a47615efc",
+      "removed": {
+        "private_reasoning_records": 2,
+        "encrypted_content_fields": 1
+      }
+    },
+    {
+      "file": "session-traces/08__B__r1/rollout-2026-10-15T08-53-14-01a13cd5-9a66-7f12-bd3c-1ee97c246bd0.jsonl.gz",
+      "original_sha256": "434187fc3567bb6389c6f08373d36027f5b92784e0603d0e87abd3845c85d473",
+      "published_sha256": "b5774b9b8e50e3b5dbbf969e42dadc2200b5fa5a14faaa475bd8ca2fad14aaaf",
+      "removed": {
+        "private_reasoning_records": 2,
+        "encrypted_content_fields": 1
+      }
+    },
+    {
+      "file": "session-traces/08__B__r2/rollout-2026-10-15T09-01-03-01a13cdc-c465-7310-a215-ac7c0757fdda.jsonl.gz",
+      "original_sha256": "27cac3e5fd10f205f359e8681dd7a1f78c8ae94fa5e25dd5979dda4df71acb53",
+      "published_sha256": "0d6ac91cc20994db6bc539575cf5494a101c6db532c21d642ec5f53de607b2a8",
+      "removed": {
+        "private_reasoning_records": 2,
+        "encrypted_content_fields": 1
+      }
+    },
+    {
+      "file": "session-traces/08__B__r3/rollout-2026-10-15T08-57-27-01a13cd9-79b8-7860-98ae-d229d8fcff34.jsonl.gz",
+      "original_sha256": "285a31280935b5cf54bc7c71eaa3543cd26c4d27b5597a1c7cc6063f9bc754f4",
+      "published_sha256": "4b41de63c0de85f2a3faf48cd7b4195eb4357c0b49b403d8b483d24f63a8cc29",
+      "removed": {
+        "private_reasoning_records": 2,
+        "encrypted_content_fields": 1
+      }
+    },
+    {
+      "file": "session-traces/08__C__r1/rollout-2026-10-15T08-55-52-01a13cd8-0430-7960-8081-9730edc914ba.jsonl.gz",
+      "original_sha256": "299dabc637cae94070b028a072f40ef1c1db2684a5d2f90fc26bdbf001ccf6ec",
+      "published_sha256": "17423964bacbd35a38e2b16f69721d4c8c4095b3b94aa5146d4e4abe8f972ec9",
+      "removed": {
+        "private_reasoning_records": 2,
+        "encrypted_content_fields": 1
+      }
+    },
+    {
+      "file": "session-traces/08__C__r2/rollout-2026-10-15T08-59-21-01a13cdb-34db-7870-8d2b-fec0e3b5fb78.jsonl.gz",
+      "original_sha256": "a78e324e10aab0721782aa5ac3c5231eaa505f953eed6e9b9ce8ad1b5b361e08",
+      "published_sha256": "babe8185b75b975c988ae57406fd4af3fe3e5c02143a49fa7579d8fa84cfcce6",
+      "removed": {
+        "private_reasoning_records": 2,
+        "encrypted_content_fields": 1
+      }
+    },
+    {
+      "file": "session-traces/08__C__r3/rollout-2026-10-15T08-48-38-01a13cd1-6470-7b73-8657-cd732c74ebbe.jsonl.gz",
+      "original_sha256": "4fed1a4495b194fda7e9e7168ee5906b2a1045d4d8e42dd7d1d570d02c9fa124",
+      "published_sha256": "9f92df952d45000ac605bf43ac81afb9ab0ad8aa10a988dd69c95abe5ad77676",
+      "removed": {
+        "private_reasoning_records": 2,
+        "encrypted_content_fields": 1
+      }
+    }
+  ]
+}

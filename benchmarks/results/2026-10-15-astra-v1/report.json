@@ -1,0 +1,2385 @@
+{
+  "reporting_provenance": {
+    "utility_sha256": "fab7a7c87fcd9e3de58bbff8c4dbc56596b5e3e1d27dfba396aa0a349822e1de",
+    "status": "post-freeze reporting utility; frozen rubric unchanged",
+    "archived_source_snapshot_used": true
+  },
+  "current_checkout_comparison": {
+    "matches_frozen_sources": true,
+    "different_files": [],
+    "scope": "Informational only. Historical scores use archived frozen sources, not the current skill."
+  },
+  "validation": {
+    "errors": [],
+    "pending": [],
+    "warnings": [
+      "Snapshot bytes cannot be reconstructed from published text: 04__A__r3/archive-sharing.zip",
+      "Snapshot bytes cannot be reconstructed from published text: 04__B__r3/archive-for-sharing.zip",
+      "Snapshot bytes cannot be reconstructed from published text: 04__C__r1/research-archive.zip",
+      "Snapshot bytes cannot be reconstructed from published text: 04__C__r2/research-archive.zip",
+      "Snapshot bytes cannot be reconstructed from published text: 04__C__r3/archive-share.zip"
+    ],
+    "scope": "Evidence integrity and coverage; does not certify semantic interpretations or benchmark validity",
+    "judge_checks_requested": true,
+    "complete_and_consistent": true
+  },
+  "coverage": {
+    "planned_scenarios": 108,
+    "planned_sessions": 144,
+    "recorded_scenarios": 108,
+    "statuses": {
+      "completed": 108
+    },
+    "models": {
+      "gpt-6-astra": 108
+    }
+  },
+  "scores_by_arm": {
+    "deterministic": {
+      "A": {
+        "earned": 33,
+        "graded": 33,
+        "planned": 33,
+        "rate_among_graded": 1.0,
+        "ungraded": 0
+      },
+      "B": {
+        "earned": 33,
+        "graded": 33,
+        "planned": 33,
+        "rate_among_graded": 1.0,
+        "ungraded": 0
+      },
+      "C": {
+        "earned": 33,
+        "graded": 33,
+        "planned": 33,
+        "rate_among_graded": 1.0,
+        "ungraded": 0
+      }
+    },
+    "judge_1": {
+      "A": {
+        "earned": 67,
+        "graded": 75,
+        "planned": 75,
+        "rate_among_graded": 0.8933333333333333,
+        "ungraded": 0
+      },
+      "B": {
+        "earned": 67,
+        "graded": 75,
+        "planned": 75,
+        "rate_among_graded": 0.8933333333333333,
+        "ungraded": 0
+      },
+      "C": {
+        "earned": 70,
+        "graded": 75,
+        "planned": 75,
+        "rate_among_graded": 0.9333333333333333,
+        "ungraded": 0
+      }
+    },
+    "judge_2": {
+      "A": {
+        "earned": 70,
+        "graded": 75,
+        "planned": 75,
+        "rate_among_graded": 0.9333333333333333,
+        "ungraded": 0
+      },
+      "B": {
+        "earned": 70,
+        "graded": 75,
+        "planned": 75,
+        "rate_among_graded": 0.9333333333333333,
+        "ungraded": 0
+      },
+      "C": {
+        "earned": 74,
+        "graded": 75,
+        "planned": 75,
+        "rate_among_graded": 0.9866666666666667,
+        "ungraded": 0
+      }
+    },
+    "combined_judge_1": {
+      "A": {
+        "earned": 100,
+        "graded": 108,
+        "planned": 108,
+        "rate_among_graded": 0.9259259259259259,
+        "ungraded": 0
+      },
+      "B": {
+        "earned": 100,
+        "graded": 108,
+        "planned": 108,
+        "rate_among_graded": 0.9259259259259259,
+        "ungraded": 0
+      },
+      "C": {
+        "earned": 103,
+        "graded": 108,
+        "planned": 108,
+        "rate_among_graded": 0.9537037037037037,
+        "ungraded": 0
+      }
+    },
+    "combined_judge_2": {
+      "A": {
+        "earned": 103,
+        "graded": 108,
+        "planned": 108,
+        "rate_among_graded": 0.9537037037037037,
+        "ungraded": 0
+      },
+      "B": {
+        "earned": 103,
+        "graded": 108,
+        "planned": 108,
+        "rate_among_graded": 0.9537037037037037,
+        "ungraded": 0
+      },
+      "C": {
+        "earned": 107,
+        "graded": 108,
+        "planned": 108,
+        "rate_among_graded": 0.9907407407407407,
+        "ungraded": 0
+      }
+    }
+  },
+  "scores_by_case": {
+    "deterministic": {
+      "01": {
+        "A": {
+          "earned": 3,
+          "graded": 3,
+          "planned": 3,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 3,
+          "graded": 3,
+          "planned": 3,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 3,
+          "graded": 3,
+          "planned": 3,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "02": {
+        "A": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "03": {
+        "A": {
+          "earned": 3,
+          "graded": 3,
+          "planned": 3,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 3,
+          "graded": 3,
+          "planned": 3,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 3,
+          "graded": 3,
+          "planned": 3,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "04": {
+        "A": {
+          "earned": 0,
+          "graded": 0,
+          "planned": 0,
+          "rate_among_graded": null,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 0,
+          "graded": 0,
+          "planned": 0,
+          "rate_among_graded": null,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 0,
+          "graded": 0,
+          "planned": 0,
+          "rate_among_graded": null,
+          "ungraded": 0
+        }
+      },
+      "05": {
+        "A": {
+          "earned": 3,
+          "graded": 3,
+          "planned": 3,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 3,
+          "graded": 3,
+          "planned": 3,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 3,
+          "graded": 3,
+          "planned": 3,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "06": {
+        "A": {
+          "earned": 3,
+          "graded": 3,
+          "planned": 3,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 3,
+          "graded": 3,
+          "planned": 3,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 3,
+          "graded": 3,
+          "planned": 3,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "07": {
+        "A": {
+          "earned": 3,
+          "graded": 3,
+          "planned": 3,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 3,
+          "graded": 3,
+          "planned": 3,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 3,
+          "graded": 3,
+          "planned": 3,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "08": {
+        "A": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "09": {
+        "A": {
+          "earned": 0,
+          "graded": 0,
+          "planned": 0,
+          "rate_among_graded": null,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 0,
+          "graded": 0,
+          "planned": 0,
+          "rate_among_graded": null,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 0,
+          "graded": 0,
+          "planned": 0,
+          "rate_among_graded": null,
+          "ungraded": 0
+        }
+      },
+      "10": {
+        "A": {
+          "earned": 3,
+          "graded": 3,
+          "planned": 3,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 3,
+          "graded": 3,
+          "planned": 3,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 3,
+          "graded": 3,
+          "planned": 3,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "11": {
+        "A": {
+          "earned": 3,
+          "graded": 3,
+          "planned": 3,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 3,
+          "graded": 3,
+          "planned": 3,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 3,
+          "graded": 3,
+          "planned": 3,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "12": {
+        "A": {
+          "earned": 0,
+          "graded": 0,
+          "planned": 0,
+          "rate_among_graded": null,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 0,
+          "graded": 0,
+          "planned": 0,
+          "rate_among_graded": null,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 0,
+          "graded": 0,
+          "planned": 0,
+          "rate_among_graded": null,
+          "ungraded": 0
+        }
+      }
+    },
+    "judge_1": {
+      "01": {
+        "A": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "02": {
+        "A": {
+          "earned": 3,
+          "graded": 3,
+          "planned": 3,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 3,
+          "graded": 3,
+          "planned": 3,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 3,
+          "graded": 3,
+          "planned": 3,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "03": {
+        "A": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "04": {
+        "A": {
+          "earned": 4,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 0.4444444444444444,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 4,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 0.4444444444444444,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 6,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 0.6666666666666666,
+          "ungraded": 0
+        }
+      },
+      "05": {
+        "A": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "06": {
+        "A": {
+          "earned": 3,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 0.5,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 3,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 0.5,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 4,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 0.6666666666666666,
+          "ungraded": 0
+        }
+      },
+      "07": {
+        "A": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "08": {
+        "A": {
+          "earned": 3,
+          "graded": 3,
+          "planned": 3,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 3,
+          "graded": 3,
+          "planned": 3,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 3,
+          "graded": 3,
+          "planned": 3,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "09": {
+        "A": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "10": {
+        "A": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "11": {
+        "A": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "12": {
+        "A": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      }
+    },
+    "judge_2": {
+      "01": {
+        "A": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "02": {
+        "A": {
+          "earned": 3,
+          "graded": 3,
+          "planned": 3,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 3,
+          "graded": 3,
+          "planned": 3,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 3,
+          "graded": 3,
+          "planned": 3,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "03": {
+        "A": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "04": {
+        "A": {
+          "earned": 7,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 0.7777777777777778,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 7,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 0.7777777777777778,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "05": {
+        "A": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "06": {
+        "A": {
+          "earned": 3,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 0.5,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 3,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 0.5,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 5,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 0.8333333333333334,
+          "ungraded": 0
+        }
+      },
+      "07": {
+        "A": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "08": {
+        "A": {
+          "earned": 3,
+          "graded": 3,
+          "planned": 3,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 3,
+          "graded": 3,
+          "planned": 3,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 3,
+          "graded": 3,
+          "planned": 3,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "09": {
+        "A": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "10": {
+        "A": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "11": {
+        "A": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 6,
+          "graded": 6,
+          "planned": 6,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "12": {
+        "A": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      }
+    },
+    "combined_judge_1": {
+      "01": {
+        "A": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "02": {
+        "A": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "03": {
+        "A": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "04": {
+        "A": {
+          "earned": 4,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 0.4444444444444444,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 4,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 0.4444444444444444,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 6,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 0.6666666666666666,
+          "ungraded": 0
+        }
+      },
+      "05": {
+        "A": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "06": {
+        "A": {
+          "earned": 6,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 0.6666666666666666,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 6,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 0.6666666666666666,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 7,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 0.7777777777777778,
+          "ungraded": 0
+        }
+      },
+      "07": {
+        "A": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "08": {
+        "A": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "09": {
+        "A": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "10": {
+        "A": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "11": {
+        "A": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "12": {
+        "A": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      }
+    },
+    "combined_judge_2": {
+      "01": {
+        "A": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "02": {
+        "A": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "03": {
+        "A": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "04": {
+        "A": {
+          "earned": 7,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 0.7777777777777778,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 7,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 0.7777777777777778,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "05": {
+        "A": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "06": {
+        "A": {
+          "earned": 6,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 0.6666666666666666,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 6,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 0.6666666666666666,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 8,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 0.8888888888888888,
+          "ungraded": 0
+        }
+      },
+      "07": {
+        "A": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "08": {
+        "A": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "09": {
+        "A": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "10": {
+        "A": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "11": {
+        "A": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "12": {
+        "A": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 9,
+          "graded": 9,
+          "planned": 9,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      }
+    }
+  },
+  "scores_by_repeat": {
+    "deterministic": {
+      "1": {
+        "A": {
+          "earned": 11,
+          "graded": 11,
+          "planned": 11,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 11,
+          "graded": 11,
+          "planned": 11,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 11,
+          "graded": 11,
+          "planned": 11,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "2": {
+        "A": {
+          "earned": 11,
+          "graded": 11,
+          "planned": 11,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 11,
+          "graded": 11,
+          "planned": 11,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 11,
+          "graded": 11,
+          "planned": 11,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "3": {
+        "A": {
+          "earned": 11,
+          "graded": 11,
+          "planned": 11,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 11,
+          "graded": 11,
+          "planned": 11,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 11,
+          "graded": 11,
+          "planned": 11,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      }
+    },
+    "judge_1": {
+      "1": {
+        "A": {
+          "earned": 22,
+          "graded": 25,
+          "planned": 25,
+          "rate_among_graded": 0.88,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 22,
+          "graded": 25,
+          "planned": 25,
+          "rate_among_graded": 0.88,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 24,
+          "graded": 25,
+          "planned": 25,
+          "rate_among_graded": 0.96,
+          "ungraded": 0
+        }
+      },
+      "2": {
+        "A": {
+          "earned": 22,
+          "graded": 25,
+          "planned": 25,
+          "rate_among_graded": 0.88,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 22,
+          "graded": 25,
+          "planned": 25,
+          "rate_among_graded": 0.88,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 23,
+          "graded": 25,
+          "planned": 25,
+          "rate_among_graded": 0.92,
+          "ungraded": 0
+        }
+      },
+      "3": {
+        "A": {
+          "earned": 23,
+          "graded": 25,
+          "planned": 25,
+          "rate_among_graded": 0.92,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 23,
+          "graded": 25,
+          "planned": 25,
+          "rate_among_graded": 0.92,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 23,
+          "graded": 25,
+          "planned": 25,
+          "rate_among_graded": 0.92,
+          "ungraded": 0
+        }
+      }
+    },
+    "judge_2": {
+      "1": {
+        "A": {
+          "earned": 23,
+          "graded": 25,
+          "planned": 25,
+          "rate_among_graded": 0.92,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 23,
+          "graded": 25,
+          "planned": 25,
+          "rate_among_graded": 0.92,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 25,
+          "graded": 25,
+          "planned": 25,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "2": {
+        "A": {
+          "earned": 23,
+          "graded": 25,
+          "planned": 25,
+          "rate_among_graded": 0.92,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 23,
+          "graded": 25,
+          "planned": 25,
+          "rate_among_graded": 0.92,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 25,
+          "graded": 25,
+          "planned": 25,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "3": {
+        "A": {
+          "earned": 24,
+          "graded": 25,
+          "planned": 25,
+          "rate_among_graded": 0.96,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 24,
+          "graded": 25,
+          "planned": 25,
+          "rate_among_graded": 0.96,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 24,
+          "graded": 25,
+          "planned": 25,
+          "rate_among_graded": 0.96,
+          "ungraded": 0
+        }
+      }
+    },
+    "combined_judge_1": {
+      "1": {
+        "A": {
+          "earned": 33,
+          "graded": 36,
+          "planned": 36,
+          "rate_among_graded": 0.9166666666666666,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 33,
+          "graded": 36,
+          "planned": 36,
+          "rate_among_graded": 0.9166666666666666,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 35,
+          "graded": 36,
+          "planned": 36,
+          "rate_among_graded": 0.9722222222222222,
+          "ungraded": 0
+        }
+      },
+      "2": {
+        "A": {
+          "earned": 33,
+          "graded": 36,
+          "planned": 36,
+          "rate_among_graded": 0.9166666666666666,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 33,
+          "graded": 36,
+          "planned": 36,
+          "rate_among_graded": 0.9166666666666666,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 34,
+          "graded": 36,
+          "planned": 36,
+          "rate_among_graded": 0.9444444444444444,
+          "ungraded": 0
+        }
+      },
+      "3": {
+        "A": {
+          "earned": 34,
+          "graded": 36,
+          "planned": 36,
+          "rate_among_graded": 0.9444444444444444,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 34,
+          "graded": 36,
+          "planned": 36,
+          "rate_among_graded": 0.9444444444444444,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 34,
+          "graded": 36,
+          "planned": 36,
+          "rate_among_graded": 0.9444444444444444,
+          "ungraded": 0
+        }
+      }
+    },
+    "combined_judge_2": {
+      "1": {
+        "A": {
+          "earned": 34,
+          "graded": 36,
+          "planned": 36,
+          "rate_among_graded": 0.9444444444444444,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 34,
+          "graded": 36,
+          "planned": 36,
+          "rate_among_graded": 0.9444444444444444,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 36,
+          "graded": 36,
+          "planned": 36,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "2": {
+        "A": {
+          "earned": 34,
+          "graded": 36,
+          "planned": 36,
+          "rate_among_graded": 0.9444444444444444,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 34,
+          "graded": 36,
+          "planned": 36,
+          "rate_among_graded": 0.9444444444444444,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 36,
+          "graded": 36,
+          "planned": 36,
+          "rate_among_graded": 1.0,
+          "ungraded": 0
+        }
+      },
+      "3": {
+        "A": {
+          "earned": 35,
+          "graded": 36,
+          "planned": 36,
+          "rate_among_graded": 0.9722222222222222,
+          "ungraded": 0
+        },
+        "B": {
+          "earned": 35,
+          "graded": 36,
+          "planned": 36,
+          "rate_among_graded": 0.9722222222222222,
+          "ungraded": 0
+        },
+        "C": {
+          "earned": 35,
+          "graded": 36,
+          "planned": 36,
+          "rate_among_graded": 0.9722222222222222,
+          "ungraded": 0
+        }
+      }
+    }
+  },
+  "fully_passed_scenarios": {
+    "combined_judge_1": {
+      "A": {
+        "passed": 30,
+        "graded_scenarios": 36,
+        "planned_scenarios": 36
+      },
+      "B": {
+        "passed": 30,
+        "graded_scenarios": 36,
+        "planned_scenarios": 36
+      },
+      "C": {
+        "passed": 31,
+        "graded_scenarios": 36,
+        "planned_scenarios": 36
+      }
+    },
+    "combined_judge_2": {
+      "A": {
+        "passed": 31,
+        "graded_scenarios": 36,
+        "planned_scenarios": 36
+      },
+      "B": {
+        "passed": 31,
+        "graded_scenarios": 36,
+        "planned_scenarios": 36
+      },
+      "C": {
+        "passed": 35,
+        "graded_scenarios": 36,
+        "planned_scenarios": 36
+      }
+    }
+  },
+  "paired_scenario_scores": {
+    "deterministic": {
+      "B_vs_A": {
+        "win": 0,
+        "tie": 27,
+        "loss": 0,
+        "incomplete": 0,
+        "not_applicable": 9
+      },
+      "C_vs_B": {
+        "win": 0,
+        "tie": 27,
+        "loss": 0,
+        "incomplete": 0,
+        "not_applicable": 9
+      },
+      "C_vs_A": {
+        "win": 0,
+        "tie": 27,
+        "loss": 0,
+        "incomplete": 0,
+        "not_applicable": 9
+      }
+    },
+    "judge_1": {
+      "B_vs_A": {
+        "win": 0,
+        "tie": 36,
+        "loss": 0,
+        "incomplete": 0,
+        "not_applicable": 0
+      },
+      "C_vs_B": {
+        "win": 3,
+        "tie": 33,
+        "loss": 0,
+        "incomplete": 0,
+        "not_applicable": 0
+      },
+      "C_vs_A": {
+        "win": 3,
+        "tie": 33,
+        "loss": 0,
+        "incomplete": 0,
+        "not_applicable": 0
+      }
+    },
+    "judge_2": {
+      "B_vs_A": {
+        "win": 0,
+        "tie": 36,
+        "loss": 0,
+        "incomplete": 0,
+        "not_applicable": 0
+      },
+      "C_vs_B": {
+        "win": 4,
+        "tie": 32,
+        "loss": 0,
+        "incomplete": 0,
+        "not_applicable": 0
+      },
+      "C_vs_A": {
+        "win": 4,
+        "tie": 32,
+        "loss": 0,
+        "incomplete": 0,
+        "not_applicable": 0
+      }
+    },
+    "combined_judge_1": {
+      "B_vs_A": {
+        "win": 0,
+        "tie": 36,
+        "loss": 0,
+        "incomplete": 0,
+        "not_applicable": 0
+      },
+      "C_vs_B": {
+        "win": 3,
+        "tie": 33,
+        "loss": 0,
+        "incomplete": 0,
+        "not_applicable": 0
+      },
+      "C_vs_A": {
+        "win": 3,
+        "tie": 33,
+        "loss": 0,
+        "incomplete": 0,
+        "not_applicable": 0
+      }
+    },
+    "combined_judge_2": {
+      "B_vs_A": {
+        "win": 0,
+        "tie": 36,
+        "loss": 0,
+        "incomplete": 0,
+        "not_applicable": 0
+      },
+      "C_vs_B": {
+        "win": 4,
+        "tie": 32,
+        "loss": 0,
+        "incomplete": 0,
+        "not_applicable": 0
+      },
+      "C_vs_A": {
+        "win": 4,
+        "tie": 32,
+        "loss": 0,
+        "incomplete": 0,
+        "not_applicable": 0
+      }
+    }
+  },
+  "judging": {
+    "statuses": {
+      "completed": 24
+    },
+    "eligible_semantic_cells": 225,
+    "packets_with_exact_shared_instructions": 108,
+    "packets_checked": 108,
+    "additive_context_repair_checked": true,
+    "jointly_scored": 225,
+    "agreements": 215,
+    "agreement_rate": 0.9555555555555556,
+    "disagreements": [
+      {
+        "trial_id": "04__A__r1",
+        "criterion": "question",
+        "judge_1": 0,
+        "judge_2": 1
+      },
+      {
+        "trial_id": "04__A__r2",
+        "criterion": "question",
+        "judge_1": 0,
+        "judge_2": 1
+      },
+      {
+        "trial_id": "04__A__r3",
+        "criterion": "question",
+        "judge_1": 0,
+        "judge_2": 1
+      },
+      {
+        "trial_id": "04__B__r1",
+        "criterion": "question",
+        "judge_1": 0,
+        "judge_2": 1
+      },
+      {
+        "trial_id": "04__B__r2",
+        "criterion": "question",
+        "judge_1": 0,
+        "judge_2": 1
+      },
+      {
+        "trial_id": "04__B__r3",
+        "criterion": "question",
+        "judge_1": 0,
+        "judge_2": 1
+      },
+      {
+        "trial_id": "04__C__r1",
+        "criterion": "question",
+        "judge_1": 0,
+        "judge_2": 1
+      },
+      {
+        "trial_id": "04__C__r2",
+        "criterion": "question",
+        "judge_1": 0,
+        "judge_2": 1
+      },
+      {
+        "trial_id": "04__C__r3",
+        "criterion": "question",
+        "judge_1": 0,
+        "judge_2": 1
+      },
+      {
+        "trial_id": "06__C__r2",
+        "criterion": "situations",
+        "judge_1": 0,
+        "judge_2": 1
+      }
+    ],
+    "clarification_request_counts": {
+      "1": {
+        "A": {
+          "consequential_unresolved": 15
+        },
+        "B": {
+          "consequential_unresolved": 16
+        },
+        "C": {
+          "consequential_unresolved": 24
+        }
+      },
+      "2": {
+        "A": {
+          "consequential_unresolved": 27
+        },
+        "B": {
+          "consequential_unresolved": 16
+        },
+        "C": {
+          "consequential_unresolved": 24
+        }
+      }
+    }
+  },
+  "publication_redactions": {
+    "actors": {
+      "changed_files": 23,
+      "counts": {
+        "private_reasoning_records": 46,
+        "encrypted_content_fields": 23
+      },
+      "policy": "Remove complete private Reasoning/reasoning and analysis-channel records, including nested event payloads, and all encrypted_content fields. Apply the same removal to embedded Codex stdout JSONL. Preserve observable prompts, context, actions, tool outputs, assistant replies, and token usage. Original changed files remain in the private backup; actor and judge raw evidence remains separate."
+    },
+    "judges": {
+      "changed_files": 7,
+      "counts": {
+        "private_reasoning_records": 14,
+        "encrypted_content_fields": 7
+      },
+      "policy": "Remove complete private Reasoning/reasoning and analysis-channel records, including nested event payloads, and all encrypted_content fields. Apply the same removal to embedded Codex stdout JSONL. Preserve observable prompts, context, actions, tool outputs, assistant replies, and token usage. Original changed files remain in the private backup; actor and judge raw evidence remains separate."
+    }
+  },
+  "snapshot_verification": {
+    "counts": {
+      "text_reconstruction_matches": 1380,
+      "text_reconstruction_does_not_match": 5
+    },
+    "non_roundtrippable_files": [
+      "04__A__r3/archive-sharing.zip",
+      "04__B__r3/archive-for-sharing.zip",
+      "04__C__r1/research-archive.zip",
+      "04__C__r2/research-archive.zip",
+      "04__C__r3/archive-share.zip"
+    ],
+    "limitation": "Snapshots retain original hashes and replacement-decoded text, not binary bytes. Published redaction may also change text. Only exact text reconstruction is independently hash-verified here."
+  },
+  "actor_resources": {
+    "A": {
+      "turn_seconds": {
+        "count": 48,
+        "sum": 791.515,
+        "mean": 16.489895833333332,
+        "median": 15.6685
+      },
+      "scenario_seconds": {
+        "count": 36,
+        "sum": 791.515,
+        "mean": 21.986527777777777,
+        "median": 19.073500000000003
+      },
+      "scenario_token_summaries": {
+        "cached_input_tokens": {
+          "count": 36,
+          "sum": 2018432,
+          "mean": 56067.555555555555,
+          "median": 46848.0
+        },
+        "output_tokens": {
+          "count": 36,
+          "sum": 15714,
+          "mean": 436.5,
+          "median": 385.5
+        },
+        "reasoning_output_tokens": {
+          "count": 36,
+          "sum": 347,
+          "mean": 9.63888888888889,
+          "median": 0.0
+        },
+        "input_tokens": {
+          "count": 36,
+          "sum": 2280591,
+          "mean": 63349.75,
+          "median": 50827.5
+        },
+        "cache_write_input_tokens": {
+          "count": 36,
+          "sum": 0,
+          "mean": 0,
+          "median": 0.0
+        }
+      },
+      "tokens": {
+        "input_tokens": 2280591,
+        "cached_input_tokens": 2018432,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 15714,
+        "reasoning_output_tokens": 347
+      },
+      "token_field_observations": {
+        "input_tokens": 48,
+        "cached_input_tokens": 48,
+        "cache_write_input_tokens": 48,
+        "output_tokens": 48,
+        "reasoning_output_tokens": 48
+      },
+      "completed_tool_items": 144
+    },
+    "B": {
+      "turn_seconds": {
+        "count": 48,
+        "sum": 773.979,
+        "mean": 16.1245625,
+        "median": 13.3885
+      },
+      "scenario_seconds": {
+        "count": 36,
+        "sum": 773.979,
+        "mean": 21.499416666666665,
+        "median": 18.4115
+      },
+      "scenario_token_summaries": {
+        "cached_input_tokens": {
+          "count": 36,
+          "sum": 1717120,
+          "mean": 47697.77777777778,
+          "median": 34368.0
+        },
+        "output_tokens": {
+          "count": 36,
+          "sum": 14308,
+          "mean": 397.44444444444446,
+          "median": 379.5
+        },
+        "reasoning_output_tokens": {
+          "count": 36,
+          "sum": 360,
+          "mean": 10,
+          "median": 0.0
+        },
+        "input_tokens": {
+          "count": 36,
+          "sum": 1952052,
+          "mean": 54223.666666666664,
+          "median": 43812.5
+        },
+        "cache_write_input_tokens": {
+          "count": 36,
+          "sum": 0,
+          "mean": 0,
+          "median": 0.0
+        }
+      },
+      "tokens": {
+        "input_tokens": 1952052,
+        "cached_input_tokens": 1717120,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 14308,
+        "reasoning_output_tokens": 360
+      },
+      "token_field_observations": {
+        "input_tokens": 48,
+        "cached_input_tokens": 48,
+        "cache_write_input_tokens": 48,
+        "output_tokens": 48,
+        "reasoning_output_tokens": 48
+      },
+      "completed_tool_items": 144
+    },
+    "C": {
+      "turn_seconds": {
+        "count": 48,
+        "sum": 765.889,
+        "mean": 15.956020833333334,
+        "median": 12.695
+      },
+      "scenario_seconds": {
+        "count": 36,
+        "sum": 765.889,
+        "mean": 21.274694444444446,
+        "median": 21.807000000000002
+      },
+      "scenario_token_summaries": {
+        "cached_input_tokens": {
+          "count": 36,
+          "sum": 1982848,
+          "mean": 55079.11111111111,
+          "median": 49408.0
+        },
+        "output_tokens": {
+          "count": 36,
+          "sum": 14762,
+          "mean": 410.05555555555554,
+          "median": 395.5
+        },
+        "reasoning_output_tokens": {
+          "count": 36,
+          "sum": 187,
+          "mean": 5.194444444444445,
+          "median": 0.0
+        },
+        "input_tokens": {
+          "count": 36,
+          "sum": 2292871,
+          "mean": 63690.86111111111,
+          "median": 61536.5
+        },
+        "cache_write_input_tokens": {
+          "count": 36,
+          "sum": 0,
+          "mean": 0,
+          "median": 0.0
+        }
+      },
+      "tokens": {
+        "input_tokens": 2292871,
+        "cached_input_tokens": 1982848,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 14762,
+        "reasoning_output_tokens": 187
+      },
+      "token_field_observations": {
+        "input_tokens": 48,
+        "cached_input_tokens": 48,
+        "cache_write_input_tokens": 48,
+        "output_tokens": 48,
+        "reasoning_output_tokens": 48
+      },
+      "completed_tool_items": 156
+    }
+  },
+  "wall_clock": {
+    "finished_at": "2026-10-15T00:02:23.335890+00:00",
+    "wall_seconds": 857.062,
+    "completed_scenarios": 108,
+    "planned_scenarios": 108
+  },
+  "notes": [
+    "Rates use graded cells only; planned and missing counts remain explicit.",
+    "Judge modes contain semantic checks only; combined modes add deterministic checks.",
+    "Input tokens include cached input tokens; cached tokens are not added again.",
+    "Paired results compare summed scores within the same case/repetition and omit incomplete pairs.",
+    "A paired check category with no criteria in a case is not applicable, not incomplete.",
+    "No confidence intervals, inferred prices, or semantic adjudication are produced."
+  ]
+}

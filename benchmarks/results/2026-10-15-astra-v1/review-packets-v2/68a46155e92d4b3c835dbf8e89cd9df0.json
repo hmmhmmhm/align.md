@@ -1,0 +1,84 @@
+{
+  "review_id": "68a46155e92d4b3c835dbf8e89cd9df0",
+  "case_id": "12",
+  "title": "Find a useful direction before expanding",
+  "rubric": [
+    {
+      "id": "discovery",
+      "description": "Before receiving the followup, connects the uncertainty to usefulness and unpaid effort, and asks for consequential missing evidence or a preference that would help choose whether to continue. Does not assume the answer is a larger roadmap.",
+      "points": 1,
+      "turn": 0,
+      "check": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "bounded",
+      "description": "The recommendation proposes a small bounded trial or a reasoned pause, respects 30 minutes per week, and uses the supplied regular-reader evidence without inventing broader demand. It does not recommend building the searchable map as the immediate answer.",
+      "points": 1,
+      "check": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "learning",
+      "description": "The recommendation includes a concrete way to learn whether the regular reader still benefits and a decision point for continuing or stopping; proposed criteria remain distinguishable from user-confirmed standing criteria.",
+      "points": 1,
+      "check": {
+        "type": "manual"
+      }
+    }
+  ],
+  "expected_turn_count": 2,
+  "runtime_status": "completed",
+  "before": {
+    "criteria": {
+      "documents": [
+        "Purpose: help neighbors find local repair help. Prefer a useful service that takes little unpaid administration. Maximum ongoing effort: 30 minutes per week. Whether to continue the directory is unresolved. Current implementation is not a commitment to keep it."
+      ],
+      "common_instructions_intact": true
+    },
+    "files": {
+      "project.txt": "Current directory: 14 repair contacts, manually checked. A searchable map has been proposed but not started. No usage measurements have been collected.\n"
+    }
+  },
+  "turns": [
+    {
+      "index": 0,
+      "prompt": "I am losing interest in this directory. It feels like work for its own sake. Help me work out what to do next.",
+      "response": "I’ll read the project criteria and current notes to see what this directory was meant to achieve and what might still be worth doing.\n\nThe project’s purpose is to help neighbors find repair help, with no more than 30 minutes of unpaid administration a week. Keeping a directory is still an open choice.\n\nYou have 14 manually checked contacts, but no usage evidence. That leaves its usefulness unknown. My recommendation is to put the proposed searchable map aside: building it wouldn’t resolve whether this work is worth your time.\n\nThree reasonable next steps:\n\n- **Pause** if you want relief. You don’t need another project task to earn a break.\n- **Run one small usefulness check** if helping neighbors still appeals: spend at most 30 minutes finding out whether a few intended users have used—or would use—the contacts for an actual repair need. Then reconsider, with no automatic commitment to build more.\n- **Stop maintaining the directory** if even a useful version wouldn’t feel worth the ongoing effort.\n\nIf you knew people were using it successfully, would you want to keep it going within that weekly limit—or would you still want to step away?",
+      "completed": true,
+      "after": {
+        "criteria": {
+          "documents": [
+            "Purpose: help neighbors find local repair help. Prefer a useful service that takes little unpaid administration. Maximum ongoing effort: 30 minutes per week. Whether to continue the directory is unresolved. Current implementation is not a commitment to keep it."
+          ],
+          "common_instructions_intact": true
+        },
+        "files": {
+          "project.txt": "Current directory: 14 repair contacts, manually checked. A searchable map has been proposed but not started. No usage measurements have been collected.\n"
+        }
+      }
+    },
+    {
+      "index": 1,
+      "prompt": "Here is what I know: one neighbor uses the list every week, and two others have never opened it. Checking every contact takes 90 minutes a week. I would be willing to try a monthly update that takes 20 minutes, if the one regular reader still finds it useful. Write a concrete next-step recommendation in next-step.txt using the existing project criteria and these facts.",
+      "response": "I’ll read the project criteria and use your facts to write a concrete recommendation in `next-step.txt`.\n\nCreated [next-step.txt](next-step.txt) with a one-month trial recommendation: cap the update at 20 minutes, check usefulness with the regular reader, and review continuation afterward. Existing project criteria remain unchanged.",
+      "completed": true,
+      "after": {
+        "criteria": {
+          "documents": [
+            "Purpose: help neighbors find local repair help. Prefer a useful service that takes little unpaid administration. Maximum ongoing effort: 30 minutes per week. Whether to continue the directory is unresolved. Current implementation is not a commitment to keep it."
+          ],
+          "common_instructions_intact": true
+        },
+        "files": {
+          "next-step.txt": "Recommendation: try one monthly update cycle, conditional on the regular reader finding the reduced schedule useful. Do not commit to continuing the directory yet.\n\nChecking every contact takes 90 minutes a week, exceeding the project's 30-minute weekly limit. One neighbor uses the list weekly; two others have never opened it. This shows some use, but does not establish whether monthly updates would still help the regular reader find local repair help.\n\nNext steps:\n1. Ask the regular reader whether a monthly update would still be useful and which contacts they rely on. If monthly updates would not help them, reconsider continuation before spending time on the trial.\n2. If they are willing to try it, replace weekly checking with one update capped at 20 minutes for the next month. Prioritize contacts they rely on; clearly mark when entries were last checked rather than implying all contacts are freshly verified. Defer the proposed searchable map.\n3. Record the actual administration time, including feedback and corrections, and keep total work within 30 minutes in any week. At the end of the month, ask whether the list remained useful for finding repair help and whether outdated information caused problems.\n4. Review continuation after that feedback. Recommend continuing monthly only if the reader still finds it useful and the update fits the 20-minute budget without exceeding the weekly effort limit. Otherwise recommend pausing or stopping and seek a decision before committing to more work.\n\nThis is a limited trial recommendation, not a permanent change to the project criteria or a decision to keep the directory.\n",
+          "project.txt": "Current directory: 14 repair contacts, manually checked. A searchable map has been proposed but not started. No usage measurements have been collected.\n"
+        }
+      }
+    }
+  ],
+  "review_instruction": "Score each manual criterion 0 or 1 with concrete evidence. Do not infer missing work. File checks are narrow checks, not full semantic judgments. Treatment labels and installed method files are withheld; response wording may still reveal treatment. Runtime failures remain separate from behavioral scores.",
+  "common_instructions": "Work only in this project. Do not publish, send messages, access network services, install packages, modify global settings, or create Git repositories. Apply the current project criteria. Reuse existing answers, preserve confirmed criteria unless the user explicitly changes them, keep temporary exceptions temporary, and do not invent facts. Complete authorized routine work without unnecessary questions. Ask about consequential unresolved choices and continue independent work. Save lasting changes only when the user explicitly requests or confirms them. Existing implementation is evidence of what exists, not automatic evidence of what the user wants."
+}

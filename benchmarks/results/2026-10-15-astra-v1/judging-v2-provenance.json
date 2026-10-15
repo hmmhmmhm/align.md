@@ -1,0 +1,10 @@
+{
+  "context_repair_commit": "f24ac8a0f769e63ea64a60eb98dc9717161f920c",
+  "created_before_calls_at": "2026-10-15T00:12:27.326593+00:00",
+  "frozen_harness_digest": "afc08f5cc7871c4fac13badbed97f528b381ce6b9f906eaf483fcaf2994e98c4",
+  "context_repair_manifest_sha256": "bc3a6f61862ecd76d64f58eba897bedd86766d6ccddbc43fb91d41932e287053",
+  "packets": "review-packets-v2",
+  "output": "judgments-v2",
+  "review_gate": "Parent confirmed independent auditor and public reader cleared all108 additive-only corrections before launch.",
+  "original_review_role": "Context-deficient retained run; not primary performance result."
+}

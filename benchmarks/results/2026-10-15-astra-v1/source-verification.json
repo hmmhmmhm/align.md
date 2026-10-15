@@ -1,0 +1,21 @@
+{
+  "matches_start": true,
+  "final_source_files": {
+    "benchmarks/cases.json": "25b5b3799d232d988b06a828d14dd198c1558b57f7f5ccae8a0be7ac5c91a097",
+    "benchmarks/grade.py": "846380a97c2f3b55b3279ed65f5aff24f21d4d36e7e49634ed3648e51a4a6bc1",
+    "benchmarks/judge.py": "9e41e3b5981ed06568d5ff5d8f1d08615382a85c66a7e55412c201419694d37f",
+    "benchmarks/run.py": "2b672c854dd36f068ef46a47f16824d582a58da6eb621688cdd66a2037ccc7e9",
+    "benchmarks/test_harness.py": "7a55071b606150db0fb52715c88bf965109e0b72c713544b555347889113ee5d",
+    "skills/align/LICENSE": "7409423471f34f663bede2c6c66da34098f70909a8fe24202984a4173e245e3a",
+    "skills/align/SKILL.md": "4067af3e2f3575d24ef448fe178966da05840ef2bd138ae174a05358d3750bdb",
+    "skills/align/agents/openai.yaml": "f288f538000d52cb67126c47a3d9dc3e909044ba7d3aa9287cc4b6af28bb83b1",
+    "skills/align/assets/instruction-block.md": "308c913b02b2f981f26962fea5ec06a28ebaf0fc6d3b3926483c48114362d5cc",
+    "skills/align/references/environment.md": "697fe856d27042ebb51a596de9f907990a88b34d66b98d19131eee6df4b98cfa",
+    "skills/align/references/installation.md": "8c2d99983d9ef7e9e7714ae1dbbcc83ba1a9783b9cdcddedbf596e249c365c2f",
+    "skills/align/references/recurring.md": "8d8fec24b409d75bd629022091706bc536cb22a7084df49a5bab584b8fcd8555",
+    "skills/align/scripts/connect_project.py": "3e481114d701856ee6985a5425a7ce75fbb9a8b1eed322f11ae18e19b3795715",
+    "benchmarks/README.md": "7e13b0232cd5063fd5c24dda09df91c4f4b24263cfbc64af370a353402ebd953",
+    "benchmarks/judging.md": "d4181832ed44484341ab70c8c0ec21ef0195739cca06fbc1b0d450b2465cc8ce",
+    "benchmarks/references.md": "96af9b2de141990809b161486243623eb692e3755b2f52e37b467a264b33679f"
+  }
+}

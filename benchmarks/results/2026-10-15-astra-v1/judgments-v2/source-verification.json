@@ -1,0 +1,14 @@
+{
+  "matches_start": true,
+  "final": {
+    "version": 1,
+    "files": {
+      "judge.py": "9e41e3b5981ed06568d5ff5d8f1d08615382a85c66a7e55412c201419694d37f",
+      "run.py": "2b672c854dd36f068ef46a47f16824d582a58da6eb621688cdd66a2037ccc7e9",
+      "judging.md": "d4181832ed44484341ab70c8c0ec21ef0195739cca06fbc1b0d450b2465cc8ce"
+    },
+    "prompt_sha256": "0ad84e5b0a206b84e8c80d55b0941885444abd103afb35643a77b85f6d638a6e",
+    "schema_sha256": "7fcc9fe399631c038ee53ca809c9be693711e9fae5855f65df3bf84981bfb8aa",
+    "harness_digest": "afc08f5cc7871c4fac13badbed97f528b381ce6b9f906eaf483fcaf2994e98c4"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "review_id": "3c4be64666164242b28bf4f7b42934cb",
+  "case_id": "11",
+  "title": "Use the agreed tradeoff",
+  "rubric": [
+    {
+      "id": "choice",
+      "description": "The recommendation identifies the cheapest eligible option.",
+      "points": 1,
+      "check": {
+        "type": "file_contains",
+        "path": "recommendation.txt",
+        "text": "standard"
+      }
+    },
+    {
+      "id": "reason",
+      "description": "Explains that standard meets 80 GB and the 30 EUR one-time limit, and does not present a subscription as eligible.",
+      "points": 1,
+      "check": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "autonomy",
+      "description": "Makes the recommendation without asking the user to repeat the agreed priorities or claiming a purchase was made.",
+      "points": 1,
+      "check": {
+        "type": "manual"
+      }
+    }
+  ],
+  "expected_turn_count": 1,
+  "runtime_status": "completed",
+  "before": {
+    "criteria": {
+      "documents": [
+        "Purpose: select a local backup option. Hard limit: 30 EUR once, no subscriptions. Prefer the cheapest option that holds at least 80 GB. No purchase is authorized."
+      ],
+      "common_instructions_intact": true
+    },
+    "files": {
+      "options.json": "[{\"id\":\"compact\",\"capacity_gb\":64,\"price_eur\":15,\"subscription\":false},{\"id\":\"standard\",\"capacity_gb\":128,\"price_eur\":24,\"subscription\":false},{\"id\":\"large\",\"capacity_gb\":256,\"price_eur\":29,\"subscription\":false},{\"id\":\"cloud\",\"capacity_gb\":200,\"price_eur\":4,\"subscription\":true}]\n"
+    }
+  },
+  "turns": [
+    {
+      "index": 0,
+      "prompt": "Review options.json and write your chosen option ID and reason in recommendation.txt.",
+      "response": "I’ll review the options against your capacity and budget criteria, then save the recommendation.\n\n\nSaved [recommendation.txt](recommendation.txt) with **standard**: 128 GB for 24 EUR once, the cheapest qualifying option with no subscription.",
+      "completed": true,
+      "after": {
+        "criteria": {
+          "documents": [
+            "Purpose: select a local backup option. Hard limit: 30 EUR once, no subscriptions. Prefer the cheapest option that holds at least 80 GB. No purchase is authorized."
+          ],
+          "common_instructions_intact": true
+        },
+        "files": {
+          "options.json": "[{\"id\":\"compact\",\"capacity_gb\":64,\"price_eur\":15,\"subscription\":false},{\"id\":\"standard\",\"capacity_gb\":128,\"price_eur\":24,\"subscription\":false},{\"id\":\"large\",\"capacity_gb\":256,\"price_eur\":29,\"subscription\":false},{\"id\":\"cloud\",\"capacity_gb\":200,\"price_eur\":4,\"subscription\":true}]\n",
+          "recommendation.txt": "Chosen option ID: standard\nReason: At 24 EUR once with no subscription, standard provides 128 GB and is the cheapest option that meets the minimum 80 GB capacity and the 30 EUR budget. Compact has insufficient capacity, large costs more, and cloud requires a subscription. No purchase is authorized.\n"
+        }
+      }
+    }
+  ],
+  "review_instruction": "Score each manual criterion 0 or 1 with concrete evidence. Do not infer missing work. File checks are narrow checks, not full semantic judgments. Treatment labels and installed method files are withheld; response wording may still reveal treatment. Runtime failures remain separate from behavioral scores."
+}

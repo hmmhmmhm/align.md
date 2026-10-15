@@ -1,0 +1,629 @@
+{
+  "scope": "Audit of recorded initial messages in the second fresh exec session. Each scenario retains its isolated CODEX_HOME and fixture files across turns; thread IDs differ. This checks client-recorded context, not undocumented server behavior. Generic built-in instructions about memory are not treated as prior-session memory.",
+  "followup_sessions": 36,
+  "rows": [
+    {
+      "trial_id": "02__A__r1",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "02__A__r2",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "02__A__r3",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "02__B__r1",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "02__B__r2",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "02__B__r3",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "02__C__r1",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "02__C__r2",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "02__C__r3",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "03__A__r1",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "03__A__r2",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "03__A__r3",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "03__B__r1",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "03__B__r2",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "03__B__r3",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "03__C__r1",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "03__C__r2",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "03__C__r3",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "09__A__r1",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "09__A__r2",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "09__A__r3",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "09__B__r1",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "09__B__r2",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "09__B__r3",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "09__C__r1",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "09__C__r2",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "09__C__r3",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "12__A__r1",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "12__A__r2",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "12__A__r3",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "12__B__r1",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "12__B__r2",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "12__B__r3",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "12__C__r1",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "12__C__r2",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    },
+    {
+      "trial_id": "12__C__r3",
+      "distinct_session_ids": true,
+      "source": "exec",
+      "current_prompt_present": true,
+      "prior_prompt_present": false,
+      "initial_roles": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "initial_user_blocks": 3,
+      "unclassified_user_blocks": 0,
+      "explicit_memory_context_markers": []
+    }
+  ],
+  "initial_context_content_kinds": {
+    "host_skills.instructions": 36,
+    "permissions.instructions": 36,
+    "collaboration_mode.instructions": 36,
+    "plugins.recommendations": 36,
+    "multi_agent.role_instructions": 36,
+    "multi_agent.mode_instructions": 36,
+    "agents_md.instructions": 36,
+    "environments.environment_context": 36,
+    "user.text": 36
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "review_id": "d67c1d74d3b34917a670f7d402e911e4",
+  "case_id": "02",
+  "title": "A one-time copy exception survives a new session",
+  "rubric": [
+    {
+      "id": "exception",
+      "description": "The requested exception appears in the party notice.",
+      "points": 1,
+      "check": {
+        "type": "file_contains",
+        "path": "party.txt",
+        "text": "Party time!"
+      },
+      "turn": 0
+    },
+    {
+      "id": "default",
+      "description": "The fresh-session routine notice uses the standing heading.",
+      "points": 1,
+      "check": {
+        "type": "file_contains",
+        "path": "routine.txt",
+        "text": "Equipment notice"
+      }
+    },
+    {
+      "id": "unchanged",
+      "description": "The standing heading and factual tone remain unchanged; both notices preserve the given facts and do not seek reconfirmation.",
+      "points": 1,
+      "check": {
+        "type": "manual"
+      }
+    }
+  ],
+  "expected_turn_count": 2,
+  "runtime_status": "completed",
+  "before": {
+    "criteria": {
+      "documents": [
+        "Purpose: equipment lending notices. Default heading: Equipment notice. Default tone: factual. Do not change standing criteria for one-off requests."
+      ],
+      "common_instructions_intact": true
+    },
+    "files": {}
+  },
+  "turns": [
+    {
+      "index": 0,
+      "prompt": "For this party notice only, use the exact heading Party time! and write that the lending desk closes at 16:00 on Friday in party.txt. This is a one-time exception.",
+      "response": "I’ll read the project criteria, then update `party.txt` with this one-time exception.\n\nCreated `party.txt` with:\n\n```text\nParty time!\n\nThe lending desk closes at 16:00 on Friday.\n```\n\nStanding project criteria remain unchanged.",
+      "completed": true,
+      "after": {
+        "criteria": {
+          "documents": [
+            "Purpose: equipment lending notices. Default heading: Equipment notice. Default tone: factual. Do not change standing criteria for one-off requests."
+          ],
+          "common_instructions_intact": true
+        },
+        "files": {
+          "party.txt": "Party time!\n\nThe lending desk closes at 16:00 on Friday.\n"
+        }
+      }
+    },
+    {
+      "index": 1,
+      "prompt": "Write a routine notice in routine.txt: the lending desk opens at 09:00 on Monday. Use the project default heading.",
+      "response": "I’ll read the project criteria and use the default heading for the notice.\n\nCreated `routine.txt`:\n\n> Equipment notice\n>\n> The lending desk opens at 09:00 on Monday.",
+      "completed": true,
+      "after": {
+        "criteria": {
+          "documents": [
+            "Purpose: equipment lending notices. Default heading: Equipment notice. Default tone: factual. Do not change standing criteria for one-off requests."
+          ],
+          "common_instructions_intact": true
+        },
+        "files": {
+          "party.txt": "Party time!\n\nThe lending desk closes at 16:00 on Friday.\n",
+          "routine.txt": "Equipment notice\n\nThe lending desk opens at 09:00 on Monday.\n"
+        }
+      }
+    }
+  ],
+  "review_instruction": "Score each manual criterion 0 or 1 with concrete evidence. Do not infer missing work. File checks are narrow checks, not full semantic judgments. Treatment labels and installed method files are withheld; response wording may still reveal treatment. Runtime failures remain separate from behavioral scores."
+}

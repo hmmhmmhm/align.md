@@ -5,9 +5,35 @@ permissions:
 jobs:
   check:
     runs-on: ubuntu-latest
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p 'test_*.py'
+      - name: Check skill package
+        run: python3 -m unittest discover -s tests -p 'test_*.py'
+      - name: Check benchmark harness
+        run: python3 -m unittest discover -s benchmarks -p 'test_*.py'
+      - name: Check offline reporting
+        run: python3 -m unittest discover -s benchmarks/reporting -p 'test_*.py'
+      - name: Verify original review evidence without model access
+        run: |
+          python3 benchmarks/reporting/verify.py benchmarks/results/2026-10-15-astra-v1 \
+            --judges benchmarks/results/2026-10-15-astra-v1/judgments \
+            --packets benchmarks/results/2026-10-15-astra-v1/review-packets \
+            --require-complete \
+            --output "$RUNNER_TEMP/align-original-review-report.json"
+      - name: Verify corrected primary review without model access
+        run: |
+          python3 benchmarks/reporting/verify.py benchmarks/results/2026-10-15-astra-v1 \
+            --judges benchmarks/results/2026-10-15-astra-v1/judgments-v2 \
+            --packets benchmarks/results/2026-10-15-astra-v1/review-packets-v2 \
+            --require-complete \
+            --output "$RUNNER_TEMP/align-evidence-report.json"
+      - name: Check corrected review quotes at their declared sources
+        run: |
+          python3 benchmarks/reporting/check_quote_sources.py \
+            benchmarks/results/2026-10-15-astra-v1/review-packets-v2 \
+            benchmarks/results/2026-10-15-astra-v1/judgments-v2

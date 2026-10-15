@@ -1,0 +1,3026 @@
+[
+  {
+    "trial_id": "08__C__r2",
+    "review_id": "5dd487d0693446d98f893e1917a24eb6",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "remove",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "data",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "scope",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "06__A__r3",
+    "review_id": "847cfe4091d54535b4683f3997aa9c28",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "situations",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "not_run",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "no_invention",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "06__A__r1",
+    "review_id": "8d4f97e9e5f34039abd36528334a6fe9",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "situations",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "not_run",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "no_invention",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "03__C__r3",
+    "review_id": "75853db93358472c947969843ff88a37",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "saved",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "applied",
+        "turn": 1,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "accurate",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "12__A__r1",
+    "review_id": "0f25436410684c0b8c78c2161ac954c2",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "discovery",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "bounded",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "learning",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "06__B__r2",
+    "review_id": "6cd419d0eec4467ea86ae5b33a5c9653",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "situations",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "not_run",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "no_invention",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "01__B__r2",
+    "review_id": "42e4c803e0d34dc4a201bf68bbd64c76",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "removed",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "retained",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "direct",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "12__B__r1",
+    "review_id": "68a46155e92d4b3c835dbf8e89cd9df0",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "discovery",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "bounded",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "learning",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "04__C__r1",
+    "review_id": "3817a2abe8c043428234121ab3780184",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "question",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "preserved",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "bounded",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "03__C__r2",
+    "review_id": "22de0459efef444c94d316c983a7165d",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "saved",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "applied",
+        "turn": 1,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "accurate",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "10__B__r3",
+    "review_id": "24bc1fde85a34266aec2ccb114db41a8",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "added",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "retained",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "respect",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "07__B__r1",
+    "review_id": "372ea7d788cb4074868c5fa59ac55d6f",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "fixed",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "order",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "friction",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "10__C__r2",
+    "review_id": "9c85e807305148aca0e882349c078c61",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "added",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "retained",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "respect",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "03__A__r2",
+    "review_id": "d063b732a4df4c6083f0fde938172ff7",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "saved",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "applied",
+        "turn": 1,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "accurate",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "12__A__r3",
+    "review_id": "cf0e37571f2040a1b5c6d9b8aa2872f1",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "discovery",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "bounded",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "learning",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "02__C__r3",
+    "review_id": "df7c3f2bc4ee41879f95d2414c4cc485",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "exception",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "default",
+        "turn": 1,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "unchanged",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "06__B__r3",
+    "review_id": "9ee7f004143447aaa4a44b086e5db0fd",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "situations",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "not_run",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "no_invention",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "10__B__r1",
+    "review_id": "bf7d1ff2716643d5ac786ef9dc023ae8",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "added",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "retained",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "respect",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "04__B__r2",
+    "review_id": "0ea6ac613c294f95bfd5300e921f83fb",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "question",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "preserved",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "bounded",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "02__B__r3",
+    "review_id": "4744313fc51848018959445b238ea5fe",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "exception",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "default",
+        "turn": 1,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "unchanged",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "04__B__r3",
+    "review_id": "93382a973c0d4191ae893cbeca4d06e0",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "question",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "preserved",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "bounded",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "04__A__r2",
+    "review_id": "022d176c15914f57a0b935cce8a1e2b6",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "question",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "preserved",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "bounded",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "12__C__r2",
+    "review_id": "53deb010dce4434e8efab72cb72dbab1",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "discovery",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "bounded",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "learning",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "07__C__r3",
+    "review_id": "fc2bd3852d1042a0a706363a3902f856",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "fixed",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "order",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "friction",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "06__C__r3",
+    "review_id": "4449a708b6f041009a012a1c87ed0976",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "situations",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "not_run",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "no_invention",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "09__A__r2",
+    "review_id": "90b945a1d14340b5ae8f21d47441df89",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "local",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "focus",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "confirmed",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "06__B__r1",
+    "review_id": "7e1df9edd9484a769e6df9851e87902e",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "situations",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "not_run",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "no_invention",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "08__B__r3",
+    "review_id": "bde09a31f9da491d894047bfa51bc95d",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "remove",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "data",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "scope",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "09__B__r2",
+    "review_id": "1c4663089855440bbd9f61c7d15761e7",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "local",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "focus",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "confirmed",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "05__C__r2",
+    "review_id": "b45cd75b2cb7454fa2d36fb9996319cd",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "fixed",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "question",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "progress",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "12__C__r3",
+    "review_id": "f10e5fa964a54806b5176455269cef65",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "discovery",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "bounded",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "learning",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "08__A__r1",
+    "review_id": "e4126f0f234a4f14a074981fb3eb40d6",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "remove",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "data",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "scope",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "07__B__r2",
+    "review_id": "f13f489a1a00416486c640f7597bcd10",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "fixed",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "order",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "friction",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "11__A__r3",
+    "review_id": "986ce6d7e6e744fcadc1e49e0aa9bce0",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "choice",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "reason",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "autonomy",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "12__C__r1",
+    "review_id": "4e98b457c4ab415fbd12aad4eff6a815",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "discovery",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "bounded",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "learning",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "01__C__r1",
+    "review_id": "bf5292a2bc264d60bffa7d543a04d988",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "removed",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "retained",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "direct",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "07__A__r3",
+    "review_id": "3dd6d65283134f1aaa76ff3f6a5622b8",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "fixed",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "order",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "friction",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "01__A__r2",
+    "review_id": "939896d811964e37846dadcecf4b8ae8",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "removed",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "retained",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "direct",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "06__A__r2",
+    "review_id": "042cc6de227a4810a9524a9c572b5a6b",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "situations",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "not_run",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "no_invention",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "10__B__r2",
+    "review_id": "c0ede80b52214a579e284562cc2d8aa7",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "added",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "retained",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "respect",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "10__A__r1",
+    "review_id": "e5ec4d796a164e35bbf6ac7d4e7620a1",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "added",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "retained",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "respect",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "05__A__r2",
+    "review_id": "d68ec62071104bbdb60004f99632388c",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "fixed",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "question",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "progress",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "11__A__r1",
+    "review_id": "3c4be64666164242b28bf4f7b42934cb",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "choice",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "reason",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "autonomy",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "08__B__r1",
+    "review_id": "2ce02c82051442daa4b986b73f762ae9",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "remove",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "data",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "scope",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "07__C__r1",
+    "review_id": "190168267e2148faaa325cca7552423b",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "fixed",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "order",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "friction",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "01__C__r3",
+    "review_id": "9c1add31a4f0482890ee60e98980d64c",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "removed",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "retained",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "direct",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "07__A__r1",
+    "review_id": "65e1ffc97e6b4031b440e420f0477ce7",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "fixed",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "order",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "friction",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "02__A__r1",
+    "review_id": "afbfecee9fec49c19c5b47df79ec0173",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "exception",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "default",
+        "turn": 1,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "unchanged",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "01__B__r1",
+    "review_id": "5ba7a116583145f4a031930ca8c76e6a",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "removed",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "retained",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "direct",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "08__A__r3",
+    "review_id": "c66f849153104e7692f10bf7f48b6ff9",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "remove",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "data",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "scope",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "12__A__r2",
+    "review_id": "bc3a03c137bb499c9b9ff4a8acda884c",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "discovery",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "bounded",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "learning",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "08__C__r1",
+    "review_id": "a23956da243c4c4da338bce5891b4ef1",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "remove",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "data",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "scope",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "09__B__r1",
+    "review_id": "8ad66f8954434dbc8e30b9709b1b1772",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "local",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "focus",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "confirmed",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "04__A__r3",
+    "review_id": "5a0c1f68fa2841b58c307f8cd09467af",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "question",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "preserved",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "bounded",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "05__C__r1",
+    "review_id": "bfe3f08a70804a76bd591df78e45f0c0",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "fixed",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "question",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "progress",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "11__A__r2",
+    "review_id": "551058dc9eb046e795054e028e644ce5",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "choice",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "reason",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "autonomy",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "01__C__r2",
+    "review_id": "8b5a22b3f1894160b976fa9d4a7c9e37",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "removed",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "retained",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "direct",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "11__B__r2",
+    "review_id": "d86ff61dfe8947f8ad859a5a82291db7",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "choice",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "reason",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "autonomy",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "07__C__r2",
+    "review_id": "845bf1b17a954790a95f68bf8390bad0",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "fixed",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "order",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "friction",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "04__A__r1",
+    "review_id": "9e170f887b0048d6b0a0a2c9a1ed1063",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "question",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "preserved",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "bounded",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "01__A__r3",
+    "review_id": "bdecfe806e3b40299b4378b201f47621",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "removed",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "retained",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "direct",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "08__C__r3",
+    "review_id": "5ed942b72b9a4ecbafb28d4072b64544",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "remove",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "data",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "scope",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "09__B__r3",
+    "review_id": "3f6b5cfbd1ed4c719781c7481c4e0313",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "local",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "focus",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "confirmed",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "10__A__r2",
+    "review_id": "4f8c274460bb4f48a1312ea16c85a556",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "added",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "retained",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "respect",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "03__C__r1",
+    "review_id": "efa7369ea326471cb9c71b1e8c19a0e2",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "saved",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "applied",
+        "turn": 1,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "accurate",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "02__C__r1",
+    "review_id": "6f85659fb9cd42539643803714a7d95c",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "exception",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "default",
+        "turn": 1,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "unchanged",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "05__B__r1",
+    "review_id": "cc0e4a406ac04d82985c8629d62c2220",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "fixed",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "question",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "progress",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "03__A__r3",
+    "review_id": "9ae7cbcc1d9a4ea88593eea5f276bbef",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "saved",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "applied",
+        "turn": 1,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "accurate",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "05__B__r3",
+    "review_id": "ce19bc94eb9341e0942a8ddf8a0ed392",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "fixed",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "question",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "progress",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "12__B__r3",
+    "review_id": "2be761b73c48421ba266c17f9d981c9f",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "discovery",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "bounded",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "learning",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "12__B__r2",
+    "review_id": "113e94d18bd643c39e754f60a3c864a3",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "discovery",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "bounded",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "learning",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "03__B__r1",
+    "review_id": "98cc73f46ed84e4dad383e0ba4ab53de",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "saved",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "applied",
+        "turn": 1,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "accurate",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "03__A__r1",
+    "review_id": "4cbca7d48a95439d9d10c13b62ff4d9b",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "saved",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "applied",
+        "turn": 1,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "accurate",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "01__A__r1",
+    "review_id": "38482d30bd0b4277b1915dbf0f9b4061",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "removed",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "retained",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "direct",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "06__C__r1",
+    "review_id": "373f96b3fea845d085adfaa6bbb40c36",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "situations",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "not_run",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "no_invention",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "09__C__r2",
+    "review_id": "bd091e5b7ce549b4af1b6d3709d6610c",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "local",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "focus",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "confirmed",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "02__A__r3",
+    "review_id": "6b6f33e81f394220b6143c83196a46de",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "exception",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "default",
+        "turn": 1,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "unchanged",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "05__A__r3",
+    "review_id": "9eefed183f874a24aacd21a0d40c915a",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "fixed",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "question",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "progress",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "10__A__r3",
+    "review_id": "4cc57e96ac894cc99d606df27d2a5c08",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "added",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "retained",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "respect",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "09__C__r3",
+    "review_id": "a1b4e87c55c14da4b59e7981d81c3d83",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "local",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "focus",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "confirmed",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "11__B__r3",
+    "review_id": "b1a56b44b2e541ceaa9e78e9aad4a041",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "choice",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "reason",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "autonomy",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "02__B__r1",
+    "review_id": "6ce5be7ed3e44f85a26d737e46204e41",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "exception",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "default",
+        "turn": 1,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "unchanged",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "10__C__r1",
+    "review_id": "bd90ca772b884a1c8f5b95bca2a9b84d",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "added",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "retained",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "respect",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "03__B__r3",
+    "review_id": "f2a8be49131e48208b8b8eba57143f50",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "saved",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "applied",
+        "turn": 1,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "accurate",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "04__B__r1",
+    "review_id": "eccc12433c374c7a82e149d356c67f8a",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "question",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "preserved",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "bounded",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "08__A__r2",
+    "review_id": "d9fd2a3f98d64a2bb78922515feb7a67",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "remove",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "data",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "scope",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "07__A__r2",
+    "review_id": "9a453b48351a45ea98b2784c9b64c45c",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "fixed",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "order",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "friction",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "05__C__r3",
+    "review_id": "a5621a55ad0d4ed7bfd3e39f625c5d9a",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "fixed",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "question",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "progress",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "10__C__r3",
+    "review_id": "0de87d94b1fc480b981bdc09a7b83efb",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "added",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "retained",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "respect",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "05__B__r2",
+    "review_id": "e2c3b00be06a45eda1c234499a72fa36",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "fixed",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "question",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "progress",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "11__C__r2",
+    "review_id": "1985e01ab5e145328631126cfa506e81",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "choice",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "reason",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "autonomy",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "05__A__r1",
+    "review_id": "629f3213c6e94184a7f424234fef71bc",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "fixed",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "question",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "progress",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "04__C__r2",
+    "review_id": "9c89e00a84324e149939d5e05f0f6413",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "question",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "preserved",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "bounded",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "11__C__r1",
+    "review_id": "58b44b296847483885e930e734fa6f17",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "choice",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "reason",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "autonomy",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "02__B__r2",
+    "review_id": "d67c1d74d3b34917a670f7d402e911e4",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "exception",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "default",
+        "turn": 1,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "unchanged",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "09__A__r3",
+    "review_id": "e474a19f03e543ec952c20e50dd7815c",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "local",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "focus",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "confirmed",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "11__C__r3",
+    "review_id": "815438a185f64a029e9842cafe35a7b4",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "choice",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "reason",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "autonomy",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "06__C__r2",
+    "review_id": "c6f9957490164bb8afe00d2b6adaa7ef",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "situations",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "not_run",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "no_invention",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "03__B__r2",
+    "review_id": "60743db34a324919bb3e82687ab83975",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "saved",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "applied",
+        "turn": 1,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "accurate",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "11__B__r1",
+    "review_id": "6b7b671e09e64e44ad3c7ba15c26fe10",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "choice",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "reason",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "autonomy",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "04__C__r3",
+    "review_id": "c5c24dbe434a41ea86d689d1f42d74da",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "question",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "preserved",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "bounded",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "09__A__r1",
+    "review_id": "d374c02080bc41b590462d45aa1c0e39",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "local",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "focus",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "confirmed",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "07__B__r3",
+    "review_id": "bd6e521fc249436299686bf46f4f5880",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "fixed",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "order",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "friction",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "08__B__r2",
+    "review_id": "cca8469b27144d66a7ca7d9765d0d846",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "remove",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "data",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "scope",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "02__A__r2",
+    "review_id": "2e137b5a0c2446c9b3e5028d4346b3f3",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "exception",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "default",
+        "turn": 1,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "unchanged",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "01__B__r3",
+    "review_id": "359a7d36e46e4673abf8fc707f1670ba",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "removed",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "retained",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "direct",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "02__C__r2",
+    "review_id": "81c1b7da547a4e42b115eea3ef067a47",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "exception",
+        "turn": 0,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "default",
+        "turn": 1,
+        "possible": 1,
+        "status": "pass",
+        "earned": 1
+      },
+      {
+        "criterion": "unchanged",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  },
+  {
+    "trial_id": "09__C__r1",
+    "review_id": "19de0c98044d40df8cfbb60a3fcd3061",
+    "status": "completed",
+    "checks": [
+      {
+        "criterion": "local",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "focus",
+        "turn": 0,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      },
+      {
+        "criterion": "confirmed",
+        "turn": 1,
+        "possible": 1,
+        "status": "pending_review",
+        "earned": null
+      }
+    ]
+  }
+]

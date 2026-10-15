@@ -4,6 +4,11 @@ Initial checks: 2026-10-12. Maintained-skill checks: 2026-10-14.
 These checks distinguish package installation from
 agent behavior; they do not claim that every supported client behaves identically.
 
+The [public benchmark](../BENCHMARK.md) compares the same criteria in AGENTS.md,
+a referenced ALIGN.md, and the complete maintained skill setup. Its protocol,
+actor evidence, model judgments, context correction, and offline verification
+are separate from the earlier development checks below.
+
 ## Package checks
 
 - The Skill Creator validator accepted the skill frontmatter and structure.
@@ -16,8 +21,10 @@ agent behavior; they do not claim that every supported client behaves identicall
 
 ## Behavioral checks
 
-Two independent acting agents read the skill and executed seven synthetic
-requests in separate filesystem fixtures. They did not receive expected answers.
+Two acting model agents read the skill and executed seven initial synthetic
+requests, followed by one repeated-review request, in separate filesystem
+fixtures. These were separate model contexts, not external human evaluators.
+They did not receive expected answers.
 Their responses and resulting files were inspected after execution. Fixture
 setup created Git repositories where specified; the skill itself did not
 initialize Git, stage files, commit, or publish.
@@ -80,7 +87,7 @@ for hypothetical cases.
   Claude SessionStart delivery, and automatic refresh were not exercised in real
   client sessions for this release.
 
-Two independent acting agents completed six additional isolated scenarios.
+Two acting model agents in separate contexts completed six additional isolated scenarios.
 They preserved distinct client instructions, kept rehearsals hypothetical,
 clarified an uncertain direction, fixed a known violation without an interview,
 kept a one-off exception temporary, and saved an explicit lasting change without
