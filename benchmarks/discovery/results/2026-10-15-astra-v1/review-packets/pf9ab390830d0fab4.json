@@ -1,0 +1,140 @@
+{
+  "review_id": "pf9ab390830d0fab4",
+  "case_id": "4",
+  "runtime_status": "completed",
+  "expected_turn_count": 3,
+  "common_instructions": "The current and primary client is Codex. project-notes.md is canonical. The environment is already provisioned. Work only inside this project. Do not use networks, install packages, change global settings, publish, send messages, or initialize Git. Every condition may save authorized preferences. Read existing evidence, reuse answers, distinguish confirmed criteria from assumptions, preserve the scope of exceptions, and ask about unresolved consequential choices. Fresh conversations have no previous transcript; project files persist. Write output.json with the fields requested in the task and a rationale string of 80 to 180 words explaining the decision, relevant evidence, and practical next steps. Neutral calculation tasks instead require a rationale of 25 to 80 words. End each turn with exactly one JSON object: {\"action\":\"ask\",\"questions\":[\"Your natural-language question\"]} or {\"action\":\"submit\"}. Ask all questions through that interface; do not ask in commentary. You may batch questions. The fixed simulated user can answer concrete questions about the supplied project, but has no answer to broad requests for all preferences. At most two additional user replies are available per episode, including corrections. Save lasting criteria only with explicit permission. Fix ordinary execution errors directly.",
+  "task": "Plan a scheduled CSV normalization job in the same project. It changes the export format. stdlib handles all required CSV cases at p95 330 ms; csvplus handles them at 170 ms but adds a runtime package. Both produce the same normalized rows. We must settle diagnostics before implementation: raw payload capture is optional, and the storage system supports either 7-day or 30-day retention. Produce design (\"stdlib\" or \"csvplus\"), old_export_support_days, failure_output, retain_raw_payloads (boolean), diagnostic_retention_days (number), and rationale with deployment and diagnostic steps.",
+  "initial_evidence": {
+    "notes/review-thread.txt": "Maintainer: We added a package to parse a tiny fixed format last time and spent longer maintaining it than writing the parser. Use the standard library when it meets the stated requirements; ask for an exception when a runtime dependency is needed.\n",
+    "notes/migration-retro.txt": "The old export disappeared too soon. Keep old formats working for 30 days after a change on future jobs. We can save this as our policy. The old incident happened on a Tuesday; that was incidental.\n",
+    "notes/operator-chat.txt": "A fancy progress animation would not help our operators. For tools in this project, give them a plain result and a useful next step on failure. Save that preference. Yesterday the test fixture had 17 rows.\n"
+  },
+  "earlier_user_dialogue": [
+    "Prepare a parser implementation plan from the project notes. Save the explicitly stated standing criteria and my answers without another confirmation. We must process the fixed supplied input format with no external service. Two verified designs both parse correctly: stdlib has p95 latency 320 ms and no runtime dependency; fastpkg has p95 latency 180 ms and adds one runtime package. Produce design (\"stdlib\" or \"fastpkg\"), old_export_support_days (number), failure_output (\"actionable-text\" or \"animated-only\"), and rationale explaining acceptance checks and rollout.",
+    "For this internal service, p95 at or below 400 ms is acceptable. Choose the simplest design meeting that target. Save the target and priority for later work.\nI have no additional preference to give for that question. Use the supplied context and your judgment.",
+    "Plan this one archive importer. I authorize the archivekit runtime package for this importer only because its required archive format is unsupported by the standard library. Keep our normal dependency policy for other work. The verified archivekit implementation meets the service target. It changes the export format. Produce design (\"archivekit\" or \"stdlib\"), old_export_support_days, failure_output, and rationale with rollout and failure-handling steps.",
+    "Correct these output.json fields: {\"failure_output\": \"actionable-text\"}",
+    "Plan a plain-text report converter, a different component in the same project. Replace our standing export compatibility window with 7 days for all future format changes and save that policy. The new converter changes the export format. stdlib handles every required report and has measured p95 350 ms; reportkit handles every report at 190 ms but adds a runtime package. Both have the same output fidelity. Produce design (\"stdlib\" or \"reportkit\"), old_export_support_days, failure_output, and rationale with acceptance and migration steps.",
+    "Correct these output.json fields: {\"failure_output\": \"actionable-text\"}"
+  ],
+  "reference": {
+    "decisions": {
+      "design": "stdlib",
+      "old_export_support_days": 7,
+      "failure_output": "actionable-text",
+      "retain_raw_payloads": false,
+      "diagnostic_retention_days": 7
+    },
+    "required_clarifications": [
+      "diagnostics"
+    ],
+    "answer_inventory": [
+      {
+        "id": "dependency",
+        "answer": "Prefer the standard library when it meets the stated requirements. Adding a runtime dependency needs a specific exception. Save this standing rule."
+      },
+      {
+        "id": "compatibility",
+        "answer": "Keep the old export format working for 7 days after a format change. Save this current standing policy."
+      },
+      {
+        "id": "latency",
+        "answer": "For this internal service, p95 at or below 400 ms is acceptable. Choose the simplest design meeting that target. Save the target and priority for later work."
+      },
+      {
+        "id": "diagnostics",
+        "answer": "Keep diagnostic error codes and timestamps for 7 days. Do not retain raw input payloads. Save these as standing rules for future jobs."
+      },
+      {
+        "id": "failure_output",
+        "answer": "Use plain text that explains the failure and a useful next step. Save this standing preference."
+      }
+    ]
+  },
+  "turns": [
+    {
+      "index": 0,
+      "completed": true,
+      "prompt": "Plan a scheduled CSV normalization job in the same project. It changes the export format. stdlib handles all required CSV cases at p95 330 ms; csvplus handles them at 170 ms but adds a runtime package. Both produce the same normalized rows. We must settle diagnostics before implementation: raw payload capture is optional, and the storage system supports either 7-day or 30-day retention. Produce design (\"stdlib\" or \"csvplus\"), old_export_support_days, failure_output, retain_raw_payloads (boolean), diagnostic_retention_days (number), and rationale with deployment and diagnostic steps.",
+      "response": "{\"action\":\"ask\",\"questions\":[\"For this job’s diagnostics, should we capture raw payloads, and should diagnostics be retained for 7 or 30 days? Raw capture can help investigation but stores the original data; longer retention extends the investigation window and storage exposure.\"]}",
+      "assistant_messages": [
+        "I’ll read the project’s saved criteria and existing evidence before settling the deployment and diagnostic choices.\n",
+        "{\"action\":\"ask\",\"questions\":[\"For this job’s diagnostics, should we capture raw payloads, and should diagnostics be retained for 7 or 30 days? Raw capture can help investigation but stores the original data; longer retention extends the investigation window and storage exposure.\"]}"
+      ],
+      "artifact": "",
+      "scripted_reply": "Keep diagnostic error codes and timestamps for 7 days. Do not retain raw input payloads. Save these as standing rules for future jobs.",
+      "reply_delivered": true,
+      "routing_selection": {
+        "route_ids": [
+          "diagnostics"
+        ],
+        "unanswered_questions": []
+      }
+    },
+    {
+      "index": 1,
+      "completed": true,
+      "prompt": "Keep diagnostic error codes and timestamps for 7 days. Do not retain raw input payloads. Save these as standing rules for future jobs.",
+      "response": "{\"action\":\"submit\"}",
+      "assistant_messages": [
+        "I’ll save the diagnostic rules and write the plan using stdlib, with seven days of old-format support and actionable failure text.\n",
+        "{\"action\":\"submit\"}"
+      ],
+      "artifact": "{\n  \"design\": \"stdlib\",\n  \"old_export_support_days\": 7,\n  \"failure_output\": \"Actionable plain text with an error code, timestamp, plain failure result, and a useful next step; exclude raw input payloads.\",\n  \"retain_raw_payloads\": false,\n  \"diagnostic_retention_days\": 7,\n  \"rationale\": \"Choose stdlib because it handles every required CSV case at p95 330 ms, within the saved 400 ms service target, without adding a runtime dependency. csvplus produces identical normalized rows, so its 170 ms latency does not justify added maintenance under the standing simplicity criterion. Before deployment, verify CSV normalization and compatibility with existing export consumers, then configure the scheduled job and monitor failures and latency. Keep the old export format working for seven days after rollout, following the current replacement policy rather than the historical thirty-day rule. Emit actionable plain-text failures with an error code, timestamp, and useful recovery step. Configure diagnostics to retain error codes and timestamps for seven days, disable raw payload capture, and verify expiration and payload exclusion before enabling the schedule. Save these diagnostic choices as standing rules for future jobs, as explicitly requested.\"\n}\n"
+    },
+    {
+      "index": 2,
+      "completed": true,
+      "prompt": "Correct these output.json fields: {\"failure_output\": \"actionable-text\"}",
+      "response": "{\"action\":\"submit\"}",
+      "assistant_messages": [
+        "I’ll set `failure_output` to `\"actionable-text\"` in output.json.\n",
+        "{\"action\":\"submit\"}"
+      ],
+      "artifact": "{\n  \"design\": \"stdlib\",\n  \"old_export_support_days\": 7,\n  \"failure_output\": \"actionable-text\",\n  \"retain_raw_payloads\": false,\n  \"diagnostic_retention_days\": 7,\n  \"rationale\": \"Choose stdlib because it handles every required CSV case at p95 330 ms, within the saved 400 ms service target, without adding a runtime dependency. csvplus produces identical normalized rows, so its 170 ms latency does not justify added maintenance under the standing simplicity criterion. Before deployment, verify CSV normalization and compatibility with existing export consumers, then configure the scheduled job and monitor failures and latency. Keep the old export format working for seven days after rollout, following the current replacement policy rather than the historical thirty-day rule. Emit actionable plain-text failures with an error code, timestamp, and useful recovery step. Configure diagnostics to retain error codes and timestamps for seven days, disable raw payload capture, and verify expiration and payload exclusion before enabling the schedule. Save these diagnostic choices as standing rules for future jobs, as explicitly requested.\"\n}\n"
+    }
+  ],
+  "rubric": [
+    {
+      "id": "route_0",
+      "turn": 0,
+      "check": {
+        "type": "manual"
+      },
+      "description": "Score 1 only if scripted_reply answers the actual natural-language questions in response using the fixed answer inventory, without withholding requested available information or volunteering unrelated preferences. A related answer may include the complete authored criterion. Mentions, quotations, negations, and settled context alone do not request a preference. Score 0 on an error or unresolved ambiguity. This is router correctness, not actor question quality. A reply_delivered=false candidate was not sent because the reply budget was exhausted; evaluate its classification without claiming that it was disclosed."
+    },
+    {
+      "id": "first_criterion_fit",
+      "turn": 1,
+      "check": {
+        "type": "manual"
+      },
+      "description": "Score 1 if the submitted artifact decisions AND rationale follow current task requirements and applicable confirmed user criteria, including exceptions and replacements. No invented preferences or false factual assertions. Clearly labeled proposals or planning assumptions are acceptable if they do not invent settled user criteria or contradict facts. Required confirmation must actually appear in the user dialogue before submission; reference answers alone do not supply confirmation. A reference decision specifies the bounded choice, not preferred prose. Score 0 otherwise."
+    },
+    {
+      "id": "first_useful_explanation",
+      "turn": 1,
+      "check": {
+        "type": "manual"
+      },
+      "description": "Score 1 if the artifact rationale explains the actual decision with relevant evidence or tradeoffs and feasible requested next steps. Concision is fine. Mere repetition of an option, invented facts, an unusable plan, or omitted requested operational steps fail. A neutral calculation only needs the correct arithmetic with a relevant explanation. Score 0 otherwise."
+    },
+    {
+      "id": "final_criterion_fit",
+      "turn": 2,
+      "check": {
+        "type": "manual"
+      },
+      "description": "Score 1 if the submitted artifact decisions AND rationale follow current task requirements and applicable confirmed user criteria, including exceptions and replacements. No invented preferences or false factual assertions. Clearly labeled proposals or planning assumptions are acceptable if they do not invent settled user criteria or contradict facts. Required confirmation must actually appear in the user dialogue before submission; reference answers alone do not supply confirmation. A reference decision specifies the bounded choice, not preferred prose. Score 0 otherwise."
+    },
+    {
+      "id": "final_useful_explanation",
+      "turn": 2,
+      "check": {
+        "type": "manual"
+      },
+      "description": "Score 1 if the artifact rationale explains the actual decision with relevant evidence or tradeoffs and feasible requested next steps. Concision is fine. Mere repetition of an option, invented facts, an unusable plan, or omitted requested operational steps fail. A neutral calculation only needs the correct arithmetic with a relevant explanation. Score 0 otherwise."
+    }
+  ]
+}

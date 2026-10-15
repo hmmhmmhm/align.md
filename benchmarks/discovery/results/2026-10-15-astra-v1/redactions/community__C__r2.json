@@ -1,0 +1,35 @@
+{
+  "counts": {
+    "private_reasoning_records": 4,
+    "encrypted_content_fields": 2
+  },
+  "private_record_sha256": "c51c0ea8e321ca1ec95a12f8cbdfad3838eed9c5a79eb661391fb757b4d230b8",
+  "published_record_sha256": "74c6d12893b7e511312c5e17b096861516104c5888eeb7e9db112823cedbeb06",
+  "session_traces": [
+    {
+      "file": "session-traces/community__C__r2/rollout-2026-10-15T10-26-51-01a13d2b-5170-7651-8431-2acaf10d38a4.jsonl.gz",
+      "private_original_sha256": "608932a0b4c6b13ccdbd8806ada9cb15a45756f3fbfa90b5c5823fcf960f78cb",
+      "published_sha256": "02186d6875d5e0cf5cb6bea5dd8907c16355fb26d71eb4424cfe0f404440eb3b"
+    },
+    {
+      "file": "session-traces/community__C__r2/rollout-2026-10-15T10-26-07-01a13d2a-a708-7923-bace-2e01526461d6.jsonl.gz",
+      "private_original_sha256": "f85bbcf3d751db28270dfbac0bf05f52841a7f419742bff24ff8bf35440e7b7e",
+      "published_sha256": "99b4c652918062dcc3554bcec21e3f0cc2e835063bd8f6c8e533208cd269159e"
+    },
+    {
+      "file": "session-traces/community__C__r2/rollout-2026-10-15T10-24-12-01a13d28-e593-7592-bd0b-a53c5eeff157.jsonl.gz",
+      "private_original_sha256": "28cff29186ee51fe4cab76ea0b2d361adc40845ad7ad8b784b91cb6df708dbff",
+      "published_sha256": "47b386c3059e4b51e6a1f7f9be2f25cabbf699a771160e6cd7412b5d52983919"
+    },
+    {
+      "file": "session-traces/community__C__r2/rollout-2026-10-15T10-25-07-01a13d29-bcf9-72b1-a661-1eb1ba69976e.jsonl.gz",
+      "private_original_sha256": "215c2f960120c6683a4637f85869152a0e594d5c026a62dcb5756a73dab90ea5",
+      "published_sha256": "cdc01dbabed8f5c9585fbe30b63435a1a6a505900524bf0c3bbbe75f2306991b"
+    },
+    {
+      "file": "session-traces/community__C__r2/rollout-2026-10-15T10-27-48-01a13d2c-2eb3-7f60-aa92-f7c522bf6536.jsonl.gz",
+      "private_original_sha256": "d1056dfaa8d27c600aaf27192f2d14ed5649f995ea69ae3731a85c54907f20b9",
+      "published_sha256": "9df99eaacaddf99bd80d92d44bbd586da9b22b22e9192f121d8d7ca10a542908"
+    }
+  ]
+}

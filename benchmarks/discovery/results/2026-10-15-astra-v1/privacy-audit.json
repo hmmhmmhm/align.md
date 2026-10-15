@@ -1,0 +1,7 @@
+{
+  "method": "Literal scan for current auth JSON string values of 16+ characters and session creator account/user IDs, plus host-home and macOS temporary-root paths. Parse JSON/JSONL for private reasoning records and encrypted_content fields. Probe values are never emitted.",
+  "script_sha256": "293d947e4547edfb0b8464a396ce51d9d0c5211649eb505222d6bea8214df00f",
+  "files_checked": 100,
+  "flagged_files": [],
+  "passed": true
+}

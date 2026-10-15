@@ -1,0 +1,15 @@
+{
+  "matches_start": true,
+  "final": {
+    "version": 1,
+    "files": {
+      "benchmarks/discovery/review.py": "128c317e45eff2677c0c65f1905a44711a9928067ab40c6884a6d7d5e329da5c",
+      "benchmarks/discovery/prepare_reviews.py": "1e593c7e47b55544921c5197d83856f204437425a3f96a7d268097899880288f",
+      "benchmarks/discovery/review-rubric.md": "8387d110ce0ef4cc372590fd82c5f0e6339dc56da733b1fe76f61737072ad8a4",
+      "benchmarks/run.py": "2b672c854dd36f068ef46a47f16824d582a58da6eb621688cdd66a2037ccc7e9"
+    },
+    "prompt_sha256": "90e3f9dc852bda628638241595180cc94eef0a121d76426b13810e6d84e331f5",
+    "schema_sha256": "7fcc9fe399631c038ee53ca809c9be693711e9fae5855f65df3bf84981bfb8aa",
+    "harness_digest": "e63c79047d8f77c4807fb2f156db4ccf81286c31c380ab00aafa386fedc14388"
+  }
+}

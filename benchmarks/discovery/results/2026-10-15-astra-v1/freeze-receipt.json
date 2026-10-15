@@ -1,0 +1,8 @@
+{
+  "preregistered_commit": "0975de3a3ee967dc6d1c2aeb5c0893ec61c5ac83",
+  "public_commit_url": "https://github.com/hmmhmmhm/align.md/commit/0975de3a3ee967dc6d1c2aeb5c0893ec61c5ac83",
+  "public_ci_receipt_url": "https://github.com/hmmhmmhm/align.md/actions/runs/38665066430",
+  "public_ci_created_at": "2026-10-15T01:20:01Z",
+  "source_digest": "8b5b4cf45ad1ed5931411703bbf2072fc31d6a0d4d5bfe8be4676877a71e880f",
+  "receipt_provenance": "Public push and CI receipt supplied by coordinating agent before the one scored invocation."
+}

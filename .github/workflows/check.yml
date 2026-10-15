@@ -41,6 +41,8 @@ jobs:
         run: python3 -m unittest discover -s benchmarks/effort -p 'test_*.py'
       - name: Check preference discovery harness and review
         run: python3 -m unittest discover -s benchmarks/discovery -p 'test_*.py'
+      - name: Check preference review replay
+        run: python3 -m unittest discover -s benchmarks/discovery/reporting -p 'test_*.py'
       - name: Verify retained intervention infrastructure failure
         run: |
           python3 benchmarks/effort/verify.py benchmarks/effort/results/2026-10-15-astra-v1-failed \
@@ -49,3 +51,13 @@ jobs:
         run: |
           python3 benchmarks/effort/verify.py benchmarks/effort/results/2026-10-15-astra-v2 \
             --output "$RUNNER_TEMP/align-effort-verification.json"
+      - name: Verify preference transfer results without model access
+        run: |
+          python3 benchmarks/discovery/verify.py benchmarks/discovery/results/2026-10-15-astra-v1 \
+            --output "$RUNNER_TEMP/align-discovery-verification.json"
+      - name: Verify blinded preference review without model access
+        run: |
+          python3 benchmarks/discovery/verify_reviews.py "$PWD/benchmarks/discovery/results/2026-10-15-astra-v1" \
+            --packets "$PWD/benchmarks/discovery/results/2026-10-15-astra-v1/review-packets" \
+            --reviews "$PWD/benchmarks/discovery/results/2026-10-15-astra-v1/judgments" \
+            --output "$RUNNER_TEMP/align-discovery-review-verification.json"

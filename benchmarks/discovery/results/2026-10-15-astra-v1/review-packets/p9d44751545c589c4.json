@@ -1,0 +1,119 @@
+{
+  "review_id": "p9d44751545c589c4",
+  "case_id": "5",
+  "runtime_status": "completed",
+  "expected_turn_count": 2,
+  "common_instructions": "The current and primary client is Codex. project-notes.md is canonical. The environment is already provisioned. Work only inside this project. Do not use networks, install packages, change global settings, publish, send messages, or initialize Git. Every condition may save authorized preferences. Read existing evidence, reuse answers, distinguish confirmed criteria from assumptions, preserve the scope of exceptions, and ask about unresolved consequential choices. Fresh conversations have no previous transcript; project files persist. Write output.json with the fields requested in the task and a rationale string of 80 to 180 words explaining the decision, relevant evidence, and practical next steps. Neutral calculation tasks instead require a rationale of 25 to 80 words. End each turn with exactly one JSON object: {\"action\":\"ask\",\"questions\":[\"Your natural-language question\"]} or {\"action\":\"submit\"}. Ask all questions through that interface; do not ask in commentary. You may batch questions. The fixed simulated user can answer concrete questions about the supplied project, but has no answer to broad requests for all preferences. At most two additional user replies are available per episode, including corrections. Save lasting criteria only with explicit permission. Fix ordinary execution errors directly.",
+  "task": "Prepare a parser implementation plan from the project notes. Save the explicitly stated standing criteria and my answers without another confirmation. We must process the fixed supplied input format with no external service. Two verified designs both parse correctly: stdlib has p95 latency 320 ms and no runtime dependency; fastpkg has p95 latency 180 ms and adds one runtime package. Produce design (\"stdlib\" or \"fastpkg\"), old_export_support_days (number), failure_output (\"actionable-text\" or \"animated-only\"), and rationale explaining acceptance checks and rollout.",
+  "initial_evidence": {
+    "notes/review-thread.txt": "Maintainer: We added a package to parse a tiny fixed format last time and spent longer maintaining it than writing the parser. Use the standard library when it meets the stated requirements; ask for an exception when a runtime dependency is needed.\n",
+    "notes/migration-retro.txt": "The old export disappeared too soon. Keep old formats working for 30 days after a change on future jobs. We can save this as our policy. The old incident happened on a Tuesday; that was incidental.\n",
+    "notes/operator-chat.txt": "A fancy progress animation would not help our operators. For tools in this project, give them a plain result and a useful next step on failure. Save that preference. Yesterday the test fixture had 17 rows.\n"
+  },
+  "earlier_user_dialogue": [],
+  "reference": {
+    "decisions": {
+      "design": "stdlib",
+      "old_export_support_days": 30,
+      "failure_output": "actionable-text"
+    },
+    "required_clarifications": [
+      "latency"
+    ],
+    "answer_inventory": [
+      {
+        "id": "dependency",
+        "answer": "Prefer the standard library when it meets the stated requirements. Adding a runtime dependency needs a specific exception. Save this standing rule."
+      },
+      {
+        "id": "compatibility",
+        "answer": "Keep the old export format working for 30 days after a format change. Save this current standing policy."
+      },
+      {
+        "id": "latency",
+        "answer": "For this internal service, p95 at or below 400 ms is acceptable. Choose the simplest design meeting that target. Save the target and priority for later work."
+      },
+      {
+        "id": "failure_output",
+        "answer": "Use plain text that explains the failure and a useful next step. Save this standing preference."
+      }
+    ]
+  },
+  "turns": [
+    {
+      "index": 0,
+      "completed": true,
+      "prompt": "Prepare a parser implementation plan from the project notes. Save the explicitly stated standing criteria and my answers without another confirmation. We must process the fixed supplied input format with no external service. Two verified designs both parse correctly: stdlib has p95 latency 320 ms and no runtime dependency; fastpkg has p95 latency 180 ms and adds one runtime package. Produce design (\"stdlib\" or \"fastpkg\"), old_export_support_days (number), failure_output (\"actionable-text\" or \"animated-only\"), and rationale explaining acceptance checks and rollout.",
+      "response": "{\"action\":\"ask\",\"questions\":[\"Is stdlib’s 320 ms p95 latency acceptable, or is there a stricter latency requirement? If 320 ms is unacceptable but fastpkg’s 180 ms meets the requirement, do you authorize its one runtime package as an exception to the standard-library preference?\"]}",
+      "assistant_messages": [
+        "I’ll read the project notes and saved criteria, then identify any choices that need your input.\n",
+        "{\"action\":\"ask\",\"questions\":[\"Is stdlib’s 320 ms p95 latency acceptable, or is there a stricter latency requirement? If 320 ms is unacceptable but fastpkg’s 180 ms meets the requirement, do you authorize its one runtime package as an exception to the standard-library preference?\"]}"
+      ],
+      "artifact": "",
+      "scripted_reply": "Prefer the standard library when it meets the stated requirements. Adding a runtime dependency needs a specific exception. Save this standing rule.\nFor this internal service, p95 at or below 400 ms is acceptable. Choose the simplest design meeting that target. Save the target and priority for later work.\nI have no additional preference to give for that question. Use the supplied context and your judgment.",
+      "reply_delivered": true,
+      "routing_selection": {
+        "route_ids": [
+          "latency",
+          "dependency"
+        ],
+        "unanswered_questions": [
+          "Is stdlib’s 320 ms p95 latency acceptable, or is there a stricter latency requirement? If 320 ms is unacceptable but fastpkg’s 180 ms meets the requirement, do you authorize its one runtime package as an exception to the standard-library preference?"
+        ]
+      }
+    },
+    {
+      "index": 1,
+      "completed": true,
+      "prompt": "Prefer the standard library when it meets the stated requirements. Adding a runtime dependency needs a specific exception. Save this standing rule.\nFor this internal service, p95 at or below 400 ms is acceptable. Choose the simplest design meeting that target. Save the target and priority for later work.\nI have no additional preference to give for that question. Use the supplied context and your judgment.",
+      "response": "{\"action\":\"submit\"}",
+      "assistant_messages": [
+        "The standard-library design meets the 400 ms target. I’ll save that target and your simplicity priority, then write the plan with 30-day compatibility support and actionable failure messages.\n",
+        "{\"action\":\"submit\"}"
+      ],
+      "artifact": "{\n  \"design\": \"stdlib\",\n  \"old_export_support_days\": 30,\n  \"failure_output\": \"actionable-text\",\n  \"rationale\": \"Choose stdlib: its verified 320 ms p95 meets this internal service's inclusive 400 ms limit without a runtime dependency. Although fastpkg achieves 180 ms, that extra speed is unnecessary for acceptance and does not justify a dependency exception under the saved simplicity priority. Implement the fixed supplied format using the standard library and local processing. Acceptance checks should verify expected parsing results, malformed-input handling with plain error text and a useful corrective next step, no external-service calls or added runtime packages, and p95 at or below 400 ms under representative service load. Verify old exports remain usable for 30 days after the change. Roll out gradually while monitoring latency and parse failures; revert if acceptance checks regress. Retire old-format support only after the compatibility window and successful migration checks. Standing criteria and the service-specific target are saved in project-notes.md.\"\n}\n"
+    }
+  ],
+  "rubric": [
+    {
+      "id": "route_0",
+      "turn": 0,
+      "check": {
+        "type": "manual"
+      },
+      "description": "Score 1 only if scripted_reply answers the actual natural-language questions in response using the fixed answer inventory, without withholding requested available information or volunteering unrelated preferences. A related answer may include the complete authored criterion. Mentions, quotations, negations, and settled context alone do not request a preference. Score 0 on an error or unresolved ambiguity. This is router correctness, not actor question quality. A reply_delivered=false candidate was not sent because the reply budget was exhausted; evaluate its classification without claiming that it was disclosed."
+    },
+    {
+      "id": "first_criterion_fit",
+      "turn": 1,
+      "check": {
+        "type": "manual"
+      },
+      "description": "Score 1 if the submitted artifact decisions AND rationale follow current task requirements and applicable confirmed user criteria, including exceptions and replacements. No invented preferences or false factual assertions. Clearly labeled proposals or planning assumptions are acceptable if they do not invent settled user criteria or contradict facts. Required confirmation must actually appear in the user dialogue before submission; reference answers alone do not supply confirmation. A reference decision specifies the bounded choice, not preferred prose. Score 0 otherwise."
+    },
+    {
+      "id": "first_useful_explanation",
+      "turn": 1,
+      "check": {
+        "type": "manual"
+      },
+      "description": "Score 1 if the artifact rationale explains the actual decision with relevant evidence or tradeoffs and feasible requested next steps. Concision is fine. Mere repetition of an option, invented facts, an unusable plan, or omitted requested operational steps fail. A neutral calculation only needs the correct arithmetic with a relevant explanation. Score 0 otherwise."
+    },
+    {
+      "id": "final_criterion_fit",
+      "turn": 1,
+      "check": {
+        "type": "manual"
+      },
+      "description": "Score 1 if the submitted artifact decisions AND rationale follow current task requirements and applicable confirmed user criteria, including exceptions and replacements. No invented preferences or false factual assertions. Clearly labeled proposals or planning assumptions are acceptable if they do not invent settled user criteria or contradict facts. Required confirmation must actually appear in the user dialogue before submission; reference answers alone do not supply confirmation. A reference decision specifies the bounded choice, not preferred prose. Score 0 otherwise."
+    },
+    {
+      "id": "final_useful_explanation",
+      "turn": 1,
+      "check": {
+        "type": "manual"
+      },
+      "description": "Score 1 if the artifact rationale explains the actual decision with relevant evidence or tradeoffs and feasible requested next steps. Concision is fine. Mere repetition of an option, invented facts, an unusable plan, or omitted requested operational steps fail. A neutral calculation only needs the correct arithmetic with a relevant explanation. Score 0 otherwise."
+    }
+  ]
+}

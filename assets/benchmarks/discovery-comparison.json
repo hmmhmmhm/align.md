@@ -1,0 +1,84 @@
+{
+  "verification_sha256": "eb3d2173e79b52c4a4431a71943f6ff94efd79301e0ca62a16207e5b3a59e98a",
+  "frozen_cases_sha256": "c22785e9f16a9e76ed38584e2ead861e6a8f1d09b1421ff1d39092b96cab3883",
+  "python": "3.14.7",
+  "matplotlib": "3.11.2",
+  "data": [
+    {
+      "arm": "A",
+      "planned_episodes": 20,
+      "planned_setup_episodes": 4,
+      "planned_later_episodes": 16,
+      "first_submission_passes": 8,
+      "final_passes": 20,
+      "setup_replies": 4,
+      "later_replies": 16,
+      "execution_failures": 0
+    },
+    {
+      "arm": "B",
+      "planned_episodes": 20,
+      "planned_setup_episodes": 4,
+      "planned_later_episodes": 16,
+      "first_submission_passes": 8,
+      "final_passes": 20,
+      "setup_replies": 4,
+      "later_replies": 16,
+      "execution_failures": 0
+    },
+    {
+      "arm": "C",
+      "planned_episodes": 20,
+      "planned_setup_episodes": 4,
+      "planned_later_episodes": 16,
+      "first_submission_passes": 8,
+      "final_passes": 20,
+      "setup_replies": 4,
+      "later_replies": 16,
+      "execution_failures": 0
+    }
+  ],
+  "text_counts": {
+    "A": {
+      "planned_trajectories": 4,
+      "source_file_characters_once_per_trajectory": 2430,
+      "common_instruction_characters_once_per_trajectory": 5268,
+      "condition_instruction_characters_once_per_trajectory": 1412,
+      "align_instruction_block_characters_once_per_trajectory": 0,
+      "initial_agents_file_characters_once_per_trajectory": 9600,
+      "setup_initial_user_characters": 2588,
+      "task_initial_user_characters": 7630,
+      "setup_reply_user_characters": 1080,
+      "task_reply_user_characters": 1326,
+      "harness_protocol_characters": 14580
+    },
+    "B": {
+      "planned_trajectories": 4,
+      "source_file_characters_once_per_trajectory": 2430,
+      "common_instruction_characters_once_per_trajectory": 5268,
+      "condition_instruction_characters_once_per_trajectory": 1428,
+      "align_instruction_block_characters_once_per_trajectory": 0,
+      "initial_agents_file_characters_once_per_trajectory": 9616,
+      "setup_initial_user_characters": 2588,
+      "task_initial_user_characters": 7630,
+      "setup_reply_user_characters": 932,
+      "task_reply_user_characters": 1422,
+      "harness_protocol_characters": 14580
+    },
+    "C": {
+      "planned_trajectories": 4,
+      "source_file_characters_once_per_trajectory": 2430,
+      "common_instruction_characters_once_per_trajectory": 5268,
+      "condition_instruction_characters_once_per_trajectory": 1452,
+      "align_instruction_block_characters_once_per_trajectory": 6168,
+      "initial_agents_file_characters_once_per_trajectory": 15812,
+      "setup_initial_user_characters": 2588,
+      "task_initial_user_characters": 7630,
+      "setup_reply_user_characters": 1080,
+      "task_reply_user_characters": 1454,
+      "harness_protocol_characters": 14580
+    }
+  },
+  "text_count_convention": "Unicode characters, not bytes or tokens. Source files and initial instruction files count once per planned trajectory; this does not measure model rereads. User-message and harness-protocol counts come from verified delivered turns. Initial AGENTS totals include separators and protocol text; component rows are not all disjoint from that total.",
+  "scope": "Synthetic bounded artifact checks and scripted replies; semantic review is separate; no human effort measurement."
+}

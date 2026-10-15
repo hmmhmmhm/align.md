@@ -1,0 +1,1840 @@
+{
+  "schema_version": 1,
+  "postrun_diagnostic": true,
+  "changes_frozen_scores": false,
+  "reviewer_role": "Separate methods-review agent within the maintainer evaluation. Unblinded to treatment. Not independent external replication.",
+  "categories": {
+    "information_answer": "Fixed answer to a formal question; not corrective feedback.",
+    "schema_only": "Intended decision already expressed; correction changes representation to frozen enum/type.",
+    "preference_or_decision": "Correction changes intended choice or policy meaning.",
+    "mixed_or_unclear": "Contains both or evidence does not support a clean classification."
+  },
+  "counts": {
+    "information_answer": 24,
+    "schema_only": 36
+  },
+  "replies": [
+    {
+      "trial": "community__A__r1",
+      "arm": "A",
+      "reply_index": 0,
+      "episode": "setup",
+      "preceding_turn": 0,
+      "receiving_turn": 1,
+      "kind": "answer",
+      "text": "When an event has too many applicants, use a lottery after the application window closes. Save that as our standing allocation rule.",
+      "protocol_preference_units": [
+        "allocation"
+      ],
+      "protocol_repeated_preference_units": 0,
+      "classification": "information_answer",
+      "questions": [
+        "Cedar meets the standing step-free requirement and $10 fee ceiling, and attendee names will stay private. For the 24 seats and 39 applicants, should everyone who applies by Friday have an equal chance through a lottery, or should earlier applicants get priority through first-come allocation?"
+      ],
+      "answered_routes": [
+        "allocation"
+      ]
+    },
+    {
+      "trial": "community__A__r1",
+      "arm": "A",
+      "reply_index": 1,
+      "episode": "exception",
+      "preceding_turn": 2,
+      "receiving_turn": 3,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"allocation\": \"lottery\"}",
+      "protocol_preference_units": [
+        "allocation"
+      ],
+      "protocol_repeated_preference_units": 1,
+      "classification": "schema_only",
+      "failed_fields": [
+        "allocation"
+      ],
+      "before_values": {
+        "allocation": "After the application window closes, run a lottery for the 20 seats among the 31 applicants; randomly order the remaining 11 applicants as a private waitlist."
+      },
+      "expected_values": {
+        "allocation": "lottery"
+      },
+      "after_values": {
+        "allocation": "lottery"
+      },
+      "changed_fields": [
+        "allocation"
+      ],
+      "task_prompt": "Plan this one ceramics workshop. The sponsor specifically authorized an $18 attendee fee for this event only; keep our usual fee ceiling for later events. There are 20 seats and 31 applicants. Choose Clay Hall (step-free, 20 seats, $18, includes the required kiln) or Brick Studio (stairs, 20 seats, $9, includes kiln). The kiln is required. Produce venue, attendee_fee, allocation, public_attendee_names, and rationale with registration and communication steps.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "community__A__r1",
+      "arm": "A",
+      "reply_index": 2,
+      "episode": "transfer_change",
+      "preceding_turn": 4,
+      "receiving_turn": 5,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"allocation\": \"lottery\"}",
+      "protocol_preference_units": [
+        "allocation"
+      ],
+      "protocol_repeated_preference_units": 1,
+      "classification": "schema_only",
+      "failed_fields": [
+        "allocation"
+      ],
+      "before_values": {
+        "allocation": "After the application window closes, run a lottery among the 44 applicants to allocate the 30 seats; 14 applicants will not receive an initial seat."
+      },
+      "expected_values": {
+        "allocation": "lottery"
+      },
+      "after_values": {
+        "allocation": "lottery"
+      },
+      "changed_fields": [
+        "allocation"
+      ],
+      "task_prompt": "We are now arranging a public neighborhood repair clinic. For all future events, raise our standing attendee fee ceiling to $20; save this replacement. Other criteria stay as they are. There are 30 seats and 44 applicants. Offers: Annex is step-free, 30 seats, $16, and has the required repair benches; Steps has stairs, 30 seats, $7, and the benches; Cedar is step-free, 30 seats, $8, but has no benches. Produce venue, attendee_fee, allocation, public_attendee_names, and rationale describing application handling and what changed in the standing policy.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "community__A__r1",
+      "arm": "A",
+      "reply_index": 3,
+      "episode": "reuse_clarify",
+      "preceding_turn": 6,
+      "receiving_turn": 7,
+      "kind": "answer",
+      "text": "If we cancel an event, refund the attendee fee to the original payment method. Save this for future events; do not substitute event credit.",
+      "protocol_preference_units": [
+        "cancellation"
+      ],
+      "protocol_repeated_preference_units": 0,
+      "classification": "information_answer",
+      "questions": [
+        "If we cancel this reading, should attendees receive a refund to their original payment method or credit for another event?"
+      ],
+      "answered_routes": [
+        "cancellation"
+      ]
+    },
+    {
+      "trial": "community__A__r1",
+      "arm": "A",
+      "reply_index": 4,
+      "episode": "reuse_clarify",
+      "preceding_turn": 7,
+      "receiving_turn": 8,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"allocation\": \"lottery\"}",
+      "protocol_preference_units": [
+        "allocation"
+      ],
+      "protocol_repeated_preference_units": 1,
+      "classification": "schema_only",
+      "failed_fields": [
+        "allocation"
+      ],
+      "before_values": {
+        "allocation": "After the application window closes, run a lottery among all 25 applicants for the 18 seats. Randomly order the remaining 7 applicants as a private waitlist and offer any released seats in that order."
+      },
+      "expected_values": {
+        "allocation": "lottery"
+      },
+      "after_values": {
+        "allocation": "lottery"
+      },
+      "changed_fields": [
+        "allocation"
+      ],
+      "task_prompt": "Prepare a public evening reading with 18 seats and 25 applicants. Offers: Garden is step-free, 18 seats, $18, and available that evening; Loft has stairs, 18 seats, $9, and is available; Cedar is step-free, 18 seats, $8, but unavailable that evening. We also need to settle what attendees receive if we cancel: an original-payment refund or credit for another event. Either is technically possible,. Produce venue, attendee_fee, allocation, public_attendee_names, cancellation_remedy (\"refund\" or \"credit\"), and rationale with a usable plan.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "community__A__r2",
+      "arm": "A",
+      "reply_index": 0,
+      "episode": "setup",
+      "preceding_turn": 0,
+      "receiving_turn": 1,
+      "kind": "answer",
+      "text": "When an event has too many applicants, use a lottery after the application window closes. Save that as our standing allocation rule.",
+      "protocol_preference_units": [
+        "allocation"
+      ],
+      "protocol_repeated_preference_units": 0,
+      "classification": "information_answer",
+      "questions": [
+        "For the 24 seats and 39 applicants, should everyone who applies by Friday have an equal chance through a lottery, or should earlier applicants get priority through first-come allocation?"
+      ],
+      "answered_routes": [
+        "allocation"
+      ]
+    },
+    {
+      "trial": "community__A__r2",
+      "arm": "A",
+      "reply_index": 1,
+      "episode": "exception",
+      "preceding_turn": 2,
+      "receiving_turn": 3,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"allocation\": \"lottery\"}",
+      "protocol_preference_units": [
+        "allocation"
+      ],
+      "protocol_repeated_preference_units": 1,
+      "classification": "schema_only",
+      "failed_fields": [
+        "allocation"
+      ],
+      "before_values": {
+        "allocation": "After the application window closes, use a lottery to allocate 20 seats among the 31 applicants. Randomly order the remaining 11 applicants as a private waitlist."
+      },
+      "expected_values": {
+        "allocation": "lottery"
+      },
+      "after_values": {
+        "allocation": "lottery"
+      },
+      "changed_fields": [
+        "allocation"
+      ],
+      "task_prompt": "Plan this one ceramics workshop. The sponsor specifically authorized an $18 attendee fee for this event only; keep our usual fee ceiling for later events. There are 20 seats and 31 applicants. Choose Clay Hall (step-free, 20 seats, $18, includes the required kiln) or Brick Studio (stairs, 20 seats, $9, includes kiln). The kiln is required. Produce venue, attendee_fee, allocation, public_attendee_names, and rationale with registration and communication steps.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "community__A__r2",
+      "arm": "A",
+      "reply_index": 2,
+      "episode": "transfer_change",
+      "preceding_turn": 4,
+      "receiving_turn": 5,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"allocation\": \"lottery\"}",
+      "protocol_preference_units": [
+        "allocation"
+      ],
+      "protocol_repeated_preference_units": 1,
+      "classification": "schema_only",
+      "failed_fields": [
+        "allocation"
+      ],
+      "before_values": {
+        "allocation": "After the application window closes, use a lottery to allocate the 30 seats among the applicants (currently 44)."
+      },
+      "expected_values": {
+        "allocation": "lottery"
+      },
+      "after_values": {
+        "allocation": "lottery"
+      },
+      "changed_fields": [
+        "allocation"
+      ],
+      "task_prompt": "We are now arranging a public neighborhood repair clinic. For all future events, raise our standing attendee fee ceiling to $20; save this replacement. Other criteria stay as they are. There are 30 seats and 44 applicants. Offers: Annex is step-free, 30 seats, $16, and has the required repair benches; Steps has stairs, 30 seats, $7, and the benches; Cedar is step-free, 30 seats, $8, but has no benches. Produce venue, attendee_fee, allocation, public_attendee_names, and rationale describing application handling and what changed in the standing policy.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "community__A__r2",
+      "arm": "A",
+      "reply_index": 3,
+      "episode": "reuse_clarify",
+      "preceding_turn": 6,
+      "receiving_turn": 7,
+      "kind": "answer",
+      "text": "If we cancel an event, refund the attendee fee to the original payment method. Save this for future events; do not substitute event credit.",
+      "protocol_preference_units": [
+        "cancellation"
+      ],
+      "protocol_repeated_preference_units": 0,
+      "classification": "information_answer",
+      "questions": [
+        "If we cancel this reading, should attendees receive a refund to their original payment method or credit for another event?"
+      ],
+      "answered_routes": [
+        "cancellation"
+      ]
+    },
+    {
+      "trial": "community__A__r2",
+      "arm": "A",
+      "reply_index": 4,
+      "episode": "reuse_clarify",
+      "preceding_turn": 7,
+      "receiving_turn": 8,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"allocation\": \"lottery\"}",
+      "protocol_preference_units": [
+        "allocation"
+      ],
+      "protocol_repeated_preference_units": 1,
+      "classification": "schema_only",
+      "failed_fields": [
+        "allocation"
+      ],
+      "before_values": {
+        "allocation": "After the application window closes, run a lottery among all 25 applicants for 18 seats. Use the remaining seven applicants in randomly drawn order as a private waitlist and offer vacated seats in that order."
+      },
+      "expected_values": {
+        "allocation": "lottery"
+      },
+      "after_values": {
+        "allocation": "lottery"
+      },
+      "changed_fields": [
+        "allocation"
+      ],
+      "task_prompt": "Prepare a public evening reading with 18 seats and 25 applicants. Offers: Garden is step-free, 18 seats, $18, and available that evening; Loft has stairs, 18 seats, $9, and is available; Cedar is step-free, 18 seats, $8, but unavailable that evening. We also need to settle what attendees receive if we cancel: an original-payment refund or credit for another event. Either is technically possible,. Produce venue, attendee_fee, allocation, public_attendee_names, cancellation_remedy (\"refund\" or \"credit\"), and rationale with a usable plan.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "community__B__r1",
+      "arm": "B",
+      "reply_index": 0,
+      "episode": "setup",
+      "preceding_turn": 0,
+      "receiving_turn": 1,
+      "kind": "answer",
+      "text": "When an event has too many applicants, use a lottery after the application window closes. Save that as our standing allocation rule.",
+      "protocol_preference_units": [
+        "allocation"
+      ],
+      "protocol_repeated_preference_units": 0,
+      "classification": "information_answer",
+      "questions": [
+        "Cedar meets the standing step-free and $10 fee requirements, and attendee names will stay private. For its 24 seats, should everyone who applies by Friday have an equal chance through a lottery, or should staff prioritize the earliest applications? Should this allocation rule apply to future oversubscribed workshops too?"
+      ],
+      "answered_routes": [
+        "allocation"
+      ]
+    },
+    {
+      "trial": "community__B__r1",
+      "arm": "B",
+      "reply_index": 1,
+      "episode": "exception",
+      "preceding_turn": 2,
+      "receiving_turn": 3,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"allocation\": \"lottery\", \"public_attendee_names\": false}",
+      "protocol_preference_units": [
+        "allocation",
+        "names"
+      ],
+      "protocol_repeated_preference_units": 2,
+      "classification": "schema_only",
+      "failed_fields": [
+        "allocation",
+        "public_attendee_names"
+      ],
+      "before_values": {
+        "allocation": {
+          "method": "lottery after the application window closes",
+          "applicants": 31,
+          "seats": 20,
+          "initial_offers": 20,
+          "waitlist": 11,
+          "registration_steps": [
+            "Publish the application closing date, $18 event fee, step-free access, kiln availability, lottery procedure, and offer acceptance deadline.",
+            "After applications close, randomly order all 31 applicants; offer the first 20 places and use the remaining 11 as an ordered private waitlist.",
+            "Record acceptances and fee payments on a private staff roster; offer declined or expired places to the next person on the waitlist."
+          ],
+          "communication_steps": [
+            "Notify each applicant privately of their offer or waitlist position, with acceptance and payment instructions for those offered seats.",
+            "Explain that the sponsor authorized the $18 fee for this ceramics workshop only; the usual $10 ceiling remains for later events.",
+            "Publish event logistics and availability updates without attendee names; send confirmed participants private arrival and workshop instructions."
+          ]
+        },
+        "public_attendee_names": []
+      },
+      "expected_values": {
+        "allocation": "lottery",
+        "public_attendee_names": false
+      },
+      "after_values": {
+        "allocation": "lottery",
+        "public_attendee_names": false
+      },
+      "changed_fields": [
+        "allocation",
+        "public_attendee_names"
+      ],
+      "task_prompt": "Plan this one ceramics workshop. The sponsor specifically authorized an $18 attendee fee for this event only; keep our usual fee ceiling for later events. There are 20 seats and 31 applicants. Choose Clay Hall (step-free, 20 seats, $18, includes the required kiln) or Brick Studio (stairs, 20 seats, $9, includes kiln). The kiln is required. Produce venue, attendee_fee, allocation, public_attendee_names, and rationale with registration and communication steps.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "community__B__r1",
+      "arm": "B",
+      "reply_index": 2,
+      "episode": "transfer_change",
+      "preceding_turn": 4,
+      "receiving_turn": 5,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"allocation\": \"lottery\", \"public_attendee_names\": false}",
+      "protocol_preference_units": [
+        "allocation",
+        "names"
+      ],
+      "protocol_repeated_preference_units": 2,
+      "classification": "schema_only",
+      "failed_fields": [
+        "allocation",
+        "public_attendee_names"
+      ],
+      "before_values": {
+        "allocation": {
+          "method": "lottery after the application window closes",
+          "applicants": 44,
+          "seats": 30,
+          "selected_count": 30,
+          "unselected_count": 14,
+          "handling": "Keep applications private; after the application window closes, run the lottery to allocate 30 places and notify applicants privately. These counts describe the planned allocation, not a completed draw."
+        },
+        "public_attendee_names": []
+      },
+      "expected_values": {
+        "allocation": "lottery",
+        "public_attendee_names": false
+      },
+      "after_values": {
+        "allocation": "lottery",
+        "public_attendee_names": false
+      },
+      "changed_fields": [
+        "allocation",
+        "public_attendee_names"
+      ],
+      "task_prompt": "We are now arranging a public neighborhood repair clinic. For all future events, raise our standing attendee fee ceiling to $20; save this replacement. Other criteria stay as they are. There are 30 seats and 44 applicants. Offers: Annex is step-free, 30 seats, $16, and has the required repair benches; Steps has stairs, 30 seats, $7, and the benches; Cedar is step-free, 30 seats, $8, but has no benches. Produce venue, attendee_fee, allocation, public_attendee_names, and rationale describing application handling and what changed in the standing policy.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "community__B__r1",
+      "arm": "B",
+      "reply_index": 3,
+      "episode": "reuse_clarify",
+      "preceding_turn": 6,
+      "receiving_turn": 7,
+      "kind": "answer",
+      "text": "If we cancel an event, refund the attendee fee to the original payment method. Save this for future events; do not substitute event credit.",
+      "protocol_preference_units": [
+        "cancellation"
+      ],
+      "protocol_repeated_preference_units": 0,
+      "classification": "information_answer",
+      "questions": [
+        "Garden fits your standing step-free requirement and current $20 price ceiling; I’ll plan an $18 attendee fee, a lottery for 18 seats after applications close, and no public attendee names. If we cancel, should attendees receive an original-payment refund or credit for another event? Should that cancellation policy apply only to this reading or be saved for future events?"
+      ],
+      "answered_routes": [
+        "cancellation"
+      ]
+    },
+    {
+      "trial": "community__B__r1",
+      "arm": "B",
+      "reply_index": 4,
+      "episode": "reuse_clarify",
+      "preceding_turn": 7,
+      "receiving_turn": 8,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"allocation\": \"lottery\"}",
+      "protocol_preference_units": [
+        "allocation"
+      ],
+      "protocol_repeated_preference_units": 1,
+      "classification": "schema_only",
+      "failed_fields": [
+        "allocation"
+      ],
+      "before_values": {
+        "allocation": "After the application window closes, randomly order all 25 applicants in one lottery. Offer the first 18 a seat and place the remaining 7 on a private waitlist in lottery order. Give selected applicants a stated acceptance and payment deadline; offer declined or unclaimed seats to the next waitlisted applicant. Maintain a private staff roster and notify applicants individually."
+      },
+      "expected_values": {
+        "allocation": "lottery"
+      },
+      "after_values": {
+        "allocation": "lottery"
+      },
+      "changed_fields": [
+        "allocation"
+      ],
+      "task_prompt": "Prepare a public evening reading with 18 seats and 25 applicants. Offers: Garden is step-free, 18 seats, $18, and available that evening; Loft has stairs, 18 seats, $9, and is available; Cedar is step-free, 18 seats, $8, but unavailable that evening. We also need to settle what attendees receive if we cancel: an original-payment refund or credit for another event. Either is technically possible,. Produce venue, attendee_fee, allocation, public_attendee_names, cancellation_remedy (\"refund\" or \"credit\"), and rationale with a usable plan.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "community__B__r2",
+      "arm": "B",
+      "reply_index": 0,
+      "episode": "setup",
+      "preceding_turn": 0,
+      "receiving_turn": 1,
+      "kind": "answer",
+      "text": "When an event has too many applicants, use a lottery after the application window closes. Save that as our standing allocation rule.",
+      "protocol_preference_units": [
+        "allocation"
+      ],
+      "protocol_repeated_preference_units": 0,
+      "classification": "information_answer",
+      "questions": [
+        "Cedar meets the standing step-free requirement and $10 fee ceiling, with attendee names kept private. For the 24 seats, should everyone who applies by Friday have an equal chance through a lottery, or should earlier applicants receive priority through first-come allocation?"
+      ],
+      "answered_routes": [
+        "allocation"
+      ]
+    },
+    {
+      "trial": "community__B__r2",
+      "arm": "B",
+      "reply_index": 1,
+      "episode": "exception",
+      "preceding_turn": 2,
+      "receiving_turn": 3,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"allocation\": \"lottery\"}",
+      "protocol_preference_units": [
+        "allocation"
+      ],
+      "protocol_repeated_preference_units": 1,
+      "classification": "schema_only",
+      "failed_fields": [
+        "allocation"
+      ],
+      "before_values": {
+        "allocation": {
+          "method": "Lottery after the application window closes",
+          "applicants": 31,
+          "seats": 20,
+          "selected": 20,
+          "waitlist": 11,
+          "registration_steps": [
+            "Confirm the application window has closed and maintain the applicant roster privately.",
+            "Randomly order all 31 applicants, offer seats to the first 20, and place the remaining 11 on the waitlist in that order.",
+            "Give selected applicants a clear acceptance and payment deadline; offer declined or unclaimed seats to the next waitlisted applicant."
+          ],
+          "communication_steps": [
+            "Announce Clay Hall's step-free access, included required kiln, 20-seat capacity, $18 fee, and lottery process without attendee names.",
+            "Privately notify each applicant of their offer or waitlist position and relevant deadlines.",
+            "Explain that the sponsor-authorized $18 fee applies only to this workshop; the usual $10 ceiling remains for later events."
+          ]
+        }
+      },
+      "expected_values": {
+        "allocation": "lottery"
+      },
+      "after_values": {
+        "allocation": "lottery"
+      },
+      "changed_fields": [
+        "allocation"
+      ],
+      "task_prompt": "Plan this one ceramics workshop. The sponsor specifically authorized an $18 attendee fee for this event only; keep our usual fee ceiling for later events. There are 20 seats and 31 applicants. Choose Clay Hall (step-free, 20 seats, $18, includes the required kiln) or Brick Studio (stairs, 20 seats, $9, includes kiln). The kiln is required. Produce venue, attendee_fee, allocation, public_attendee_names, and rationale with registration and communication steps.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "community__B__r2",
+      "arm": "B",
+      "reply_index": 2,
+      "episode": "transfer_change",
+      "preceding_turn": 4,
+      "receiving_turn": 5,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"allocation\": \"lottery\", \"public_attendee_names\": false}",
+      "protocol_preference_units": [
+        "allocation",
+        "names"
+      ],
+      "protocol_repeated_preference_units": 2,
+      "classification": "schema_only",
+      "failed_fields": [
+        "allocation",
+        "public_attendee_names"
+      ],
+      "before_values": {
+        "allocation": {
+          "method": "lottery after the application window closes",
+          "applicants": 44,
+          "seats": 30,
+          "selected": 30,
+          "unallocated": 14,
+          "status": "planned; no lottery has been run"
+        },
+        "public_attendee_names": []
+      },
+      "expected_values": {
+        "allocation": "lottery",
+        "public_attendee_names": false
+      },
+      "after_values": {
+        "allocation": "lottery",
+        "public_attendee_names": false
+      },
+      "changed_fields": [
+        "allocation",
+        "public_attendee_names"
+      ],
+      "task_prompt": "We are now arranging a public neighborhood repair clinic. For all future events, raise our standing attendee fee ceiling to $20; save this replacement. Other criteria stay as they are. There are 30 seats and 44 applicants. Offers: Annex is step-free, 30 seats, $16, and has the required repair benches; Steps has stairs, 30 seats, $7, and the benches; Cedar is step-free, 30 seats, $8, but has no benches. Produce venue, attendee_fee, allocation, public_attendee_names, and rationale describing application handling and what changed in the standing policy.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "community__B__r2",
+      "arm": "B",
+      "reply_index": 3,
+      "episode": "reuse_clarify",
+      "preceding_turn": 6,
+      "receiving_turn": 7,
+      "kind": "answer",
+      "text": "If we cancel an event, refund the attendee fee to the original payment method. Save this for future events; do not substitute event credit.",
+      "protocol_preference_units": [
+        "cancellation"
+      ],
+      "protocol_repeated_preference_units": 0,
+      "classification": "information_answer",
+      "questions": [
+        "If we cancel this reading, should attendees receive a refund to their original payment method or credit for another event? Should I save that choice for future events, or apply it only to this reading?"
+      ],
+      "answered_routes": [
+        "cancellation"
+      ]
+    },
+    {
+      "trial": "community__B__r2",
+      "arm": "B",
+      "reply_index": 4,
+      "episode": "reuse_clarify",
+      "preceding_turn": 7,
+      "receiving_turn": 8,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"allocation\": \"lottery\"}",
+      "protocol_preference_units": [
+        "allocation"
+      ],
+      "protocol_repeated_preference_units": 1,
+      "classification": "schema_only",
+      "failed_fields": [
+        "allocation"
+      ],
+      "before_values": {
+        "allocation": "After the application window closes, randomly draw 18 of the 25 applicants with equal chances. Randomly order the remaining 7 on a private waitlist. Notify applicants privately, give selected applicants 48 hours to accept and pay, and offer declined or expired places in waitlist order with a stated response deadline."
+      },
+      "expected_values": {
+        "allocation": "lottery"
+      },
+      "after_values": {
+        "allocation": "lottery"
+      },
+      "changed_fields": [
+        "allocation"
+      ],
+      "task_prompt": "Prepare a public evening reading with 18 seats and 25 applicants. Offers: Garden is step-free, 18 seats, $18, and available that evening; Loft has stairs, 18 seats, $9, and is available; Cedar is step-free, 18 seats, $8, but unavailable that evening. We also need to settle what attendees receive if we cancel: an original-payment refund or credit for another event. Either is technically possible,. Produce venue, attendee_fee, allocation, public_attendee_names, cancellation_remedy (\"refund\" or \"credit\"), and rationale with a usable plan.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "community__C__r1",
+      "arm": "C",
+      "reply_index": 0,
+      "episode": "setup",
+      "preceding_turn": 0,
+      "receiving_turn": 1,
+      "kind": "answer",
+      "text": "When an event has too many applicants, use a lottery after the application window closes. Save that as our standing allocation rule.",
+      "protocol_preference_units": [
+        "allocation"
+      ],
+      "protocol_repeated_preference_units": 0,
+      "classification": "information_answer",
+      "questions": [
+        "Cedar meets the step-free requirement and $10 usual fee ceiling at $8; attendee names will remain private. For its 24 seats, should everyone applying by Friday have an equal chance through a lottery, or should earlier applicants get priority through first-come allocation? I recommend the lottery because the application window is still open."
+      ],
+      "answered_routes": [
+        "allocation"
+      ]
+    },
+    {
+      "trial": "community__C__r1",
+      "arm": "C",
+      "reply_index": 1,
+      "episode": "exception",
+      "preceding_turn": 2,
+      "receiving_turn": 3,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"allocation\": \"lottery\", \"public_attendee_names\": false}",
+      "protocol_preference_units": [
+        "allocation",
+        "names"
+      ],
+      "protocol_repeated_preference_units": 2,
+      "classification": "schema_only",
+      "failed_fields": [
+        "allocation",
+        "public_attendee_names"
+      ],
+      "before_values": {
+        "allocation": {
+          "method": "lottery after the application window closes",
+          "applicants": 31,
+          "seats": 20,
+          "selected": 20,
+          "waitlisted": 11,
+          "registration_steps": [
+            "Publish the application deadline, $18 fee, step-free access, included kiln, and lottery process.",
+            "After applications close, randomly order the 31 applicants, offer places to the first 20, and use the remaining 11 as an ordered waitlist.",
+            "Notify applicants privately, give selected applicants a confirmation and payment deadline, and offer declined or unconfirmed places in waitlist order.",
+            "Maintain the attendee roster privately for staff."
+          ]
+        },
+        "public_attendee_names": []
+      },
+      "expected_values": {
+        "allocation": "lottery",
+        "public_attendee_names": false
+      },
+      "after_values": {
+        "allocation": "lottery",
+        "public_attendee_names": false
+      },
+      "changed_fields": [
+        "allocation",
+        "public_attendee_names"
+      ],
+      "task_prompt": "Plan this one ceramics workshop. The sponsor specifically authorized an $18 attendee fee for this event only; keep our usual fee ceiling for later events. There are 20 seats and 31 applicants. Choose Clay Hall (step-free, 20 seats, $18, includes the required kiln) or Brick Studio (stairs, 20 seats, $9, includes kiln). The kiln is required. Produce venue, attendee_fee, allocation, public_attendee_names, and rationale with registration and communication steps.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "community__C__r1",
+      "arm": "C",
+      "reply_index": 2,
+      "episode": "transfer_change",
+      "preceding_turn": 4,
+      "receiving_turn": 5,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"allocation\": \"lottery\", \"public_attendee_names\": false}",
+      "protocol_preference_units": [
+        "allocation",
+        "names"
+      ],
+      "protocol_repeated_preference_units": 2,
+      "classification": "schema_only",
+      "failed_fields": [
+        "allocation",
+        "public_attendee_names"
+      ],
+      "before_values": {
+        "allocation": {
+          "method": "lottery after the application window closes",
+          "applicants": 44,
+          "seats": 30,
+          "selected": 30,
+          "not_selected": 14
+        },
+        "public_attendee_names": []
+      },
+      "expected_values": {
+        "allocation": "lottery",
+        "public_attendee_names": false
+      },
+      "after_values": {
+        "allocation": "lottery",
+        "public_attendee_names": false
+      },
+      "changed_fields": [
+        "allocation",
+        "public_attendee_names"
+      ],
+      "task_prompt": "We are now arranging a public neighborhood repair clinic. For all future events, raise our standing attendee fee ceiling to $20; save this replacement. Other criteria stay as they are. There are 30 seats and 44 applicants. Offers: Annex is step-free, 30 seats, $16, and has the required repair benches; Steps has stairs, 30 seats, $7, and the benches; Cedar is step-free, 30 seats, $8, but has no benches. Produce venue, attendee_fee, allocation, public_attendee_names, and rationale describing application handling and what changed in the standing policy.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "community__C__r1",
+      "arm": "C",
+      "reply_index": 3,
+      "episode": "reuse_clarify",
+      "preceding_turn": 6,
+      "receiving_turn": 7,
+      "kind": "answer",
+      "text": "If we cancel an event, refund the attendee fee to the original payment method. Save this for future events; do not substitute event credit.",
+      "protocol_preference_units": [
+        "cancellation"
+      ],
+      "protocol_repeated_preference_units": 0,
+      "classification": "information_answer",
+      "questions": [
+        "The saved criteria support Garden at $18 per attendee, a lottery for the 18 seats, and keeping attendee names private. If we cancel this reading, should attendees receive an original-payment refund or credit for another event?"
+      ],
+      "answered_routes": [
+        "cancellation"
+      ]
+    },
+    {
+      "trial": "community__C__r1",
+      "arm": "C",
+      "reply_index": 4,
+      "episode": "reuse_clarify",
+      "preceding_turn": 7,
+      "receiving_turn": 8,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"allocation\": \"lottery\"}",
+      "protocol_preference_units": [
+        "allocation"
+      ],
+      "protocol_repeated_preference_units": 1,
+      "classification": "schema_only",
+      "failed_fields": [
+        "allocation"
+      ],
+      "before_values": {
+        "allocation": "After the application window closes, randomly order all 25 applicants in an equal-chance lottery. Offer the first 18 applicants one seat each and place the remaining seven on a private waitlist in lottery order. Set a clear acceptance deadline and offer declined or unclaimed seats to the next person on the waitlist. Keep the draw record and attendee roster private."
+      },
+      "expected_values": {
+        "allocation": "lottery"
+      },
+      "after_values": {
+        "allocation": "lottery"
+      },
+      "changed_fields": [
+        "allocation"
+      ],
+      "task_prompt": "Prepare a public evening reading with 18 seats and 25 applicants. Offers: Garden is step-free, 18 seats, $18, and available that evening; Loft has stairs, 18 seats, $9, and is available; Cedar is step-free, 18 seats, $8, but unavailable that evening. We also need to settle what attendees receive if we cancel: an original-payment refund or credit for another event. Either is technically possible,. Produce venue, attendee_fee, allocation, public_attendee_names, cancellation_remedy (\"refund\" or \"credit\"), and rationale with a usable plan.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "community__C__r2",
+      "arm": "C",
+      "reply_index": 0,
+      "episode": "setup",
+      "preceding_turn": 0,
+      "receiving_turn": 1,
+      "kind": "answer",
+      "text": "When an event has too many applicants, use a lottery after the application window closes. Save that as our standing allocation rule.",
+      "protocol_preference_units": [
+        "allocation"
+      ],
+      "protocol_repeated_preference_units": 0,
+      "classification": "information_answer",
+      "questions": [
+        "Cedar meets the step-free requirement and $10 fee ceiling, and attendee names will stay private. For the 24 seats, should everyone applying by Friday have an equal chance through a lottery, or should earlier applicants get priority through first-come allocation? I recommend a lottery to give everyone in the application window an equal chance."
+      ],
+      "answered_routes": [
+        "allocation"
+      ]
+    },
+    {
+      "trial": "community__C__r2",
+      "arm": "C",
+      "reply_index": 1,
+      "episode": "exception",
+      "preceding_turn": 2,
+      "receiving_turn": 3,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"allocation\": \"lottery\", \"public_attendee_names\": false}",
+      "protocol_preference_units": [
+        "allocation",
+        "names"
+      ],
+      "protocol_repeated_preference_units": 2,
+      "classification": "schema_only",
+      "failed_fields": [
+        "allocation",
+        "public_attendee_names"
+      ],
+      "before_values": {
+        "allocation": {
+          "method": "lottery after the application window closes",
+          "applicants": 31,
+          "seats": 20,
+          "selected": 20,
+          "waitlist": 11,
+          "steps": [
+            "Close registration and verify one entry per applicant in a private staff roster.",
+            "Randomly order all 31 applicants; offer seats to the first 20 and retain the remaining 11 as an ordered waitlist.",
+            "Notify applicants privately, set a confirmation and payment deadline, and fill declined or unconfirmed seats in waitlist order."
+          ]
+        },
+        "public_attendee_names": []
+      },
+      "expected_values": {
+        "allocation": "lottery",
+        "public_attendee_names": false
+      },
+      "after_values": {
+        "allocation": "lottery",
+        "public_attendee_names": false
+      },
+      "changed_fields": [
+        "allocation",
+        "public_attendee_names"
+      ],
+      "task_prompt": "Plan this one ceramics workshop. The sponsor specifically authorized an $18 attendee fee for this event only; keep our usual fee ceiling for later events. There are 20 seats and 31 applicants. Choose Clay Hall (step-free, 20 seats, $18, includes the required kiln) or Brick Studio (stairs, 20 seats, $9, includes kiln). The kiln is required. Produce venue, attendee_fee, allocation, public_attendee_names, and rationale with registration and communication steps.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "community__C__r2",
+      "arm": "C",
+      "reply_index": 2,
+      "episode": "transfer_change",
+      "preceding_turn": 4,
+      "receiving_turn": 5,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"allocation\": \"lottery\", \"public_attendee_names\": false}",
+      "protocol_preference_units": [
+        "allocation",
+        "names"
+      ],
+      "protocol_repeated_preference_units": 2,
+      "classification": "schema_only",
+      "failed_fields": [
+        "allocation",
+        "public_attendee_names"
+      ],
+      "before_values": {
+        "allocation": "After the application window closes, allocate the 30 seats by lottery among the 44 applicants; 14 applicants will not receive an initial seat. Keep application records and lottery results private.",
+        "public_attendee_names": []
+      },
+      "expected_values": {
+        "allocation": "lottery",
+        "public_attendee_names": false
+      },
+      "after_values": {
+        "allocation": "lottery",
+        "public_attendee_names": false
+      },
+      "changed_fields": [
+        "allocation",
+        "public_attendee_names"
+      ],
+      "task_prompt": "We are now arranging a public neighborhood repair clinic. For all future events, raise our standing attendee fee ceiling to $20; save this replacement. Other criteria stay as they are. There are 30 seats and 44 applicants. Offers: Annex is step-free, 30 seats, $16, and has the required repair benches; Steps has stairs, 30 seats, $7, and the benches; Cedar is step-free, 30 seats, $8, but has no benches. Produce venue, attendee_fee, allocation, public_attendee_names, and rationale describing application handling and what changed in the standing policy.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "community__C__r2",
+      "arm": "C",
+      "reply_index": 3,
+      "episode": "reuse_clarify",
+      "preceding_turn": 6,
+      "receiving_turn": 7,
+      "kind": "answer",
+      "text": "If we cancel an event, refund the attendee fee to the original payment method. Save this for future events; do not substitute event credit.",
+      "protocol_preference_units": [
+        "cancellation"
+      ],
+      "protocol_repeated_preference_units": 0,
+      "classification": "information_answer",
+      "questions": [
+        "Garden at $18 fits your step-free requirement and current $20 ceiling. I’ll use a lottery for the 18 seats and keep attendee names private. If we cancel, should attendees receive an original-payment refund or credit for another event?"
+      ],
+      "answered_routes": [
+        "cancellation"
+      ]
+    },
+    {
+      "trial": "community__C__r2",
+      "arm": "C",
+      "reply_index": 4,
+      "episode": "reuse_clarify",
+      "preceding_turn": 7,
+      "receiving_turn": 8,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"allocation\": \"lottery\"}",
+      "protocol_preference_units": [
+        "allocation"
+      ],
+      "protocol_repeated_preference_units": 1,
+      "classification": "schema_only",
+      "failed_fields": [
+        "allocation"
+      ],
+      "before_values": {
+        "allocation": "After the application window closes, randomly order all 25 applicants with equal chances. Offer seats to the first 18 and place the remaining 7 on a private waitlist in draw order. Set an acceptance deadline and offer declined or unclaimed seats to the next waitlisted applicant."
+      },
+      "expected_values": {
+        "allocation": "lottery"
+      },
+      "after_values": {
+        "allocation": "lottery"
+      },
+      "changed_fields": [
+        "allocation"
+      ],
+      "task_prompt": "Prepare a public evening reading with 18 seats and 25 applicants. Offers: Garden is step-free, 18 seats, $18, and available that evening; Loft has stairs, 18 seats, $9, and is available; Cedar is step-free, 18 seats, $8, but unavailable that evening. We also need to settle what attendees receive if we cancel: an original-payment refund or credit for another event. Either is technically possible,. Produce venue, attendee_fee, allocation, public_attendee_names, cancellation_remedy (\"refund\" or \"credit\"), and rationale with a usable plan.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "service__A__r1",
+      "arm": "A",
+      "reply_index": 0,
+      "episode": "setup",
+      "preceding_turn": 0,
+      "receiving_turn": 1,
+      "kind": "answer",
+      "text": "Prefer the standard library when it meets the stated requirements. Adding a runtime dependency needs a specific exception. Save this standing rule.\nFor this internal service, p95 at or below 400 ms is acceptable. Choose the simplest design meeting that target. Save the target and priority for later work.\nI have no additional preference to give for that question. Use the supplied context and your judgment.",
+      "protocol_preference_units": [
+        "dependency",
+        "latency"
+      ],
+      "protocol_repeated_preference_units": 1,
+      "classification": "information_answer",
+      "questions": [
+        "Is stdlib’s 320 ms p95 latency acceptable, or is there a stricter latency requirement? If 320 ms is unacceptable but fastpkg’s 180 ms meets the requirement, do you authorize its one runtime package as an exception to the standard-library preference?"
+      ],
+      "answered_routes": [
+        "dependency",
+        "latency"
+      ]
+    },
+    {
+      "trial": "service__A__r1",
+      "arm": "A",
+      "reply_index": 1,
+      "episode": "exception",
+      "preceding_turn": 2,
+      "receiving_turn": 3,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"failure_output\": \"actionable-text\"}",
+      "protocol_preference_units": [
+        "failure_output"
+      ],
+      "protocol_repeated_preference_units": 1,
+      "classification": "schema_only",
+      "failed_fields": [
+        "failure_output"
+      ],
+      "before_values": {
+        "failure_output": "Provide a plain failure result identifying what failed and a useful next step: for an unreadable or invalid archive, check the file and supply a valid archive in the required format; for an export failure, preserve the source, report whether any output was committed, and retry after correcting the reported cause."
+      },
+      "expected_values": {
+        "failure_output": "actionable-text"
+      },
+      "after_values": {
+        "failure_output": "actionable-text"
+      },
+      "changed_fields": [
+        "failure_output"
+      ],
+      "task_prompt": "Plan this one archive importer. I authorize the archivekit runtime package for this importer only because its required archive format is unsupported by the standard library. Keep our normal dependency policy for other work. The verified archivekit implementation meets the service target. It changes the export format. Produce design (\"archivekit\" or \"stdlib\"), old_export_support_days, failure_output, and rationale with rollout and failure-handling steps.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "service__A__r1",
+      "arm": "A",
+      "reply_index": 2,
+      "episode": "transfer_change",
+      "preceding_turn": 4,
+      "receiving_turn": 5,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"failure_output\": \"actionable-text\"}",
+      "protocol_preference_units": [
+        "failure_output"
+      ],
+      "protocol_repeated_preference_units": 1,
+      "classification": "schema_only",
+      "failed_fields": [
+        "failure_output"
+      ],
+      "before_values": {
+        "failure_output": "Plain-text failure result stating what failed and why, with a useful next step; for example: Conversion failed: invalid report input. Correct the indicated input field and retry."
+      },
+      "expected_values": {
+        "failure_output": "actionable-text"
+      },
+      "after_values": {
+        "failure_output": "actionable-text"
+      },
+      "changed_fields": [
+        "failure_output"
+      ],
+      "task_prompt": "Plan a plain-text report converter, a different component in the same project. Replace our standing export compatibility window with 7 days for all future format changes and save that policy. The new converter changes the export format. stdlib handles every required report and has measured p95 350 ms; reportkit handles every report at 190 ms but adds a runtime package. Both have the same output fidelity. Produce design (\"stdlib\" or \"reportkit\"), old_export_support_days, failure_output, and rationale with acceptance and migration steps.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "service__A__r1",
+      "arm": "A",
+      "reply_index": 3,
+      "episode": "reuse_clarify",
+      "preceding_turn": 6,
+      "receiving_turn": 7,
+      "kind": "answer",
+      "text": "Keep diagnostic error codes and timestamps for 7 days. Do not retain raw input payloads. Save these as standing rules for future jobs.",
+      "protocol_preference_units": [
+        "diagnostics"
+      ],
+      "protocol_repeated_preference_units": 0,
+      "classification": "information_answer",
+      "questions": [
+        "For this CSV job, should diagnostics retain raw input payloads, or only error details without raw payloads? Should diagnostic retention be 7 days or 30 days?"
+      ],
+      "answered_routes": [
+        "diagnostics"
+      ]
+    },
+    {
+      "trial": "service__A__r1",
+      "arm": "A",
+      "reply_index": 4,
+      "episode": "reuse_clarify",
+      "preceding_turn": 7,
+      "receiving_turn": 8,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"failure_output\": \"actionable-text\"}",
+      "protocol_preference_units": [
+        "failure_output"
+      ],
+      "protocol_repeated_preference_units": 1,
+      "classification": "schema_only",
+      "failed_fields": [
+        "failure_output"
+      ],
+      "before_values": {
+        "failure_output": "Plain failure result with an error code and timestamp, plus a useful next step: correct the identified CSV issue and retry; for operational errors, check the reported cause before rerunning the job. Do not include raw input payloads."
+      },
+      "expected_values": {
+        "failure_output": "actionable-text"
+      },
+      "after_values": {
+        "failure_output": "actionable-text"
+      },
+      "changed_fields": [
+        "failure_output"
+      ],
+      "task_prompt": "Plan a scheduled CSV normalization job in the same project. It changes the export format. stdlib handles all required CSV cases at p95 330 ms; csvplus handles them at 170 ms but adds a runtime package. Both produce the same normalized rows. We must settle diagnostics before implementation: raw payload capture is optional, and the storage system supports either 7-day or 30-day retention. Produce design (\"stdlib\" or \"csvplus\"), old_export_support_days, failure_output, retain_raw_payloads (boolean), diagnostic_retention_days (number), and rationale with deployment and diagnostic steps.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "service__A__r2",
+      "arm": "A",
+      "reply_index": 0,
+      "episode": "setup",
+      "preceding_turn": 0,
+      "receiving_turn": 1,
+      "kind": "answer",
+      "text": "Prefer the standard library when it meets the stated requirements. Adding a runtime dependency needs a specific exception. Save this standing rule.\nFor this internal service, p95 at or below 400 ms is acceptable. Choose the simplest design meeting that target. Save the target and priority for later work.\nI have no additional preference to give for that question. Use the supplied context and your judgment.",
+      "protocol_preference_units": [
+        "dependency",
+        "latency"
+      ],
+      "protocol_repeated_preference_units": 1,
+      "classification": "information_answer",
+      "questions": [
+        "Is 320 ms p95 latency acceptable for this parser, or is there a stricter latency requirement? If 320 ms is too slow but 180 ms meets your requirement, do you authorize fastpkg’s one runtime package as an exception to the standard-library preference?"
+      ],
+      "answered_routes": [
+        "dependency",
+        "latency"
+      ]
+    },
+    {
+      "trial": "service__A__r2",
+      "arm": "A",
+      "reply_index": 1,
+      "episode": "exception",
+      "preceding_turn": 2,
+      "receiving_turn": 3,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"failure_output\": \"actionable-text\"}",
+      "protocol_preference_units": [
+        "failure_output"
+      ],
+      "protocol_repeated_preference_units": 1,
+      "classification": "schema_only",
+      "failed_fields": [
+        "failure_output"
+      ],
+      "before_values": {
+        "failure_output": "actionable text"
+      },
+      "expected_values": {
+        "failure_output": "actionable-text"
+      },
+      "after_values": {
+        "failure_output": "actionable-text"
+      },
+      "changed_fields": [
+        "failure_output"
+      ],
+      "task_prompt": "Plan this one archive importer. I authorize the archivekit runtime package for this importer only because its required archive format is unsupported by the standard library. Keep our normal dependency policy for other work. The verified archivekit implementation meets the service target. It changes the export format. Produce design (\"archivekit\" or \"stdlib\"), old_export_support_days, failure_output, and rationale with rollout and failure-handling steps.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "service__A__r2",
+      "arm": "A",
+      "reply_index": 2,
+      "episode": "transfer_change",
+      "preceding_turn": 4,
+      "receiving_turn": 5,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"failure_output\": \"actionable-text\"}",
+      "protocol_preference_units": [
+        "failure_output"
+      ],
+      "protocol_repeated_preference_units": 1,
+      "classification": "schema_only",
+      "failed_fields": [
+        "failure_output"
+      ],
+      "before_values": {
+        "failure_output": "Plain-text failure result describing what failed and a concrete next step, such as correcting the identified report input and retrying."
+      },
+      "expected_values": {
+        "failure_output": "actionable-text"
+      },
+      "after_values": {
+        "failure_output": "actionable-text"
+      },
+      "changed_fields": [
+        "failure_output"
+      ],
+      "task_prompt": "Plan a plain-text report converter, a different component in the same project. Replace our standing export compatibility window with 7 days for all future format changes and save that policy. The new converter changes the export format. stdlib handles every required report and has measured p95 350 ms; reportkit handles every report at 190 ms but adds a runtime package. Both have the same output fidelity. Produce design (\"stdlib\" or \"reportkit\"), old_export_support_days, failure_output, and rationale with acceptance and migration steps.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "service__A__r2",
+      "arm": "A",
+      "reply_index": 3,
+      "episode": "reuse_clarify",
+      "preceding_turn": 6,
+      "receiving_turn": 7,
+      "kind": "answer",
+      "text": "Keep diagnostic error codes and timestamps for 7 days. Do not retain raw input payloads. Save these as standing rules for future jobs.",
+      "protocol_preference_units": [
+        "diagnostics"
+      ],
+      "protocol_repeated_preference_units": 0,
+      "classification": "information_answer",
+      "questions": [
+        "Should this CSV job retain raw payloads for diagnostics, or omit them? Should diagnostics be retained for 7 or 30 days?",
+        "Should I save these diagnostic choices as standing criteria for future jobs, or apply them only to this CSV job?"
+      ],
+      "answered_routes": [
+        "diagnostics"
+      ]
+    },
+    {
+      "trial": "service__A__r2",
+      "arm": "A",
+      "reply_index": 4,
+      "episode": "reuse_clarify",
+      "preceding_turn": 7,
+      "receiving_turn": 8,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"failure_output\": \"actionable-text\"}",
+      "protocol_preference_units": [
+        "failure_output"
+      ],
+      "protocol_repeated_preference_units": 1,
+      "classification": "schema_only",
+      "failed_fields": [
+        "failure_output"
+      ],
+      "before_values": {
+        "failure_output": "Actionable text: provide a plain failure result, diagnostic error code, timestamp, and useful next step without including raw input payloads."
+      },
+      "expected_values": {
+        "failure_output": "actionable-text"
+      },
+      "after_values": {
+        "failure_output": "actionable-text"
+      },
+      "changed_fields": [
+        "failure_output"
+      ],
+      "task_prompt": "Plan a scheduled CSV normalization job in the same project. It changes the export format. stdlib handles all required CSV cases at p95 330 ms; csvplus handles them at 170 ms but adds a runtime package. Both produce the same normalized rows. We must settle diagnostics before implementation: raw payload capture is optional, and the storage system supports either 7-day or 30-day retention. Produce design (\"stdlib\" or \"csvplus\"), old_export_support_days, failure_output, retain_raw_payloads (boolean), diagnostic_retention_days (number), and rationale with deployment and diagnostic steps.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "service__B__r1",
+      "arm": "B",
+      "reply_index": 0,
+      "episode": "setup",
+      "preceding_turn": 0,
+      "receiving_turn": 1,
+      "kind": "answer",
+      "text": "For this internal service, p95 at or below 400 ms is acceptable. Choose the simplest design meeting that target. Save the target and priority for later work.\nI have no additional preference to give for that question. Use the supplied context and your judgment.",
+      "protocol_preference_units": [
+        "latency"
+      ],
+      "protocol_repeated_preference_units": 0,
+      "classification": "information_answer",
+      "questions": [
+        "What p95 latency limit must this parser meet? Stdlib takes 320 ms; fastpkg takes 180 ms but needs an exception to your dependency policy. If the limit rules out stdlib, do you authorize that one-package exception for this parser?"
+      ],
+      "answered_routes": [
+        "latency"
+      ]
+    },
+    {
+      "trial": "service__B__r1",
+      "arm": "B",
+      "reply_index": 1,
+      "episode": "exception",
+      "preceding_turn": 2,
+      "receiving_turn": 3,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"failure_output\": \"actionable-text\"}",
+      "protocol_preference_units": [
+        "failure_output"
+      ],
+      "protocol_repeated_preference_units": 1,
+      "classification": "schema_only",
+      "failed_fields": [
+        "failure_output"
+      ],
+      "before_values": {
+        "failure_output": "Actionable plain text stating that the import failed, identifying the cause and affected archive, and giving a concrete next step; return a nonzero exit status and do not publish partial results."
+      },
+      "expected_values": {
+        "failure_output": "actionable-text"
+      },
+      "after_values": {
+        "failure_output": "actionable-text"
+      },
+      "changed_fields": [
+        "failure_output"
+      ],
+      "task_prompt": "Plan this one archive importer. I authorize the archivekit runtime package for this importer only because its required archive format is unsupported by the standard library. Keep our normal dependency policy for other work. The verified archivekit implementation meets the service target. It changes the export format. Produce design (\"archivekit\" or \"stdlib\"), old_export_support_days, failure_output, and rationale with rollout and failure-handling steps.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "service__B__r1",
+      "arm": "B",
+      "reply_index": 2,
+      "episode": "transfer_change",
+      "preceding_turn": 4,
+      "receiving_turn": 5,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"failure_output\": \"actionable-text\"}",
+      "protocol_preference_units": [
+        "failure_output"
+      ],
+      "protocol_repeated_preference_units": 1,
+      "classification": "schema_only",
+      "failed_fields": [
+        "failure_output"
+      ],
+      "before_values": {
+        "failure_output": "Plain text stating that conversion failed, identifying the report and actionable cause, and giving a concrete correction or retry step. Do not present incomplete output as a successful export."
+      },
+      "expected_values": {
+        "failure_output": "actionable-text"
+      },
+      "after_values": {
+        "failure_output": "actionable-text"
+      },
+      "changed_fields": [
+        "failure_output"
+      ],
+      "task_prompt": "Plan a plain-text report converter, a different component in the same project. Replace our standing export compatibility window with 7 days for all future format changes and save that policy. The new converter changes the export format. stdlib handles every required report and has measured p95 350 ms; reportkit handles every report at 190 ms but adds a runtime package. Both have the same output fidelity. Produce design (\"stdlib\" or \"reportkit\"), old_export_support_days, failure_output, and rationale with acceptance and migration steps.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "service__B__r1",
+      "arm": "B",
+      "reply_index": 3,
+      "episode": "reuse_clarify",
+      "preceding_turn": 6,
+      "receiving_turn": 7,
+      "kind": "answer",
+      "text": "Keep diagnostic error codes and timestamps for 7 days. Do not retain raw input payloads. Save these as standing rules for future jobs.",
+      "protocol_preference_units": [
+        "diagnostics"
+      ],
+      "protocol_repeated_preference_units": 0,
+      "classification": "information_answer",
+      "questions": [
+        "For this job’s diagnostics, should we capture raw payloads, and should diagnostics be retained for 7 or 30 days? Raw capture can help investigation but stores the original data; longer retention extends the investigation window and storage exposure."
+      ],
+      "answered_routes": [
+        "diagnostics"
+      ]
+    },
+    {
+      "trial": "service__B__r1",
+      "arm": "B",
+      "reply_index": 4,
+      "episode": "reuse_clarify",
+      "preceding_turn": 7,
+      "receiving_turn": 8,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"failure_output\": \"actionable-text\"}",
+      "protocol_preference_units": [
+        "failure_output"
+      ],
+      "protocol_repeated_preference_units": 1,
+      "classification": "schema_only",
+      "failed_fields": [
+        "failure_output"
+      ],
+      "before_values": {
+        "failure_output": "Actionable plain text with an error code, timestamp, plain failure result, and a useful next step; exclude raw input payloads."
+      },
+      "expected_values": {
+        "failure_output": "actionable-text"
+      },
+      "after_values": {
+        "failure_output": "actionable-text"
+      },
+      "changed_fields": [
+        "failure_output"
+      ],
+      "task_prompt": "Plan a scheduled CSV normalization job in the same project. It changes the export format. stdlib handles all required CSV cases at p95 330 ms; csvplus handles them at 170 ms but adds a runtime package. Both produce the same normalized rows. We must settle diagnostics before implementation: raw payload capture is optional, and the storage system supports either 7-day or 30-day retention. Produce design (\"stdlib\" or \"csvplus\"), old_export_support_days, failure_output, retain_raw_payloads (boolean), diagnostic_retention_days (number), and rationale with deployment and diagnostic steps.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "service__B__r2",
+      "arm": "B",
+      "reply_index": 0,
+      "episode": "setup",
+      "preceding_turn": 0,
+      "receiving_turn": 1,
+      "kind": "answer",
+      "text": "Prefer the standard library when it meets the stated requirements. Adding a runtime dependency needs a specific exception. Save this standing rule.\nFor this internal service, p95 at or below 400 ms is acceptable. Choose the simplest design meeting that target. Save the target and priority for later work.\nI have no additional preference to give for that question. Use the supplied context and your judgment.",
+      "protocol_preference_units": [
+        "dependency",
+        "latency"
+      ],
+      "protocol_repeated_preference_units": 1,
+      "classification": "information_answer",
+      "questions": [
+        "What p95 latency must this parser meet? The standard-library design takes 320 ms; if the limit requires the 180 ms fastpkg design, do you authorize its one runtime package as an exception to the standard-library preference?"
+      ],
+      "answered_routes": [
+        "dependency",
+        "latency"
+      ]
+    },
+    {
+      "trial": "service__B__r2",
+      "arm": "B",
+      "reply_index": 1,
+      "episode": "exception",
+      "preceding_turn": 2,
+      "receiving_turn": 3,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"failure_output\": \"actionable-text\"}",
+      "protocol_preference_units": [
+        "failure_output"
+      ],
+      "protocol_repeated_preference_units": 1,
+      "classification": "schema_only",
+      "failed_fields": [
+        "failure_output"
+      ],
+      "before_values": {
+        "failure_output": "Return a plain failure result identifying the failed stage and cause, stating whether any output was committed, and giving a useful next step: correct an invalid archive and retry, or contact the operator with diagnostic details for an internal error. Never report success or publish a partial export after failure."
+      },
+      "expected_values": {
+        "failure_output": "actionable-text"
+      },
+      "after_values": {
+        "failure_output": "actionable-text"
+      },
+      "changed_fields": [
+        "failure_output"
+      ],
+      "task_prompt": "Plan this one archive importer. I authorize the archivekit runtime package for this importer only because its required archive format is unsupported by the standard library. Keep our normal dependency policy for other work. The verified archivekit implementation meets the service target. It changes the export format. Produce design (\"archivekit\" or \"stdlib\"), old_export_support_days, failure_output, and rationale with rollout and failure-handling steps.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "service__B__r2",
+      "arm": "B",
+      "reply_index": 2,
+      "episode": "transfer_change",
+      "preceding_turn": 4,
+      "receiving_turn": 5,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"failure_output\": \"actionable-text\"}",
+      "protocol_preference_units": [
+        "failure_output"
+      ],
+      "protocol_repeated_preference_units": 1,
+      "classification": "schema_only",
+      "failed_fields": [
+        "failure_output"
+      ],
+      "before_values": {
+        "failure_output": "Plain-text failure result identifying the report and cause, followed by a concrete corrective action or retry step; do not present partial output as a successful export."
+      },
+      "expected_values": {
+        "failure_output": "actionable-text"
+      },
+      "after_values": {
+        "failure_output": "actionable-text"
+      },
+      "changed_fields": [
+        "failure_output"
+      ],
+      "task_prompt": "Plan a plain-text report converter, a different component in the same project. Replace our standing export compatibility window with 7 days for all future format changes and save that policy. The new converter changes the export format. stdlib handles every required report and has measured p95 350 ms; reportkit handles every report at 190 ms but adds a runtime package. Both have the same output fidelity. Produce design (\"stdlib\" or \"reportkit\"), old_export_support_days, failure_output, and rationale with acceptance and migration steps.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "service__B__r2",
+      "arm": "B",
+      "reply_index": 3,
+      "episode": "reuse_clarify",
+      "preceding_turn": 6,
+      "receiving_turn": 7,
+      "kind": "answer",
+      "text": "Keep diagnostic error codes and timestamps for 7 days. Do not retain raw input payloads. Save these as standing rules for future jobs.",
+      "protocol_preference_units": [
+        "diagnostics"
+      ],
+      "protocol_repeated_preference_units": 0,
+      "classification": "information_answer",
+      "questions": [
+        "For this scheduled job, should diagnostics capture raw payloads, or omit them? Should diagnostics be retained for 7 or 30 days?"
+      ],
+      "answered_routes": [
+        "diagnostics"
+      ]
+    },
+    {
+      "trial": "service__B__r2",
+      "arm": "B",
+      "reply_index": 4,
+      "episode": "reuse_clarify",
+      "preceding_turn": 7,
+      "receiving_turn": 8,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"failure_output\": \"actionable-text\"}",
+      "protocol_preference_units": [
+        "failure_output"
+      ],
+      "protocol_repeated_preference_units": 1,
+      "classification": "schema_only",
+      "failed_fields": [
+        "failure_output"
+      ],
+      "before_values": {
+        "failure_output": "Plain failure result with an error code, timestamp, and useful next step, such as correcting the indicated CSV formatting issue and rerunning the job; exclude raw input payloads."
+      },
+      "expected_values": {
+        "failure_output": "actionable-text"
+      },
+      "after_values": {
+        "failure_output": "actionable-text"
+      },
+      "changed_fields": [
+        "failure_output"
+      ],
+      "task_prompt": "Plan a scheduled CSV normalization job in the same project. It changes the export format. stdlib handles all required CSV cases at p95 330 ms; csvplus handles them at 170 ms but adds a runtime package. Both produce the same normalized rows. We must settle diagnostics before implementation: raw payload capture is optional, and the storage system supports either 7-day or 30-day retention. Produce design (\"stdlib\" or \"csvplus\"), old_export_support_days, failure_output, retain_raw_payloads (boolean), diagnostic_retention_days (number), and rationale with deployment and diagnostic steps.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "service__C__r1",
+      "arm": "C",
+      "reply_index": 0,
+      "episode": "setup",
+      "preceding_turn": 0,
+      "receiving_turn": 1,
+      "kind": "answer",
+      "text": "Prefer the standard library when it meets the stated requirements. Adding a runtime dependency needs a specific exception. Save this standing rule.\nFor this internal service, p95 at or below 400 ms is acceptable. Choose the simplest design meeting that target. Save the target and priority for later work.\nI have no additional preference to give for that question. Use the supplied context and your judgment.",
+      "protocol_preference_units": [
+        "dependency",
+        "latency"
+      ],
+      "protocol_repeated_preference_units": 1,
+      "classification": "information_answer",
+      "questions": [
+        "What p95 latency must the parser meet? If stdlib’s 320 ms exceeds that limit but fastpkg’s 180 ms meets it, do you authorize the one runtime package as an exception for this parser?"
+      ],
+      "answered_routes": [
+        "dependency",
+        "latency"
+      ]
+    },
+    {
+      "trial": "service__C__r1",
+      "arm": "C",
+      "reply_index": 1,
+      "episode": "exception",
+      "preceding_turn": 2,
+      "receiving_turn": 3,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"failure_output\": \"actionable-text\"}",
+      "protocol_preference_units": [
+        "failure_output"
+      ],
+      "protocol_repeated_preference_units": 1,
+      "classification": "schema_only",
+      "failed_fields": [
+        "failure_output"
+      ],
+      "before_values": {
+        "failure_output": "Plain, actionable text stating the failed operation, affected archive, known cause, and a useful next step. For invalid input, ask the operator to verify or regenerate the archive and retry; for an internal error, provide a diagnostic reference for investigation. Report success only after completion and identify any uncommitted work."
+      },
+      "expected_values": {
+        "failure_output": "actionable-text"
+      },
+      "after_values": {
+        "failure_output": "actionable-text"
+      },
+      "changed_fields": [
+        "failure_output"
+      ],
+      "task_prompt": "Plan this one archive importer. I authorize the archivekit runtime package for this importer only because its required archive format is unsupported by the standard library. Keep our normal dependency policy for other work. The verified archivekit implementation meets the service target. It changes the export format. Produce design (\"archivekit\" or \"stdlib\"), old_export_support_days, failure_output, and rationale with rollout and failure-handling steps.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "service__C__r1",
+      "arm": "C",
+      "reply_index": 2,
+      "episode": "transfer_change",
+      "preceding_turn": 4,
+      "receiving_turn": 5,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"failure_output\": \"actionable-text\"}",
+      "protocol_preference_units": [
+        "failure_output"
+      ],
+      "protocol_repeated_preference_units": 1,
+      "classification": "schema_only",
+      "failed_fields": [
+        "failure_output"
+      ],
+      "before_values": {
+        "failure_output": "Conversion failed: {specific reason}. Check {affected report or field}, correct the indicated issue, and retry."
+      },
+      "expected_values": {
+        "failure_output": "actionable-text"
+      },
+      "after_values": {
+        "failure_output": "actionable-text"
+      },
+      "changed_fields": [
+        "failure_output"
+      ],
+      "task_prompt": "Plan a plain-text report converter, a different component in the same project. Replace our standing export compatibility window with 7 days for all future format changes and save that policy. The new converter changes the export format. stdlib handles every required report and has measured p95 350 ms; reportkit handles every report at 190 ms but adds a runtime package. Both have the same output fidelity. Produce design (\"stdlib\" or \"reportkit\"), old_export_support_days, failure_output, and rationale with acceptance and migration steps.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "service__C__r1",
+      "arm": "C",
+      "reply_index": 3,
+      "episode": "reuse_clarify",
+      "preceding_turn": 6,
+      "receiving_turn": 7,
+      "kind": "answer",
+      "text": "Keep diagnostic error codes and timestamps for 7 days. Do not retain raw input payloads. Save these as standing rules for future jobs.",
+      "protocol_preference_units": [
+        "diagnostics"
+      ],
+      "protocol_repeated_preference_units": 0,
+      "classification": "information_answer",
+      "questions": [
+        "For this CSV job, should diagnostics retain raw payloads, or only error metadata without row contents?",
+        "Should diagnostics be retained for 7 days or 30 days?"
+      ],
+      "answered_routes": [
+        "diagnostics"
+      ]
+    },
+    {
+      "trial": "service__C__r1",
+      "arm": "C",
+      "reply_index": 4,
+      "episode": "reuse_clarify",
+      "preceding_turn": 7,
+      "receiving_turn": 8,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"failure_output\": \"actionable-text\"}",
+      "protocol_preference_units": [
+        "failure_output"
+      ],
+      "protocol_repeated_preference_units": 1,
+      "classification": "schema_only",
+      "failed_fields": [
+        "failure_output"
+      ],
+      "before_values": {
+        "failure_output": "Plain actionable text with an error code and timestamp: CSV normalization failed; no completed export was published. Correct the input issue identified by the error code and rerun the job. Do not include raw input values."
+      },
+      "expected_values": {
+        "failure_output": "actionable-text"
+      },
+      "after_values": {
+        "failure_output": "actionable-text"
+      },
+      "changed_fields": [
+        "failure_output"
+      ],
+      "task_prompt": "Plan a scheduled CSV normalization job in the same project. It changes the export format. stdlib handles all required CSV cases at p95 330 ms; csvplus handles them at 170 ms but adds a runtime package. Both produce the same normalized rows. We must settle diagnostics before implementation: raw payload capture is optional, and the storage system supports either 7-day or 30-day retention. Produce design (\"stdlib\" or \"csvplus\"), old_export_support_days, failure_output, retain_raw_payloads (boolean), diagnostic_retention_days (number), and rationale with deployment and diagnostic steps.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "service__C__r2",
+      "arm": "C",
+      "reply_index": 0,
+      "episode": "setup",
+      "preceding_turn": 0,
+      "receiving_turn": 1,
+      "kind": "answer",
+      "text": "Prefer the standard library when it meets the stated requirements. Adding a runtime dependency needs a specific exception. Save this standing rule.\nFor this internal service, p95 at or below 400 ms is acceptable. Choose the simplest design meeting that target. Save the target and priority for later work.\nI have no additional preference to give for that question. Use the supplied context and your judgment.",
+      "protocol_preference_units": [
+        "dependency",
+        "latency"
+      ],
+      "protocol_repeated_preference_units": 1,
+      "classification": "information_answer",
+      "questions": [
+        "What p95 latency must the parser meet? The standard-library design takes 320 ms with no runtime dependency; fastpkg takes 180 ms with one package. If 320 ms misses your requirement, do you authorize a fastpkg exception to the standard-library policy for this parser?"
+      ],
+      "answered_routes": [
+        "dependency",
+        "latency"
+      ]
+    },
+    {
+      "trial": "service__C__r2",
+      "arm": "C",
+      "reply_index": 1,
+      "episode": "exception",
+      "preceding_turn": 2,
+      "receiving_turn": 3,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"failure_output\": \"actionable-text\"}",
+      "protocol_preference_units": [
+        "failure_output"
+      ],
+      "protocol_repeated_preference_units": 1,
+      "classification": "schema_only",
+      "failed_fields": [
+        "failure_output"
+      ],
+      "before_values": {
+        "failure_output": "Plain failure result identifying the archive and cause, stating whether any output was committed, and giving a useful next step: repair or replace an invalid archive and retry; for an internal error, retain the input and report the diagnostic to the maintainer. Return a nonzero exit status."
+      },
+      "expected_values": {
+        "failure_output": "actionable-text"
+      },
+      "after_values": {
+        "failure_output": "actionable-text"
+      },
+      "changed_fields": [
+        "failure_output"
+      ],
+      "task_prompt": "Plan this one archive importer. I authorize the archivekit runtime package for this importer only because its required archive format is unsupported by the standard library. Keep our normal dependency policy for other work. The verified archivekit implementation meets the service target. It changes the export format. Produce design (\"archivekit\" or \"stdlib\"), old_export_support_days, failure_output, and rationale with rollout and failure-handling steps.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "service__C__r2",
+      "arm": "C",
+      "reply_index": 2,
+      "episode": "transfer_change",
+      "preceding_turn": 4,
+      "receiving_turn": 5,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"failure_output\": \"actionable-text\"}",
+      "protocol_preference_units": [
+        "failure_output"
+      ],
+      "protocol_repeated_preference_units": 1,
+      "classification": "schema_only",
+      "failed_fields": [
+        "failure_output"
+      ],
+      "before_values": {
+        "failure_output": "Conversion failed: <report identifier> — <specific cause>. Next step: <concrete corrective action>, then retry conversion."
+      },
+      "expected_values": {
+        "failure_output": "actionable-text"
+      },
+      "after_values": {
+        "failure_output": "actionable-text"
+      },
+      "changed_fields": [
+        "failure_output"
+      ],
+      "task_prompt": "Plan a plain-text report converter, a different component in the same project. Replace our standing export compatibility window with 7 days for all future format changes and save that policy. The new converter changes the export format. stdlib handles every required report and has measured p95 350 ms; reportkit handles every report at 190 ms but adds a runtime package. Both have the same output fidelity. Produce design (\"stdlib\" or \"reportkit\"), old_export_support_days, failure_output, and rationale with acceptance and migration steps.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    },
+    {
+      "trial": "service__C__r2",
+      "arm": "C",
+      "reply_index": 3,
+      "episode": "reuse_clarify",
+      "preceding_turn": 6,
+      "receiving_turn": 7,
+      "kind": "answer",
+      "text": "Keep diagnostic error codes and timestamps for 7 days. Do not retain raw input payloads. Save these as standing rules for future jobs.",
+      "protocol_preference_units": [
+        "diagnostics"
+      ],
+      "protocol_repeated_preference_units": 0,
+      "classification": "information_answer",
+      "questions": [
+        "Existing criteria select stdlib (330 ms meets the 400 ms target), 7 days of old-export support, and plain failure output with a useful next step. For diagnostics, should this job capture raw payloads or keep only error metadata, and should diagnostics be retained for 7 or 30 days?"
+      ],
+      "answered_routes": [
+        "diagnostics"
+      ]
+    },
+    {
+      "trial": "service__C__r2",
+      "arm": "C",
+      "reply_index": 4,
+      "episode": "reuse_clarify",
+      "preceding_turn": 7,
+      "receiving_turn": 8,
+      "kind": "artifact_correction",
+      "text": "Correct these output.json fields: {\"failure_output\": \"actionable-text\"}",
+      "protocol_preference_units": [
+        "failure_output"
+      ],
+      "protocol_repeated_preference_units": 1,
+      "classification": "schema_only",
+      "failed_fields": [
+        "failure_output"
+      ],
+      "before_values": {
+        "failure_output": "Plain failure result with an error code, timestamp, and an actionable next step: correct the indicated CSV format issue and rerun; for operational errors, resolve the reported cause before retrying. Do not include raw input payloads."
+      },
+      "expected_values": {
+        "failure_output": "actionable-text"
+      },
+      "after_values": {
+        "failure_output": "actionable-text"
+      },
+      "changed_fields": [
+        "failure_output"
+      ],
+      "task_prompt": "Plan a scheduled CSV normalization job in the same project. It changes the export format. stdlib handles all required CSV cases at p95 330 ms; csvplus handles them at 170 ms but adds a runtime package. Both produce the same normalized rows. We must settle diagnostics before implementation: raw payload capture is optional, and the storage system supports either 7-day or 30-day retention. Produce design (\"stdlib\" or \"csvplus\"), old_export_support_days, failure_output, retain_raw_payloads (boolean), diagnostic_retention_days (number), and rationale with deployment and diagnostic steps.",
+      "task_repeats_exact_enum_or_type_for_failed_fields": false,
+      "assessment": "The pre-correction value already expresses the intended lottery, nonpublication of names, or actionable failure handling. The fixed oracle demanded a particular string or boolean representation. These later task prompts name the fields without repeating the setup enum/type contract. This diagnostic does not alter frozen exact checks or intervention totals."
+    }
+  ],
+  "interpretation": "Counts are descriptive diagnostics after observing the run, not a revised endpoint. The original reply and preference-unit metrics include schema-only feedback and must not be described as pure preference misunderstandings."
+}

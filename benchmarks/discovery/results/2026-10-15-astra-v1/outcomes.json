@@ -1,0 +1,50 @@
+[
+  {
+    "id": "service__A__r2",
+    "status": "completed"
+  },
+  {
+    "id": "service__B__r1",
+    "status": "completed"
+  },
+  {
+    "id": "service__C__r2",
+    "status": "completed"
+  },
+  {
+    "id": "community__A__r1",
+    "status": "completed"
+  },
+  {
+    "id": "community__B__r1",
+    "status": "completed"
+  },
+  {
+    "id": "community__C__r2",
+    "status": "completed"
+  },
+  {
+    "id": "community__A__r2",
+    "status": "completed"
+  },
+  {
+    "id": "community__B__r2",
+    "status": "completed"
+  },
+  {
+    "id": "service__A__r1",
+    "status": "completed"
+  },
+  {
+    "id": "service__B__r2",
+    "status": "completed"
+  },
+  {
+    "id": "service__C__r1",
+    "status": "completed"
+  },
+  {
+    "id": "community__C__r1",
+    "status": "completed"
+  }
+]

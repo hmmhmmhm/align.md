@@ -1,0 +1,35 @@
+{
+  "counts": {
+    "private_reasoning_records": 4,
+    "encrypted_content_fields": 2
+  },
+  "private_record_sha256": "ca0b569672e512068ad82b333d25b375cb4cec1ce06f312f9503b8f987fd5582",
+  "published_record_sha256": "34584f546c54e8c866d88459b0a6af4d23bf86476ed2f2ea8d2a0ab7a773886c",
+  "session_traces": [
+    {
+      "file": "session-traces/community__C__r1/rollout-2026-10-15T10-33-03-01a13d30-fcdd-78c0-9cab-8cb8ae727197.jsonl.gz",
+      "private_original_sha256": "5433e5bd3a9fd07a1bc9e8ba288bb9ae8f129c2e20f335d70ff33de7f9b66401",
+      "published_sha256": "3df0bb075a092387063e0a37f80055ca5bbed29ae0bd15d89b7c9b0e1b3759fd"
+    },
+    {
+      "file": "session-traces/community__C__r1/rollout-2026-10-15T10-34-40-01a13d32-7915-7923-aff9-fb1d8b667632.jsonl.gz",
+      "private_original_sha256": "144660bab64eba1acb8fd56a2a197181993ebeab34d33e24feb65f45bccd8903",
+      "published_sha256": "9a5c504403b07c483d402e2ff76433e306864e36d094d8c4ed27ac12d2810091"
+    },
+    {
+      "file": "session-traces/community__C__r1/rollout-2026-10-15T10-33-55-01a13d31-c9e3-7723-b521-06da349d71cc.jsonl.gz",
+      "private_original_sha256": "b4da72f173c00d75a69cb3650b0a5c52d0c87751bf0477a34046c1f81e54ddce",
+      "published_sha256": "5f951c281fe79063a5e810e4ce274e74f463f8dee315aa47130cb6f94ea06603"
+    },
+    {
+      "file": "session-traces/community__C__r1/rollout-2026-10-15T10-35-48-01a13d33-8469-7fa2-bbf4-031c22b6f678.jsonl.gz",
+      "private_original_sha256": "a7028b307fc573431b5b0534a81a29e23a009471996a4b077f0a8ce222cb3235",
+      "published_sha256": "594d58805869217e0deea4d08eec4066f2ab0276e41c4c559c4d90f4559d2040"
+    },
+    {
+      "file": "session-traces/community__C__r1/rollout-2026-10-15T10-32-03-01a13d30-14fe-7e70-ab84-699d4d696f77.jsonl.gz",
+      "private_original_sha256": "ce3142317c0b61708c82695b2eade8a7a1075681e0f14ea9c21de340c27faf50",
+      "published_sha256": "91150f84c1b002ff6f6d3f125c35b6ba66cbd1596c8792fa2e64924bde092c52"
+    }
+  ]
+}

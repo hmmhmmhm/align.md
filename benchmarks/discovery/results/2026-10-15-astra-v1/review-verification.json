@@ -1,0 +1,660 @@
+{
+  "verified": true,
+  "errors": [],
+  "pending": [],
+  "packet_count": 60,
+  "planned_review_batches": 12,
+  "completed_review_batches": 12,
+  "arms": {
+    "A": {
+      "1": {
+        "first_substantive_passes": 19,
+        "final_substantive_passes": 19,
+        "route_checks": 8,
+        "route_correct": 8
+      },
+      "2": {
+        "first_substantive_passes": 15,
+        "final_substantive_passes": 19,
+        "route_checks": 8,
+        "route_correct": 8
+      }
+    },
+    "B": {
+      "1": {
+        "first_substantive_passes": 20,
+        "final_substantive_passes": 20,
+        "route_checks": 8,
+        "route_correct": 7
+      },
+      "2": {
+        "first_substantive_passes": 16,
+        "final_substantive_passes": 20,
+        "route_checks": 8,
+        "route_correct": 8
+      }
+    },
+    "C": {
+      "1": {
+        "first_substantive_passes": 17,
+        "final_substantive_passes": 20,
+        "route_checks": 8,
+        "route_correct": 8
+      },
+      "2": {
+        "first_substantive_passes": 15,
+        "final_substantive_passes": 20,
+        "route_checks": 8,
+        "route_correct": 7
+      }
+    }
+  },
+  "disagreements": [
+    {
+      "review_id": "p021fe1a5743505c0",
+      "criterion": "first_criterion_fit",
+      "judges": {
+        "1": {
+          "criterion": "first_criterion_fit",
+          "score": 1,
+          "evidence": [
+            {
+              "source": "turns[0].artifact",
+              "quote": "\"design\": \"archivekit\",\n  \"old_export_support_days\": 30"
+            },
+            {
+              "source": "turns[0].artifact",
+              "quote": "Provide a plain failure result identifying what failed and a useful next step"
+            },
+            {
+              "source": "turns[0].artifact",
+              "quote": "The normal standard-library preference and requirement for specific dependency exceptions remain in force elsewhere."
+            }
+          ],
+          "reason": "The decisions honor the scoped exception, 30-day compatibility, and actionable text preference; the longer failure value is semantically consistent."
+        },
+        "2": {
+          "criterion": "first_criterion_fit",
+          "score": 0,
+          "evidence": [
+            {
+              "source": "turns[0].artifact",
+              "quote": "\"failure_output\": \"Provide a plain failure result identifying what failed and a useful next step:"
+            },
+            {
+              "source": "earlier_user_dialogue[0]",
+              "quote": "failure_output (\"actionable-text\" or \"animated-only\")"
+            }
+          ],
+          "reason": "The failure policy is substantively appropriate, but the field does not use its established bounded value."
+        }
+      },
+      "status": "needs_independent_adjudication"
+    },
+    {
+      "review_id": "p08733da3fad7ab65",
+      "criterion": "route_0",
+      "judges": {
+        "1": {
+          "criterion": "route_0",
+          "score": 0,
+          "evidence": [
+            {
+              "source": "turns[0].response",
+              "quote": "if the limit requires the 180 ms fastpkg design, do you authorize its one runtime package as an exception to the standard-library preference?"
+            },
+            {
+              "source": "turns[0].scripted_reply",
+              "quote": "Prefer the standard library when it meets the stated requirements. Adding a runtime dependency needs a specific exception. Save this standing rule."
+            }
+          ],
+          "reason": "The question requests a latency target and conditional package exception, not a restatement or saving of the settled dependency preference. Routing the standing dependency answer mistakes an exception request for a policy question."
+        },
+        "2": {
+          "criterion": "route_0",
+          "score": 1,
+          "evidence": [
+            {
+              "source": "turns[0].response",
+              "quote": "if the limit requires the 180 ms fastpkg design, do you authorize its one runtime package as an exception to the standard-library preference?"
+            },
+            {
+              "source": "turns[0].scripted_reply",
+              "quote": "Adding a runtime dependency needs a specific exception."
+            },
+            {
+              "source": "turns[0].scripted_reply",
+              "quote": "For this internal service, p95 at or below 400 ms is acceptable."
+            }
+          ],
+          "reason": "The reply provides the latency answer and related dependency criterion. The exception condition is false under that target, so no applicable decision remains unresolved."
+        }
+      },
+      "status": "needs_independent_adjudication"
+    },
+    {
+      "review_id": "p13b5a3ef177111d5",
+      "criterion": "first_criterion_fit",
+      "judges": {
+        "1": {
+          "criterion": "first_criterion_fit",
+          "score": 1,
+          "evidence": [
+            {
+              "source": "turns[0].artifact",
+              "quote": "\"venue\": \"Annex\",\n  \"attendee_fee\": 16"
+            },
+            {
+              "source": "turns[0].artifact",
+              "quote": "\"method\": \"lottery after the application window closes\""
+            },
+            {
+              "source": "turns[0].artifact",
+              "quote": "Keep attendee names off public materials, with a private roster available to staff."
+            },
+            {
+              "source": "turns[0].artifact",
+              "quote": "Accessibility, privacy, and lottery criteria remain unchanged."
+            }
+          ],
+          "reason": "The artifact unambiguously selects Annex, lottery allocation, and no public names under the new ceiling. Alternative field representations do not change these substantive decisions."
+        },
+        "2": {
+          "criterion": "first_criterion_fit",
+          "score": 0,
+          "evidence": [
+            {
+              "source": "turns[0].artifact",
+              "quote": "\"public_attendee_names\": []"
+            },
+            {
+              "source": "turns[0].artifact",
+              "quote": "\"method\": \"lottery after the application window closes\""
+            },
+            {
+              "source": "earlier_user_dialogue[0]",
+              "quote": "allocation (\"lottery\" or \"first-come\"), public_attendee_names (boolean)"
+            }
+          ],
+          "reason": "Allocation is an object rather than the bounded choice, and public_attendee_names is an array rather than the required boolean."
+        }
+      },
+      "status": "needs_independent_adjudication"
+    },
+    {
+      "review_id": "p3d95cafabf12b6ba",
+      "criterion": "first_criterion_fit",
+      "judges": {
+        "1": {
+          "criterion": "first_criterion_fit",
+          "score": 1,
+          "evidence": [
+            {
+              "source": "turns[0].artifact",
+              "quote": "\"venue\": \"Clay Hall\",\n  \"attendee_fee\": 18"
+            },
+            {
+              "source": "turns[0].artifact",
+              "quote": "\"method\": \"lottery after the application window closes\""
+            },
+            {
+              "source": "turns[0].artifact",
+              "quote": "Keep attendee names off all public materials, consistent with the saved privacy criterion."
+            },
+            {
+              "source": "turns[0].artifact",
+              "quote": "the usual $10 ceiling remains unchanged for future events"
+            }
+          ],
+          "reason": "The artifact substantively selects the required venue, fee, lottery, and privacy outcome while preserving the exception's scope. Its structured allocation and empty names list do not contradict the explicit rationale."
+        },
+        "2": {
+          "criterion": "first_criterion_fit",
+          "score": 0,
+          "evidence": [
+            {
+              "source": "turns[0].artifact",
+              "quote": "\"public_attendee_names\": []"
+            },
+            {
+              "source": "turns[0].artifact",
+              "quote": "\"method\": \"lottery after the application window closes\""
+            },
+            {
+              "source": "earlier_user_dialogue[0]",
+              "quote": "allocation (\"lottery\" or \"first-come\"), public_attendee_names (boolean)"
+            }
+          ],
+          "reason": "The decisions are substantively aligned, but allocation is an object and the privacy field is an array instead of the required bounded value and boolean."
+        }
+      },
+      "status": "needs_independent_adjudication"
+    },
+    {
+      "review_id": "p6a55f24bd70145d6",
+      "criterion": "first_criterion_fit",
+      "judges": {
+        "1": {
+          "criterion": "first_criterion_fit",
+          "score": 1,
+          "evidence": [
+            {
+              "source": "turns[0].artifact",
+              "quote": "\"design\": \"archivekit\",\n  \"old_export_support_days\": 30"
+            },
+            {
+              "source": "turns[0].artifact",
+              "quote": "Plain, actionable text stating the failed operation, affected archive, known cause, and a useful next step."
+            },
+            {
+              "source": "turns[0].artifact",
+              "quote": "The normal dependency policy remains unchanged."
+            }
+          ],
+          "reason": "The decisions substantively follow the importer-only exception, compatibility policy, and actionable failure preference. The prose failure value expresses the required choice."
+        },
+        "2": {
+          "criterion": "first_criterion_fit",
+          "score": 0,
+          "evidence": [
+            {
+              "source": "turns[0].artifact",
+              "quote": "\"failure_output\": \"Plain, actionable text stating the failed operation, affected archive, known cause, and a useful next step."
+            },
+            {
+              "source": "earlier_user_dialogue[0]",
+              "quote": "failure_output (\"actionable-text\" or \"animated-only\")"
+            }
+          ],
+          "reason": "The substantive plan follows the criteria, but failure_output does not use the established bounded field value."
+        }
+      },
+      "status": "needs_independent_adjudication"
+    },
+    {
+      "review_id": "p848fae679b413450",
+      "criterion": "first_criterion_fit",
+      "judges": {
+        "1": {
+          "criterion": "first_criterion_fit",
+          "score": 1,
+          "evidence": [
+            {
+              "source": "turns[0].artifact",
+              "quote": "\"design\": \"stdlib\",\n  \"old_export_support_days\": 7"
+            },
+            {
+              "source": "turns[0].artifact",
+              "quote": "Plain text stating that conversion failed, identifying the report and actionable cause, and giving a concrete correction or retry step."
+            },
+            {
+              "source": "turns[0].artifact",
+              "quote": "The archivekit exception applies only to the archive importer."
+            }
+          ],
+          "reason": "The artifact applies the replacement compatibility window and selects the simplest qualifying design. The failure prose expresses actionable text."
+        },
+        "2": {
+          "criterion": "first_criterion_fit",
+          "score": 0,
+          "evidence": [
+            {
+              "source": "turns[0].artifact",
+              "quote": "\"failure_output\": \"Plain text stating that conversion failed, identifying the report and actionable cause, and giving a concrete correction or retry step."
+            },
+            {
+              "source": "earlier_user_dialogue[0]",
+              "quote": "failure_output (\"actionable-text\" or \"animated-only\")"
+            }
+          ],
+          "reason": "The substantive decisions follow the criteria, but failure_output does not use the established bounded value."
+        }
+      },
+      "status": "needs_independent_adjudication"
+    },
+    {
+      "review_id": "pa65b15c59dacb290",
+      "criterion": "first_criterion_fit",
+      "judges": {
+        "1": {
+          "criterion": "first_criterion_fit",
+          "score": 1,
+          "evidence": [
+            {
+              "source": "turns[1].artifact",
+              "quote": "\"venue\": \"Garden\",\n  \"attendee_fee\": 18"
+            },
+            {
+              "source": "turns[1].artifact",
+              "quote": "\"public_attendee_names\": false,\n  \"cancellation_remedy\": \"refund\""
+            },
+            {
+              "source": "turns[1].artifact",
+              "quote": "The standing lottery rule resolves oversubscription fairly: draw after applications close, offer 18 places, and retain seven applicants on an ordered waitlist."
+            }
+          ],
+          "reason": "The artifact follows the current ceiling, accessibility, privacy, and lottery rules, and incorporates the cancellation answer received before submission."
+        },
+        "2": {
+          "criterion": "first_criterion_fit",
+          "score": 0,
+          "evidence": [
+            {
+              "source": "turns[1].artifact",
+              "quote": "\"allocation\": \"After the application window closes, randomly order all 25 applicants with equal chances."
+            },
+            {
+              "source": "earlier_user_dialogue[0]",
+              "quote": "allocation (\"lottery\" or \"first-come\")"
+            }
+          ],
+          "reason": "The plan follows the confirmed cancellation and event criteria, but allocation does not use the established bounded field value."
+        }
+      },
+      "status": "needs_independent_adjudication"
+    },
+    {
+      "review_id": "pb58dac362f4365a9",
+      "criterion": "first_criterion_fit",
+      "judges": {
+        "1": {
+          "criterion": "first_criterion_fit",
+          "score": 1,
+          "evidence": [
+            {
+              "source": "turns[1].artifact",
+              "quote": "\"design\": \"stdlib\",\n  \"old_export_support_days\": 7"
+            },
+            {
+              "source": "turns[1].artifact",
+              "quote": "\"retain_raw_payloads\": false,\n  \"diagnostic_retention_days\": 7"
+            },
+            {
+              "source": "turns[1].artifact",
+              "quote": "Plain failure result with an error code and timestamp, plus a useful next step"
+            }
+          ],
+          "reason": "The substantive choices follow the existing design and compatibility rules and the newly confirmed diagnostics. Failure prose clearly selects actionable text."
+        },
+        "2": {
+          "criterion": "first_criterion_fit",
+          "score": 0,
+          "evidence": [
+            {
+              "source": "turns[1].artifact",
+              "quote": "\"failure_output\": \"Plain failure result with an error code and timestamp, plus a useful next step:"
+            },
+            {
+              "source": "earlier_user_dialogue[0]",
+              "quote": "failure_output (\"actionable-text\" or \"animated-only\")"
+            }
+          ],
+          "reason": "All substantive choices follow the confirmed criteria, but failure_output does not use the established bounded value."
+        }
+      },
+      "status": "needs_independent_adjudication"
+    },
+    {
+      "review_id": "pbe7c2364ac48e561",
+      "criterion": "first_criterion_fit",
+      "judges": {
+        "1": {
+          "criterion": "first_criterion_fit",
+          "score": 1,
+          "evidence": [
+            {
+              "source": "turns[0].artifact",
+              "quote": "\"method\": \"lottery after the application window closes\""
+            },
+            {
+              "source": "turns[0].artifact",
+              "quote": "\"public_attendee_names\": []"
+            },
+            {
+              "source": "turns[0].artifact",
+              "quote": "Staff may keep a private roster and should communicate results privately; publish no attendee names."
+            },
+            {
+              "source": "turns[0].artifact",
+              "quote": "within the newly authorized $20 ceiling."
+            }
+          ],
+          "reason": "The artifact substantively chooses Annex at $16, a lottery, and no public names while applying the replacement ceiling. Its object and empty-array representations do not contradict those semantic decisions."
+        },
+        "2": {
+          "criterion": "first_criterion_fit",
+          "score": 0,
+          "evidence": [
+            {
+              "source": "turns[0].artifact",
+              "quote": "\"public_attendee_names\": []"
+            },
+            {
+              "source": "earlier_user_dialogue[0]",
+              "quote": "public_attendee_names (boolean)"
+            }
+          ],
+          "reason": "The substantive plan preserves privacy, but the submitted names field is an array rather than the established boolean decision field."
+        }
+      },
+      "status": "needs_independent_adjudication"
+    },
+    {
+      "review_id": "pd659086b5ea90f7f",
+      "criterion": "first_criterion_fit",
+      "judges": {
+        "1": {
+          "criterion": "first_criterion_fit",
+          "score": 1,
+          "evidence": [
+            {
+              "source": "turns[0].artifact",
+              "quote": "\"venue\": \"Annex\",\n  \"attendee_fee\": 16"
+            },
+            {
+              "source": "turns[0].artifact",
+              "quote": "After the application window closes, use a lottery to allocate the 30 seats among the applicants (currently 44)."
+            },
+            {
+              "source": "turns[0].artifact",
+              "quote": "\"public_attendee_names\": false"
+            },
+            {
+              "source": "turns[0].artifact",
+              "quote": "All other criteria remain unchanged, and the prior $18 ceramics exception remains limited to that workshop."
+            }
+          ],
+          "reason": "All substantive decisions follow the confirmed policies and the new ceiling. The allocation prose clearly selects lottery."
+        },
+        "2": {
+          "criterion": "first_criterion_fit",
+          "score": 0,
+          "evidence": [
+            {
+              "source": "turns[0].artifact",
+              "quote": "\"allocation\": \"After the application window closes, use a lottery to allocate the 30 seats among the applicants (currently 44).\""
+            },
+            {
+              "source": "earlier_user_dialogue[0]",
+              "quote": "allocation (\"lottery\" or \"first-come\")"
+            }
+          ],
+          "reason": "The intended allocation is correct, but the field does not use the established bounded value."
+        }
+      },
+      "status": "needs_independent_adjudication"
+    },
+    {
+      "review_id": "pedc91ffe9fbe5695",
+      "criterion": "route_0",
+      "judges": {
+        "1": {
+          "criterion": "route_0",
+          "score": 1,
+          "evidence": [
+            {
+              "source": "turns[0].response",
+              "quote": "What p95 latency must the parser meet? If stdlib\u2019s 320 ms exceeds that limit but fastpkg\u2019s 180 ms meets it, do you authorize the one runtime package as an exception for this parser?"
+            },
+            {
+              "source": "turns[0].scripted_reply",
+              "quote": "Prefer the standard library when it meets the stated requirements. Adding a runtime dependency needs a specific exception. Save this standing rule.\nFor this internal service, p95 at or below 400 ms is acceptable. Choose the simplest design meeting that target. Save the target and priority for later work."
+            }
+          ],
+          "reason": "The reply supplies the requested latency criterion and relevant dependency rule. The 400 ms limit makes the conditional exception unnecessary; no unrelated preference is supplied."
+        },
+        "2": {
+          "criterion": "route_0",
+          "score": 0,
+          "evidence": [
+            {
+              "source": "turns[0].response",
+              "quote": "If stdlib\u2019s 320 ms exceeds that limit but fastpkg\u2019s 180 ms meets it, do you authorize the one runtime package as an exception for this parser?"
+            },
+            {
+              "source": "turns[0].scripted_reply",
+              "quote": "Adding a runtime dependency needs a specific exception."
+            },
+            {
+              "source": "turns[0].scripted_reply",
+              "quote": "I have no additional preference to give for that question. Use the supplied context and your judgment."
+            }
+          ],
+          "reason": "The reply supplies the latency target but does not answer the requested conditional authorization; restating the exception rule does not grant or deny that exception. The supplied target makes it unnecessary for the actual plan."
+        }
+      },
+      "status": "needs_independent_adjudication"
+    },
+    {
+      "review_id": "pfccf6dc338b6f296",
+      "criterion": "first_criterion_fit",
+      "judges": {
+        "1": {
+          "criterion": "first_criterion_fit",
+          "score": 1,
+          "evidence": [
+            {
+              "source": "turns[0].artifact",
+              "quote": "\"venue\": \"Clay Hall\",\n  \"attendee_fee\": 18"
+            },
+            {
+              "source": "turns[0].artifact",
+              "quote": "After the application window closes, run a lottery for the 20 seats among the 31 applicants"
+            },
+            {
+              "source": "turns[0].artifact",
+              "quote": "\"public_attendee_names\": false"
+            },
+            {
+              "source": "turns[0].artifact",
+              "quote": "the usual $10 ceiling remains in force for later events"
+            }
+          ],
+          "reason": "The decisions respect access, kiln, privacy, lottery, and the event-only fee exception. The allocation prose unambiguously selects lottery."
+        },
+        "2": {
+          "criterion": "first_criterion_fit",
+          "score": 0,
+          "evidence": [
+            {
+              "source": "turns[0].artifact",
+              "quote": "\"allocation\": \"After the application window closes, run a lottery for the 20 seats among the 31 applicants; randomly order the remaining 11 applicants as a private waitlist.\""
+            },
+            {
+              "source": "earlier_user_dialogue[0]",
+              "quote": "allocation (\"lottery\" or \"first-come\")"
+            }
+          ],
+          "reason": "The allocation policy is appropriate, but the field does not use the established bounded value."
+        }
+      },
+      "status": "needs_independent_adjudication"
+    }
+  ],
+  "routing_errors": [
+    {
+      "review_id": "p08733da3fad7ab65",
+      "criterion": "route_0",
+      "judges": {
+        "1": {
+          "criterion": "route_0",
+          "score": 0,
+          "evidence": [
+            {
+              "source": "turns[0].response",
+              "quote": "if the limit requires the 180 ms fastpkg design, do you authorize its one runtime package as an exception to the standard-library preference?"
+            },
+            {
+              "source": "turns[0].scripted_reply",
+              "quote": "Prefer the standard library when it meets the stated requirements. Adding a runtime dependency needs a specific exception. Save this standing rule."
+            }
+          ],
+          "reason": "The question requests a latency target and conditional package exception, not a restatement or saving of the settled dependency preference. Routing the standing dependency answer mistakes an exception request for a policy question."
+        },
+        "2": {
+          "criterion": "route_0",
+          "score": 1,
+          "evidence": [
+            {
+              "source": "turns[0].response",
+              "quote": "if the limit requires the 180 ms fastpkg design, do you authorize its one runtime package as an exception to the standard-library preference?"
+            },
+            {
+              "source": "turns[0].scripted_reply",
+              "quote": "Adding a runtime dependency needs a specific exception."
+            },
+            {
+              "source": "turns[0].scripted_reply",
+              "quote": "For this internal service, p95 at or below 400 ms is acceptable."
+            }
+          ],
+          "reason": "The reply provides the latency answer and related dependency criterion. The exception condition is false under that target, so no applicable decision remains unresolved."
+        }
+      },
+      "status": "needs_independent_adjudication"
+    },
+    {
+      "review_id": "pedc91ffe9fbe5695",
+      "criterion": "route_0",
+      "judges": {
+        "1": {
+          "criterion": "route_0",
+          "score": 1,
+          "evidence": [
+            {
+              "source": "turns[0].response",
+              "quote": "What p95 latency must the parser meet? If stdlib\u2019s 320 ms exceeds that limit but fastpkg\u2019s 180 ms meets it, do you authorize the one runtime package as an exception for this parser?"
+            },
+            {
+              "source": "turns[0].scripted_reply",
+              "quote": "Prefer the standard library when it meets the stated requirements. Adding a runtime dependency needs a specific exception. Save this standing rule.\nFor this internal service, p95 at or below 400 ms is acceptable. Choose the simplest design meeting that target. Save the target and priority for later work."
+            }
+          ],
+          "reason": "The reply supplies the requested latency criterion and relevant dependency rule. The 400 ms limit makes the conditional exception unnecessary; no unrelated preference is supplied."
+        },
+        "2": {
+          "criterion": "route_0",
+          "score": 0,
+          "evidence": [
+            {
+              "source": "turns[0].response",
+              "quote": "If stdlib\u2019s 320 ms exceeds that limit but fastpkg\u2019s 180 ms meets it, do you authorize the one runtime package as an exception for this parser?"
+            },
+            {
+              "source": "turns[0].scripted_reply",
+              "quote": "Adding a runtime dependency needs a specific exception."
+            },
+            {
+              "source": "turns[0].scripted_reply",
+              "quote": "I have no additional preference to give for that question. Use the supplied context and your judgment."
+            }
+          ],
+          "reason": "The reply supplies the latency target but does not answer the requested conditional authorization; restating the exception rule does not grant or deny that exception. The supplied target makes it unnecessary for the actual plan."
+        }
+      },
+      "status": "needs_independent_adjudication"
+    }
+  ],
+  "off_interface_requests": [],
+  "audit_note": "Independent offline replay of model evidence. Semantic correctness, saved-memory authorization, and hidden-source reads still need human or model audit. No human satisfaction measurement."
+}
