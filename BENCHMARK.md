@@ -6,6 +6,8 @@ came from two scenarios. Separating criteria into ALIGN.md alone produced no
 score change. This small result does not establish general reliability or a
 reduction in user effort.
 
+The separate [scripted user intervention pilot](EFFORT_BENCHMARK.md) measures setup, repeated explanations, and corrections across cold sessions. Its results are not pooled with this behavioral score.
+
 ## What was compared
 
 This maintainer-authored pilot used 12 synthetic scenarios, three conditions,

@@ -37,3 +37,13 @@ jobs:
           python3 benchmarks/reporting/check_quote_sources.py \
             benchmarks/results/2026-10-15-astra-v1/review-packets-v2 \
             benchmarks/results/2026-10-15-astra-v1/judgments-v2
+      - name: Check scripted intervention harness and reporting
+        run: python3 -m unittest discover -s benchmarks/effort -p 'test_*.py'
+      - name: Verify retained intervention infrastructure failure
+        run: |
+          python3 benchmarks/effort/verify.py benchmarks/effort/results/2026-10-15-astra-v1-failed \
+            --output "$RUNNER_TEMP/align-effort-failed-verification.json"
+      - name: Verify scripted intervention results without model access
+        run: |
+          python3 benchmarks/effort/verify.py benchmarks/effort/results/2026-10-15-astra-v2 \
+            --output "$RUNNER_TEMP/align-effort-verification.json"

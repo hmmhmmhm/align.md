@@ -1,0 +1,354 @@
+{
+  "version": 1,
+  "name": "Scripted user intervention burden",
+  "common_instructions": "The current and primary client is Codex. AGENTS.md is the canonical project instruction file. The benchmark environment is already provisioned; no installation, update, client selection, or global configuration work is needed. Work only in this project. Do not publish, send messages, access network services, install packages, modify global settings, or create Git repositories. You may read and update persistent project notes in every condition. Keep lasting preferences only when the user explicitly authorizes them. Reuse available answers, keep one-time exceptions temporary, and complete authorized work without unnecessary questions. No conversation history carries into the next episode; files you write remain. For task episodes write output.json with exactly the requested fields. End each turn with exactly one JSON object: {\"action\":\"ask\",\"keys\":[\"preference_id\"]} to ask one or more available preference questions, or {\"action\":\"submit\"} when done. Questions must use the IDs supplied in the current request. Do not put questions outside this interface. You may batch questions. A request or correction consumes one scripted user reply. All answers explicitly say whether they may be saved. The harness allows at most two replies per episode. Setup has no output artifact requirement.",
+  "protocol": {
+    "repetitions": 2,
+    "max_replies_per_episode": 2,
+    "seed": 20261015,
+    "primary_comparison": [
+      "C",
+      "B"
+    ],
+    "secondary_comparison": [
+      "C",
+      "A"
+    ],
+    "relative_reduction_threshold": 0.2,
+    "mean_reply_reduction_threshold": 1.0,
+    "quality_guardrail": "Every planned C task episode must pass and no C trajectory may have an execution failure. Report B and A failures without dropping them.",
+    "scored_run_status": "not_run",
+    "decision_rule": {
+      "preference_unit_relative_reduction_min": 0.2,
+      "reply_relative_reduction_min": 0.2,
+      "reply_mean_reduction_min": 1.0,
+      "repeated_preference_units_must_not_increase": true,
+      "all_c_tasks_must_pass": true,
+      "c_execution_failures_must_be_zero": true,
+      "unresolved_side_channel_questions_must_be_zero": true
+    }
+  },
+  "conditions": {
+    "A": {
+      "label": "Ordinary writable project",
+      "instructions": "Use the common project instructions. You may keep authorized preferences in AGENTS.md or another project file."
+    },
+    "B": {
+      "label": "Explicit persistent notes",
+      "instructions": "Read PREFERENCES.md at the start of every episode. Maintain concise current preferences there when the user authorizes saving them. Apply those notes on later tasks. Keep temporary exceptions out of standing preferences and update a lasting preference when explicitly requested. Ask only for missing consequential choices. PREFERENCES.md starts empty."
+    },
+    "C": {
+      "label": "Maintained ALIGN setup",
+      "instructions": "Read ALIGN.md at the start of every episode. Use the installed align skill and recurring-use instructions to set up and maintain the project agreement. ALIGN.md starts empty. The method is pinned to this benchmark snapshot; do not check for updates."
+    }
+  },
+  "cases": [
+    {
+      "id": "notice",
+      "title": "Community workshop notices",
+      "files": {},
+      "preferences": {
+        "heading": {
+          "value": "Workshop bulletin",
+          "answer": "My standing heading preference is Workshop bulletin. Save this preference for later work in this project; no further confirmation is needed."
+        },
+        "date_style": {
+          "value": "day-month-year",
+          "answer": "My standing date_style preference is day-month-year. Save this preference for later work in this project; no further confirmation is needed."
+        },
+        "contact": {
+          "value": "info@example.test",
+          "answer": "My standing contact preference is info@example.test. Save this preference for later work in this project; no further confirmation is needed."
+        }
+      },
+      "setup_prompt": "Prepare this project for recurring notices. Ask about the defaults you need, using heading, date_style, and contact. I authorize you to save my answers for later tasks. Available date_style choices are day-month-year (DD/MM/YYYY) and year-month-day (YYYY-MM-DD). You may ask all three in one reply. Do not produce a notice during setup.",
+      "setup_answers": {
+        "heading": "My standing heading preference is Workshop bulletin. Save this preference for later work in this project; no further confirmation is needed.",
+        "date_style": "My standing date_style preference is day-month-year. Save this preference for later work in this project; no further confirmation is needed.",
+        "contact": "My standing contact preference is info@example.test. Save this preference for later work in this project; no further confirmation is needed."
+      },
+      "setup_preferences": [
+        "heading",
+        "date_style",
+        "contact"
+      ],
+      "episodes": [
+        {
+          "id": "routine",
+          "prompt": "Write output.json with exactly these fields: template, title, date, contact, body. Use my usual heading for title unless I changed it in this request; format the date 2026-11-03 using my date_style and use my usual contact. Copy this exact body: The desk opens at 09:00. Available preference question IDs: heading, date_style, contact. Choose template notice-1-alpha for a day-month-year notice or notice-1-beta for a year-month-day notice. Put the selected template ID in template.",
+          "answers": {
+            "heading": "My standing heading preference is Workshop bulletin. Save this preference for later work in this project; no further confirmation is needed.",
+            "date_style": "My standing date_style preference is day-month-year. Save this preference for later work in this project; no further confirmation is needed.",
+            "contact": "My standing contact preference is info@example.test. Save this preference for later work in this project; no further confirmation is needed."
+          },
+          "expected": {
+            "title": "Workshop bulletin",
+            "date": "03/11/2026",
+            "contact": "info@example.test",
+            "body": "The desk opens at 09:00.",
+            "template": "notice-1-alpha"
+          },
+          "field_preferences": {
+            "title": "heading",
+            "date": "date_style",
+            "contact": "contact",
+            "template": "date_style"
+          },
+          "provided_preferences": [],
+          "required_questions": []
+        },
+        {
+          "id": "temporary",
+          "prompt": "For this notice only, use the title Open day special. Keep the standing heading unchanged. Write output.json with exactly these fields: template, title, date, contact, body. Use my usual heading for title unless I changed it in this request; format the date 2026-11-08 using my date_style and use my usual contact. Copy this exact body: The desk closes at 16:00. Available preference question IDs: heading, date_style, contact. Choose template notice-2-beta for a day-month-year notice or notice-2-alpha for a year-month-day notice. Put the selected template ID in template.",
+          "answers": {
+            "heading": "For this notice only, use Open day special. Do not save it as my standing heading; my standing heading remains Workshop bulletin.",
+            "date_style": "My standing date_style preference is day-month-year. Save this preference for later work in this project; no further confirmation is needed.",
+            "contact": "My standing contact preference is info@example.test. Save this preference for later work in this project; no further confirmation is needed."
+          },
+          "expected": {
+            "title": "Open day special",
+            "date": "08/11/2026",
+            "contact": "info@example.test",
+            "body": "The desk closes at 16:00.",
+            "template": "notice-2-beta"
+          },
+          "field_preferences": {
+            "title": "heading",
+            "date": "date_style",
+            "contact": "contact",
+            "template": "date_style"
+          },
+          "provided_preferences": [
+            "heading"
+          ],
+          "required_questions": []
+        },
+        {
+          "id": "transfer",
+          "prompt": "Write output.json with exactly these fields: template, title, date, contact, body. Use my usual heading for title unless I changed it in this request; format the date 2026-11-12 using my date_style and use my usual contact. Copy this exact body: The collection window starts at 10:00. Available preference question IDs: heading, date_style, contact. Choose template notice-3-alpha for a day-month-year notice or notice-3-beta for a year-month-day notice. Put the selected template ID in template.",
+          "answers": {
+            "heading": "My standing heading preference is Workshop bulletin. Save this preference for later work in this project; no further confirmation is needed.",
+            "date_style": "My standing date_style preference is day-month-year. Save this preference for later work in this project; no further confirmation is needed.",
+            "contact": "My standing contact preference is info@example.test. Save this preference for later work in this project; no further confirmation is needed."
+          },
+          "expected": {
+            "title": "Workshop bulletin",
+            "date": "12/11/2026",
+            "contact": "info@example.test",
+            "body": "The collection window starts at 10:00.",
+            "template": "notice-3-alpha"
+          },
+          "field_preferences": {
+            "title": "heading",
+            "date": "date_style",
+            "contact": "contact",
+            "template": "date_style"
+          },
+          "provided_preferences": [],
+          "required_questions": []
+        },
+        {
+          "id": "lasting_change",
+          "prompt": "Change my standing heading to Workshop update from now on and save it for later work. Write output.json with exactly these fields: template, title, date, contact, body. Use my usual heading for title unless I changed it in this request; format the date 2026-11-17 using my date_style and use my usual contact. Copy this exact body: The desk opens at 08:30. Available preference question IDs: heading, date_style, contact. Choose template notice-4-beta for a day-month-year notice or notice-4-alpha for a year-month-day notice. Put the selected template ID in template.",
+          "answers": {
+            "heading": "My standing heading preference is Workshop update. Save this preference for later work in this project; no further confirmation is needed.",
+            "date_style": "My standing date_style preference is day-month-year. Save this preference for later work in this project; no further confirmation is needed.",
+            "contact": "My standing contact preference is info@example.test. Save this preference for later work in this project; no further confirmation is needed."
+          },
+          "expected": {
+            "title": "Workshop update",
+            "date": "17/11/2026",
+            "contact": "info@example.test",
+            "body": "The desk opens at 08:30.",
+            "template": "notice-4-beta"
+          },
+          "field_preferences": {
+            "title": "heading",
+            "date": "date_style",
+            "contact": "contact",
+            "template": "date_style"
+          },
+          "provided_preferences": [
+            "heading"
+          ],
+          "required_questions": []
+        },
+        {
+          "id": "new_choice",
+          "prompt": "This notice also needs a channel choice, email or print. We have not chosen one previously; ask me before submitting. Write output.json with exactly these fields: template, title, date, contact, body, channel. Use my usual heading for title unless I changed it in this request; format the date 2026-11-21 using my date_style and use my usual contact. Copy this exact body: The collection window ends at 15:00. Available preference question IDs: heading, date_style, contact, channel. Choose template notice-5-alpha for a day-month-year notice or notice-5-beta for a year-month-day notice. Put the selected template ID in template.",
+          "answers": {
+            "heading": "My standing heading preference is Workshop update. Save this preference for later work in this project; no further confirmation is needed.",
+            "date_style": "My standing date_style preference is day-month-year. Save this preference for later work in this project; no further confirmation is needed.",
+            "contact": "My standing contact preference is info@example.test. Save this preference for later work in this project; no further confirmation is needed.",
+            "channel": "Use email for this notice. This is a one-time channel choice; do not turn it into a standing preference."
+          },
+          "expected": {
+            "title": "Workshop update",
+            "date": "21/11/2026",
+            "contact": "info@example.test",
+            "body": "The collection window ends at 15:00.",
+            "channel": "email",
+            "template": "notice-5-alpha"
+          },
+          "field_preferences": {
+            "title": "heading",
+            "date": "date_style",
+            "contact": "contact",
+            "channel": "channel",
+            "template": "date_style"
+          },
+          "provided_preferences": [],
+          "required_questions": [
+            "channel"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "software",
+      "title": "Small website implementation choices",
+      "files": {},
+      "preferences": {
+        "hosting": {
+          "value": "Prefer a static host when it meets the stated feature requirements. Do not choose a managed application server merely for convenience.",
+          "answer": "Prefer a static host when it meets the stated feature requirements. Do not choose a managed application server merely for convenience. Save this standing preference for future project work; no further confirmation is needed."
+        },
+        "dependencies": {
+          "value": "Use the standard library; avoid adding third-party runtime dependencies.",
+          "answer": "Use the standard library; avoid adding third-party runtime dependencies. Save this standing preference for future project work; no further confirmation is needed."
+        },
+        "analytics": {
+          "value": "Collect aggregate counts only; do not store visitor identifiers or page-by-page visitor histories.",
+          "answer": "Collect aggregate counts only; do not store visitor identifiers or page-by-page visitor histories. Save this standing preference for future project work; no further confirmation is needed."
+        }
+      },
+      "setup_prompt": "Prepare to help maintain a small website over several sessions. Ask for my standing preferences using hosting, dependencies, and analytics. I authorize saving my answers for future project work. You may ask all three in one reply. Setup requires no implementation or output artifact.",
+      "setup_answers": {
+        "hosting": "Prefer a static host when it meets the stated feature requirements. Do not choose a managed application server merely for convenience. Save this standing preference for future project work; no further confirmation is needed.",
+        "dependencies": "Use the standard library; avoid adding third-party runtime dependencies. Save this standing preference for future project work; no further confirmation is needed.",
+        "analytics": "Collect aggregate counts only; do not store visitor identifiers or page-by-page visitor histories. Save this standing preference for future project work; no further confirmation is needed."
+      },
+      "setup_preferences": [
+        "hosting",
+        "dependencies",
+        "analytics"
+      ],
+      "episodes": [
+        {
+          "id": "routine",
+          "prompt": "Build a static opening-hours page. Both hosting options meet its feature requirements. Hosting options: choice-1-red serves static files with no server process; choice-1-blue runs a managed application server. Dependency options: choice-1-green uses the language standard library; choice-1-amber adds a third-party runtime library. Analytics options: choice-1-silver stores daily aggregate counts without identifiers; choice-1-violet stores a stable visitor identifier with page history. Write output.json with exactly these fields: hosting, dependency, analytics. Use the selected option ID for each hosting, dependency, and analytics field. Available preference question IDs: hosting, dependencies, analytics.",
+          "answers": {
+            "hosting": "Prefer a static host when it meets the stated feature requirements. Do not choose a managed application server merely for convenience. Save this standing preference for future project work; no further confirmation is needed.",
+            "dependencies": "Use the standard library; avoid adding third-party runtime dependencies. Save this standing preference for future project work; no further confirmation is needed.",
+            "analytics": "Collect aggregate counts only; do not store visitor identifiers or page-by-page visitor histories. Save this standing preference for future project work; no further confirmation is needed."
+          },
+          "expected": {
+            "hosting": "choice-1-red",
+            "dependency": "choice-1-green",
+            "analytics": "choice-1-silver"
+          },
+          "field_preferences": {
+            "hosting": "hosting",
+            "dependency": "dependencies",
+            "analytics": "analytics"
+          },
+          "provided_preferences": [],
+          "required_questions": []
+        },
+        {
+          "id": "temporary",
+          "prompt": "For this task only, the approved library option is allowed and required because the supplied integration adapter depends on it. Keep my standing dependency policy unchanged. Connect the supplied adapter to a static registration page. Both hosting options meet its feature requirements. Hosting options: choice-2-violet serves static files with no server process; choice-2-silver runs a managed application server. Dependency options: choice-2-amber uses the language standard library; choice-2-green adds a third-party runtime library. Analytics options: choice-2-blue stores daily aggregate counts without identifiers; choice-2-red stores a stable visitor identifier with page history. Write output.json with exactly these fields: hosting, dependency, analytics. Use the selected option ID for each hosting, dependency, and analytics field. Available preference question IDs: hosting, dependencies, analytics.",
+          "answers": {
+            "hosting": "Prefer a static host when it meets the stated feature requirements. Do not choose a managed application server merely for convenience. Save this standing preference for future project work; no further confirmation is needed.",
+            "dependencies": "For this integration task only, use the offered third-party runtime library. Do not save this exception as my standing dependency policy.",
+            "analytics": "Collect aggregate counts only; do not store visitor identifiers or page-by-page visitor histories. Save this standing preference for future project work; no further confirmation is needed."
+          },
+          "expected": {
+            "hosting": "choice-2-violet",
+            "dependency": "choice-2-green",
+            "analytics": "choice-2-blue"
+          },
+          "field_preferences": {
+            "hosting": "hosting",
+            "dependency": "dependencies",
+            "analytics": "analytics"
+          },
+          "provided_preferences": [
+            "dependencies"
+          ],
+          "required_questions": []
+        },
+        {
+          "id": "transfer",
+          "prompt": "Build a static equipment catalog. Both hosting options meet its feature requirements. Hosting options: choice-3-red serves static files with no server process; choice-3-blue runs a managed application server. Dependency options: choice-3-green uses the language standard library; choice-3-amber adds a third-party runtime library. Analytics options: choice-3-silver stores daily aggregate counts without identifiers; choice-3-violet stores a stable visitor identifier with page history. Write output.json with exactly these fields: hosting, dependency, analytics. Use the selected option ID for each hosting, dependency, and analytics field. Available preference question IDs: hosting, dependencies, analytics.",
+          "answers": {
+            "hosting": "Prefer a static host when it meets the stated feature requirements. Do not choose a managed application server merely for convenience. Save this standing preference for future project work; no further confirmation is needed.",
+            "dependencies": "Use the standard library; avoid adding third-party runtime dependencies. Save this standing preference for future project work; no further confirmation is needed.",
+            "analytics": "Collect aggregate counts only; do not store visitor identifiers or page-by-page visitor histories. Save this standing preference for future project work; no further confirmation is needed."
+          },
+          "expected": {
+            "hosting": "choice-3-red",
+            "dependency": "choice-3-green",
+            "analytics": "choice-3-silver"
+          },
+          "field_preferences": {
+            "hosting": "hosting",
+            "dependency": "dependencies",
+            "analytics": "analytics"
+          },
+          "provided_preferences": [],
+          "required_questions": []
+        },
+        {
+          "id": "lasting_change",
+          "prompt": "Our operations team now supports the managed application server. Use that hosting option from now on, including static pages, and save this lasting change. Prepare a static contact page. Both hosting options meet its feature requirements. Hosting options: choice-4-violet serves static files with no server process; choice-4-silver runs a managed application server. Dependency options: choice-4-amber uses the language standard library; choice-4-green adds a third-party runtime library. Analytics options: choice-4-blue stores daily aggregate counts without identifiers; choice-4-red stores a stable visitor identifier with page history. Write output.json with exactly these fields: hosting, dependency, analytics. Use the selected option ID for each hosting, dependency, and analytics field. Available preference question IDs: hosting, dependencies, analytics.",
+          "answers": {
+            "hosting": "My standing hosting preference is now the managed application server, including for static pages, because our operations team supports it. Save this lasting change; no further confirmation is needed.",
+            "dependencies": "Use the standard library; avoid adding third-party runtime dependencies. Save this standing preference for future project work; no further confirmation is needed.",
+            "analytics": "Collect aggregate counts only; do not store visitor identifiers or page-by-page visitor histories. Save this standing preference for future project work; no further confirmation is needed."
+          },
+          "expected": {
+            "hosting": "choice-4-silver",
+            "dependency": "choice-4-amber",
+            "analytics": "choice-4-blue"
+          },
+          "field_preferences": {
+            "hosting": "hosting",
+            "dependency": "dependencies",
+            "analytics": "analytics"
+          },
+          "provided_preferences": [
+            "hosting"
+          ],
+          "required_questions": []
+        },
+        {
+          "id": "new_choice",
+          "prompt": "We also need a retention duration for these aggregate counts. We have not decided it before; ask me before submitting. Prepare a static status page. Both hosting options meet its feature requirements. Hosting options: choice-5-red serves static files with no server process; choice-5-blue runs a managed application server. Dependency options: choice-5-green uses the language standard library; choice-5-amber adds a third-party runtime library. Analytics options: choice-5-silver stores daily aggregate counts without identifiers; choice-5-violet stores a stable visitor identifier with page history. Write output.json with exactly these fields: hosting, dependency, analytics, retention_days. Use the selected option ID for each hosting, dependency, and analytics field. Use an integer for retention_days. Available preference question IDs: hosting, dependencies, analytics, retention.",
+          "answers": {
+            "hosting": "My standing hosting preference is now the managed application server, including for static pages, because our operations team supports it. Save this lasting change; no further confirmation is needed.",
+            "dependencies": "Use the standard library; avoid adding third-party runtime dependencies. Save this standing preference for future project work; no further confirmation is needed.",
+            "analytics": "Collect aggregate counts only; do not store visitor identifiers or page-by-page visitor histories. Save this standing preference for future project work; no further confirmation is needed.",
+            "retention": "Keep aggregate counts for 14 days for this status page. This is a task-specific decision; do not save a project-wide retention preference."
+          },
+          "expected": {
+            "hosting": "choice-5-blue",
+            "dependency": "choice-5-green",
+            "analytics": "choice-5-silver",
+            "retention_days": 14
+          },
+          "field_preferences": {
+            "hosting": "hosting",
+            "dependency": "dependencies",
+            "analytics": "analytics",
+            "retention_days": "retention"
+          },
+          "provided_preferences": [],
+          "required_questions": [
+            "retention"
+          ]
+        }
+      ]
+    }
+  ]
+}

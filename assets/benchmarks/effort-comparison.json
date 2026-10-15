@@ -1,0 +1,32 @@
+{
+  "report_sha256": "59ebd7487de970c352184d9a4050beb50f543f494bde49489d0c5d970f658876",
+  "python": "3.14.7",
+  "matplotlib": "3.11.2",
+  "data": [
+    {
+      "arm": "A",
+      "planned_tasks": 20,
+      "first_submission_passes": 20,
+      "setup_replies": 4,
+      "task_replies": 4,
+      "preference_units": 24
+    },
+    {
+      "arm": "B",
+      "planned_tasks": 20,
+      "first_submission_passes": 20,
+      "setup_replies": 4,
+      "task_replies": 4,
+      "preference_units": 24
+    },
+    {
+      "arm": "C",
+      "planned_tasks": 20,
+      "first_submission_passes": 20,
+      "setup_replies": 4,
+      "task_replies": 4,
+      "preference_units": 24
+    }
+  ],
+  "scope": "Scripted criteria and user replies; not measured human satisfaction or effort."
+}

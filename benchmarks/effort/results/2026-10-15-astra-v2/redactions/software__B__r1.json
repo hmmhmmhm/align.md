@@ -1,0 +1,37 @@
+{
+  "counts": {},
+  "private_record_sha256": "371e78ffbfc4d5bd8a5f93d03487fe1d3cf3f7e5312ba1259270da6f7001e6c0",
+  "published_record_sha256": "0c8e842694950d995592cbdcb2ae670dead5172f2b7ee379c219427089e104b3",
+  "session_traces": [
+    {
+      "file": "session-traces/software__B__r1/rollout-2026-10-15T09-46-49-01a13d06-a8f6-7420-b15e-16d281635ee7.jsonl.gz",
+      "private_original_sha256": "a0b4f352748e11218685ce313f3471259d44c9643902b3b124f3f8f7da4f4851",
+      "published_sha256": "a654ca7ded1f9b1eb99720b014635089813af1e2ea5829f855cb0398d12e9719"
+    },
+    {
+      "file": "session-traces/software__B__r1/rollout-2026-10-15T09-46-35-01a13d06-7440-72d2-8caa-765df68be9a3.jsonl.gz",
+      "private_original_sha256": "1e4bc9c739226c35223a439aea524b6f93f9926789bd52688e84597dcf4948d8",
+      "published_sha256": "24e8ab3effb715174bb2a12aa6f84be4f6ab6d9c48840660295f4b171560d39e"
+    },
+    {
+      "file": "session-traces/software__B__r1/rollout-2026-10-15T09-47-10-01a13d06-fc34-7400-b308-bf6ac3836dbb.jsonl.gz",
+      "private_original_sha256": "d9d545a40073a3b71214461c9e1226335b88fdf2eb7bf8e9d1177960ea6bc4fa",
+      "published_sha256": "7980ae8b1e67bb77bd32db24303e6d491477af327333290d1bf0fa3a2fd7fc12"
+    },
+    {
+      "file": "session-traces/software__B__r1/rollout-2026-10-15T09-46-08-01a13d06-08e8-7b70-8451-9ec201f9642a.jsonl.gz",
+      "private_original_sha256": "3add11a73327c538625470493580095b2e8e37f807991f815c818490f7b5089b",
+      "published_sha256": "201ad62fb526a363a27be41d4852a44961cda7f62f00b187e52def9502c50e12"
+    },
+    {
+      "file": "session-traces/software__B__r1/rollout-2026-10-15T09-46-27-01a13d06-54a8-7e11-bdab-2cf353234303.jsonl.gz",
+      "private_original_sha256": "e9db7ad4f648fcc3490abb1daea342065e09ee07f5e8fd5f5fefc5c90bcd8e6e",
+      "published_sha256": "c18468aeaa6580fc2cec060aa69fa6cb47e4e1090cf8e5a5614caf3a3f63c0d0"
+    },
+    {
+      "file": "session-traces/software__B__r1/rollout-2026-10-15T09-46-58-01a13d06-cd39-7f83-923d-3d05aefc127c.jsonl.gz",
+      "private_original_sha256": "cff212169630780076a41044c02a06b6f4df0f6a8aea213a7580d333933adad9",
+      "published_sha256": "5167996473ebd2e06631ab9e17cb5b714875f1bd82cfe399d27f3d0e782e8f0c"
+    }
+  ]
+}

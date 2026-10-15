@@ -1,0 +1,5249 @@
+{
+  "verified": true,
+  "errors": [],
+  "non_scored_smoke": false,
+  "arms": {
+    "A": {
+      "planned_trajectories": 4,
+      "recorded_trajectories": 4,
+      "execution_failures": 0,
+      "totals": {
+        "actor_turns": 32,
+        "user_characters": 17380,
+        "harness_protocol_characters": 15288,
+        "setup_initial_user_characters": 1238,
+        "user_whitespace_words": 2430,
+        "assistant_characters": 3215,
+        "final_protocol_characters": 840,
+        "tokens_input_tokens": 1457159,
+        "tokens_cached_input_tokens": 1288064,
+        "tokens_cache_write_input_tokens": 0,
+        "tokens_output_tokens": 6433,
+        "tokens_reasoning_output_tokens": 0,
+        "setup_reply_user_characters": 1996,
+        "task_initial_user_characters": 13662,
+        "task_reply_user_characters": 484,
+        "intervention_turns": 8,
+        "preference_units": 24,
+        "repeated_preference_units": 0,
+        "passed_episodes": 24,
+        "planned_episodes": 24,
+        "provided_preference_units": 8,
+        "off_interface_audit_turns": 25,
+        "setup_intervention_turns": 4,
+        "task_intervention_turns": 4,
+        "setup_preference_units": 12,
+        "setup_repeated_preference_units": 0,
+        "task_preference_units": 12,
+        "task_repeated_preference_units": 0,
+        "repeated_question_units": 0,
+        "new_question_units": 16,
+        "failed_or_missing_episodes": 0,
+        "duration_seconds": 374.99399999999997,
+        "usage_missing_turns": 0,
+        "correction_rounds": 0,
+        "protocol_errors": 0
+      }
+    },
+    "B": {
+      "planned_trajectories": 4,
+      "recorded_trajectories": 4,
+      "execution_failures": 0,
+      "totals": {
+        "actor_turns": 32,
+        "user_characters": 17380,
+        "harness_protocol_characters": 15288,
+        "setup_initial_user_characters": 1238,
+        "user_whitespace_words": 2430,
+        "assistant_characters": 3204,
+        "final_protocol_characters": 840,
+        "tokens_input_tokens": 1252807,
+        "tokens_cached_input_tokens": 1129216,
+        "tokens_cache_write_input_tokens": 0,
+        "tokens_output_tokens": 5022,
+        "tokens_reasoning_output_tokens": 0,
+        "setup_reply_user_characters": 1996,
+        "task_initial_user_characters": 13662,
+        "task_reply_user_characters": 484,
+        "intervention_turns": 8,
+        "preference_units": 24,
+        "repeated_preference_units": 0,
+        "passed_episodes": 24,
+        "planned_episodes": 24,
+        "provided_preference_units": 8,
+        "off_interface_audit_turns": 32,
+        "setup_intervention_turns": 4,
+        "task_intervention_turns": 4,
+        "setup_preference_units": 12,
+        "setup_repeated_preference_units": 0,
+        "task_preference_units": 12,
+        "task_repeated_preference_units": 0,
+        "repeated_question_units": 0,
+        "new_question_units": 16,
+        "failed_or_missing_episodes": 0,
+        "duration_seconds": 444.62700000000007,
+        "usage_missing_turns": 0,
+        "correction_rounds": 0,
+        "protocol_errors": 0
+      }
+    },
+    "C": {
+      "planned_trajectories": 4,
+      "recorded_trajectories": 4,
+      "execution_failures": 0,
+      "totals": {
+        "actor_turns": 32,
+        "user_characters": 17380,
+        "harness_protocol_characters": 15288,
+        "setup_initial_user_characters": 1238,
+        "user_whitespace_words": 2430,
+        "assistant_characters": 3834,
+        "final_protocol_characters": 840,
+        "tokens_input_tokens": 2052165,
+        "tokens_cached_input_tokens": 1793920,
+        "tokens_cache_write_input_tokens": 0,
+        "tokens_output_tokens": 10285,
+        "tokens_reasoning_output_tokens": 0,
+        "setup_reply_user_characters": 1996,
+        "task_initial_user_characters": 13662,
+        "task_reply_user_characters": 484,
+        "intervention_turns": 8,
+        "preference_units": 24,
+        "repeated_preference_units": 0,
+        "passed_episodes": 24,
+        "planned_episodes": 24,
+        "provided_preference_units": 8,
+        "off_interface_audit_turns": 32,
+        "setup_intervention_turns": 4,
+        "task_intervention_turns": 4,
+        "setup_preference_units": 12,
+        "setup_repeated_preference_units": 0,
+        "task_preference_units": 12,
+        "task_repeated_preference_units": 0,
+        "repeated_question_units": 0,
+        "new_question_units": 16,
+        "failed_or_missing_episodes": 0,
+        "duration_seconds": 499.024,
+        "usage_missing_turns": 0,
+        "correction_rounds": 0,
+        "protocol_errors": 0
+      }
+    }
+  },
+  "trajectories": [
+    {
+      "id": "notice__B__r2",
+      "arm": "B",
+      "case_id": "notice",
+      "repeat": 2,
+      "status": "completed",
+      "metrics": {
+        "actor_turns": 8,
+        "user_characters": 3612,
+        "harness_protocol_characters": 3822,
+        "setup_initial_user_characters": 336,
+        "user_whitespace_words": 546,
+        "assistant_characters": 782,
+        "final_protocol_characters": 207,
+        "tokens_input_tokens": 302470,
+        "tokens_cached_input_tokens": 273792,
+        "tokens_cache_write_input_tokens": 0,
+        "tokens_output_tokens": 1261,
+        "tokens_reasoning_output_tokens": 0,
+        "setup_reply_user_characters": 422,
+        "task_initial_user_characters": 2750,
+        "task_reply_user_characters": 104,
+        "intervention_turns": 2,
+        "preference_units": 6,
+        "repeated_preference_units": 0,
+        "passed_episodes": 6,
+        "planned_episodes": 6,
+        "provided_preference_units": 2,
+        "off_interface_audit_turns": 8,
+        "setup_intervention_turns": 1,
+        "task_intervention_turns": 1,
+        "setup_preference_units": 3,
+        "setup_repeated_preference_units": 0,
+        "task_preference_units": 3,
+        "task_repeated_preference_units": 0,
+        "repeated_question_units": 0,
+        "new_question_units": 4,
+        "failed_or_missing_episodes": 0,
+        "duration_seconds": 137.145,
+        "usage_missing_turns": 0,
+        "correction_rounds": 0,
+        "protocol_errors": 0
+      },
+      "episodes": [
+        {
+          "id": "setup",
+          "passed": true,
+          "actor_turns": 2,
+          "provided_preferences": [],
+          "required_questions": [
+            "heading",
+            "date_style",
+            "contact"
+          ],
+          "answered_questions": [
+            "contact",
+            "date_style",
+            "heading"
+          ],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "actual": null
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 1,
+            "preference_units": 3,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "routine",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "template": "notice-1-alpha",
+              "title": "Workshop bulletin",
+              "date": "03/11/2026",
+              "contact": "info@example.test",
+              "body": "The desk opens at 09:00."
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 0,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "temporary",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [
+            "heading"
+          ],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "template": "notice-2-beta",
+              "title": "Open day special",
+              "date": "08/11/2026",
+              "contact": "info@example.test",
+              "body": "The desk closes at 16:00."
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "transfer",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "template": "notice-3-alpha",
+              "title": "Workshop bulletin",
+              "date": "12/11/2026",
+              "contact": "info@example.test",
+              "body": "The collection window starts at 10:00."
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 0,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "lasting_change",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [
+            "heading"
+          ],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "template": "notice-4-beta",
+              "title": "Workshop update",
+              "date": "17/11/2026",
+              "contact": "info@example.test",
+              "body": "The desk opens at 08:30."
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "new_choice",
+          "passed": true,
+          "actor_turns": 2,
+          "provided_preferences": [],
+          "required_questions": [
+            "channel"
+          ],
+          "answered_questions": [
+            "channel"
+          ],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "template": "notice-5-alpha",
+              "title": "Workshop update",
+              "date": "21/11/2026",
+              "contact": "info@example.test",
+              "body": "The collection window ends at 15:00.",
+              "channel": "email"
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 1,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        }
+      ],
+      "cumulative": [
+        {
+          "episode": "setup",
+          "intervention_turns": 1,
+          "preference_units": 3,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "routine",
+          "intervention_turns": 1,
+          "preference_units": 3,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "temporary",
+          "intervention_turns": 1,
+          "preference_units": 4,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "transfer",
+          "intervention_turns": 1,
+          "preference_units": 4,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "lasting_change",
+          "intervention_turns": 1,
+          "preference_units": 5,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "new_choice",
+          "intervention_turns": 2,
+          "preference_units": 6,
+          "repeated_preference_units": 0,
+          "passed": true
+        }
+      ],
+      "models": [
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "id": "software__B__r2",
+      "arm": "B",
+      "case_id": "software",
+      "repeat": 2,
+      "status": "completed",
+      "metrics": {
+        "actor_turns": 8,
+        "user_characters": 5078,
+        "harness_protocol_characters": 3822,
+        "setup_initial_user_characters": 283,
+        "user_whitespace_words": 669,
+        "assistant_characters": 854,
+        "final_protocol_characters": 213,
+        "tokens_input_tokens": 330205,
+        "tokens_cached_input_tokens": 300672,
+        "tokens_cache_write_input_tokens": 0,
+        "tokens_output_tokens": 1265,
+        "tokens_reasoning_output_tokens": 0,
+        "setup_reply_user_characters": 576,
+        "task_initial_user_characters": 4081,
+        "task_reply_user_characters": 138,
+        "intervention_turns": 2,
+        "preference_units": 6,
+        "repeated_preference_units": 0,
+        "passed_episodes": 6,
+        "planned_episodes": 6,
+        "provided_preference_units": 2,
+        "off_interface_audit_turns": 8,
+        "setup_intervention_turns": 1,
+        "task_intervention_turns": 1,
+        "setup_preference_units": 3,
+        "setup_repeated_preference_units": 0,
+        "task_preference_units": 3,
+        "task_repeated_preference_units": 0,
+        "repeated_question_units": 0,
+        "new_question_units": 4,
+        "failed_or_missing_episodes": 0,
+        "duration_seconds": 141.142,
+        "usage_missing_turns": 0,
+        "correction_rounds": 0,
+        "protocol_errors": 0
+      },
+      "episodes": [
+        {
+          "id": "setup",
+          "passed": true,
+          "actor_turns": 2,
+          "provided_preferences": [],
+          "required_questions": [
+            "hosting",
+            "dependencies",
+            "analytics"
+          ],
+          "answered_questions": [
+            "analytics",
+            "dependencies",
+            "hosting"
+          ],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "actual": null
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 1,
+            "preference_units": 3,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "routine",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "hosting": "choice-1-red",
+              "dependency": "choice-1-green",
+              "analytics": "choice-1-silver"
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 0,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "temporary",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [
+            "dependencies"
+          ],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "hosting": "choice-2-violet",
+              "dependency": "choice-2-green",
+              "analytics": "choice-2-blue"
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "transfer",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "hosting": "choice-3-red",
+              "dependency": "choice-3-green",
+              "analytics": "choice-3-silver"
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 0,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "lasting_change",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [
+            "hosting"
+          ],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "hosting": "choice-4-silver",
+              "dependency": "choice-4-amber",
+              "analytics": "choice-4-blue"
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "new_choice",
+          "passed": true,
+          "actor_turns": 2,
+          "provided_preferences": [],
+          "required_questions": [
+            "retention"
+          ],
+          "answered_questions": [
+            "retention"
+          ],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "hosting": "choice-5-blue",
+              "dependency": "choice-5-green",
+              "analytics": "choice-5-silver",
+              "retention_days": 14
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 1,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        }
+      ],
+      "cumulative": [
+        {
+          "episode": "setup",
+          "intervention_turns": 1,
+          "preference_units": 3,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "routine",
+          "intervention_turns": 1,
+          "preference_units": 3,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "temporary",
+          "intervention_turns": 1,
+          "preference_units": 4,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "transfer",
+          "intervention_turns": 1,
+          "preference_units": 4,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "lasting_change",
+          "intervention_turns": 1,
+          "preference_units": 5,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "new_choice",
+          "intervention_turns": 2,
+          "preference_units": 6,
+          "repeated_preference_units": 0,
+          "passed": true
+        }
+      ],
+      "models": [
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "id": "notice__C__r1",
+      "arm": "C",
+      "case_id": "notice",
+      "repeat": 1,
+      "status": "completed",
+      "metrics": {
+        "actor_turns": 8,
+        "user_characters": 3612,
+        "harness_protocol_characters": 3822,
+        "setup_initial_user_characters": 336,
+        "user_whitespace_words": 546,
+        "assistant_characters": 946,
+        "final_protocol_characters": 207,
+        "tokens_input_tokens": 530216,
+        "tokens_cached_input_tokens": 475008,
+        "tokens_cache_write_input_tokens": 0,
+        "tokens_output_tokens": 3048,
+        "tokens_reasoning_output_tokens": 0,
+        "setup_reply_user_characters": 422,
+        "task_initial_user_characters": 2750,
+        "task_reply_user_characters": 104,
+        "intervention_turns": 2,
+        "preference_units": 6,
+        "repeated_preference_units": 0,
+        "passed_episodes": 6,
+        "planned_episodes": 6,
+        "provided_preference_units": 2,
+        "off_interface_audit_turns": 8,
+        "setup_intervention_turns": 1,
+        "task_intervention_turns": 1,
+        "setup_preference_units": 3,
+        "setup_repeated_preference_units": 0,
+        "task_preference_units": 3,
+        "task_repeated_preference_units": 0,
+        "repeated_question_units": 0,
+        "new_question_units": 4,
+        "failed_or_missing_episodes": 0,
+        "duration_seconds": 137.028,
+        "usage_missing_turns": 0,
+        "correction_rounds": 0,
+        "protocol_errors": 0
+      },
+      "episodes": [
+        {
+          "id": "setup",
+          "passed": true,
+          "actor_turns": 2,
+          "provided_preferences": [],
+          "required_questions": [
+            "heading",
+            "date_style",
+            "contact"
+          ],
+          "answered_questions": [
+            "contact",
+            "date_style",
+            "heading"
+          ],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "actual": null
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 1,
+            "preference_units": 3,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "routine",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "template": "notice-1-alpha",
+              "title": "Workshop bulletin",
+              "date": "03/11/2026",
+              "contact": "info@example.test",
+              "body": "The desk opens at 09:00."
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 0,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "temporary",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [
+            "heading"
+          ],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "template": "notice-2-beta",
+              "title": "Open day special",
+              "date": "08/11/2026",
+              "contact": "info@example.test",
+              "body": "The desk closes at 16:00."
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "transfer",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "template": "notice-3-alpha",
+              "title": "Workshop bulletin",
+              "date": "12/11/2026",
+              "contact": "info@example.test",
+              "body": "The collection window starts at 10:00."
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 0,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "lasting_change",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [
+            "heading"
+          ],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "template": "notice-4-beta",
+              "title": "Workshop update",
+              "date": "17/11/2026",
+              "contact": "info@example.test",
+              "body": "The desk opens at 08:30."
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "new_choice",
+          "passed": true,
+          "actor_turns": 2,
+          "provided_preferences": [],
+          "required_questions": [
+            "channel"
+          ],
+          "answered_questions": [
+            "channel"
+          ],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "template": "notice-5-alpha",
+              "title": "Workshop update",
+              "date": "21/11/2026",
+              "contact": "info@example.test",
+              "body": "The collection window ends at 15:00.",
+              "channel": "email"
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 1,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        }
+      ],
+      "cumulative": [
+        {
+          "episode": "setup",
+          "intervention_turns": 1,
+          "preference_units": 3,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "routine",
+          "intervention_turns": 1,
+          "preference_units": 3,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "temporary",
+          "intervention_turns": 1,
+          "preference_units": 4,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "transfer",
+          "intervention_turns": 1,
+          "preference_units": 4,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "lasting_change",
+          "intervention_turns": 1,
+          "preference_units": 5,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "new_choice",
+          "intervention_turns": 2,
+          "preference_units": 6,
+          "repeated_preference_units": 0,
+          "passed": true
+        }
+      ],
+      "models": [
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "id": "notice__B__r1",
+      "arm": "B",
+      "case_id": "notice",
+      "repeat": 1,
+      "status": "completed",
+      "metrics": {
+        "actor_turns": 8,
+        "user_characters": 3612,
+        "harness_protocol_characters": 3822,
+        "setup_initial_user_characters": 336,
+        "user_whitespace_words": 546,
+        "assistant_characters": 770,
+        "final_protocol_characters": 207,
+        "tokens_input_tokens": 303673,
+        "tokens_cached_input_tokens": 274560,
+        "tokens_cache_write_input_tokens": 0,
+        "tokens_output_tokens": 1297,
+        "tokens_reasoning_output_tokens": 0,
+        "setup_reply_user_characters": 422,
+        "task_initial_user_characters": 2750,
+        "task_reply_user_characters": 104,
+        "intervention_turns": 2,
+        "preference_units": 6,
+        "repeated_preference_units": 0,
+        "passed_episodes": 6,
+        "planned_episodes": 6,
+        "provided_preference_units": 2,
+        "off_interface_audit_turns": 8,
+        "setup_intervention_turns": 1,
+        "task_intervention_turns": 1,
+        "setup_preference_units": 3,
+        "setup_repeated_preference_units": 0,
+        "task_preference_units": 3,
+        "task_repeated_preference_units": 0,
+        "repeated_question_units": 0,
+        "new_question_units": 4,
+        "failed_or_missing_episodes": 0,
+        "duration_seconds": 85.821,
+        "usage_missing_turns": 0,
+        "correction_rounds": 0,
+        "protocol_errors": 0
+      },
+      "episodes": [
+        {
+          "id": "setup",
+          "passed": true,
+          "actor_turns": 2,
+          "provided_preferences": [],
+          "required_questions": [
+            "heading",
+            "date_style",
+            "contact"
+          ],
+          "answered_questions": [
+            "contact",
+            "date_style",
+            "heading"
+          ],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "actual": null
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 1,
+            "preference_units": 3,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "routine",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "template": "notice-1-alpha",
+              "title": "Workshop bulletin",
+              "date": "03/11/2026",
+              "contact": "info@example.test",
+              "body": "The desk opens at 09:00."
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 0,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "temporary",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [
+            "heading"
+          ],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "template": "notice-2-beta",
+              "title": "Open day special",
+              "date": "08/11/2026",
+              "contact": "info@example.test",
+              "body": "The desk closes at 16:00."
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "transfer",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "template": "notice-3-alpha",
+              "title": "Workshop bulletin",
+              "date": "12/11/2026",
+              "contact": "info@example.test",
+              "body": "The collection window starts at 10:00."
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 0,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "lasting_change",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [
+            "heading"
+          ],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "template": "notice-4-beta",
+              "title": "Workshop update",
+              "date": "17/11/2026",
+              "contact": "info@example.test",
+              "body": "The desk opens at 08:30."
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "new_choice",
+          "passed": true,
+          "actor_turns": 2,
+          "provided_preferences": [],
+          "required_questions": [
+            "channel"
+          ],
+          "answered_questions": [
+            "channel"
+          ],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "template": "notice-5-alpha",
+              "title": "Workshop update",
+              "date": "21/11/2026",
+              "contact": "info@example.test",
+              "body": "The collection window ends at 15:00.",
+              "channel": "email"
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 1,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        }
+      ],
+      "cumulative": [
+        {
+          "episode": "setup",
+          "intervention_turns": 1,
+          "preference_units": 3,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "routine",
+          "intervention_turns": 1,
+          "preference_units": 3,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "temporary",
+          "intervention_turns": 1,
+          "preference_units": 4,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "transfer",
+          "intervention_turns": 1,
+          "preference_units": 4,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "lasting_change",
+          "intervention_turns": 1,
+          "preference_units": 5,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "new_choice",
+          "intervention_turns": 2,
+          "preference_units": 6,
+          "repeated_preference_units": 0,
+          "passed": true
+        }
+      ],
+      "models": [
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "id": "notice__C__r2",
+      "arm": "C",
+      "case_id": "notice",
+      "repeat": 2,
+      "status": "completed",
+      "metrics": {
+        "actor_turns": 8,
+        "user_characters": 3612,
+        "harness_protocol_characters": 3822,
+        "setup_initial_user_characters": 336,
+        "user_whitespace_words": 546,
+        "assistant_characters": 904,
+        "final_protocol_characters": 207,
+        "tokens_input_tokens": 515216,
+        "tokens_cached_input_tokens": 457088,
+        "tokens_cache_write_input_tokens": 0,
+        "tokens_output_tokens": 2658,
+        "tokens_reasoning_output_tokens": 0,
+        "setup_reply_user_characters": 422,
+        "task_initial_user_characters": 2750,
+        "task_reply_user_characters": 104,
+        "intervention_turns": 2,
+        "preference_units": 6,
+        "repeated_preference_units": 0,
+        "passed_episodes": 6,
+        "planned_episodes": 6,
+        "provided_preference_units": 2,
+        "off_interface_audit_turns": 8,
+        "setup_intervention_turns": 1,
+        "task_intervention_turns": 1,
+        "setup_preference_units": 3,
+        "setup_repeated_preference_units": 0,
+        "task_preference_units": 3,
+        "task_repeated_preference_units": 0,
+        "repeated_question_units": 0,
+        "new_question_units": 4,
+        "failed_or_missing_episodes": 0,
+        "duration_seconds": 118.85900000000001,
+        "usage_missing_turns": 0,
+        "correction_rounds": 0,
+        "protocol_errors": 0
+      },
+      "episodes": [
+        {
+          "id": "setup",
+          "passed": true,
+          "actor_turns": 2,
+          "provided_preferences": [],
+          "required_questions": [
+            "heading",
+            "date_style",
+            "contact"
+          ],
+          "answered_questions": [
+            "contact",
+            "date_style",
+            "heading"
+          ],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "actual": null
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 1,
+            "preference_units": 3,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "routine",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "template": "notice-1-alpha",
+              "title": "Workshop bulletin",
+              "date": "03/11/2026",
+              "contact": "info@example.test",
+              "body": "The desk opens at 09:00."
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 0,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "temporary",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [
+            "heading"
+          ],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "template": "notice-2-beta",
+              "title": "Open day special",
+              "date": "08/11/2026",
+              "contact": "info@example.test",
+              "body": "The desk closes at 16:00."
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "transfer",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "template": "notice-3-alpha",
+              "title": "Workshop bulletin",
+              "date": "12/11/2026",
+              "contact": "info@example.test",
+              "body": "The collection window starts at 10:00."
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 0,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "lasting_change",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [
+            "heading"
+          ],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "template": "notice-4-beta",
+              "title": "Workshop update",
+              "date": "17/11/2026",
+              "contact": "info@example.test",
+              "body": "The desk opens at 08:30."
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "new_choice",
+          "passed": true,
+          "actor_turns": 2,
+          "provided_preferences": [],
+          "required_questions": [
+            "channel"
+          ],
+          "answered_questions": [
+            "channel"
+          ],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "template": "notice-5-alpha",
+              "title": "Workshop update",
+              "date": "21/11/2026",
+              "contact": "info@example.test",
+              "body": "The collection window ends at 15:00.",
+              "channel": "email"
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 1,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        }
+      ],
+      "cumulative": [
+        {
+          "episode": "setup",
+          "intervention_turns": 1,
+          "preference_units": 3,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "routine",
+          "intervention_turns": 1,
+          "preference_units": 3,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "temporary",
+          "intervention_turns": 1,
+          "preference_units": 4,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "transfer",
+          "intervention_turns": 1,
+          "preference_units": 4,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "lasting_change",
+          "intervention_turns": 1,
+          "preference_units": 5,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "new_choice",
+          "intervention_turns": 2,
+          "preference_units": 6,
+          "repeated_preference_units": 0,
+          "passed": true
+        }
+      ],
+      "models": [
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "id": "software__C__r1",
+      "arm": "C",
+      "case_id": "software",
+      "repeat": 1,
+      "status": "completed",
+      "metrics": {
+        "actor_turns": 8,
+        "user_characters": 5078,
+        "harness_protocol_characters": 3822,
+        "setup_initial_user_characters": 283,
+        "user_whitespace_words": 669,
+        "assistant_characters": 958,
+        "final_protocol_characters": 213,
+        "tokens_input_tokens": 526089,
+        "tokens_cached_input_tokens": 439552,
+        "tokens_cache_write_input_tokens": 0,
+        "tokens_output_tokens": 2299,
+        "tokens_reasoning_output_tokens": 0,
+        "setup_reply_user_characters": 576,
+        "task_initial_user_characters": 4081,
+        "task_reply_user_characters": 138,
+        "intervention_turns": 2,
+        "preference_units": 6,
+        "repeated_preference_units": 0,
+        "passed_episodes": 6,
+        "planned_episodes": 6,
+        "provided_preference_units": 2,
+        "off_interface_audit_turns": 8,
+        "setup_intervention_turns": 1,
+        "task_intervention_turns": 1,
+        "setup_preference_units": 3,
+        "setup_repeated_preference_units": 0,
+        "task_preference_units": 3,
+        "task_repeated_preference_units": 0,
+        "repeated_question_units": 0,
+        "new_question_units": 4,
+        "failed_or_missing_episodes": 0,
+        "duration_seconds": 121.769,
+        "usage_missing_turns": 0,
+        "correction_rounds": 0,
+        "protocol_errors": 0
+      },
+      "episodes": [
+        {
+          "id": "setup",
+          "passed": true,
+          "actor_turns": 2,
+          "provided_preferences": [],
+          "required_questions": [
+            "hosting",
+            "dependencies",
+            "analytics"
+          ],
+          "answered_questions": [
+            "analytics",
+            "dependencies",
+            "hosting"
+          ],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "actual": null
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 1,
+            "preference_units": 3,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "routine",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "hosting": "choice-1-red",
+              "dependency": "choice-1-green",
+              "analytics": "choice-1-silver"
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 0,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "temporary",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [
+            "dependencies"
+          ],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "hosting": "choice-2-violet",
+              "dependency": "choice-2-green",
+              "analytics": "choice-2-blue"
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "transfer",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "hosting": "choice-3-red",
+              "dependency": "choice-3-green",
+              "analytics": "choice-3-silver"
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 0,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "lasting_change",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [
+            "hosting"
+          ],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "hosting": "choice-4-silver",
+              "dependency": "choice-4-amber",
+              "analytics": "choice-4-blue"
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "new_choice",
+          "passed": true,
+          "actor_turns": 2,
+          "provided_preferences": [],
+          "required_questions": [
+            "retention"
+          ],
+          "answered_questions": [
+            "retention"
+          ],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "hosting": "choice-5-blue",
+              "dependency": "choice-5-green",
+              "analytics": "choice-5-silver",
+              "retention_days": 14
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 1,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        }
+      ],
+      "cumulative": [
+        {
+          "episode": "setup",
+          "intervention_turns": 1,
+          "preference_units": 3,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "routine",
+          "intervention_turns": 1,
+          "preference_units": 3,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "temporary",
+          "intervention_turns": 1,
+          "preference_units": 4,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "transfer",
+          "intervention_turns": 1,
+          "preference_units": 4,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "lasting_change",
+          "intervention_turns": 1,
+          "preference_units": 5,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "new_choice",
+          "intervention_turns": 2,
+          "preference_units": 6,
+          "repeated_preference_units": 0,
+          "passed": true
+        }
+      ],
+      "models": [
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "id": "software__A__r1",
+      "arm": "A",
+      "case_id": "software",
+      "repeat": 1,
+      "status": "completed",
+      "metrics": {
+        "actor_turns": 8,
+        "user_characters": 5078,
+        "harness_protocol_characters": 3822,
+        "setup_initial_user_characters": 283,
+        "user_whitespace_words": 669,
+        "assistant_characters": 881,
+        "final_protocol_characters": 213,
+        "tokens_input_tokens": 375515,
+        "tokens_cached_input_tokens": 341760,
+        "tokens_cache_write_input_tokens": 0,
+        "tokens_output_tokens": 1607,
+        "tokens_reasoning_output_tokens": 0,
+        "setup_reply_user_characters": 576,
+        "task_initial_user_characters": 4081,
+        "task_reply_user_characters": 138,
+        "intervention_turns": 2,
+        "preference_units": 6,
+        "repeated_preference_units": 0,
+        "passed_episodes": 6,
+        "planned_episodes": 6,
+        "provided_preference_units": 2,
+        "off_interface_audit_turns": 6,
+        "setup_intervention_turns": 1,
+        "task_intervention_turns": 1,
+        "setup_preference_units": 3,
+        "setup_repeated_preference_units": 0,
+        "task_preference_units": 3,
+        "task_repeated_preference_units": 0,
+        "repeated_question_units": 0,
+        "new_question_units": 4,
+        "failed_or_missing_episodes": 0,
+        "duration_seconds": 87.812,
+        "usage_missing_turns": 0,
+        "correction_rounds": 0,
+        "protocol_errors": 0
+      },
+      "episodes": [
+        {
+          "id": "setup",
+          "passed": true,
+          "actor_turns": 2,
+          "provided_preferences": [],
+          "required_questions": [
+            "hosting",
+            "dependencies",
+            "analytics"
+          ],
+          "answered_questions": [
+            "analytics",
+            "dependencies",
+            "hosting"
+          ],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "actual": null
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 1,
+            "preference_units": 3,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "routine",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "hosting": "choice-1-red",
+              "dependency": "choice-1-green",
+              "analytics": "choice-1-silver"
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 0,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "temporary",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [
+            "dependencies"
+          ],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "hosting": "choice-2-violet",
+              "dependency": "choice-2-green",
+              "analytics": "choice-2-blue"
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "transfer",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "hosting": "choice-3-red",
+              "dependency": "choice-3-green",
+              "analytics": "choice-3-silver"
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 0,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "lasting_change",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [
+            "hosting"
+          ],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "hosting": "choice-4-silver",
+              "dependency": "choice-4-amber",
+              "analytics": "choice-4-blue"
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "new_choice",
+          "passed": true,
+          "actor_turns": 2,
+          "provided_preferences": [],
+          "required_questions": [
+            "retention"
+          ],
+          "answered_questions": [
+            "retention"
+          ],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "hosting": "choice-5-blue",
+              "dependency": "choice-5-green",
+              "analytics": "choice-5-silver",
+              "retention_days": 14
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 1,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        }
+      ],
+      "cumulative": [
+        {
+          "episode": "setup",
+          "intervention_turns": 1,
+          "preference_units": 3,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "routine",
+          "intervention_turns": 1,
+          "preference_units": 3,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "temporary",
+          "intervention_turns": 1,
+          "preference_units": 4,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "transfer",
+          "intervention_turns": 1,
+          "preference_units": 4,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "lasting_change",
+          "intervention_turns": 1,
+          "preference_units": 5,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "new_choice",
+          "intervention_turns": 2,
+          "preference_units": 6,
+          "repeated_preference_units": 0,
+          "passed": true
+        }
+      ],
+      "models": [
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "id": "notice__A__r1",
+      "arm": "A",
+      "case_id": "notice",
+      "repeat": 1,
+      "status": "completed",
+      "metrics": {
+        "actor_turns": 8,
+        "user_characters": 3612,
+        "harness_protocol_characters": 3822,
+        "setup_initial_user_characters": 336,
+        "user_whitespace_words": 546,
+        "assistant_characters": 813,
+        "final_protocol_characters": 207,
+        "tokens_input_tokens": 413584,
+        "tokens_cached_input_tokens": 354176,
+        "tokens_cache_write_input_tokens": 0,
+        "tokens_output_tokens": 1955,
+        "tokens_reasoning_output_tokens": 0,
+        "setup_reply_user_characters": 422,
+        "task_initial_user_characters": 2750,
+        "task_reply_user_characters": 104,
+        "intervention_turns": 2,
+        "preference_units": 6,
+        "repeated_preference_units": 0,
+        "passed_episodes": 6,
+        "planned_episodes": 6,
+        "provided_preference_units": 2,
+        "off_interface_audit_turns": 7,
+        "setup_intervention_turns": 1,
+        "task_intervention_turns": 1,
+        "setup_preference_units": 3,
+        "setup_repeated_preference_units": 0,
+        "task_preference_units": 3,
+        "task_repeated_preference_units": 0,
+        "repeated_question_units": 0,
+        "new_question_units": 4,
+        "failed_or_missing_episodes": 0,
+        "duration_seconds": 103.78,
+        "usage_missing_turns": 0,
+        "correction_rounds": 0,
+        "protocol_errors": 0
+      },
+      "episodes": [
+        {
+          "id": "setup",
+          "passed": true,
+          "actor_turns": 2,
+          "provided_preferences": [],
+          "required_questions": [
+            "heading",
+            "date_style",
+            "contact"
+          ],
+          "answered_questions": [
+            "contact",
+            "date_style",
+            "heading"
+          ],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "actual": null
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 1,
+            "preference_units": 3,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "routine",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "template": "notice-1-alpha",
+              "title": "Workshop bulletin",
+              "date": "03/11/2026",
+              "contact": "info@example.test",
+              "body": "The desk opens at 09:00."
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 0,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "temporary",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [
+            "heading"
+          ],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "template": "notice-2-beta",
+              "title": "Open day special",
+              "date": "08/11/2026",
+              "contact": "info@example.test",
+              "body": "The desk closes at 16:00."
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "transfer",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "template": "notice-3-alpha",
+              "title": "Workshop bulletin",
+              "date": "12/11/2026",
+              "contact": "info@example.test",
+              "body": "The collection window starts at 10:00."
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 0,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "lasting_change",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [
+            "heading"
+          ],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "template": "notice-4-beta",
+              "title": "Workshop update",
+              "date": "17/11/2026",
+              "contact": "info@example.test",
+              "body": "The desk opens at 08:30."
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "new_choice",
+          "passed": true,
+          "actor_turns": 2,
+          "provided_preferences": [],
+          "required_questions": [
+            "channel"
+          ],
+          "answered_questions": [
+            "channel"
+          ],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "template": "notice-5-alpha",
+              "title": "Workshop update",
+              "date": "21/11/2026",
+              "contact": "info@example.test",
+              "body": "The collection window ends at 15:00.",
+              "channel": "email"
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 1,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        }
+      ],
+      "cumulative": [
+        {
+          "episode": "setup",
+          "intervention_turns": 1,
+          "preference_units": 3,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "routine",
+          "intervention_turns": 1,
+          "preference_units": 3,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "temporary",
+          "intervention_turns": 1,
+          "preference_units": 4,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "transfer",
+          "intervention_turns": 1,
+          "preference_units": 4,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "lasting_change",
+          "intervention_turns": 1,
+          "preference_units": 5,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "new_choice",
+          "intervention_turns": 2,
+          "preference_units": 6,
+          "repeated_preference_units": 0,
+          "passed": true
+        }
+      ],
+      "models": [
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "id": "software__A__r2",
+      "arm": "A",
+      "case_id": "software",
+      "repeat": 2,
+      "status": "completed",
+      "metrics": {
+        "actor_turns": 8,
+        "user_characters": 5078,
+        "harness_protocol_characters": 3822,
+        "setup_initial_user_characters": 283,
+        "user_whitespace_words": 669,
+        "assistant_characters": 846,
+        "final_protocol_characters": 213,
+        "tokens_input_tokens": 321952,
+        "tokens_cached_input_tokens": 277888,
+        "tokens_cache_write_input_tokens": 0,
+        "tokens_output_tokens": 1315,
+        "tokens_reasoning_output_tokens": 0,
+        "setup_reply_user_characters": 576,
+        "task_initial_user_characters": 4081,
+        "task_reply_user_characters": 138,
+        "intervention_turns": 2,
+        "preference_units": 6,
+        "repeated_preference_units": 0,
+        "passed_episodes": 6,
+        "planned_episodes": 6,
+        "provided_preference_units": 2,
+        "off_interface_audit_turns": 6,
+        "setup_intervention_turns": 1,
+        "task_intervention_turns": 1,
+        "setup_preference_units": 3,
+        "setup_repeated_preference_units": 0,
+        "task_preference_units": 3,
+        "task_repeated_preference_units": 0,
+        "repeated_question_units": 0,
+        "new_question_units": 4,
+        "failed_or_missing_episodes": 0,
+        "duration_seconds": 87.712,
+        "usage_missing_turns": 0,
+        "correction_rounds": 0,
+        "protocol_errors": 0
+      },
+      "episodes": [
+        {
+          "id": "setup",
+          "passed": true,
+          "actor_turns": 2,
+          "provided_preferences": [],
+          "required_questions": [
+            "hosting",
+            "dependencies",
+            "analytics"
+          ],
+          "answered_questions": [
+            "analytics",
+            "dependencies",
+            "hosting"
+          ],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "actual": null
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 1,
+            "preference_units": 3,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "routine",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "hosting": "choice-1-red",
+              "dependency": "choice-1-green",
+              "analytics": "choice-1-silver"
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 0,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "temporary",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [
+            "dependencies"
+          ],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "hosting": "choice-2-violet",
+              "dependency": "choice-2-green",
+              "analytics": "choice-2-blue"
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "transfer",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "hosting": "choice-3-red",
+              "dependency": "choice-3-green",
+              "analytics": "choice-3-silver"
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 0,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "lasting_change",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [
+            "hosting"
+          ],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "hosting": "choice-4-silver",
+              "dependency": "choice-4-amber",
+              "analytics": "choice-4-blue"
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "new_choice",
+          "passed": true,
+          "actor_turns": 2,
+          "provided_preferences": [],
+          "required_questions": [
+            "retention"
+          ],
+          "answered_questions": [
+            "retention"
+          ],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "hosting": "choice-5-blue",
+              "dependency": "choice-5-green",
+              "analytics": "choice-5-silver",
+              "retention_days": 14
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 1,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        }
+      ],
+      "cumulative": [
+        {
+          "episode": "setup",
+          "intervention_turns": 1,
+          "preference_units": 3,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "routine",
+          "intervention_turns": 1,
+          "preference_units": 3,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "temporary",
+          "intervention_turns": 1,
+          "preference_units": 4,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "transfer",
+          "intervention_turns": 1,
+          "preference_units": 4,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "lasting_change",
+          "intervention_turns": 1,
+          "preference_units": 5,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "new_choice",
+          "intervention_turns": 2,
+          "preference_units": 6,
+          "repeated_preference_units": 0,
+          "passed": true
+        }
+      ],
+      "models": [
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "id": "software__B__r1",
+      "arm": "B",
+      "case_id": "software",
+      "repeat": 1,
+      "status": "completed",
+      "metrics": {
+        "actor_turns": 8,
+        "user_characters": 5078,
+        "harness_protocol_characters": 3822,
+        "setup_initial_user_characters": 283,
+        "user_whitespace_words": 669,
+        "assistant_characters": 798,
+        "final_protocol_characters": 213,
+        "tokens_input_tokens": 316459,
+        "tokens_cached_input_tokens": 280192,
+        "tokens_cache_write_input_tokens": 0,
+        "tokens_output_tokens": 1199,
+        "tokens_reasoning_output_tokens": 0,
+        "setup_reply_user_characters": 576,
+        "task_initial_user_characters": 4081,
+        "task_reply_user_characters": 138,
+        "intervention_turns": 2,
+        "preference_units": 6,
+        "repeated_preference_units": 0,
+        "passed_episodes": 6,
+        "planned_episodes": 6,
+        "provided_preference_units": 2,
+        "off_interface_audit_turns": 8,
+        "setup_intervention_turns": 1,
+        "task_intervention_turns": 1,
+        "setup_preference_units": 3,
+        "setup_repeated_preference_units": 0,
+        "task_preference_units": 3,
+        "task_repeated_preference_units": 0,
+        "repeated_question_units": 0,
+        "new_question_units": 4,
+        "failed_or_missing_episodes": 0,
+        "duration_seconds": 80.519,
+        "usage_missing_turns": 0,
+        "correction_rounds": 0,
+        "protocol_errors": 0
+      },
+      "episodes": [
+        {
+          "id": "setup",
+          "passed": true,
+          "actor_turns": 2,
+          "provided_preferences": [],
+          "required_questions": [
+            "hosting",
+            "dependencies",
+            "analytics"
+          ],
+          "answered_questions": [
+            "analytics",
+            "dependencies",
+            "hosting"
+          ],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "actual": null
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 1,
+            "preference_units": 3,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "routine",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "hosting": "choice-1-red",
+              "dependency": "choice-1-green",
+              "analytics": "choice-1-silver"
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 0,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "temporary",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [
+            "dependencies"
+          ],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "hosting": "choice-2-violet",
+              "dependency": "choice-2-green",
+              "analytics": "choice-2-blue"
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "transfer",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "hosting": "choice-3-red",
+              "dependency": "choice-3-green",
+              "analytics": "choice-3-silver"
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 0,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "lasting_change",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [
+            "hosting"
+          ],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "hosting": "choice-4-silver",
+              "dependency": "choice-4-amber",
+              "analytics": "choice-4-blue"
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "new_choice",
+          "passed": true,
+          "actor_turns": 2,
+          "provided_preferences": [],
+          "required_questions": [
+            "retention"
+          ],
+          "answered_questions": [
+            "retention"
+          ],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "hosting": "choice-5-blue",
+              "dependency": "choice-5-green",
+              "analytics": "choice-5-silver",
+              "retention_days": 14
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 1,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        }
+      ],
+      "cumulative": [
+        {
+          "episode": "setup",
+          "intervention_turns": 1,
+          "preference_units": 3,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "routine",
+          "intervention_turns": 1,
+          "preference_units": 3,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "temporary",
+          "intervention_turns": 1,
+          "preference_units": 4,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "transfer",
+          "intervention_turns": 1,
+          "preference_units": 4,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "lasting_change",
+          "intervention_turns": 1,
+          "preference_units": 5,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "new_choice",
+          "intervention_turns": 2,
+          "preference_units": 6,
+          "repeated_preference_units": 0,
+          "passed": true
+        }
+      ],
+      "models": [
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "id": "software__C__r2",
+      "arm": "C",
+      "case_id": "software",
+      "repeat": 2,
+      "status": "completed",
+      "metrics": {
+        "actor_turns": 8,
+        "user_characters": 5078,
+        "harness_protocol_characters": 3822,
+        "setup_initial_user_characters": 283,
+        "user_whitespace_words": 669,
+        "assistant_characters": 1026,
+        "final_protocol_characters": 213,
+        "tokens_input_tokens": 480644,
+        "tokens_cached_input_tokens": 422272,
+        "tokens_cache_write_input_tokens": 0,
+        "tokens_output_tokens": 2280,
+        "tokens_reasoning_output_tokens": 0,
+        "setup_reply_user_characters": 576,
+        "task_initial_user_characters": 4081,
+        "task_reply_user_characters": 138,
+        "intervention_turns": 2,
+        "preference_units": 6,
+        "repeated_preference_units": 0,
+        "passed_episodes": 6,
+        "planned_episodes": 6,
+        "provided_preference_units": 2,
+        "off_interface_audit_turns": 8,
+        "setup_intervention_turns": 1,
+        "task_intervention_turns": 1,
+        "setup_preference_units": 3,
+        "setup_repeated_preference_units": 0,
+        "task_preference_units": 3,
+        "task_repeated_preference_units": 0,
+        "repeated_question_units": 0,
+        "new_question_units": 4,
+        "failed_or_missing_episodes": 0,
+        "duration_seconds": 121.368,
+        "usage_missing_turns": 0,
+        "correction_rounds": 0,
+        "protocol_errors": 0
+      },
+      "episodes": [
+        {
+          "id": "setup",
+          "passed": true,
+          "actor_turns": 2,
+          "provided_preferences": [],
+          "required_questions": [
+            "hosting",
+            "dependencies",
+            "analytics"
+          ],
+          "answered_questions": [
+            "analytics",
+            "dependencies",
+            "hosting"
+          ],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "actual": null
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 1,
+            "preference_units": 3,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "routine",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "hosting": "choice-1-red",
+              "dependency": "choice-1-green",
+              "analytics": "choice-1-silver"
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 0,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "temporary",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [
+            "dependencies"
+          ],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "hosting": "choice-2-violet",
+              "dependency": "choice-2-green",
+              "analytics": "choice-2-blue"
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "transfer",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "hosting": "choice-3-red",
+              "dependency": "choice-3-green",
+              "analytics": "choice-3-silver"
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 0,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "lasting_change",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [
+            "hosting"
+          ],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "hosting": "choice-4-silver",
+              "dependency": "choice-4-amber",
+              "analytics": "choice-4-blue"
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "new_choice",
+          "passed": true,
+          "actor_turns": 2,
+          "provided_preferences": [],
+          "required_questions": [
+            "retention"
+          ],
+          "answered_questions": [
+            "retention"
+          ],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "hosting": "choice-5-blue",
+              "dependency": "choice-5-green",
+              "analytics": "choice-5-silver",
+              "retention_days": 14
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 1,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        }
+      ],
+      "cumulative": [
+        {
+          "episode": "setup",
+          "intervention_turns": 1,
+          "preference_units": 3,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "routine",
+          "intervention_turns": 1,
+          "preference_units": 3,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "temporary",
+          "intervention_turns": 1,
+          "preference_units": 4,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "transfer",
+          "intervention_turns": 1,
+          "preference_units": 4,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "lasting_change",
+          "intervention_turns": 1,
+          "preference_units": 5,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "new_choice",
+          "intervention_turns": 2,
+          "preference_units": 6,
+          "repeated_preference_units": 0,
+          "passed": true
+        }
+      ],
+      "models": [
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "id": "notice__A__r2",
+      "arm": "A",
+      "case_id": "notice",
+      "repeat": 2,
+      "status": "completed",
+      "metrics": {
+        "actor_turns": 8,
+        "user_characters": 3612,
+        "harness_protocol_characters": 3822,
+        "setup_initial_user_characters": 336,
+        "user_whitespace_words": 546,
+        "assistant_characters": 675,
+        "final_protocol_characters": 207,
+        "tokens_input_tokens": 346108,
+        "tokens_cached_input_tokens": 314240,
+        "tokens_cache_write_input_tokens": 0,
+        "tokens_output_tokens": 1556,
+        "tokens_reasoning_output_tokens": 0,
+        "setup_reply_user_characters": 422,
+        "task_initial_user_characters": 2750,
+        "task_reply_user_characters": 104,
+        "intervention_turns": 2,
+        "preference_units": 6,
+        "repeated_preference_units": 0,
+        "passed_episodes": 6,
+        "planned_episodes": 6,
+        "provided_preference_units": 2,
+        "off_interface_audit_turns": 6,
+        "setup_intervention_turns": 1,
+        "task_intervention_turns": 1,
+        "setup_preference_units": 3,
+        "setup_repeated_preference_units": 0,
+        "task_preference_units": 3,
+        "task_repeated_preference_units": 0,
+        "repeated_question_units": 0,
+        "new_question_units": 4,
+        "failed_or_missing_episodes": 0,
+        "duration_seconds": 95.69,
+        "usage_missing_turns": 0,
+        "correction_rounds": 0,
+        "protocol_errors": 0
+      },
+      "episodes": [
+        {
+          "id": "setup",
+          "passed": true,
+          "actor_turns": 2,
+          "provided_preferences": [],
+          "required_questions": [
+            "heading",
+            "date_style",
+            "contact"
+          ],
+          "answered_questions": [
+            "contact",
+            "date_style",
+            "heading"
+          ],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "actual": null
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 1,
+            "preference_units": 3,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "routine",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "template": "notice-1-alpha",
+              "title": "Workshop bulletin",
+              "date": "03/11/2026",
+              "contact": "info@example.test",
+              "body": "The desk opens at 09:00."
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 0,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "temporary",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [
+            "heading"
+          ],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "template": "notice-2-beta",
+              "title": "Open day special",
+              "date": "08/11/2026",
+              "contact": "info@example.test",
+              "body": "The desk closes at 16:00."
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "transfer",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "template": "notice-3-alpha",
+              "title": "Workshop bulletin",
+              "date": "12/11/2026",
+              "contact": "info@example.test",
+              "body": "The collection window starts at 10:00."
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 0,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "lasting_change",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [
+            "heading"
+          ],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "template": "notice-4-beta",
+              "title": "Workshop update",
+              "date": "17/11/2026",
+              "contact": "info@example.test",
+              "body": "The desk opens at 08:30."
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "new_choice",
+          "passed": true,
+          "actor_turns": 2,
+          "provided_preferences": [],
+          "required_questions": [
+            "channel"
+          ],
+          "answered_questions": [
+            "channel"
+          ],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "actual": {
+              "template": "notice-5-alpha",
+              "title": "Workshop update",
+              "date": "21/11/2026",
+              "contact": "info@example.test",
+              "body": "The collection window ends at 15:00.",
+              "channel": "email"
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 1,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        }
+      ],
+      "cumulative": [
+        {
+          "episode": "setup",
+          "intervention_turns": 1,
+          "preference_units": 3,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "routine",
+          "intervention_turns": 1,
+          "preference_units": 3,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "temporary",
+          "intervention_turns": 1,
+          "preference_units": 4,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "transfer",
+          "intervention_turns": 1,
+          "preference_units": 4,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "lasting_change",
+          "intervention_turns": 1,
+          "preference_units": 5,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "new_choice",
+          "intervention_turns": 2,
+          "preference_units": 6,
+          "repeated_preference_units": 0,
+          "passed": true
+        }
+      ],
+      "models": [
+        "gpt-6-astra"
+      ]
+    }
+  ],
+  "paired": [
+    {
+      "comparison": "C_vs_B",
+      "profile": "notice",
+      "repeat": 1,
+      "arms": {
+        "C": {
+          "status": "completed",
+          "metrics": {
+            "actor_turns": 8,
+            "user_characters": 3612,
+            "harness_protocol_characters": 3822,
+            "setup_initial_user_characters": 336,
+            "user_whitespace_words": 546,
+            "assistant_characters": 946,
+            "final_protocol_characters": 207,
+            "tokens_input_tokens": 530216,
+            "tokens_cached_input_tokens": 475008,
+            "tokens_cache_write_input_tokens": 0,
+            "tokens_output_tokens": 3048,
+            "tokens_reasoning_output_tokens": 0,
+            "setup_reply_user_characters": 422,
+            "task_initial_user_characters": 2750,
+            "task_reply_user_characters": 104,
+            "intervention_turns": 2,
+            "preference_units": 6,
+            "repeated_preference_units": 0,
+            "passed_episodes": 6,
+            "planned_episodes": 6,
+            "provided_preference_units": 2,
+            "off_interface_audit_turns": 8,
+            "setup_intervention_turns": 1,
+            "task_intervention_turns": 1,
+            "setup_preference_units": 3,
+            "setup_repeated_preference_units": 0,
+            "task_preference_units": 3,
+            "task_repeated_preference_units": 0,
+            "repeated_question_units": 0,
+            "new_question_units": 4,
+            "failed_or_missing_episodes": 0,
+            "duration_seconds": 137.028,
+            "usage_missing_turns": 0,
+            "correction_rounds": 0,
+            "protocol_errors": 0
+          },
+          "cumulative": [
+            {
+              "episode": "setup",
+              "intervention_turns": 1,
+              "preference_units": 3,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "routine",
+              "intervention_turns": 1,
+              "preference_units": 3,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "temporary",
+              "intervention_turns": 1,
+              "preference_units": 4,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "transfer",
+              "intervention_turns": 1,
+              "preference_units": 4,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "lasting_change",
+              "intervention_turns": 1,
+              "preference_units": 5,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "new_choice",
+              "intervention_turns": 2,
+              "preference_units": 6,
+              "repeated_preference_units": 0,
+              "passed": true
+            }
+          ]
+        },
+        "B": {
+          "status": "completed",
+          "metrics": {
+            "actor_turns": 8,
+            "user_characters": 3612,
+            "harness_protocol_characters": 3822,
+            "setup_initial_user_characters": 336,
+            "user_whitespace_words": 546,
+            "assistant_characters": 770,
+            "final_protocol_characters": 207,
+            "tokens_input_tokens": 303673,
+            "tokens_cached_input_tokens": 274560,
+            "tokens_cache_write_input_tokens": 0,
+            "tokens_output_tokens": 1297,
+            "tokens_reasoning_output_tokens": 0,
+            "setup_reply_user_characters": 422,
+            "task_initial_user_characters": 2750,
+            "task_reply_user_characters": 104,
+            "intervention_turns": 2,
+            "preference_units": 6,
+            "repeated_preference_units": 0,
+            "passed_episodes": 6,
+            "planned_episodes": 6,
+            "provided_preference_units": 2,
+            "off_interface_audit_turns": 8,
+            "setup_intervention_turns": 1,
+            "task_intervention_turns": 1,
+            "setup_preference_units": 3,
+            "setup_repeated_preference_units": 0,
+            "task_preference_units": 3,
+            "task_repeated_preference_units": 0,
+            "repeated_question_units": 0,
+            "new_question_units": 4,
+            "failed_or_missing_episodes": 0,
+            "duration_seconds": 85.821,
+            "usage_missing_turns": 0,
+            "correction_rounds": 0,
+            "protocol_errors": 0
+          },
+          "cumulative": [
+            {
+              "episode": "setup",
+              "intervention_turns": 1,
+              "preference_units": 3,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "routine",
+              "intervention_turns": 1,
+              "preference_units": 3,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "temporary",
+              "intervention_turns": 1,
+              "preference_units": 4,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "transfer",
+              "intervention_turns": 1,
+              "preference_units": 4,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "lasting_change",
+              "intervention_turns": 1,
+              "preference_units": 5,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "new_choice",
+              "intervention_turns": 2,
+              "preference_units": 6,
+              "repeated_preference_units": 0,
+              "passed": true
+            }
+          ]
+        }
+      },
+      "preference_unit_result": "tie",
+      "first_observed_preference_cost_lead_episode": null
+    },
+    {
+      "comparison": "C_vs_B",
+      "profile": "notice",
+      "repeat": 2,
+      "arms": {
+        "C": {
+          "status": "completed",
+          "metrics": {
+            "actor_turns": 8,
+            "user_characters": 3612,
+            "harness_protocol_characters": 3822,
+            "setup_initial_user_characters": 336,
+            "user_whitespace_words": 546,
+            "assistant_characters": 904,
+            "final_protocol_characters": 207,
+            "tokens_input_tokens": 515216,
+            "tokens_cached_input_tokens": 457088,
+            "tokens_cache_write_input_tokens": 0,
+            "tokens_output_tokens": 2658,
+            "tokens_reasoning_output_tokens": 0,
+            "setup_reply_user_characters": 422,
+            "task_initial_user_characters": 2750,
+            "task_reply_user_characters": 104,
+            "intervention_turns": 2,
+            "preference_units": 6,
+            "repeated_preference_units": 0,
+            "passed_episodes": 6,
+            "planned_episodes": 6,
+            "provided_preference_units": 2,
+            "off_interface_audit_turns": 8,
+            "setup_intervention_turns": 1,
+            "task_intervention_turns": 1,
+            "setup_preference_units": 3,
+            "setup_repeated_preference_units": 0,
+            "task_preference_units": 3,
+            "task_repeated_preference_units": 0,
+            "repeated_question_units": 0,
+            "new_question_units": 4,
+            "failed_or_missing_episodes": 0,
+            "duration_seconds": 118.85900000000001,
+            "usage_missing_turns": 0,
+            "correction_rounds": 0,
+            "protocol_errors": 0
+          },
+          "cumulative": [
+            {
+              "episode": "setup",
+              "intervention_turns": 1,
+              "preference_units": 3,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "routine",
+              "intervention_turns": 1,
+              "preference_units": 3,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "temporary",
+              "intervention_turns": 1,
+              "preference_units": 4,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "transfer",
+              "intervention_turns": 1,
+              "preference_units": 4,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "lasting_change",
+              "intervention_turns": 1,
+              "preference_units": 5,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "new_choice",
+              "intervention_turns": 2,
+              "preference_units": 6,
+              "repeated_preference_units": 0,
+              "passed": true
+            }
+          ]
+        },
+        "B": {
+          "status": "completed",
+          "metrics": {
+            "actor_turns": 8,
+            "user_characters": 3612,
+            "harness_protocol_characters": 3822,
+            "setup_initial_user_characters": 336,
+            "user_whitespace_words": 546,
+            "assistant_characters": 782,
+            "final_protocol_characters": 207,
+            "tokens_input_tokens": 302470,
+            "tokens_cached_input_tokens": 273792,
+            "tokens_cache_write_input_tokens": 0,
+            "tokens_output_tokens": 1261,
+            "tokens_reasoning_output_tokens": 0,
+            "setup_reply_user_characters": 422,
+            "task_initial_user_characters": 2750,
+            "task_reply_user_characters": 104,
+            "intervention_turns": 2,
+            "preference_units": 6,
+            "repeated_preference_units": 0,
+            "passed_episodes": 6,
+            "planned_episodes": 6,
+            "provided_preference_units": 2,
+            "off_interface_audit_turns": 8,
+            "setup_intervention_turns": 1,
+            "task_intervention_turns": 1,
+            "setup_preference_units": 3,
+            "setup_repeated_preference_units": 0,
+            "task_preference_units": 3,
+            "task_repeated_preference_units": 0,
+            "repeated_question_units": 0,
+            "new_question_units": 4,
+            "failed_or_missing_episodes": 0,
+            "duration_seconds": 137.145,
+            "usage_missing_turns": 0,
+            "correction_rounds": 0,
+            "protocol_errors": 0
+          },
+          "cumulative": [
+            {
+              "episode": "setup",
+              "intervention_turns": 1,
+              "preference_units": 3,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "routine",
+              "intervention_turns": 1,
+              "preference_units": 3,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "temporary",
+              "intervention_turns": 1,
+              "preference_units": 4,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "transfer",
+              "intervention_turns": 1,
+              "preference_units": 4,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "lasting_change",
+              "intervention_turns": 1,
+              "preference_units": 5,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "new_choice",
+              "intervention_turns": 2,
+              "preference_units": 6,
+              "repeated_preference_units": 0,
+              "passed": true
+            }
+          ]
+        }
+      },
+      "preference_unit_result": "tie",
+      "first_observed_preference_cost_lead_episode": null
+    },
+    {
+      "comparison": "C_vs_B",
+      "profile": "software",
+      "repeat": 1,
+      "arms": {
+        "C": {
+          "status": "completed",
+          "metrics": {
+            "actor_turns": 8,
+            "user_characters": 5078,
+            "harness_protocol_characters": 3822,
+            "setup_initial_user_characters": 283,
+            "user_whitespace_words": 669,
+            "assistant_characters": 958,
+            "final_protocol_characters": 213,
+            "tokens_input_tokens": 526089,
+            "tokens_cached_input_tokens": 439552,
+            "tokens_cache_write_input_tokens": 0,
+            "tokens_output_tokens": 2299,
+            "tokens_reasoning_output_tokens": 0,
+            "setup_reply_user_characters": 576,
+            "task_initial_user_characters": 4081,
+            "task_reply_user_characters": 138,
+            "intervention_turns": 2,
+            "preference_units": 6,
+            "repeated_preference_units": 0,
+            "passed_episodes": 6,
+            "planned_episodes": 6,
+            "provided_preference_units": 2,
+            "off_interface_audit_turns": 8,
+            "setup_intervention_turns": 1,
+            "task_intervention_turns": 1,
+            "setup_preference_units": 3,
+            "setup_repeated_preference_units": 0,
+            "task_preference_units": 3,
+            "task_repeated_preference_units": 0,
+            "repeated_question_units": 0,
+            "new_question_units": 4,
+            "failed_or_missing_episodes": 0,
+            "duration_seconds": 121.769,
+            "usage_missing_turns": 0,
+            "correction_rounds": 0,
+            "protocol_errors": 0
+          },
+          "cumulative": [
+            {
+              "episode": "setup",
+              "intervention_turns": 1,
+              "preference_units": 3,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "routine",
+              "intervention_turns": 1,
+              "preference_units": 3,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "temporary",
+              "intervention_turns": 1,
+              "preference_units": 4,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "transfer",
+              "intervention_turns": 1,
+              "preference_units": 4,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "lasting_change",
+              "intervention_turns": 1,
+              "preference_units": 5,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "new_choice",
+              "intervention_turns": 2,
+              "preference_units": 6,
+              "repeated_preference_units": 0,
+              "passed": true
+            }
+          ]
+        },
+        "B": {
+          "status": "completed",
+          "metrics": {
+            "actor_turns": 8,
+            "user_characters": 5078,
+            "harness_protocol_characters": 3822,
+            "setup_initial_user_characters": 283,
+            "user_whitespace_words": 669,
+            "assistant_characters": 798,
+            "final_protocol_characters": 213,
+            "tokens_input_tokens": 316459,
+            "tokens_cached_input_tokens": 280192,
+            "tokens_cache_write_input_tokens": 0,
+            "tokens_output_tokens": 1199,
+            "tokens_reasoning_output_tokens": 0,
+            "setup_reply_user_characters": 576,
+            "task_initial_user_characters": 4081,
+            "task_reply_user_characters": 138,
+            "intervention_turns": 2,
+            "preference_units": 6,
+            "repeated_preference_units": 0,
+            "passed_episodes": 6,
+            "planned_episodes": 6,
+            "provided_preference_units": 2,
+            "off_interface_audit_turns": 8,
+            "setup_intervention_turns": 1,
+            "task_intervention_turns": 1,
+            "setup_preference_units": 3,
+            "setup_repeated_preference_units": 0,
+            "task_preference_units": 3,
+            "task_repeated_preference_units": 0,
+            "repeated_question_units": 0,
+            "new_question_units": 4,
+            "failed_or_missing_episodes": 0,
+            "duration_seconds": 80.519,
+            "usage_missing_turns": 0,
+            "correction_rounds": 0,
+            "protocol_errors": 0
+          },
+          "cumulative": [
+            {
+              "episode": "setup",
+              "intervention_turns": 1,
+              "preference_units": 3,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "routine",
+              "intervention_turns": 1,
+              "preference_units": 3,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "temporary",
+              "intervention_turns": 1,
+              "preference_units": 4,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "transfer",
+              "intervention_turns": 1,
+              "preference_units": 4,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "lasting_change",
+              "intervention_turns": 1,
+              "preference_units": 5,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "new_choice",
+              "intervention_turns": 2,
+              "preference_units": 6,
+              "repeated_preference_units": 0,
+              "passed": true
+            }
+          ]
+        }
+      },
+      "preference_unit_result": "tie",
+      "first_observed_preference_cost_lead_episode": null
+    },
+    {
+      "comparison": "C_vs_B",
+      "profile": "software",
+      "repeat": 2,
+      "arms": {
+        "C": {
+          "status": "completed",
+          "metrics": {
+            "actor_turns": 8,
+            "user_characters": 5078,
+            "harness_protocol_characters": 3822,
+            "setup_initial_user_characters": 283,
+            "user_whitespace_words": 669,
+            "assistant_characters": 1026,
+            "final_protocol_characters": 213,
+            "tokens_input_tokens": 480644,
+            "tokens_cached_input_tokens": 422272,
+            "tokens_cache_write_input_tokens": 0,
+            "tokens_output_tokens": 2280,
+            "tokens_reasoning_output_tokens": 0,
+            "setup_reply_user_characters": 576,
+            "task_initial_user_characters": 4081,
+            "task_reply_user_characters": 138,
+            "intervention_turns": 2,
+            "preference_units": 6,
+            "repeated_preference_units": 0,
+            "passed_episodes": 6,
+            "planned_episodes": 6,
+            "provided_preference_units": 2,
+            "off_interface_audit_turns": 8,
+            "setup_intervention_turns": 1,
+            "task_intervention_turns": 1,
+            "setup_preference_units": 3,
+            "setup_repeated_preference_units": 0,
+            "task_preference_units": 3,
+            "task_repeated_preference_units": 0,
+            "repeated_question_units": 0,
+            "new_question_units": 4,
+            "failed_or_missing_episodes": 0,
+            "duration_seconds": 121.368,
+            "usage_missing_turns": 0,
+            "correction_rounds": 0,
+            "protocol_errors": 0
+          },
+          "cumulative": [
+            {
+              "episode": "setup",
+              "intervention_turns": 1,
+              "preference_units": 3,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "routine",
+              "intervention_turns": 1,
+              "preference_units": 3,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "temporary",
+              "intervention_turns": 1,
+              "preference_units": 4,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "transfer",
+              "intervention_turns": 1,
+              "preference_units": 4,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "lasting_change",
+              "intervention_turns": 1,
+              "preference_units": 5,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "new_choice",
+              "intervention_turns": 2,
+              "preference_units": 6,
+              "repeated_preference_units": 0,
+              "passed": true
+            }
+          ]
+        },
+        "B": {
+          "status": "completed",
+          "metrics": {
+            "actor_turns": 8,
+            "user_characters": 5078,
+            "harness_protocol_characters": 3822,
+            "setup_initial_user_characters": 283,
+            "user_whitespace_words": 669,
+            "assistant_characters": 854,
+            "final_protocol_characters": 213,
+            "tokens_input_tokens": 330205,
+            "tokens_cached_input_tokens": 300672,
+            "tokens_cache_write_input_tokens": 0,
+            "tokens_output_tokens": 1265,
+            "tokens_reasoning_output_tokens": 0,
+            "setup_reply_user_characters": 576,
+            "task_initial_user_characters": 4081,
+            "task_reply_user_characters": 138,
+            "intervention_turns": 2,
+            "preference_units": 6,
+            "repeated_preference_units": 0,
+            "passed_episodes": 6,
+            "planned_episodes": 6,
+            "provided_preference_units": 2,
+            "off_interface_audit_turns": 8,
+            "setup_intervention_turns": 1,
+            "task_intervention_turns": 1,
+            "setup_preference_units": 3,
+            "setup_repeated_preference_units": 0,
+            "task_preference_units": 3,
+            "task_repeated_preference_units": 0,
+            "repeated_question_units": 0,
+            "new_question_units": 4,
+            "failed_or_missing_episodes": 0,
+            "duration_seconds": 141.142,
+            "usage_missing_turns": 0,
+            "correction_rounds": 0,
+            "protocol_errors": 0
+          },
+          "cumulative": [
+            {
+              "episode": "setup",
+              "intervention_turns": 1,
+              "preference_units": 3,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "routine",
+              "intervention_turns": 1,
+              "preference_units": 3,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "temporary",
+              "intervention_turns": 1,
+              "preference_units": 4,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "transfer",
+              "intervention_turns": 1,
+              "preference_units": 4,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "lasting_change",
+              "intervention_turns": 1,
+              "preference_units": 5,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "new_choice",
+              "intervention_turns": 2,
+              "preference_units": 6,
+              "repeated_preference_units": 0,
+              "passed": true
+            }
+          ]
+        }
+      },
+      "preference_unit_result": "tie",
+      "first_observed_preference_cost_lead_episode": null
+    },
+    {
+      "comparison": "C_vs_A",
+      "profile": "notice",
+      "repeat": 1,
+      "arms": {
+        "C": {
+          "status": "completed",
+          "metrics": {
+            "actor_turns": 8,
+            "user_characters": 3612,
+            "harness_protocol_characters": 3822,
+            "setup_initial_user_characters": 336,
+            "user_whitespace_words": 546,
+            "assistant_characters": 946,
+            "final_protocol_characters": 207,
+            "tokens_input_tokens": 530216,
+            "tokens_cached_input_tokens": 475008,
+            "tokens_cache_write_input_tokens": 0,
+            "tokens_output_tokens": 3048,
+            "tokens_reasoning_output_tokens": 0,
+            "setup_reply_user_characters": 422,
+            "task_initial_user_characters": 2750,
+            "task_reply_user_characters": 104,
+            "intervention_turns": 2,
+            "preference_units": 6,
+            "repeated_preference_units": 0,
+            "passed_episodes": 6,
+            "planned_episodes": 6,
+            "provided_preference_units": 2,
+            "off_interface_audit_turns": 8,
+            "setup_intervention_turns": 1,
+            "task_intervention_turns": 1,
+            "setup_preference_units": 3,
+            "setup_repeated_preference_units": 0,
+            "task_preference_units": 3,
+            "task_repeated_preference_units": 0,
+            "repeated_question_units": 0,
+            "new_question_units": 4,
+            "failed_or_missing_episodes": 0,
+            "duration_seconds": 137.028,
+            "usage_missing_turns": 0,
+            "correction_rounds": 0,
+            "protocol_errors": 0
+          },
+          "cumulative": [
+            {
+              "episode": "setup",
+              "intervention_turns": 1,
+              "preference_units": 3,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "routine",
+              "intervention_turns": 1,
+              "preference_units": 3,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "temporary",
+              "intervention_turns": 1,
+              "preference_units": 4,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "transfer",
+              "intervention_turns": 1,
+              "preference_units": 4,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "lasting_change",
+              "intervention_turns": 1,
+              "preference_units": 5,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "new_choice",
+              "intervention_turns": 2,
+              "preference_units": 6,
+              "repeated_preference_units": 0,
+              "passed": true
+            }
+          ]
+        },
+        "A": {
+          "status": "completed",
+          "metrics": {
+            "actor_turns": 8,
+            "user_characters": 3612,
+            "harness_protocol_characters": 3822,
+            "setup_initial_user_characters": 336,
+            "user_whitespace_words": 546,
+            "assistant_characters": 813,
+            "final_protocol_characters": 207,
+            "tokens_input_tokens": 413584,
+            "tokens_cached_input_tokens": 354176,
+            "tokens_cache_write_input_tokens": 0,
+            "tokens_output_tokens": 1955,
+            "tokens_reasoning_output_tokens": 0,
+            "setup_reply_user_characters": 422,
+            "task_initial_user_characters": 2750,
+            "task_reply_user_characters": 104,
+            "intervention_turns": 2,
+            "preference_units": 6,
+            "repeated_preference_units": 0,
+            "passed_episodes": 6,
+            "planned_episodes": 6,
+            "provided_preference_units": 2,
+            "off_interface_audit_turns": 7,
+            "setup_intervention_turns": 1,
+            "task_intervention_turns": 1,
+            "setup_preference_units": 3,
+            "setup_repeated_preference_units": 0,
+            "task_preference_units": 3,
+            "task_repeated_preference_units": 0,
+            "repeated_question_units": 0,
+            "new_question_units": 4,
+            "failed_or_missing_episodes": 0,
+            "duration_seconds": 103.78,
+            "usage_missing_turns": 0,
+            "correction_rounds": 0,
+            "protocol_errors": 0
+          },
+          "cumulative": [
+            {
+              "episode": "setup",
+              "intervention_turns": 1,
+              "preference_units": 3,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "routine",
+              "intervention_turns": 1,
+              "preference_units": 3,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "temporary",
+              "intervention_turns": 1,
+              "preference_units": 4,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "transfer",
+              "intervention_turns": 1,
+              "preference_units": 4,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "lasting_change",
+              "intervention_turns": 1,
+              "preference_units": 5,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "new_choice",
+              "intervention_turns": 2,
+              "preference_units": 6,
+              "repeated_preference_units": 0,
+              "passed": true
+            }
+          ]
+        }
+      },
+      "preference_unit_result": "tie",
+      "first_observed_preference_cost_lead_episode": null
+    },
+    {
+      "comparison": "C_vs_A",
+      "profile": "notice",
+      "repeat": 2,
+      "arms": {
+        "C": {
+          "status": "completed",
+          "metrics": {
+            "actor_turns": 8,
+            "user_characters": 3612,
+            "harness_protocol_characters": 3822,
+            "setup_initial_user_characters": 336,
+            "user_whitespace_words": 546,
+            "assistant_characters": 904,
+            "final_protocol_characters": 207,
+            "tokens_input_tokens": 515216,
+            "tokens_cached_input_tokens": 457088,
+            "tokens_cache_write_input_tokens": 0,
+            "tokens_output_tokens": 2658,
+            "tokens_reasoning_output_tokens": 0,
+            "setup_reply_user_characters": 422,
+            "task_initial_user_characters": 2750,
+            "task_reply_user_characters": 104,
+            "intervention_turns": 2,
+            "preference_units": 6,
+            "repeated_preference_units": 0,
+            "passed_episodes": 6,
+            "planned_episodes": 6,
+            "provided_preference_units": 2,
+            "off_interface_audit_turns": 8,
+            "setup_intervention_turns": 1,
+            "task_intervention_turns": 1,
+            "setup_preference_units": 3,
+            "setup_repeated_preference_units": 0,
+            "task_preference_units": 3,
+            "task_repeated_preference_units": 0,
+            "repeated_question_units": 0,
+            "new_question_units": 4,
+            "failed_or_missing_episodes": 0,
+            "duration_seconds": 118.85900000000001,
+            "usage_missing_turns": 0,
+            "correction_rounds": 0,
+            "protocol_errors": 0
+          },
+          "cumulative": [
+            {
+              "episode": "setup",
+              "intervention_turns": 1,
+              "preference_units": 3,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "routine",
+              "intervention_turns": 1,
+              "preference_units": 3,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "temporary",
+              "intervention_turns": 1,
+              "preference_units": 4,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "transfer",
+              "intervention_turns": 1,
+              "preference_units": 4,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "lasting_change",
+              "intervention_turns": 1,
+              "preference_units": 5,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "new_choice",
+              "intervention_turns": 2,
+              "preference_units": 6,
+              "repeated_preference_units": 0,
+              "passed": true
+            }
+          ]
+        },
+        "A": {
+          "status": "completed",
+          "metrics": {
+            "actor_turns": 8,
+            "user_characters": 3612,
+            "harness_protocol_characters": 3822,
+            "setup_initial_user_characters": 336,
+            "user_whitespace_words": 546,
+            "assistant_characters": 675,
+            "final_protocol_characters": 207,
+            "tokens_input_tokens": 346108,
+            "tokens_cached_input_tokens": 314240,
+            "tokens_cache_write_input_tokens": 0,
+            "tokens_output_tokens": 1556,
+            "tokens_reasoning_output_tokens": 0,
+            "setup_reply_user_characters": 422,
+            "task_initial_user_characters": 2750,
+            "task_reply_user_characters": 104,
+            "intervention_turns": 2,
+            "preference_units": 6,
+            "repeated_preference_units": 0,
+            "passed_episodes": 6,
+            "planned_episodes": 6,
+            "provided_preference_units": 2,
+            "off_interface_audit_turns": 6,
+            "setup_intervention_turns": 1,
+            "task_intervention_turns": 1,
+            "setup_preference_units": 3,
+            "setup_repeated_preference_units": 0,
+            "task_preference_units": 3,
+            "task_repeated_preference_units": 0,
+            "repeated_question_units": 0,
+            "new_question_units": 4,
+            "failed_or_missing_episodes": 0,
+            "duration_seconds": 95.69,
+            "usage_missing_turns": 0,
+            "correction_rounds": 0,
+            "protocol_errors": 0
+          },
+          "cumulative": [
+            {
+              "episode": "setup",
+              "intervention_turns": 1,
+              "preference_units": 3,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "routine",
+              "intervention_turns": 1,
+              "preference_units": 3,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "temporary",
+              "intervention_turns": 1,
+              "preference_units": 4,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "transfer",
+              "intervention_turns": 1,
+              "preference_units": 4,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "lasting_change",
+              "intervention_turns": 1,
+              "preference_units": 5,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "new_choice",
+              "intervention_turns": 2,
+              "preference_units": 6,
+              "repeated_preference_units": 0,
+              "passed": true
+            }
+          ]
+        }
+      },
+      "preference_unit_result": "tie",
+      "first_observed_preference_cost_lead_episode": null
+    },
+    {
+      "comparison": "C_vs_A",
+      "profile": "software",
+      "repeat": 1,
+      "arms": {
+        "C": {
+          "status": "completed",
+          "metrics": {
+            "actor_turns": 8,
+            "user_characters": 5078,
+            "harness_protocol_characters": 3822,
+            "setup_initial_user_characters": 283,
+            "user_whitespace_words": 669,
+            "assistant_characters": 958,
+            "final_protocol_characters": 213,
+            "tokens_input_tokens": 526089,
+            "tokens_cached_input_tokens": 439552,
+            "tokens_cache_write_input_tokens": 0,
+            "tokens_output_tokens": 2299,
+            "tokens_reasoning_output_tokens": 0,
+            "setup_reply_user_characters": 576,
+            "task_initial_user_characters": 4081,
+            "task_reply_user_characters": 138,
+            "intervention_turns": 2,
+            "preference_units": 6,
+            "repeated_preference_units": 0,
+            "passed_episodes": 6,
+            "planned_episodes": 6,
+            "provided_preference_units": 2,
+            "off_interface_audit_turns": 8,
+            "setup_intervention_turns": 1,
+            "task_intervention_turns": 1,
+            "setup_preference_units": 3,
+            "setup_repeated_preference_units": 0,
+            "task_preference_units": 3,
+            "task_repeated_preference_units": 0,
+            "repeated_question_units": 0,
+            "new_question_units": 4,
+            "failed_or_missing_episodes": 0,
+            "duration_seconds": 121.769,
+            "usage_missing_turns": 0,
+            "correction_rounds": 0,
+            "protocol_errors": 0
+          },
+          "cumulative": [
+            {
+              "episode": "setup",
+              "intervention_turns": 1,
+              "preference_units": 3,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "routine",
+              "intervention_turns": 1,
+              "preference_units": 3,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "temporary",
+              "intervention_turns": 1,
+              "preference_units": 4,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "transfer",
+              "intervention_turns": 1,
+              "preference_units": 4,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "lasting_change",
+              "intervention_turns": 1,
+              "preference_units": 5,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "new_choice",
+              "intervention_turns": 2,
+              "preference_units": 6,
+              "repeated_preference_units": 0,
+              "passed": true
+            }
+          ]
+        },
+        "A": {
+          "status": "completed",
+          "metrics": {
+            "actor_turns": 8,
+            "user_characters": 5078,
+            "harness_protocol_characters": 3822,
+            "setup_initial_user_characters": 283,
+            "user_whitespace_words": 669,
+            "assistant_characters": 881,
+            "final_protocol_characters": 213,
+            "tokens_input_tokens": 375515,
+            "tokens_cached_input_tokens": 341760,
+            "tokens_cache_write_input_tokens": 0,
+            "tokens_output_tokens": 1607,
+            "tokens_reasoning_output_tokens": 0,
+            "setup_reply_user_characters": 576,
+            "task_initial_user_characters": 4081,
+            "task_reply_user_characters": 138,
+            "intervention_turns": 2,
+            "preference_units": 6,
+            "repeated_preference_units": 0,
+            "passed_episodes": 6,
+            "planned_episodes": 6,
+            "provided_preference_units": 2,
+            "off_interface_audit_turns": 6,
+            "setup_intervention_turns": 1,
+            "task_intervention_turns": 1,
+            "setup_preference_units": 3,
+            "setup_repeated_preference_units": 0,
+            "task_preference_units": 3,
+            "task_repeated_preference_units": 0,
+            "repeated_question_units": 0,
+            "new_question_units": 4,
+            "failed_or_missing_episodes": 0,
+            "duration_seconds": 87.812,
+            "usage_missing_turns": 0,
+            "correction_rounds": 0,
+            "protocol_errors": 0
+          },
+          "cumulative": [
+            {
+              "episode": "setup",
+              "intervention_turns": 1,
+              "preference_units": 3,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "routine",
+              "intervention_turns": 1,
+              "preference_units": 3,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "temporary",
+              "intervention_turns": 1,
+              "preference_units": 4,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "transfer",
+              "intervention_turns": 1,
+              "preference_units": 4,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "lasting_change",
+              "intervention_turns": 1,
+              "preference_units": 5,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "new_choice",
+              "intervention_turns": 2,
+              "preference_units": 6,
+              "repeated_preference_units": 0,
+              "passed": true
+            }
+          ]
+        }
+      },
+      "preference_unit_result": "tie",
+      "first_observed_preference_cost_lead_episode": null
+    },
+    {
+      "comparison": "C_vs_A",
+      "profile": "software",
+      "repeat": 2,
+      "arms": {
+        "C": {
+          "status": "completed",
+          "metrics": {
+            "actor_turns": 8,
+            "user_characters": 5078,
+            "harness_protocol_characters": 3822,
+            "setup_initial_user_characters": 283,
+            "user_whitespace_words": 669,
+            "assistant_characters": 1026,
+            "final_protocol_characters": 213,
+            "tokens_input_tokens": 480644,
+            "tokens_cached_input_tokens": 422272,
+            "tokens_cache_write_input_tokens": 0,
+            "tokens_output_tokens": 2280,
+            "tokens_reasoning_output_tokens": 0,
+            "setup_reply_user_characters": 576,
+            "task_initial_user_characters": 4081,
+            "task_reply_user_characters": 138,
+            "intervention_turns": 2,
+            "preference_units": 6,
+            "repeated_preference_units": 0,
+            "passed_episodes": 6,
+            "planned_episodes": 6,
+            "provided_preference_units": 2,
+            "off_interface_audit_turns": 8,
+            "setup_intervention_turns": 1,
+            "task_intervention_turns": 1,
+            "setup_preference_units": 3,
+            "setup_repeated_preference_units": 0,
+            "task_preference_units": 3,
+            "task_repeated_preference_units": 0,
+            "repeated_question_units": 0,
+            "new_question_units": 4,
+            "failed_or_missing_episodes": 0,
+            "duration_seconds": 121.368,
+            "usage_missing_turns": 0,
+            "correction_rounds": 0,
+            "protocol_errors": 0
+          },
+          "cumulative": [
+            {
+              "episode": "setup",
+              "intervention_turns": 1,
+              "preference_units": 3,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "routine",
+              "intervention_turns": 1,
+              "preference_units": 3,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "temporary",
+              "intervention_turns": 1,
+              "preference_units": 4,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "transfer",
+              "intervention_turns": 1,
+              "preference_units": 4,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "lasting_change",
+              "intervention_turns": 1,
+              "preference_units": 5,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "new_choice",
+              "intervention_turns": 2,
+              "preference_units": 6,
+              "repeated_preference_units": 0,
+              "passed": true
+            }
+          ]
+        },
+        "A": {
+          "status": "completed",
+          "metrics": {
+            "actor_turns": 8,
+            "user_characters": 5078,
+            "harness_protocol_characters": 3822,
+            "setup_initial_user_characters": 283,
+            "user_whitespace_words": 669,
+            "assistant_characters": 846,
+            "final_protocol_characters": 213,
+            "tokens_input_tokens": 321952,
+            "tokens_cached_input_tokens": 277888,
+            "tokens_cache_write_input_tokens": 0,
+            "tokens_output_tokens": 1315,
+            "tokens_reasoning_output_tokens": 0,
+            "setup_reply_user_characters": 576,
+            "task_initial_user_characters": 4081,
+            "task_reply_user_characters": 138,
+            "intervention_turns": 2,
+            "preference_units": 6,
+            "repeated_preference_units": 0,
+            "passed_episodes": 6,
+            "planned_episodes": 6,
+            "provided_preference_units": 2,
+            "off_interface_audit_turns": 6,
+            "setup_intervention_turns": 1,
+            "task_intervention_turns": 1,
+            "setup_preference_units": 3,
+            "setup_repeated_preference_units": 0,
+            "task_preference_units": 3,
+            "task_repeated_preference_units": 0,
+            "repeated_question_units": 0,
+            "new_question_units": 4,
+            "failed_or_missing_episodes": 0,
+            "duration_seconds": 87.712,
+            "usage_missing_turns": 0,
+            "correction_rounds": 0,
+            "protocol_errors": 0
+          },
+          "cumulative": [
+            {
+              "episode": "setup",
+              "intervention_turns": 1,
+              "preference_units": 3,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "routine",
+              "intervention_turns": 1,
+              "preference_units": 3,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "temporary",
+              "intervention_turns": 1,
+              "preference_units": 4,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "transfer",
+              "intervention_turns": 1,
+              "preference_units": 4,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "lasting_change",
+              "intervention_turns": 1,
+              "preference_units": 5,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "new_choice",
+              "intervention_turns": 2,
+              "preference_units": 6,
+              "repeated_preference_units": 0,
+              "passed": true
+            }
+          ]
+        }
+      },
+      "preference_unit_result": "tie",
+      "first_observed_preference_cost_lead_episode": null
+    }
+  ],
+  "comparisons": {
+    "C_vs_B": {
+      "relative_preference_unit_reduction": 0.0,
+      "relative_reply_reduction": 0.0,
+      "mean_reply_reduction": 0.0,
+      "numeric_thresholds_met": false,
+      "decision_rule_met_before_manual_audits": false,
+      "decision_rule_met": false
+    },
+    "C_vs_A": {
+      "relative_preference_unit_reduction": 0.0,
+      "relative_reply_reduction": 0.0,
+      "mean_reply_reduction": 0.0,
+      "numeric_thresholds_met": false,
+      "decision_rule_met_before_manual_audits": false,
+      "decision_rule_met": false
+    }
+  },
+  "C_quality_guardrail": true,
+  "off_interface_audit_pending": [
+    {
+      "trial": "notice__B__r2",
+      "turn": 1,
+      "messages": [
+        "I\u2019ll read the project preferences before asking for the notice defaults.\n"
+      ]
+    },
+    {
+      "trial": "notice__B__r2",
+      "turn": 2,
+      "messages": [
+        "I\u2019ll save these three defaults for future notices in this project.\n"
+      ]
+    },
+    {
+      "trial": "notice__B__r2",
+      "turn": 3,
+      "messages": [
+        "I\u2019ll read the project preferences before creating the notice.\n"
+      ]
+    },
+    {
+      "trial": "notice__B__r2",
+      "turn": 4,
+      "messages": [
+        "I\u2019ll read your saved preferences and use the temporary title for this notice.\n"
+      ]
+    },
+    {
+      "trial": "notice__B__r2",
+      "turn": 5,
+      "messages": [
+        "I\u2019ll read the project preferences before writing the notice.\n"
+      ]
+    },
+    {
+      "trial": "notice__B__r2",
+      "turn": 6,
+      "messages": [
+        "I\u2019ll read your saved preferences and update the standing heading to \u201cWorkshop update.\u201d\n"
+      ]
+    },
+    {
+      "trial": "notice__B__r2",
+      "turn": 7,
+      "messages": [
+        "I\u2019ll check your saved preferences before preparing the notice.\n"
+      ]
+    },
+    {
+      "trial": "notice__B__r2",
+      "turn": 8,
+      "messages": [
+        "I\u2019ll create the notice using your saved preferences and email for this notice only.\n"
+      ]
+    },
+    {
+      "trial": "software__B__r2",
+      "turn": 1,
+      "messages": [
+        "I\u2019ll read the project preferences before asking for the standing choices.\n"
+      ]
+    },
+    {
+      "trial": "software__B__r2",
+      "turn": 2,
+      "messages": [
+        "I\u2019ll save these three standing preferences for future project work.\n"
+      ]
+    },
+    {
+      "trial": "software__B__r2",
+      "turn": 3,
+      "messages": [
+        "I\u2019ll read the project preferences before selecting the options.\n"
+      ]
+    },
+    {
+      "trial": "software__B__r2",
+      "turn": 4,
+      "messages": [
+        "I\u2019ll read the project preferences and apply the required library exception only to this task.\n"
+      ]
+    },
+    {
+      "trial": "software__B__r2",
+      "turn": 5,
+      "messages": [
+        "I\u2019ll read the project preferences before selecting the catalog options.\n"
+      ]
+    },
+    {
+      "trial": "software__B__r2",
+      "turn": 6,
+      "messages": [
+        "I\u2019ll read the project preferences and save the new hosting choice before preparing output.json.\n"
+      ]
+    },
+    {
+      "trial": "software__B__r2",
+      "turn": 7,
+      "messages": [
+        "I\u2019ll read the project preferences before selecting the options.\n"
+      ]
+    },
+    {
+      "trial": "software__B__r2",
+      "turn": 8,
+      "messages": [
+        "I\u2019ll use the saved hosting, dependency, and analytics preferences, with 14-day retention for this page only.\n"
+      ]
+    },
+    {
+      "trial": "notice__C__r1",
+      "turn": 1,
+      "messages": [
+        "I\u2019ll read ALIGN.md and use the installed align skill to set up the recurring notice defaults.\n"
+      ]
+    },
+    {
+      "trial": "notice__C__r1",
+      "turn": 2,
+      "messages": [
+        "I\u2019ll save these three defaults in ALIGN.md for future notices.\n"
+      ]
+    },
+    {
+      "trial": "notice__C__r1",
+      "turn": 3,
+      "messages": [
+        "I\u2019ll read the project agreement and use the installed align skill to check your saved preferences.\n"
+      ]
+    },
+    {
+      "trial": "notice__C__r1",
+      "turn": 4,
+      "messages": [
+        "I\u2019ll use the align skill to check your saved preferences and apply the title change only to this notice.\n"
+      ]
+    },
+    {
+      "trial": "notice__C__r1",
+      "turn": 5,
+      "messages": [
+        "I\u2019ll read ALIGN.md and use the installed align skill to apply your saved preferences.\n"
+      ]
+    },
+    {
+      "trial": "notice__C__r1",
+      "turn": 6,
+      "messages": [
+        "I\u2019ll apply the align skill, read your saved preferences, and save \u201cWorkshop update\u201d as your standing heading.\n"
+      ]
+    },
+    {
+      "trial": "notice__C__r1",
+      "turn": 7,
+      "messages": [
+        "I\u2019ll read the project agreement and use the align skill to check which preferences remain unresolved.\n"
+      ]
+    },
+    {
+      "trial": "notice__C__r1",
+      "turn": 8,
+      "messages": [
+        "I\u2019ll write the notice using your saved defaults and email for this notice only.\n"
+      ]
+    },
+    {
+      "trial": "notice__B__r1",
+      "turn": 1,
+      "messages": [
+        "I\u2019ll read the project preferences before asking for the notice defaults.\n"
+      ]
+    },
+    {
+      "trial": "notice__B__r1",
+      "turn": 2,
+      "messages": [
+        "I\u2019ll save these three defaults for future notices in this project.\n"
+      ]
+    },
+    {
+      "trial": "notice__B__r1",
+      "turn": 3,
+      "messages": [
+        "I\u2019ll read the project preferences before preparing the notice.\n"
+      ]
+    },
+    {
+      "trial": "notice__B__r1",
+      "turn": 4,
+      "messages": [
+        "I\u2019ll read the saved preferences and apply the title change only to this notice.\n"
+      ]
+    },
+    {
+      "trial": "notice__B__r1",
+      "turn": 5,
+      "messages": [
+        "I\u2019ll read the project preferences before preparing the notice.\n"
+      ]
+    },
+    {
+      "trial": "notice__B__r1",
+      "turn": 6,
+      "messages": [
+        "I\u2019ll read your saved preferences and update the standing heading.\n"
+      ]
+    },
+    {
+      "trial": "notice__B__r1",
+      "turn": 7,
+      "messages": [
+        "I\u2019ll read the project preferences before selecting the notice format.\n"
+      ]
+    },
+    {
+      "trial": "notice__B__r1",
+      "turn": 8,
+      "messages": [
+        "I\u2019ll create the notice using your saved defaults and email for this notice only.\n"
+      ]
+    },
+    {
+      "trial": "notice__C__r2",
+      "turn": 1,
+      "messages": [
+        "I\u2019ll use the align skill to record the recurring-notice defaults after checking the project agreement.\n"
+      ]
+    },
+    {
+      "trial": "notice__C__r2",
+      "turn": 2,
+      "messages": [
+        "I\u2019ll save all three defaults in ALIGN.md for future notices.\n"
+      ]
+    },
+    {
+      "trial": "notice__C__r2",
+      "turn": 3,
+      "messages": [
+        "I\u2019ll read the project agreement and use the align skill to check your saved preferences.\n"
+      ]
+    },
+    {
+      "trial": "notice__C__r2",
+      "turn": 4,
+      "messages": [
+        "I\u2019ll use the align skill to check your saved preferences and apply the title change only to this notice.\n"
+      ]
+    },
+    {
+      "trial": "notice__C__r2",
+      "turn": 5,
+      "messages": [
+        "I\u2019ll read ALIGN.md and use the align skill to apply your saved preferences.\n"
+      ]
+    },
+    {
+      "trial": "notice__C__r2",
+      "turn": 6,
+      "messages": [
+        "I\u2019ll use the align skill to check your saved preferences and save \u201cWorkshop update\u201d as your standing heading.\n"
+      ]
+    },
+    {
+      "trial": "notice__C__r2",
+      "turn": 7,
+      "messages": [
+        "I\u2019ll use the align skill to check your saved preferences before preparing the notice.\n"
+      ]
+    },
+    {
+      "trial": "notice__C__r2",
+      "turn": 8,
+      "messages": [
+        "I\u2019ll prepare the notice with email as the one-time channel choice.\n"
+      ]
+    },
+    {
+      "trial": "software__C__r1",
+      "turn": 1,
+      "messages": [
+        "I\u2019ll use the align skill to record your standing project preferences.\n"
+      ]
+    },
+    {
+      "trial": "software__C__r1",
+      "turn": 2,
+      "messages": [
+        "I\u2019ll save these three standing preferences in ALIGN.md for future project work.\n"
+      ]
+    },
+    {
+      "trial": "software__C__r1",
+      "turn": 3,
+      "messages": [
+        "I\u2019ll read the project agreement and use the align skill to check which preferences are already settled.\n"
+      ]
+    },
+    {
+      "trial": "software__C__r1",
+      "turn": 4,
+      "messages": [
+        "I\u2019ll read the project agreement and apply the align skill, keeping the dependency exception limited to this task.\n"
+      ]
+    },
+    {
+      "trial": "software__C__r1",
+      "turn": 5,
+      "messages": [
+        "I\u2019ll read the project agreement and apply the installed align skill to the selections.\n"
+      ]
+    },
+    {
+      "trial": "software__C__r1",
+      "turn": 6,
+      "messages": [
+        "I\u2019ll use the align skill to apply the project agreement and save the hosting change.\n"
+      ]
+    },
+    {
+      "trial": "software__C__r1",
+      "turn": 7,
+      "messages": [
+        "I\u2019ll read the project agreement and use the align skill to identify any unresolved preferences.\n"
+      ]
+    },
+    {
+      "trial": "software__C__r1",
+      "turn": 8,
+      "messages": [
+        "I\u2019ll use the saved hosting, dependency, and analytics preferences, with 14-day retention for this page only.\n"
+      ]
+    },
+    {
+      "trial": "software__A__r1",
+      "turn": 2,
+      "messages": [
+        "I\u2019ll save these standing preferences in the project notes for future sessions.\n"
+      ]
+    },
+    {
+      "trial": "software__A__r1",
+      "turn": 3,
+      "messages": [
+        "I\u2019ll use your saved preferences for static hosting, standard-library dependencies, and aggregate-only analytics.\n"
+      ]
+    },
+    {
+      "trial": "software__A__r1",
+      "turn": 4,
+      "messages": [
+        "I\u2019ll use static hosting, the required library exception for this task, and aggregate-only analytics. The standing dependency policy will stay unchanged.\n"
+      ]
+    },
+    {
+      "trial": "software__A__r1",
+      "turn": 5,
+      "messages": [
+        "I\u2019ll use your saved preferences to select static hosting, standard-library dependencies, and aggregate-only analytics.\n"
+      ]
+    },
+    {
+      "trial": "software__A__r1",
+      "turn": 6,
+      "messages": [
+        "I\u2019ll save the managed-server hosting preference and write the selected options to output.json.\n"
+      ]
+    },
+    {
+      "trial": "software__A__r1",
+      "turn": 8,
+      "messages": [
+        "I\u2019ll use the saved hosting, dependency, and analytics preferences, with 14-day retention for this page only.\n"
+      ]
+    },
+    {
+      "trial": "notice__A__r1",
+      "turn": 1,
+      "messages": [
+        "I\u2019ll check the project notes for existing defaults before asking for any missing preferences.\n"
+      ]
+    },
+    {
+      "trial": "notice__A__r1",
+      "turn": 2,
+      "messages": [
+        "I\u2019ll save these three defaults in the project instructions for future notices.\n"
+      ]
+    },
+    {
+      "trial": "notice__A__r1",
+      "turn": 3,
+      "messages": [
+        "I\u2019ll write output.json using your saved heading, date format, and contact.\n"
+      ]
+    },
+    {
+      "trial": "notice__A__r1",
+      "turn": 4,
+      "messages": [
+        "I\u2019ll use the one-time title and your saved date and contact defaults, keeping the standing heading unchanged.\n"
+      ]
+    },
+    {
+      "trial": "notice__A__r1",
+      "turn": 5,
+      "messages": [
+        "I\u2019ll use your saved defaults and write output.json.\n"
+      ]
+    },
+    {
+      "trial": "notice__A__r1",
+      "turn": 6,
+      "messages": [
+        "I\u2019ll save \u201cWorkshop update\u201d as your standing heading and write the notice using your usual date format and contact.\n"
+      ]
+    },
+    {
+      "trial": "notice__A__r1",
+      "turn": 8,
+      "messages": [
+        "I\u2019ll write the notice using your saved defaults and the one-time email channel.\n"
+      ]
+    },
+    {
+      "trial": "software__A__r2",
+      "turn": 2,
+      "messages": [
+        "I\u2019ll save these standing preferences in the project for future sessions.\n"
+      ]
+    },
+    {
+      "trial": "software__A__r2",
+      "turn": 3,
+      "messages": [
+        "I\u2019ll use the saved preferences to select static hosting, the standard library, and aggregate-only analytics.\n"
+      ]
+    },
+    {
+      "trial": "software__A__r2",
+      "turn": 4,
+      "messages": [
+        "I\u2019ll use static hosting, the required library exception for this task, and aggregate-only analytics, while leaving your standing dependency policy unchanged.\n"
+      ]
+    },
+    {
+      "trial": "software__A__r2",
+      "turn": 5,
+      "messages": [
+        "I\u2019ll apply your saved preferences for static hosting, standard-library dependencies, and aggregate-only analytics.\n"
+      ]
+    },
+    {
+      "trial": "software__A__r2",
+      "turn": 6,
+      "messages": [
+        "I\u2019ll save the updated hosting preference and write the selected options to output.json.\n"
+      ]
+    },
+    {
+      "trial": "software__A__r2",
+      "turn": 8,
+      "messages": [
+        "I\u2019ll write the selected options with a 14-day retention period for this status page only.\n"
+      ]
+    },
+    {
+      "trial": "software__B__r1",
+      "turn": 1,
+      "messages": [
+        "I\u2019ll read the project preferences before asking for the standing choices.\n"
+      ]
+    },
+    {
+      "trial": "software__B__r1",
+      "turn": 2,
+      "messages": [
+        "I\u2019ll save these three standing preferences for future project work.\n"
+      ]
+    },
+    {
+      "trial": "software__B__r1",
+      "turn": 3,
+      "messages": [
+        "I\u2019ll read the project preferences before selecting the options.\n"
+      ]
+    },
+    {
+      "trial": "software__B__r1",
+      "turn": 4,
+      "messages": [
+        "I\u2019ll read the project preferences and apply the library exception only to this task.\n"
+      ]
+    },
+    {
+      "trial": "software__B__r1",
+      "turn": 5,
+      "messages": [
+        "I\u2019ll read the project preferences before selecting the catalog options.\n"
+      ]
+    },
+    {
+      "trial": "software__B__r1",
+      "turn": 6,
+      "messages": [
+        "I\u2019ll read the project preferences and save the updated hosting choice.\n"
+      ]
+    },
+    {
+      "trial": "software__B__r1",
+      "turn": 7,
+      "messages": [
+        "I\u2019ll read the project preferences before selecting the options.\n"
+      ]
+    },
+    {
+      "trial": "software__B__r1",
+      "turn": 8,
+      "messages": [
+        "I\u2019ll use the saved option preferences and set retention to 14 days for this page only.\n"
+      ]
+    },
+    {
+      "trial": "software__C__r2",
+      "turn": 1,
+      "messages": [
+        "I\u2019ll read the project agreement and use the align skill to record your standing preferences.\n"
+      ]
+    },
+    {
+      "trial": "software__C__r2",
+      "turn": 2,
+      "messages": [
+        "I\u2019ll save these three preferences in ALIGN.md for future project work.\n"
+      ]
+    },
+    {
+      "trial": "software__C__r2",
+      "turn": 3,
+      "messages": [
+        "I\u2019ll read the project agreement and use the align skill to check the hosting, dependency, and analytics preferences.\n"
+      ]
+    },
+    {
+      "trial": "software__C__r2",
+      "turn": 4,
+      "messages": [
+        "I\u2019ll read the project agreement and apply the align skill, keeping the dependency exception limited to this task.\n"
+      ]
+    },
+    {
+      "trial": "software__C__r2",
+      "turn": 5,
+      "messages": [
+        "I\u2019ll read the project agreement and use the align skill to check for existing preferences.\n"
+      ]
+    },
+    {
+      "trial": "software__C__r2",
+      "turn": 6,
+      "messages": [
+        "I\u2019ll read the project agreement and apply the align skill, then save the hosting change and prepare the requested output.\n"
+      ]
+    },
+    {
+      "trial": "software__C__r2",
+      "turn": 7,
+      "messages": [
+        "I\u2019ll read the project agreement and use the align skill to check which preferences are already settled.\n"
+      ]
+    },
+    {
+      "trial": "software__C__r2",
+      "turn": 8,
+      "messages": [
+        "I\u2019ll use 14 days for this page and keep the existing hosting, dependency, and analytics preferences.\n"
+      ]
+    },
+    {
+      "trial": "notice__A__r2",
+      "turn": 2,
+      "messages": [
+        "I\u2019ll save these defaults in the project for future notices.\n"
+      ]
+    },
+    {
+      "trial": "notice__A__r2",
+      "turn": 3,
+      "messages": [
+        "I\u2019ll write output.json using your saved notice preferences.\n"
+      ]
+    },
+    {
+      "trial": "notice__A__r2",
+      "turn": 4,
+      "messages": [
+        "I\u2019ll write the notice with the temporary title and your saved date and contact preferences.\n"
+      ]
+    },
+    {
+      "trial": "notice__A__r2",
+      "turn": 5,
+      "messages": [
+        "I\u2019ll use your saved notice preferences to write output.json.\n"
+      ]
+    },
+    {
+      "trial": "notice__A__r2",
+      "turn": 6,
+      "messages": [
+        "I\u2019ll save \u201cWorkshop update\u201d as your standing heading and write the notice using your saved date style and contact.\n"
+      ]
+    },
+    {
+      "trial": "notice__A__r2",
+      "turn": 8,
+      "messages": [
+        "I\u2019ll write the notice using your saved defaults and email for this notice only.\n"
+      ]
+    }
+  ],
+  "favorable_effort_claim_permitted": false,
+  "scripted_proxy_decision_rule_met": false,
+  "claim_gate": "Non-final assistant prose requires separate human/model audit; no automatic keyword clearance. External-read and privacy redaction completeness also require review. Hashes establish integrity, not preregistration time or authenticity.",
+  "interpretation": "Scripted reply, preference-unit and text proxies only; no measured human effort or population inference."
+}

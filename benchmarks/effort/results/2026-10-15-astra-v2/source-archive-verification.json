@@ -1,0 +1,25 @@
+{
+  "matches_manifest": true,
+  "source_files": {
+    "benchmarks/effort/README.md": "f88e46fe67fbcb76dc396609bbecfb1c97019300d158049dfc5d180d64b292c3",
+    "benchmarks/effort/cases.json": "5382aab86989673962fa420828d3f27e2df42bb9549239b54425e0d26bfa9fbc",
+    "benchmarks/effort/infrastructure-correction.md": "9f2e07e05db7b9d34ecc898609277d154f794ba1926315211d681e4e2adbadfe",
+    "benchmarks/effort/method-review.md": "dcd7f557a41fa9b3cb5ce2837ee837343e7727be77bea21abc48e9714bd61daf",
+    "benchmarks/effort/run.py": "81d99185ae7adc53753e599705f16359ed921d2360250edef91a9e3e733c5d37",
+    "benchmarks/effort/test_runner.py": "44afe0eff58c77bbdc0e7a3fde918abcc3e6120bfa666564108501e426a3dad4",
+    "benchmarks/effort/test_verify.py": "0d1577c781f5c886a7cccb58e934ebdc261ddc7f7dcbb46c9f0adee280ab7e14",
+    "benchmarks/effort/verify.py": "cc01cb15deff3801e1adb6376fe694b372cf19a39b150b29f79376114c0b9c13",
+    "benchmarks/reporting/audit_privacy.py": "293d947e4547edfb0b8464a396ce51d9d0c5211649eb505222d6bea8214df00f",
+    "benchmarks/reporting/redact_private.py": "0e271b1e17b8761178b2ec6ddf452d72e98660db051f13b9c8234d9b811462bb",
+    "benchmarks/run.py": "2b672c854dd36f068ef46a47f16824d582a58da6eb621688cdd66a2037ccc7e9",
+    "skills/align/LICENSE": "7409423471f34f663bede2c6c66da34098f70909a8fe24202984a4173e245e3a",
+    "skills/align/SKILL.md": "4067af3e2f3575d24ef448fe178966da05840ef2bd138ae174a05358d3750bdb",
+    "skills/align/agents/openai.yaml": "f288f538000d52cb67126c47a3d9dc3e909044ba7d3aa9287cc4b6af28bb83b1",
+    "skills/align/assets/instruction-block.md": "308c913b02b2f981f26962fea5ec06a28ebaf0fc6d3b3926483c48114362d5cc",
+    "skills/align/references/environment.md": "697fe856d27042ebb51a596de9f907990a88b34d66b98d19131eee6df4b98cfa",
+    "skills/align/references/installation.md": "8c2d99983d9ef7e9e7714ae1dbbcc83ba1a9783b9cdcddedbf596e249c365c2f",
+    "skills/align/references/recurring.md": "8d8fec24b409d75bd629022091706bc536cb22a7084df49a5bab584b8fcd8555",
+    "skills/align/scripts/connect_project.py": "3e481114d701856ee6985a5425a7ce75fbb9a8b1eed322f11ae18e19b3795715"
+  },
+  "privacy_scope": "Source archive excluded from runtime privacy scan; byte hashes match the already public committed source manifest."
+}
