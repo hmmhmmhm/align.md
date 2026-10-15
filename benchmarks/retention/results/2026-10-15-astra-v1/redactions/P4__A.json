@@ -1,0 +1,8 @@
+{
+  "counts": {
+    "private_reasoning_records": 6,
+    "encrypted_content_fields": 3
+  },
+  "private_record_sha256": "cb938da3e8954c81fe40fc69ccbc10aa7b7b0ff6613a9f56b002d10d371834c8",
+  "public_record_sha256": "9f079fafbcceecf3a0a1c0912989a928dd2f29283eb25beb79ec9ede4dc11f6d"
+}

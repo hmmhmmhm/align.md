@@ -61,7 +61,7 @@ can update this marketplace automatically when enabled. Other routes can use a
 user-authorized update at the start of an alignment session. No background
 updater or universal automatic activation is assumed.
 
-[Installation and updates](docs/usage.md) · [Behavioral benchmark](BENCHMARK.md) · [Intervention pilot](EFFORT_BENCHMARK.md) · [Preference transfer](DISCOVERY_BENCHMARK.md) · [Validation](docs/validation.md) · [Distribution](docs/distribution.md)
+[Installation and updates](docs/usage.md) · [Behavioral benchmark](BENCHMARK.md) · [Intervention pilot](EFFORT_BENCHMARK.md) · [Preference transfer](DISCOVERY_BENCHMARK.md) · [Preference retention](RETENTION_BENCHMARK.md) · [Validation](docs/validation.md) · [Distribution](docs/distribution.md)
 
 ## License
 

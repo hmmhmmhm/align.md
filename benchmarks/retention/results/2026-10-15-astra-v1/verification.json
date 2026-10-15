@@ -1,0 +1,700 @@
+{
+  "verified": true,
+  "errors": [],
+  "rows": [
+    {
+      "profile": "P1",
+      "arm": "A",
+      "task": "workshop",
+      "zero_reply_fit": false,
+      "first_submission_fit": true,
+      "final_fit": true,
+      "replies": 1,
+      "repeated_units": 2,
+      "format_replies": 0,
+      "preference_corrections": 0,
+      "answer_replies": 1,
+      "runtime_failure": false
+    },
+    {
+      "profile": "P1",
+      "arm": "A",
+      "task": "guide",
+      "zero_reply_fit": false,
+      "first_submission_fit": true,
+      "final_fit": true,
+      "replies": 1,
+      "repeated_units": 2,
+      "format_replies": 0,
+      "preference_corrections": 0,
+      "answer_replies": 1,
+      "runtime_failure": false
+    },
+    {
+      "profile": "P1",
+      "arm": "A",
+      "task": "demo",
+      "zero_reply_fit": false,
+      "first_submission_fit": true,
+      "final_fit": true,
+      "replies": 1,
+      "repeated_units": 2,
+      "format_replies": 0,
+      "preference_corrections": 0,
+      "answer_replies": 1,
+      "runtime_failure": false
+    },
+    {
+      "profile": "P1",
+      "arm": "B",
+      "task": "workshop",
+      "zero_reply_fit": true,
+      "first_submission_fit": true,
+      "final_fit": true,
+      "replies": 0,
+      "repeated_units": 0,
+      "format_replies": 0,
+      "preference_corrections": 0,
+      "answer_replies": 0,
+      "runtime_failure": false
+    },
+    {
+      "profile": "P1",
+      "arm": "B",
+      "task": "guide",
+      "zero_reply_fit": true,
+      "first_submission_fit": true,
+      "final_fit": true,
+      "replies": 0,
+      "repeated_units": 0,
+      "format_replies": 0,
+      "preference_corrections": 0,
+      "answer_replies": 0,
+      "runtime_failure": false
+    },
+    {
+      "profile": "P1",
+      "arm": "B",
+      "task": "demo",
+      "zero_reply_fit": true,
+      "first_submission_fit": true,
+      "final_fit": true,
+      "replies": 0,
+      "repeated_units": 0,
+      "format_replies": 0,
+      "preference_corrections": 0,
+      "answer_replies": 0,
+      "runtime_failure": false
+    },
+    {
+      "profile": "P2",
+      "arm": "A",
+      "task": "workshop",
+      "zero_reply_fit": false,
+      "first_submission_fit": true,
+      "final_fit": true,
+      "replies": 1,
+      "repeated_units": 2,
+      "format_replies": 0,
+      "preference_corrections": 0,
+      "answer_replies": 1,
+      "runtime_failure": false
+    },
+    {
+      "profile": "P2",
+      "arm": "A",
+      "task": "guide",
+      "zero_reply_fit": true,
+      "first_submission_fit": true,
+      "final_fit": true,
+      "replies": 0,
+      "repeated_units": 0,
+      "format_replies": 0,
+      "preference_corrections": 0,
+      "answer_replies": 0,
+      "runtime_failure": false
+    },
+    {
+      "profile": "P2",
+      "arm": "A",
+      "task": "demo",
+      "zero_reply_fit": true,
+      "first_submission_fit": true,
+      "final_fit": true,
+      "replies": 0,
+      "repeated_units": 0,
+      "format_replies": 0,
+      "preference_corrections": 0,
+      "answer_replies": 0,
+      "runtime_failure": false
+    },
+    {
+      "profile": "P2",
+      "arm": "B",
+      "task": "workshop",
+      "zero_reply_fit": true,
+      "first_submission_fit": true,
+      "final_fit": true,
+      "replies": 0,
+      "repeated_units": 0,
+      "format_replies": 0,
+      "preference_corrections": 0,
+      "answer_replies": 0,
+      "runtime_failure": false
+    },
+    {
+      "profile": "P2",
+      "arm": "B",
+      "task": "guide",
+      "zero_reply_fit": true,
+      "first_submission_fit": true,
+      "final_fit": true,
+      "replies": 0,
+      "repeated_units": 0,
+      "format_replies": 0,
+      "preference_corrections": 0,
+      "answer_replies": 0,
+      "runtime_failure": false
+    },
+    {
+      "profile": "P2",
+      "arm": "B",
+      "task": "demo",
+      "zero_reply_fit": true,
+      "first_submission_fit": true,
+      "final_fit": true,
+      "replies": 0,
+      "repeated_units": 0,
+      "format_replies": 0,
+      "preference_corrections": 0,
+      "answer_replies": 0,
+      "runtime_failure": false
+    },
+    {
+      "profile": "P3",
+      "arm": "A",
+      "task": "workshop",
+      "zero_reply_fit": false,
+      "first_submission_fit": true,
+      "final_fit": true,
+      "replies": 1,
+      "repeated_units": 2,
+      "format_replies": 0,
+      "preference_corrections": 0,
+      "answer_replies": 1,
+      "runtime_failure": false
+    },
+    {
+      "profile": "P3",
+      "arm": "A",
+      "task": "guide",
+      "zero_reply_fit": false,
+      "first_submission_fit": true,
+      "final_fit": true,
+      "replies": 1,
+      "repeated_units": 2,
+      "format_replies": 0,
+      "preference_corrections": 0,
+      "answer_replies": 1,
+      "runtime_failure": false
+    },
+    {
+      "profile": "P3",
+      "arm": "A",
+      "task": "demo",
+      "zero_reply_fit": true,
+      "first_submission_fit": true,
+      "final_fit": true,
+      "replies": 0,
+      "repeated_units": 0,
+      "format_replies": 0,
+      "preference_corrections": 0,
+      "answer_replies": 0,
+      "runtime_failure": false
+    },
+    {
+      "profile": "P3",
+      "arm": "B",
+      "task": "workshop",
+      "zero_reply_fit": true,
+      "first_submission_fit": true,
+      "final_fit": true,
+      "replies": 0,
+      "repeated_units": 0,
+      "format_replies": 0,
+      "preference_corrections": 0,
+      "answer_replies": 0,
+      "runtime_failure": false
+    },
+    {
+      "profile": "P3",
+      "arm": "B",
+      "task": "guide",
+      "zero_reply_fit": true,
+      "first_submission_fit": true,
+      "final_fit": true,
+      "replies": 0,
+      "repeated_units": 0,
+      "format_replies": 0,
+      "preference_corrections": 0,
+      "answer_replies": 0,
+      "runtime_failure": false
+    },
+    {
+      "profile": "P3",
+      "arm": "B",
+      "task": "demo",
+      "zero_reply_fit": true,
+      "first_submission_fit": true,
+      "final_fit": true,
+      "replies": 0,
+      "repeated_units": 0,
+      "format_replies": 0,
+      "preference_corrections": 0,
+      "answer_replies": 0,
+      "runtime_failure": false
+    },
+    {
+      "profile": "P4",
+      "arm": "A",
+      "task": "workshop",
+      "zero_reply_fit": false,
+      "first_submission_fit": true,
+      "final_fit": true,
+      "replies": 1,
+      "repeated_units": 2,
+      "format_replies": 0,
+      "preference_corrections": 0,
+      "answer_replies": 1,
+      "runtime_failure": false
+    },
+    {
+      "profile": "P4",
+      "arm": "A",
+      "task": "guide",
+      "zero_reply_fit": false,
+      "first_submission_fit": true,
+      "final_fit": true,
+      "replies": 1,
+      "repeated_units": 2,
+      "format_replies": 0,
+      "preference_corrections": 0,
+      "answer_replies": 1,
+      "runtime_failure": false
+    },
+    {
+      "profile": "P4",
+      "arm": "A",
+      "task": "demo",
+      "zero_reply_fit": false,
+      "first_submission_fit": true,
+      "final_fit": true,
+      "replies": 1,
+      "repeated_units": 2,
+      "format_replies": 0,
+      "preference_corrections": 0,
+      "answer_replies": 1,
+      "runtime_failure": false
+    },
+    {
+      "profile": "P4",
+      "arm": "B",
+      "task": "workshop",
+      "zero_reply_fit": true,
+      "first_submission_fit": true,
+      "final_fit": true,
+      "replies": 0,
+      "repeated_units": 0,
+      "format_replies": 0,
+      "preference_corrections": 0,
+      "answer_replies": 0,
+      "runtime_failure": false
+    },
+    {
+      "profile": "P4",
+      "arm": "B",
+      "task": "guide",
+      "zero_reply_fit": true,
+      "first_submission_fit": true,
+      "final_fit": true,
+      "replies": 0,
+      "repeated_units": 0,
+      "format_replies": 0,
+      "preference_corrections": 0,
+      "answer_replies": 0,
+      "runtime_failure": false
+    },
+    {
+      "profile": "P4",
+      "arm": "B",
+      "task": "demo",
+      "zero_reply_fit": true,
+      "first_submission_fit": true,
+      "final_fit": true,
+      "replies": 0,
+      "repeated_units": 0,
+      "format_replies": 0,
+      "preference_corrections": 0,
+      "answer_replies": 0,
+      "runtime_failure": false
+    }
+  ],
+  "totals": {
+    "A": {
+      "actor_calls": 21,
+      "known_subprocess_duration_seconds": 288.596,
+      "tokens_input_tokens": 454628,
+      "tokens_cached_input_tokens": 363520,
+      "tokens_cache_write_input_tokens": 0,
+      "tokens_output_tokens": 5466,
+      "tokens_reasoning_output_tokens": 334,
+      "zero_reply_fit": 3,
+      "first_submission_fit": 12,
+      "final_fit": 12,
+      "replies": 9,
+      "repeated_units": 18,
+      "format_replies": 0,
+      "preference_corrections": 0,
+      "answer_replies": 9,
+      "runtime_failure": 0,
+      "episodes": 12,
+      "missing_subprocess_durations": 2,
+      "recovered_native_duration_seconds": 38.302
+    },
+    "B": {
+      "actor_calls": 12,
+      "missing_subprocess_durations": 6,
+      "recovered_native_duration_seconds": 100.994,
+      "zero_reply_fit": 12,
+      "first_submission_fit": 12,
+      "final_fit": 12,
+      "replies": 0,
+      "repeated_units": 0,
+      "format_replies": 0,
+      "preference_corrections": 0,
+      "answer_replies": 0,
+      "runtime_failure": 0,
+      "episodes": 12,
+      "known_subprocess_duration_seconds": 102.273,
+      "tokens_input_tokens": 151609,
+      "tokens_cached_input_tokens": 133120,
+      "tokens_cache_write_input_tokens": 0,
+      "tokens_output_tokens": 1817,
+      "tokens_reasoning_output_tokens": 0
+    }
+  },
+  "cumulative_later_replies": {
+    "A": [
+      4,
+      7,
+      9
+    ],
+    "B": [
+      0,
+      0,
+      0
+    ]
+  },
+  "payback": {
+    "P1": {
+      "cumulative_saved_replies": [
+        1,
+        2,
+        3
+      ],
+      "setup_sensitivity": {
+        "0": 1,
+        "1": 1,
+        "2": 2,
+        "3": 3
+      }
+    },
+    "P2": {
+      "cumulative_saved_replies": [
+        1,
+        1,
+        1
+      ],
+      "setup_sensitivity": {
+        "0": 1,
+        "1": 1,
+        "2": "not reached",
+        "3": "not reached"
+      }
+    },
+    "P3": {
+      "cumulative_saved_replies": [
+        1,
+        2,
+        2
+      ],
+      "setup_sensitivity": {
+        "0": 1,
+        "1": 1,
+        "2": 2,
+        "3": "not reached"
+      }
+    },
+    "P4": {
+      "cumulative_saved_replies": [
+        1,
+        2,
+        3
+      ],
+      "setup_sensitivity": {
+        "0": 1,
+        "1": 1,
+        "2": 2,
+        "3": 3
+      }
+    },
+    "pooled": {
+      "cumulative_saved_replies": [
+        4,
+        7,
+        9
+      ],
+      "setup_sensitivity": {
+        "0": 1,
+        "1": 1,
+        "2": 3,
+        "3": "not reached"
+      }
+    }
+  },
+  "recovery_checks": [
+    {
+      "chain": "P1__A",
+      "task": "workshop",
+      "turn": 0,
+      "native_turn_id": "01a13da8-8abc-7453-ad5e-eedf053d9c8b",
+      "recovered": false
+    },
+    {
+      "chain": "P1__A",
+      "task": "workshop",
+      "turn": 1,
+      "native_turn_id": "01a13da8-b40f-74e0-befc-2807ac42e452",
+      "recovered": false
+    },
+    {
+      "chain": "P1__A",
+      "task": "guide",
+      "turn": 0,
+      "native_turn_id": "01a13da9-1a19-7950-b87f-8e8a1b567d5e",
+      "recovered": false
+    },
+    {
+      "chain": "P1__A",
+      "task": "guide",
+      "turn": 1,
+      "native_turn_id": "01a13da9-3578-7e10-8bc3-9b3467961c39",
+      "recovered": false
+    },
+    {
+      "chain": "P1__A",
+      "task": "demo",
+      "turn": 0,
+      "native_turn_id": "01a13da9-89d7-7480-b78f-33f12d55e464",
+      "recovered": false
+    },
+    {
+      "chain": "P1__A",
+      "task": "demo",
+      "turn": 1,
+      "native_turn_id": "01a13da9-ab13-7373-989c-84a343060fed",
+      "recovered": false
+    },
+    {
+      "chain": "P1__B",
+      "task": "workshop",
+      "turn": 0,
+      "native_turn_id": "01a13d9e-0003-74a1-b2ba-93694cd22867",
+      "recovered": true
+    },
+    {
+      "chain": "P1__B",
+      "task": "guide",
+      "turn": 0,
+      "native_turn_id": "01a13d9e-50ff-7bd2-84d9-fee98ed739fc",
+      "recovered": true
+    },
+    {
+      "chain": "P1__B",
+      "task": "demo",
+      "turn": 0,
+      "native_turn_id": "01a13d9e-9be9-73b0-a609-e7e774cbdc31",
+      "recovered": true
+    },
+    {
+      "chain": "P2__A",
+      "task": "workshop",
+      "turn": 0,
+      "native_turn_id": "01a13d9d-ffa9-7b50-be38-615f754f04fb",
+      "recovered": true
+    },
+    {
+      "chain": "P2__A",
+      "task": "workshop",
+      "turn": 1,
+      "native_turn_id": "01a13d9e-2081-77f0-b398-467a4804226e",
+      "recovered": true
+    },
+    {
+      "chain": "P2__A",
+      "task": "guide",
+      "turn": 0,
+      "native_turn_id": "01a13da8-8348-7a13-95f7-74727a056f18",
+      "recovered": false
+    },
+    {
+      "chain": "P2__A",
+      "task": "demo",
+      "turn": 0,
+      "native_turn_id": "01a13da8-bd1d-7393-8ba7-4b537ba39d8e",
+      "recovered": false
+    },
+    {
+      "chain": "P2__B",
+      "task": "workshop",
+      "turn": 0,
+      "native_turn_id": "01a13d9d-ffa9-7b02-996c-81a30e101b9e",
+      "recovered": true
+    },
+    {
+      "chain": "P2__B",
+      "task": "guide",
+      "turn": 0,
+      "native_turn_id": "01a13d9e-3cdf-7333-b23f-fe58c2e9b45d",
+      "recovered": true
+    },
+    {
+      "chain": "P2__B",
+      "task": "demo",
+      "turn": 0,
+      "native_turn_id": "01a13d9e-83a1-7800-bcec-1dcf35548b94",
+      "recovered": true
+    },
+    {
+      "chain": "P3__A",
+      "task": "workshop",
+      "turn": 0,
+      "native_turn_id": "01a13da8-f9e0-7bf3-9d27-68e43d3481ac",
+      "recovered": false
+    },
+    {
+      "chain": "P3__A",
+      "task": "workshop",
+      "turn": 1,
+      "native_turn_id": "01a13da9-1772-7d42-8552-7f346ad46b87",
+      "recovered": false
+    },
+    {
+      "chain": "P3__A",
+      "task": "guide",
+      "turn": 0,
+      "native_turn_id": "01a13da9-6d83-7590-845b-e67386bb5cca",
+      "recovered": false
+    },
+    {
+      "chain": "P3__A",
+      "task": "guide",
+      "turn": 1,
+      "native_turn_id": "01a13da9-8858-7781-8492-8f1773d82352",
+      "recovered": false
+    },
+    {
+      "chain": "P3__A",
+      "task": "demo",
+      "turn": 0,
+      "native_turn_id": "01a13da9-eee4-7962-bea0-d8e0d9f203a3",
+      "recovered": false
+    },
+    {
+      "chain": "P3__B",
+      "task": "workshop",
+      "turn": 0,
+      "native_turn_id": "01a13da8-89f2-7af1-85ef-8b92e9d281de",
+      "recovered": false
+    },
+    {
+      "chain": "P3__B",
+      "task": "guide",
+      "turn": 0,
+      "native_turn_id": "01a13da8-cde0-71d1-9b0c-1ffccf4657d3",
+      "recovered": false
+    },
+    {
+      "chain": "P3__B",
+      "task": "demo",
+      "turn": 0,
+      "native_turn_id": "01a13da9-1331-7c92-91ab-c8f3f72b00e3",
+      "recovered": false
+    },
+    {
+      "chain": "P4__A",
+      "task": "workshop",
+      "turn": 0,
+      "native_turn_id": "01a13daa-19e0-7b23-aafc-cf879b79e687",
+      "recovered": false
+    },
+    {
+      "chain": "P4__A",
+      "task": "workshop",
+      "turn": 1,
+      "native_turn_id": "01a13daa-38ae-7e53-8d99-aaa5aec38682",
+      "recovered": false
+    },
+    {
+      "chain": "P4__A",
+      "task": "guide",
+      "turn": 0,
+      "native_turn_id": "01a13daa-a7b1-7b80-be6b-1ce7fc2704c6",
+      "recovered": false
+    },
+    {
+      "chain": "P4__A",
+      "task": "guide",
+      "turn": 1,
+      "native_turn_id": "01a13daa-c863-73d2-9dd5-4cc10535f469",
+      "recovered": false
+    },
+    {
+      "chain": "P4__A",
+      "task": "demo",
+      "turn": 0,
+      "native_turn_id": "01a13dab-0ced-7612-9c22-aa2bb9673ef7",
+      "recovered": false
+    },
+    {
+      "chain": "P4__A",
+      "task": "demo",
+      "turn": 1,
+      "native_turn_id": "01a13dab-2817-75d1-8cef-5ac312a8d442",
+      "recovered": false
+    },
+    {
+      "chain": "P4__B",
+      "task": "workshop",
+      "turn": 0,
+      "native_turn_id": "01a13da9-5e3b-73f2-804e-2c360ce8ff0e",
+      "recovered": false
+    },
+    {
+      "chain": "P4__B",
+      "task": "guide",
+      "turn": 0,
+      "native_turn_id": "01a13da9-9cd5-7a73-b2fd-f26d9315a9dd",
+      "recovered": false
+    },
+    {
+      "chain": "P4__B",
+      "task": "demo",
+      "turn": 0,
+      "native_turn_id": "01a13da9-e89a-79f0-a69a-54c32dc8342c",
+      "recovered": false
+    }
+  ],
+  "native_turns": 33,
+  "resource_adapter": "Frozen verifier primary scoring unchanged. Unavailable subprocess durations excluded from known subtotal and counted explicitly; native durations separate."
+}

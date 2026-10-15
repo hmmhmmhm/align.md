@@ -1,0 +1,38 @@
+{
+  "created_at": "2026-10-15T03:32:04.456023+00:00",
+  "freeze_commit": "c07a880fd10d2f007c5bf1851070062819284571",
+  "source_files": {
+    "benchmarks/reporting/redact_private.py": "0e271b1e17b8761178b2ec6ddf452d72e98660db051f13b9c8234d9b811462bb",
+    "benchmarks/retention/README.md": "4ad60b375c3b2296f8991c9d9c4865a78bed11328b2b11173a5d11ce6b65c7a7",
+    "benchmarks/retention/cases.json": "04e9e86fe3875fda72e16459c3ca776d785a262b00dd8c6bbd2faa49473ca154",
+    "benchmarks/retention/run.py": "c9dfb6364303afdac1025634b3668fed3982319237b26eb733633496c66c9295",
+    "benchmarks/retention/test_runner.py": "0d16563ac402c81326ca7ed82f1e97c70281b6b512e51afe5c09233ca9559a0f",
+    "benchmarks/retention/verify.py": "40fbc2345fb9fe795d948c2c76e040cb13258ab2c29df5f90c356f4b0276b551",
+    "benchmarks/run.py": "2b672c854dd36f068ef46a47f16824d582a58da6eb621688cdd66a2037ccc7e9",
+    "skills/align/LICENSE": "7409423471f34f663bede2c6c66da34098f70909a8fe24202984a4173e245e3a",
+    "skills/align/SKILL.md": "4067af3e2f3575d24ef448fe178966da05840ef2bd138ae174a05358d3750bdb",
+    "skills/align/agents/openai.yaml": "f288f538000d52cb67126c47a3d9dc3e909044ba7d3aa9287cc4b6af28bb83b1",
+    "skills/align/assets/instruction-block.md": "308c913b02b2f981f26962fea5ec06a28ebaf0fc6d3b3926483c48114362d5cc",
+    "skills/align/references/environment.md": "697fe856d27042ebb51a596de9f907990a88b34d66b98d19131eee6df4b98cfa",
+    "skills/align/references/installation.md": "8c2d99983d9ef7e9e7714ae1dbbcc83ba1a9783b9cdcddedbf596e249c365c2f",
+    "skills/align/references/recurring.md": "8d8fec24b409d75bd629022091706bc536cb22a7084df49a5bab584b8fcd8555",
+    "skills/align/scripts/connect_project.py": "3e481114d701856ee6985a5425a7ce75fbb9a8b1eed322f11ae18e19b3795715"
+  },
+  "ordered_chains": [
+    "P1__B",
+    "P2__A",
+    "P2__B",
+    "P1__A",
+    "P3__B",
+    "P3__A",
+    "P4__B",
+    "P4__A"
+  ],
+  "model": "gpt-6-astra",
+  "effort": "medium",
+  "cli_version": "codex-cli 0.162.0-alpha.17.2",
+  "cli_sha256": "0d5ac7aae20c4eda6242428d5e218c55ba96d8763fda2a271088ff37104b9d28",
+  "workers": 3,
+  "retry_policy": "none",
+  "setup": "authored prior conversation one reply each; B one additional modeled confirmation, not executed"
+}

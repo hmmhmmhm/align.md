@@ -1,0 +1,424 @@
+{
+  "reviewer_role": "Maintainer-run unblinded model evidence audit; not independent external validation",
+  "issues": [],
+  "episode_count": 24,
+  "actor_calls": 33,
+  "recovered_calls": 8,
+  "runtime_failures": 0,
+  "unresolved_episodes": 0,
+  "all_planned_records_retained": true,
+  "resources": {
+    "A": {
+      "calls": 21,
+      "native_duration_all_calls_seconds": 310.7949999999999,
+      "resumed_cli_input_tokens": 454628,
+      "resumed_cli_cached_input_tokens": 363520,
+      "resumed_cli_cache_write_input_tokens": 0,
+      "resumed_cli_output_tokens": 5466,
+      "resumed_cli_reasoning_output_tokens": 334,
+      "resumed_native_input_tokens": 357526,
+      "resumed_native_cached_input_tokens": 294528,
+      "resumed_native_cache_write_input_tokens": 0,
+      "resumed_native_output_tokens": 4892,
+      "resumed_native_reasoning_output_tokens": 247,
+      "resumed_native_total_tokens": 362418,
+      "known_subprocess_duration_seconds": 288.596,
+      "resumed_calls": 19,
+      "episodes": 12,
+      "replies": 9,
+      "criterion_units": 18,
+      "recovered_calls": 2,
+      "recovered_native_input_tokens": 62606,
+      "recovered_native_cached_input_tokens": 58880,
+      "recovered_native_cache_write_input_tokens": 0,
+      "recovered_native_output_tokens": 742,
+      "recovered_native_reasoning_output_tokens": 27,
+      "recovered_native_total_tokens": 63348,
+      "all_native_input_tokens": 420132,
+      "all_native_output_tokens": 5634
+    },
+    "B": {
+      "calls": 12,
+      "native_duration_all_calls_seconds": 197.566,
+      "recovered_calls": 6,
+      "recovered_native_input_tokens": 151826,
+      "recovered_native_cached_input_tokens": 111104,
+      "recovered_native_cache_write_input_tokens": 0,
+      "recovered_native_output_tokens": 1804,
+      "recovered_native_reasoning_output_tokens": 0,
+      "recovered_native_total_tokens": 153630,
+      "episodes": 12,
+      "replies": 0,
+      "criterion_units": 0,
+      "resumed_cli_input_tokens": 151609,
+      "resumed_cli_cached_input_tokens": 133120,
+      "resumed_cli_cache_write_input_tokens": 0,
+      "resumed_cli_output_tokens": 1817,
+      "resumed_cli_reasoning_output_tokens": 0,
+      "resumed_native_input_tokens": 151609,
+      "resumed_native_cached_input_tokens": 133120,
+      "resumed_native_cache_write_input_tokens": 0,
+      "resumed_native_output_tokens": 1817,
+      "resumed_native_reasoning_output_tokens": 0,
+      "resumed_native_total_tokens": 153426,
+      "known_subprocess_duration_seconds": 102.273,
+      "resumed_calls": 6,
+      "all_native_input_tokens": 303435,
+      "all_native_output_tokens": 3621
+    }
+  },
+  "bindings": [
+    {
+      "chain": "P1__A",
+      "task": "workshop",
+      "turn": 0,
+      "native_trace": "session-traces/P1__A/rollout-2026-10-15T12-43-38-01a13da8-8aa6-71b1-8d44-d4084bfd48aa.jsonl.gz",
+      "native_turn_id": "01a13da8-8abc-7453-ad5e-eedf053d9c8b",
+      "recovered": false,
+      "binding": "exact prompt, delivered reply, all observable assistant messages, final response, completion, score, and resource receipt"
+    },
+    {
+      "chain": "P1__A",
+      "task": "workshop",
+      "turn": 1,
+      "native_trace": "session-traces/P1__A/rollout-2026-10-15T12-43-38-01a13da8-8aa6-71b1-8d44-d4084bfd48aa.jsonl.gz",
+      "native_turn_id": "01a13da8-b40f-74e0-befc-2807ac42e452",
+      "recovered": false,
+      "binding": "exact prompt, delivered reply, all observable assistant messages, final response, completion, score, and resource receipt"
+    },
+    {
+      "chain": "P1__A",
+      "task": "guide",
+      "turn": 0,
+      "native_trace": "session-traces/P1__A/rollout-2026-10-15T12-44-14-01a13da9-19e6-7a60-9a49-a284f681f2b1.jsonl.gz",
+      "native_turn_id": "01a13da9-1a19-7950-b87f-8e8a1b567d5e",
+      "recovered": false,
+      "binding": "exact prompt, delivered reply, all observable assistant messages, final response, completion, score, and resource receipt"
+    },
+    {
+      "chain": "P1__A",
+      "task": "guide",
+      "turn": 1,
+      "native_trace": "session-traces/P1__A/rollout-2026-10-15T12-44-14-01a13da9-19e6-7a60-9a49-a284f681f2b1.jsonl.gz",
+      "native_turn_id": "01a13da9-3578-7e10-8bc3-9b3467961c39",
+      "recovered": false,
+      "binding": "exact prompt, delivered reply, all observable assistant messages, final response, completion, score, and resource receipt"
+    },
+    {
+      "chain": "P1__A",
+      "task": "demo",
+      "turn": 0,
+      "native_trace": "session-traces/P1__A/rollout-2026-10-15T12-44-43-01a13da9-89a6-7e70-a583-56421cb011de.jsonl.gz",
+      "native_turn_id": "01a13da9-89d7-7480-b78f-33f12d55e464",
+      "recovered": false,
+      "binding": "exact prompt, delivered reply, all observable assistant messages, final response, completion, score, and resource receipt"
+    },
+    {
+      "chain": "P1__A",
+      "task": "demo",
+      "turn": 1,
+      "native_trace": "session-traces/P1__A/rollout-2026-10-15T12-44-43-01a13da9-89a6-7e70-a583-56421cb011de.jsonl.gz",
+      "native_turn_id": "01a13da9-ab13-7373-989c-84a343060fed",
+      "recovered": false,
+      "binding": "exact prompt, delivered reply, all observable assistant messages, final response, completion, score, and resource receipt"
+    },
+    {
+      "chain": "P1__B",
+      "task": "workshop",
+      "turn": 0,
+      "native_trace": "session-traces/P1__B/rollout-2026-10-15T12-32-07-01a13d9d-ffd3-7fe3-90df-34d35b7dad3f.jsonl.gz",
+      "native_turn_id": "01a13d9e-0003-74a1-b2ba-93694cd22867",
+      "recovered": true,
+      "binding": "exact prompt, delivered reply, all observable assistant messages, final response, completion, score, and resource receipt"
+    },
+    {
+      "chain": "P1__B",
+      "task": "guide",
+      "turn": 0,
+      "native_trace": "session-traces/P1__B/rollout-2026-10-15T12-32-27-01a13d9e-50c9-7d90-bc21-ba6471b1e631.jsonl.gz",
+      "native_turn_id": "01a13d9e-50ff-7bd2-84d9-fee98ed739fc",
+      "recovered": true,
+      "binding": "exact prompt, delivered reply, all observable assistant messages, final response, completion, score, and resource receipt"
+    },
+    {
+      "chain": "P1__B",
+      "task": "demo",
+      "turn": 0,
+      "native_trace": "session-traces/P1__B/rollout-2026-10-15T12-32-47-01a13d9e-9bb1-7802-847e-5968f4b247cb.jsonl.gz",
+      "native_turn_id": "01a13d9e-9be9-73b0-a609-e7e774cbdc31",
+      "recovered": true,
+      "binding": "exact prompt, delivered reply, all observable assistant messages, final response, completion, score, and resource receipt"
+    },
+    {
+      "chain": "P2__A",
+      "task": "workshop",
+      "turn": 0,
+      "native_trace": "session-traces/P2__A/rollout-2026-10-15T12-32-07-01a13d9d-ff66-7831-bab8-751b69b46959.jsonl.gz",
+      "native_turn_id": "01a13d9d-ffa9-7b50-be38-615f754f04fb",
+      "recovered": true,
+      "binding": "exact prompt, delivered reply, all observable assistant messages, final response, completion, score, and resource receipt"
+    },
+    {
+      "chain": "P2__A",
+      "task": "workshop",
+      "turn": 1,
+      "native_trace": "session-traces/P2__A/rollout-2026-10-15T12-32-07-01a13d9d-ff66-7831-bab8-751b69b46959.jsonl.gz",
+      "native_turn_id": "01a13d9e-2081-77f0-b398-467a4804226e",
+      "recovered": true,
+      "binding": "exact prompt, delivered reply, all observable assistant messages, final response, completion, score, and resource receipt"
+    },
+    {
+      "chain": "P2__A",
+      "task": "guide",
+      "turn": 0,
+      "native_trace": "session-traces/P2__A/rollout-2026-10-15T12-43-36-01a13da8-8123-7a83-b29b-89132c2bdbff.jsonl.gz",
+      "native_turn_id": "01a13da8-8348-7a13-95f7-74727a056f18",
+      "recovered": false,
+      "binding": "exact prompt, delivered reply, all observable assistant messages, final response, completion, score, and resource receipt"
+    },
+    {
+      "chain": "P2__A",
+      "task": "demo",
+      "turn": 0,
+      "native_trace": "session-traces/P2__A/rollout-2026-10-15T12-43-51-01a13da8-bce8-7b41-9ecc-28cda92cd3ab.jsonl.gz",
+      "native_turn_id": "01a13da8-bd1d-7393-8ba7-4b537ba39d8e",
+      "recovered": false,
+      "binding": "exact prompt, delivered reply, all observable assistant messages, final response, completion, score, and resource receipt"
+    },
+    {
+      "chain": "P2__B",
+      "task": "workshop",
+      "turn": 0,
+      "native_trace": "session-traces/P2__B/rollout-2026-10-15T12-32-07-01a13d9d-ff66-7df1-a39f-449985639514.jsonl.gz",
+      "native_turn_id": "01a13d9d-ffa9-7b02-996c-81a30e101b9e",
+      "recovered": true,
+      "binding": "exact prompt, delivered reply, all observable assistant messages, final response, completion, score, and resource receipt"
+    },
+    {
+      "chain": "P2__B",
+      "task": "guide",
+      "turn": 0,
+      "native_trace": "session-traces/P2__B/rollout-2026-10-15T12-32-22-01a13d9e-3ca5-7c70-b51e-0f4867a9b664.jsonl.gz",
+      "native_turn_id": "01a13d9e-3cdf-7333-b23f-fe58c2e9b45d",
+      "recovered": true,
+      "binding": "exact prompt, delivered reply, all observable assistant messages, final response, completion, score, and resource receipt"
+    },
+    {
+      "chain": "P2__B",
+      "task": "demo",
+      "turn": 0,
+      "native_trace": "session-traces/P2__B/rollout-2026-10-15T12-32-40-01a13d9e-8356-7042-802e-6b12c2010037.jsonl.gz",
+      "native_turn_id": "01a13d9e-83a1-7800-bcec-1dcf35548b94",
+      "recovered": true,
+      "binding": "exact prompt, delivered reply, all observable assistant messages, final response, completion, score, and resource receipt"
+    },
+    {
+      "chain": "P3__A",
+      "task": "workshop",
+      "turn": 0,
+      "native_trace": "session-traces/P3__A/rollout-2026-10-15T12-44-06-01a13da8-f9c7-72c1-9537-15d8f359a8a0.jsonl.gz",
+      "native_turn_id": "01a13da8-f9e0-7bf3-9d27-68e43d3481ac",
+      "recovered": false,
+      "binding": "exact prompt, delivered reply, all observable assistant messages, final response, completion, score, and resource receipt"
+    },
+    {
+      "chain": "P3__A",
+      "task": "workshop",
+      "turn": 1,
+      "native_trace": "session-traces/P3__A/rollout-2026-10-15T12-44-06-01a13da8-f9c7-72c1-9537-15d8f359a8a0.jsonl.gz",
+      "native_turn_id": "01a13da9-1772-7d42-8552-7f346ad46b87",
+      "recovered": false,
+      "binding": "exact prompt, delivered reply, all observable assistant messages, final response, completion, score, and resource receipt"
+    },
+    {
+      "chain": "P3__A",
+      "task": "guide",
+      "turn": 0,
+      "native_trace": "session-traces/P3__A/rollout-2026-10-15T12-44-36-01a13da9-6d50-7a43-b0fc-0d0aea78c5dd.jsonl.gz",
+      "native_turn_id": "01a13da9-6d83-7590-845b-e67386bb5cca",
+      "recovered": false,
+      "binding": "exact prompt, delivered reply, all observable assistant messages, final response, completion, score, and resource receipt"
+    },
+    {
+      "chain": "P3__A",
+      "task": "guide",
+      "turn": 1,
+      "native_trace": "session-traces/P3__A/rollout-2026-10-15T12-44-36-01a13da9-6d50-7a43-b0fc-0d0aea78c5dd.jsonl.gz",
+      "native_turn_id": "01a13da9-8858-7781-8492-8f1773d82352",
+      "recovered": false,
+      "binding": "exact prompt, delivered reply, all observable assistant messages, final response, completion, score, and resource receipt"
+    },
+    {
+      "chain": "P3__A",
+      "task": "demo",
+      "turn": 0,
+      "native_trace": "session-traces/P3__A/rollout-2026-10-15T12-45-09-01a13da9-eeb2-70e2-8b23-46e370560acb.jsonl.gz",
+      "native_turn_id": "01a13da9-eee4-7962-bea0-d8e0d9f203a3",
+      "recovered": false,
+      "binding": "exact prompt, delivered reply, all observable assistant messages, final response, completion, score, and resource receipt"
+    },
+    {
+      "chain": "P3__B",
+      "task": "workshop",
+      "turn": 0,
+      "native_trace": "session-traces/P3__B/rollout-2026-10-15T12-43-37-01a13da8-89db-78a1-bca4-9523a7cd5257.jsonl.gz",
+      "native_turn_id": "01a13da8-89f2-7af1-85ef-8b92e9d281de",
+      "recovered": false,
+      "binding": "exact prompt, delivered reply, all observable assistant messages, final response, completion, score, and resource receipt"
+    },
+    {
+      "chain": "P3__B",
+      "task": "guide",
+      "turn": 0,
+      "native_trace": "session-traces/P3__B/rollout-2026-10-15T12-43-55-01a13da8-cdaf-7c71-8dd0-af42666a26aa.jsonl.gz",
+      "native_turn_id": "01a13da8-cde0-71d1-9b0c-1ffccf4657d3",
+      "recovered": false,
+      "binding": "exact prompt, delivered reply, all observable assistant messages, final response, completion, score, and resource receipt"
+    },
+    {
+      "chain": "P3__B",
+      "task": "demo",
+      "turn": 0,
+      "native_trace": "session-traces/P3__B/rollout-2026-10-15T12-44-13-01a13da9-12ff-7503-9636-9e96838a6d34.jsonl.gz",
+      "native_turn_id": "01a13da9-1331-7c92-91ab-c8f3f72b00e3",
+      "recovered": false,
+      "binding": "exact prompt, delivered reply, all observable assistant messages, final response, completion, score, and resource receipt"
+    },
+    {
+      "chain": "P4__A",
+      "task": "workshop",
+      "turn": 0,
+      "native_trace": "session-traces/P4__A/rollout-2026-10-15T12-45-20-01a13daa-19ca-7943-86a7-918c60737ae5.jsonl.gz",
+      "native_turn_id": "01a13daa-19e0-7b23-aafc-cf879b79e687",
+      "recovered": false,
+      "binding": "exact prompt, delivered reply, all observable assistant messages, final response, completion, score, and resource receipt"
+    },
+    {
+      "chain": "P4__A",
+      "task": "workshop",
+      "turn": 1,
+      "native_trace": "session-traces/P4__A/rollout-2026-10-15T12-45-20-01a13daa-19ca-7943-86a7-918c60737ae5.jsonl.gz",
+      "native_turn_id": "01a13daa-38ae-7e53-8d99-aaa5aec38682",
+      "recovered": false,
+      "binding": "exact prompt, delivered reply, all observable assistant messages, final response, completion, score, and resource receipt"
+    },
+    {
+      "chain": "P4__A",
+      "task": "guide",
+      "turn": 0,
+      "native_trace": "session-traces/P4__A/rollout-2026-10-15T12-45-56-01a13daa-a780-71b3-8b1f-773439312912.jsonl.gz",
+      "native_turn_id": "01a13daa-a7b1-7b80-be6b-1ce7fc2704c6",
+      "recovered": false,
+      "binding": "exact prompt, delivered reply, all observable assistant messages, final response, completion, score, and resource receipt"
+    },
+    {
+      "chain": "P4__A",
+      "task": "guide",
+      "turn": 1,
+      "native_trace": "session-traces/P4__A/rollout-2026-10-15T12-45-56-01a13daa-a780-71b3-8b1f-773439312912.jsonl.gz",
+      "native_turn_id": "01a13daa-c863-73d2-9dd5-4cc10535f469",
+      "recovered": false,
+      "binding": "exact prompt, delivered reply, all observable assistant messages, final response, completion, score, and resource receipt"
+    },
+    {
+      "chain": "P4__A",
+      "task": "demo",
+      "turn": 0,
+      "native_trace": "session-traces/P4__A/rollout-2026-10-15T12-46-22-01a13dab-0cbb-76a2-8360-ffef575c9b77.jsonl.gz",
+      "native_turn_id": "01a13dab-0ced-7612-9c22-aa2bb9673ef7",
+      "recovered": false,
+      "binding": "exact prompt, delivered reply, all observable assistant messages, final response, completion, score, and resource receipt"
+    },
+    {
+      "chain": "P4__A",
+      "task": "demo",
+      "turn": 1,
+      "native_trace": "session-traces/P4__A/rollout-2026-10-15T12-46-22-01a13dab-0cbb-76a2-8360-ffef575c9b77.jsonl.gz",
+      "native_turn_id": "01a13dab-2817-75d1-8cef-5ac312a8d442",
+      "recovered": false,
+      "binding": "exact prompt, delivered reply, all observable assistant messages, final response, completion, score, and resource receipt"
+    },
+    {
+      "chain": "P4__B",
+      "task": "workshop",
+      "turn": 0,
+      "native_trace": "session-traces/P4__B/rollout-2026-10-15T12-44-32-01a13da9-5e26-7f72-80ee-e753903f5028.jsonl.gz",
+      "native_turn_id": "01a13da9-5e3b-73f2-804e-2c360ce8ff0e",
+      "recovered": false,
+      "binding": "exact prompt, delivered reply, all observable assistant messages, final response, completion, score, and resource receipt"
+    },
+    {
+      "chain": "P4__B",
+      "task": "guide",
+      "turn": 0,
+      "native_trace": "session-traces/P4__B/rollout-2026-10-15T12-44-48-01a13da9-9ca7-7551-b295-3f748e617830.jsonl.gz",
+      "native_turn_id": "01a13da9-9cd5-7a73-b2fd-f26d9315a9dd",
+      "recovered": false,
+      "binding": "exact prompt, delivered reply, all observable assistant messages, final response, completion, score, and resource receipt"
+    },
+    {
+      "chain": "P4__B",
+      "task": "demo",
+      "turn": 0,
+      "native_trace": "session-traces/P4__B/rollout-2026-10-15T12-45-07-01a13da9-e86a-7fa3-98ca-8993dbff79a6.jsonl.gz",
+      "native_turn_id": "01a13da9-e89a-79f0-a69a-54c32dc8342c",
+      "recovered": false,
+      "binding": "exact prompt, delivered reply, all observable assistant messages, final response, completion, score, and resource receipt"
+    }
+  ],
+  "reviewed_artifact_sha256": {
+    "trials/P1__A.json": "20c544f65d1aff9b000389835e560b9893592dcf110825547585a89edb5c3d4c",
+    "session-traces/P1__A/rollout-2026-10-15T12-43-38-01a13da8-8aa6-71b1-8d44-d4084bfd48aa.jsonl.gz": "c43367ad80c254672c99c7902d1d3d42ab1e0ba2d0c25c63334574f731c6af4e",
+    "session-traces/P1__A/rollout-2026-10-15T12-44-14-01a13da9-19e6-7a60-9a49-a284f681f2b1.jsonl.gz": "551f05f599b1d9bebc2a622539742fcf7ae07f6610bb57f37e5c0d978fd56838",
+    "session-traces/P1__A/rollout-2026-10-15T12-44-43-01a13da9-89a6-7e70-a583-56421cb011de.jsonl.gz": "9b61461f471866bce28ac797b24768a164943e99c648904ac334e40e1a954f6c",
+    "trials/P1__B.json": "fd7b1f3a87014d8eb5546630522eb2a8f99e8766d525959a2abde2990768fabb",
+    "session-traces/P1__B/rollout-2026-10-15T12-32-07-01a13d9d-ffd3-7fe3-90df-34d35b7dad3f.jsonl.gz": "951ed2b303a0a0ec449dde4a8fc5ff16c7d3cb9f427a4d3e7a5afc4d370a4f90",
+    "session-traces/P1__B/rollout-2026-10-15T12-32-27-01a13d9e-50c9-7d90-bc21-ba6471b1e631.jsonl.gz": "a1898e174343356b60850753b9d4e69d22101a04863a3958ae94db7c52f81b46",
+    "session-traces/P1__B/rollout-2026-10-15T12-32-47-01a13d9e-9bb1-7802-847e-5968f4b247cb.jsonl.gz": "68b0687409a33656388dc7e2c6f6e79212841f3c55d66a8efae1fa50858b503a",
+    "trials/P2__A.json": "ebf3e89fc02935461bc4466fcaa4a481c24d58ebba687ba5912088a8fca4351e",
+    "session-traces/P2__A/rollout-2026-10-15T12-32-07-01a13d9d-ff66-7831-bab8-751b69b46959.jsonl.gz": "a58bdc7aef7a9b05953dd0b989fcf67eac7cf1e77c1b2f64c8ceacfd9ac1f933",
+    "session-traces/P2__A/rollout-2026-10-15T12-43-36-01a13da8-8123-7a83-b29b-89132c2bdbff.jsonl.gz": "72d7ae72e964efa9cf872ee9959f76056086cbd5350a1dd8e0c590191a73fb7c",
+    "session-traces/P2__A/rollout-2026-10-15T12-43-51-01a13da8-bce8-7b41-9ecc-28cda92cd3ab.jsonl.gz": "cc8b074041bbd891e39b139ae3dd1fe73f9fc7a67da201464eaafc11c65d2172",
+    "trials/P2__B.json": "31719bd064afa0be7824d44e1b11ce78a6637d853f42263904a166f8903f7ee4",
+    "session-traces/P2__B/rollout-2026-10-15T12-32-07-01a13d9d-ff66-7df1-a39f-449985639514.jsonl.gz": "7b322517477fd42aefe212ec4ef97dfdf8d125b6985762f07579cdab838836a3",
+    "session-traces/P2__B/rollout-2026-10-15T12-32-22-01a13d9e-3ca5-7c70-b51e-0f4867a9b664.jsonl.gz": "312d151b58fde303926e9f14801a17bdb4b2ac90b2732de44b0897a29d06606a",
+    "session-traces/P2__B/rollout-2026-10-15T12-32-40-01a13d9e-8356-7042-802e-6b12c2010037.jsonl.gz": "6e46a5fb631e6636729786b698c538adf9c633812b01f2a0a5c45b74f5c6681f",
+    "trials/P3__A.json": "5b16ff3d47e337995fca5fd57148b74a907dee6ef04910d639941858224c6905",
+    "session-traces/P3__A/rollout-2026-10-15T12-44-06-01a13da8-f9c7-72c1-9537-15d8f359a8a0.jsonl.gz": "98fb96c191d143c2e3b7aea39cbeb32c515312fc0e4ab2a7cf1a85126b628016",
+    "session-traces/P3__A/rollout-2026-10-15T12-44-36-01a13da9-6d50-7a43-b0fc-0d0aea78c5dd.jsonl.gz": "8d80d20582f9ef715209896582701810a965c61a37513bcac86c77707e9ff4e4",
+    "session-traces/P3__A/rollout-2026-10-15T12-45-09-01a13da9-eeb2-70e2-8b23-46e370560acb.jsonl.gz": "f45ab9f04a974cbe2ae7d4de6b13a0e26180ca33db82f36d16bcb85a3ca66e1c",
+    "trials/P3__B.json": "dfbc962de793bd59649be856bf6d4e7ea99dd095b3d58586c16e4e35ce3e6973",
+    "session-traces/P3__B/rollout-2026-10-15T12-43-37-01a13da8-89db-78a1-bca4-9523a7cd5257.jsonl.gz": "150c122ff99a7e8bd0856415b00bcd9e8c6b947583b7c8d094afc84149010c0a",
+    "session-traces/P3__B/rollout-2026-10-15T12-43-55-01a13da8-cdaf-7c71-8dd0-af42666a26aa.jsonl.gz": "7351c52231f58bdabe086129fd454ff698311ccbb27c372a2d6cc08a4589d7fd",
+    "session-traces/P3__B/rollout-2026-10-15T12-44-13-01a13da9-12ff-7503-9636-9e96838a6d34.jsonl.gz": "325da24b83270011daba80e8165ed474b30bb99c765f70dbe8c99338c55d67c7",
+    "trials/P4__A.json": "9f079fafbcceecf3a0a1c0912989a928dd2f29283eb25beb79ec9ede4dc11f6d",
+    "session-traces/P4__A/rollout-2026-10-15T12-45-20-01a13daa-19ca-7943-86a7-918c60737ae5.jsonl.gz": "0f34b61889409ab3986b341e3a75b0b2d582e41d043cdb716d5fc452fd3555d7",
+    "session-traces/P4__A/rollout-2026-10-15T12-45-56-01a13daa-a780-71b3-8b1f-773439312912.jsonl.gz": "f968f3dcbcadd8de114ff4b264b12c91af0150415717933cf27fcb5d7adf9551",
+    "session-traces/P4__A/rollout-2026-10-15T12-46-22-01a13dab-0cbb-76a2-8360-ffef575c9b77.jsonl.gz": "8dc65083f52c6ebc94ee2d36a2f445ab7bd312dd1af409a6b458b15611e93a48",
+    "trials/P4__B.json": "451ea5481d880c20cde2e533923b8f64c83323dbe42076bae335ab26f796206d",
+    "session-traces/P4__B/rollout-2026-10-15T12-44-32-01a13da9-5e26-7f72-80ee-e753903f5028.jsonl.gz": "4e7c1e6935be13805fa6e064da294f7cff0410c35cbb1246c0897775ee04b547",
+    "session-traces/P4__B/rollout-2026-10-15T12-44-48-01a13da9-9ca7-7551-b295-3f748e617830.jsonl.gz": "6792ead96ddf1669069e9760c1d844cad5cce217876479f049de10e7ef4d8c44",
+    "session-traces/P4__B/rollout-2026-10-15T12-45-07-01a13da9-e86a-7fa3-98ca-8993dbff79a6.jsonl.gz": "ec13a63636f2198ab690822eea3d9a7b2ece3dac83b48329e20d94191a13f4b0"
+  },
+  "status": "Evidence verified with disclosed recovery and resource limitations",
+  "native_sessions": 24,
+  "command_executions_reviewed": 21,
+  "file_changes_reviewed": 4,
+  "commentary_messages_reviewed": 15,
+  "off_interface_user_requests_observed": 0,
+  "hidden_answer_reads_observed": 0,
+  "unsupported_preference_writes_observed": 0,
+  "unverified_fields": [
+    "Recovered subprocess stdout, stderr, exit code, timeout, and wall duration",
+    "Recovered initial/per-turn workspace snapshots and original prompt-audit output"
+  ],
+  "resource_method": "For each native session, take the last event_msg token_count.info.total_token_usage at each task_complete and subtract the preceding completed turn total in that session, starting at zero. Keep recovered and resumed subtotals separate. CLI turn.completed usage can be cumulative for resumed conversations and is not an additive per-call total.",
+  "findings": [
+    {
+      "severity": "reporting limitation",
+      "subject": "Non-additive CLI usage sums",
+      "detail": "Resumed A CLI usage sums input 454628/output 5466; native per-turn deltas total input 357526/output 4892. Do not present raw CLI receipt sums as independent per-call token consumption."
+    }
+  ],
+  "scope": "Independent cross-check within a maintainer-run unblinded model audit. No actor calls or semantic scoring performed. All 33 prompts, observable assistant message lists, responses, native completion receipts, scripted replies, exact checks, and resource fields cross-checked. All 24 planned episodes retained. Public actor traces and records scanned for private reasoning, identity/path leakage, off-interface questions, hidden-answer reads, and unsupported preference writes. Semantic reviewer packets and outputs are outside this audit."
+}

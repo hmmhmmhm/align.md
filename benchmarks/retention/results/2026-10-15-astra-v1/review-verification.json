@@ -1,0 +1,18 @@
+{
+  "verified": true,
+  "errors": [],
+  "packets": 24,
+  "judgments": 24,
+  "quotes_checked": 152,
+  "totals": {
+    "A": {
+      "first_passes": 12,
+      "final_passes": 12
+    },
+    "B": {
+      "first_passes": 12,
+      "final_passes": 12
+    }
+  },
+  "scope": "Verifies packet and review provenance, schema and literal quotations; does not independently validate semantic judgments or prove reviewer model identity."
+}

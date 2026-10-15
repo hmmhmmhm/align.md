@@ -1,0 +1,37 @@
+{
+  "original_freeze": "c07a880fd10d2f007c5bf1851070062819284571",
+  "recovery_commit": "d6b7bc5d42b876dda9e017d90de3e29a2bd76896",
+  "recovered": {
+    "P1__B": {
+      "episodes": 3,
+      "calls": 3
+    },
+    "P2__B": {
+      "episodes": 3,
+      "calls": 3
+    },
+    "P2__A": {
+      "episodes": 1,
+      "calls": 2
+    }
+  },
+  "remaining_order": [
+    "P2__A",
+    "P1__A",
+    "P3__B",
+    "P3__A",
+    "P4__B",
+    "P4__A"
+  ],
+  "private_trace_hashes": {
+    "retention-rclw3ca5/home/.codex/sessions/2026/10/15/rollout-2026-10-15T12-32-07-01a13d9d-ffd3-7fe3-90df-34d35b7dad3f.jsonl": "4834fa83cba06d7548bd21e164bd81432f4eeb4a4b8f2441e0eb6c3ee7d84d33",
+    "retention-rclw3ca5/home/.codex/sessions/2026/10/15/rollout-2026-10-15T12-32-47-01a13d9e-9bb1-7802-847e-5968f4b247cb.jsonl": "074b1bca52a3662bfa12b8ef126d5f299d96127c2e75278a3c446ab24ab43e36",
+    "retention-rclw3ca5/home/.codex/sessions/2026/10/15/rollout-2026-10-15T12-32-27-01a13d9e-50c9-7d90-bc21-ba6471b1e631.jsonl": "1c6a0c9496f103020323eba248aa29196a298ae452612aaba22fa6b403cbcb3d",
+    "retention-7mwaejv2/home/.codex/sessions/2026/10/15/rollout-2026-10-15T12-32-07-01a13d9d-ff66-7831-bab8-751b69b46959.jsonl": "fe6503834633f1bd9bfda58080d27fd788eb1102678fe50ef4a9e4aaa71d186b",
+    "retention-7qc4x8oj/home/.codex/sessions/2026/10/15/rollout-2026-10-15T12-32-07-01a13d9d-ff66-7df1-a39f-449985639514.jsonl": "58c2974c0bf85a8fd3194edab8e1129619dae8ca6923a33ba4210580eb3c1253",
+    "retention-7qc4x8oj/home/.codex/sessions/2026/10/15/rollout-2026-10-15T12-32-22-01a13d9e-3ca5-7c70-b51e-0f4867a9b664.jsonl": "a7a5bbb1764064e97a96b281243b6ba2499630e6bc5f521988195e6a5b89751e",
+    "retention-7qc4x8oj/home/.codex/sessions/2026/10/15/rollout-2026-10-15T12-32-40-01a13d9e-8356-7042-802e-6b12c2010037.jsonl": "703b207f1fc8dd312ee14a317ece4a768b4dbd2e3e59df03e64cddd2a72df836"
+  },
+  "missing_receipts_policy": "null; no subprocess receipt fabricated",
+  "created_at": "2026-10-15T03:43:35.124946+00:00"
+}

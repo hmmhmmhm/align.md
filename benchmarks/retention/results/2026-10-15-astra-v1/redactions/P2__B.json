@@ -1,0 +1,22 @@
+{
+  "counts": {},
+  "traces": [
+    {
+      "file": "session-traces/P2__B/rollout-2026-10-15T12-32-07-01a13d9d-ff66-7df1-a39f-449985639514.jsonl.gz",
+      "private_sha256": "58c2974c0bf85a8fd3194edab8e1129619dae8ca6923a33ba4210580eb3c1253",
+      "published_sha256": "ff25f57d0e41b9be31724dc9e07a40b3e0f8a46d5f918d67a40aa31a3721f432"
+    },
+    {
+      "file": "session-traces/P2__B/rollout-2026-10-15T12-32-22-01a13d9e-3ca5-7c70-b51e-0f4867a9b664.jsonl.gz",
+      "private_sha256": "a7a5bbb1764064e97a96b281243b6ba2499630e6bc5f521988195e6a5b89751e",
+      "published_sha256": "02192d0a63839234b0e4139091e3c05203d70cea7b11b32d1d6ef497af3a32fb"
+    },
+    {
+      "file": "session-traces/P2__B/rollout-2026-10-15T12-32-40-01a13d9e-8356-7042-802e-6b12c2010037.jsonl.gz",
+      "private_sha256": "703b207f1fc8dd312ee14a317ece4a768b4dbd2e3e59df03e64cddd2a72df836",
+      "published_sha256": "015554959dacfbbdef1b68f90c93700e0cace81a5807929ccd066bc718520c1d"
+    }
+  ],
+  "private_record_sha256": "13d94f24b5d351edcd6826fd37b1941bf807eeb8b9d0a3bf55ca1ea462e1d6f6",
+  "public_record_sha256": "31719bd064afa0be7824d44e1b11ce78a6637d853f42263904a166f8903f7ee4"
+}

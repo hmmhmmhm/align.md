@@ -1,0 +1,15 @@
+{
+  "method": "Fresh condition-masked subagent review; no actor executions. Only packets.json and rubric.md supplied. Original response text retained, including storage clues.",
+  "requested_model": "gpt-6-astra",
+  "requested_reasoning_effort": "medium",
+  "agent": "/root/retention_benchmark/semantic_review",
+  "configuration_evidence": "Explicit model and effort in collaboration.spawn_agent; this review has no independently archived CLI turn_context receipt.",
+  "actor_source_freeze": "c07a880fd10d2f007c5bf1851070062819284571",
+  "rubric_provenance": "Substantive criteria frozen in source-snapshot/benchmarks/retention/README.md. Packet rubric adds an evidence-output schema and labels storage claims unverified when source history is unavailable.",
+  "sha256": {
+    "review-packets/packets.json": "f7c77973c94c34961cce2673a061269d4f43337ab37dd6a03d88c48e48d69323",
+    "review-packets/rubric.md": "e8636f0abafdf7292ba3711086165e4e21fb245422938665df806c6681960815",
+    "review/judgments.json": "aaaf99bb4fe18d7ebf7c2d9433f302fe25d563e98f31de16cdebed66287e4363",
+    "review/limitations.md": "36e22ed4af6f7c5f7d9b36e0ed62c2bd25badf20c2f1588bf84a0551fe5ed4af"
+  }
+}

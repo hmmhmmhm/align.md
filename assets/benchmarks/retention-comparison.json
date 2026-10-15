@@ -1,0 +1,69 @@
+{
+  "verification_sha256": "3f0ef3f9af166893aac9666696a591145bb0b4c62c2442f758b8d8d1b50bee09",
+  "plot_script_sha256": "dc887ef36d14eead9a503b7b8f4ed630bea0ab5b19d7196c6cc6eb12653e9ad4",
+  "matplotlib_version": "3.11.2",
+  "totals": {
+    "A": {
+      "actor_calls": 21,
+      "known_subprocess_duration_seconds": 288.596,
+      "tokens_input_tokens": 454628,
+      "tokens_cached_input_tokens": 363520,
+      "tokens_cache_write_input_tokens": 0,
+      "tokens_output_tokens": 5466,
+      "tokens_reasoning_output_tokens": 334,
+      "zero_reply_fit": 3,
+      "first_submission_fit": 12,
+      "final_fit": 12,
+      "replies": 9,
+      "repeated_units": 18,
+      "format_replies": 0,
+      "preference_corrections": 0,
+      "answer_replies": 9,
+      "runtime_failure": 0,
+      "episodes": 12,
+      "missing_subprocess_durations": 2,
+      "recovered_native_duration_seconds": 38.302
+    },
+    "B": {
+      "actor_calls": 12,
+      "missing_subprocess_durations": 6,
+      "recovered_native_duration_seconds": 100.994,
+      "zero_reply_fit": 12,
+      "first_submission_fit": 12,
+      "final_fit": 12,
+      "replies": 0,
+      "repeated_units": 0,
+      "format_replies": 0,
+      "preference_corrections": 0,
+      "answer_replies": 0,
+      "runtime_failure": 0,
+      "episodes": 12,
+      "known_subprocess_duration_seconds": 102.273,
+      "tokens_input_tokens": 151609,
+      "tokens_cached_input_tokens": 133120,
+      "tokens_cache_write_input_tokens": 0,
+      "tokens_output_tokens": 1817,
+      "tokens_reasoning_output_tokens": 0
+    }
+  },
+  "cumulative_later_replies": {
+    "A": [
+      4,
+      7,
+      9
+    ],
+    "B": [
+      0,
+      0,
+      0
+    ]
+  },
+  "assumed_incremental_setup_replies": {
+    "A": 0,
+    "B": 4
+  },
+  "common_prior_conversation_replies_excluded": {
+    "A": 4,
+    "B": 4
+  }
+}

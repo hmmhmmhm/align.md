@@ -1,0 +1,16 @@
+{
+  "completed_at": "2026-10-15T03:46:45.321464+00:00",
+  "resumed_wall_seconds": 189.65491095901234,
+  "original_wall_seconds": null,
+  "chains": [
+    "P1__B",
+    "P2__A",
+    "P2__B",
+    "P1__A",
+    "P3__B",
+    "P3__A",
+    "P4__B",
+    "P4__A"
+  ],
+  "original_source_snapshot_unchanged": true
+}

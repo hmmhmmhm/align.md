@@ -61,3 +61,15 @@ jobs:
             --packets "$PWD/benchmarks/discovery/results/2026-10-15-astra-v1/review-packets" \
             --reviews "$PWD/benchmarks/discovery/results/2026-10-15-astra-v1/judgments" \
             --output "$RUNNER_TEMP/align-discovery-review-verification.json"
+      - name: Check preference retention protocol
+        run: python3 -m unittest discover -s benchmarks/retention -p 'test_*.py'
+      - name: Check retention review replay
+        run: python3 -m unittest discover -s benchmarks/retention/reporting -p 'test_*.py'
+      - name: Verify recovered retention evidence without model access
+        run: |
+          python3 benchmarks/retention/recovery/verify.py benchmarks/retention/results/2026-10-15-astra-v1 \
+            --output "$RUNNER_TEMP/align-retention-verification.json"
+      - name: Verify masked retention review without model access
+        run: |
+          python3 benchmarks/retention/reporting/verify_review.py benchmarks/retention/results/2026-10-15-astra-v1 \
+            --output "$RUNNER_TEMP/align-retention-review-verification.json"

@@ -1,0 +1,610 @@
+[
+  {
+    "id": "9a7aa8d8930e5bfb",
+    "first": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"Cleaning and analysis\". Cleaning, analysis, and charting receive substantive sections. Audience: \"compare lines for trends, bars for regional comparisons, and scatterplots for relationships\". Advanced choices and trade-offs are taught without a foundations or first-use teaching segment; scenario orientation does not teach tool basics. Rationale: \"A survey of all three equally mature workflows supports your goal of comparing possibilities within two pages.\" matches supplied criteria and explains the choices without inventing user history. Storage claim \"These confirmed defaults are saved in AGENTS.md for later learning-material tasks.\" is unverifiable from these packets, not contradicted by supplied evidence, and is not scored as invented.",
+      "quotes": [
+        "Cleaning and analysis",
+        "compare lines for trends, bars for regional comparisons, and scatterplots for relationships",
+        "A survey of all three equally mature workflows supports your goal of comparing possibilities within two pages.",
+        "These confirmed defaults are saved in AGENTS.md for later learning-material tasks."
+      ]
+    },
+    "final": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"Cleaning and analysis\". Cleaning, analysis, and charting receive substantive sections. Audience: \"compare lines for trends, bars for regional comparisons, and scatterplots for relationships\". Advanced choices and trade-offs are taught without a foundations or first-use teaching segment; scenario orientation does not teach tool basics. Rationale: \"A survey of all three equally mature workflows supports your goal of comparing possibilities within two pages.\" matches supplied criteria and explains the choices without inventing user history. Storage claim \"These confirmed defaults are saved in AGENTS.md for later learning-material tasks.\" is unverifiable from these packets, not contradicted by supplied evidence, and is not scored as invented.",
+      "quotes": [
+        "Cleaning and analysis",
+        "compare lines for trends, bars for regional comparisons, and scatterplots for relationships",
+        "A survey of all three equally mature workflows supports your goal of comparing possibilities within two pages.",
+        "These confirmed defaults are saved in AGENTS.md for later learning-material tasks."
+      ]
+    }
+  },
+  {
+    "id": "e879ef5145f5ee46",
+    "first": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"compare capture, retrieval, and linking\". Capture, retrieval, and linking each have practice and comparison. Audience: \"compare interruption cost and later cleanup\". Advanced choices and trade-offs are taught without a foundations or first-use teaching segment; scenario orientation does not teach tool basics. Rationale: \"Your confirmed preferences favor surveying several workflows to compare possibilities and teaching advanced choices to existing users.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "compare capture, retrieval, and linking",
+        "compare interruption cost and later cleanup",
+        "Your confirmed preferences favor surveying several workflows to compare possibilities and teaching advanced choices to existing users."
+      ]
+    },
+    "final": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"compare capture, retrieval, and linking\". Capture, retrieval, and linking each have practice and comparison. Audience: \"compare interruption cost and later cleanup\". Advanced choices and trade-offs are taught without a foundations or first-use teaching segment; scenario orientation does not teach tool basics. Rationale: \"Your confirmed preferences favor surveying several workflows to compare possibilities and teaching advanced choices to existing users.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "compare capture, retrieval, and linking",
+        "compare interruption cost and later cleanup",
+        "Your confirmed preferences favor surveying several workflows to compare possibilities and teaching advanced choices to existing users."
+      ]
+    }
+  },
+  {
+    "id": "4f29481df0a4442f",
+    "first": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"planning a team website launch\". Only planning is worked; board setup, ownership, and checklists serve that workflow. Audience: \"explain boards, tasks, owners, and due dates\". Foundations and concrete first-use actions are taught; no advanced teaching segment contradicts the newcomer criterion. Rationale: \"Your confirmed preferences favor one carefully worked workflow and foundations for people who have never used the tool.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "planning a team website launch",
+        "explain boards, tasks, owners, and due dates",
+        "Your confirmed preferences favor one carefully worked workflow and foundations for people who have never used the tool."
+      ]
+    },
+    "final": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"planning a team website launch\". Only planning is worked; board setup, ownership, and checklists serve that workflow. Audience: \"explain boards, tasks, owners, and due dates\". Foundations and concrete first-use actions are taught; no advanced teaching segment contradicts the newcomer criterion. Rationale: \"Your confirmed preferences favor one carefully worked workflow and foundations for people who have never used the tool.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "planning a team website launch",
+        "explain boards, tasks, owners, and due dates",
+        "Your confirmed preferences favor one carefully worked workflow and foundations for people who have never used the tool."
+      ]
+    }
+  },
+  {
+    "id": "76b704dbe582d75b",
+    "first": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"planning: Create a task\". Planning, tracking, and review each have concrete steps. Audience: \"explain boards, task cards, owners, and statuses\". Foundations and concrete first-use actions are taught; no advanced teaching segment contradicts the newcomer criterion. Rationale: \"Your confirmed preferences favor comparing several workflows and teaching people who have never used the tool.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "planning: Create a task",
+        "explain boards, task cards, owners, and statuses",
+        "Your confirmed preferences favor comparing several workflows and teaching people who have never used the tool."
+      ]
+    },
+    "final": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"planning: Create a task\". Planning, tracking, and review each have concrete steps. Audience: \"explain boards, task cards, owners, and statuses\". Foundations and concrete first-use actions are taught; no advanced teaching segment contradicts the newcomer criterion. Rationale: \"Your confirmed preferences favor comparing several workflows and teaching people who have never used the tool.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "planning: Create a task",
+        "explain boards, task cards, owners, and statuses",
+        "Your confirmed preferences favor comparing several workflows and teaching people who have never used the tool."
+      ]
+    }
+  },
+  {
+    "id": "3ba892735ed7775c",
+    "first": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"advanced data cleaning\". Normalization, deduplication, missing values, and validation stay within cleaning. Audience: \"Compare deleting duplicates with retaining legitimate repeated purchases\". Advanced choices and trade-offs are taught without a foundations or first-use teaching segment; scenario orientation does not teach tool basics. Rationale: \"Your confirmed preferences favor one carefully worked workflow and advanced instruction for existing users.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "advanced data cleaning",
+        "Compare deleting duplicates with retaining legitimate repeated purchases",
+        "Your confirmed preferences favor one carefully worked workflow and advanced instruction for existing users."
+      ]
+    },
+    "final": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"advanced data cleaning\". Normalization, deduplication, missing values, and validation stay within cleaning. Audience: \"Compare deleting duplicates with retaining legitimate repeated purchases\". Advanced choices and trade-offs are taught without a foundations or first-use teaching segment; scenario orientation does not teach tool basics. Rationale: \"Your confirmed preferences favor one carefully worked workflow and advanced instruction for existing users.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "advanced data cleaning",
+        "Compare deleting duplicates with retaining legitimate repeated purchases",
+        "Your confirmed preferences favor one carefully worked workflow and advanced instruction for existing users."
+      ]
+    }
+  },
+  {
+    "id": "994981f8872f08ee",
+    "first": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"one retrieval workflow\". Search formulation, refinement, and evidence checks stay within retrieval. Audience: \"discussing speed versus completeness and the risk of overly narrow filters\". Advanced choices and trade-offs are taught without a foundations or first-use teaching segment; scenario orientation does not teach tool basics. Rationale: \"Your confirmed preferences favor one carefully worked workflow and advanced instruction for existing users.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "one retrieval workflow",
+        "discussing speed versus completeness and the risk of overly narrow filters",
+        "Your confirmed preferences favor one carefully worked workflow and advanced instruction for existing users."
+      ]
+    },
+    "final": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"one retrieval workflow\". Search formulation, refinement, and evidence checks stay within retrieval. Audience: \"discussing speed versus completeness and the risk of overly narrow filters\". Advanced choices and trade-offs are taught without a foundations or first-use teaching segment; scenario orientation does not teach tool basics. Rationale: \"Your confirmed preferences favor one carefully worked workflow and advanced instruction for existing users.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "one retrieval workflow",
+        "discussing speed versus completeness and the risk of overly narrow filters",
+        "Your confirmed preferences favor one carefully worked workflow and advanced instruction for existing users."
+      ]
+    }
+  },
+  {
+    "id": "872244c0866c8a56",
+    "first": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"Planning—compare priority ordering with capacity-based commitments\". Planning, tracking, and review each have concrete decisions. Audience: \"compare limiting work in progress with reassigning ownership\". Advanced choices and trade-offs are taught without a foundations or first-use teaching segment; scenario orientation does not teach tool basics. Rationale: \"Your confirmed defaults favor surveying several workflows and teaching advanced choices to existing users.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "Planning—compare priority ordering with capacity-based commitments",
+        "compare limiting work in progress with reassigning ownership",
+        "Your confirmed defaults favor surveying several workflows and teaching advanced choices to existing users."
+      ]
+    },
+    "final": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"Planning—compare priority ordering with capacity-based commitments\". Planning, tracking, and review each have concrete decisions. Audience: \"compare limiting work in progress with reassigning ownership\". Advanced choices and trade-offs are taught without a foundations or first-use teaching segment; scenario orientation does not teach tool basics. Rationale: \"Your confirmed defaults favor surveying several workflows and teaching advanced choices to existing users.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "Planning—compare priority ordering with capacity-based commitments",
+        "compare limiting work in progress with reassigning ownership",
+        "Your confirmed defaults favor surveying several workflows and teaching advanced choices to existing users."
+      ]
+    }
+  },
+  {
+    "id": "1a8b76124e120fdd",
+    "first": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"Retrieval under ambiguity\". Query refinement and conflicting-note verification stay within retrieval. Audience: \"weigh recency, authority, and context\". Advanced choices and trade-offs are taught without a foundations or first-use teaching segment; scenario orientation does not teach tool basics. Rationale: \"Your confirmed defaults favor depth on one example and advanced instruction for existing users.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "Retrieval under ambiguity",
+        "weigh recency, authority, and context",
+        "Your confirmed defaults favor depth on one example and advanced instruction for existing users."
+      ]
+    },
+    "final": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"Retrieval under ambiguity\". Query refinement and conflicting-note verification stay within retrieval. Audience: \"weigh recency, authority, and context\". Advanced choices and trade-offs are taught without a foundations or first-use teaching segment; scenario orientation does not teach tool basics. Rationale: \"Your confirmed defaults favor depth on one example and advanced instruction for existing users.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "Retrieval under ambiguity",
+        "weigh recency, authority, and context",
+        "Your confirmed defaults favor depth on one example and advanced instruction for existing users."
+      ]
+    }
+  },
+  {
+    "id": "bc3b9470dc1cc2ee",
+    "first": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"Capture your first useful note\". Creating, editing, checking, and saving notes stay within capture. Audience: \"orient participants to the interface and demonstrate creating and naming the kickoff note\". Foundations and concrete first-use actions are taught; no advanced teaching segment contradicts the newcomer criterion. Rationale: \"A focused beginner session follows your confirmed preference for depth on one example and foundations for first-time users.\" matches supplied criteria and explains the choices without inventing user history. Storage claim \"Your defaults have been saved in AGENTS.md for later learning-material tasks.\" is unverifiable from these packets, not contradicted by supplied evidence, and is not scored as invented.",
+      "quotes": [
+        "Capture your first useful note",
+        "orient participants to the interface and demonstrate creating and naming the kickoff note",
+        "A focused beginner session follows your confirmed preference for depth on one example and foundations for first-time users.",
+        "Your defaults have been saved in AGENTS.md for later learning-material tasks."
+      ]
+    },
+    "final": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"Capture your first useful note\". Creating, editing, checking, and saving notes stay within capture. Audience: \"orient participants to the interface and demonstrate creating and naming the kickoff note\". Foundations and concrete first-use actions are taught; no advanced teaching segment contradicts the newcomer criterion. Rationale: \"A focused beginner session follows your confirmed preference for depth on one example and foundations for first-time users.\" matches supplied criteria and explains the choices without inventing user history. Storage claim \"Your defaults have been saved in AGENTS.md for later learning-material tasks.\" is unverifiable from these packets, not contradicted by supplied evidence, and is not scored as invented.",
+      "quotes": [
+        "Capture your first useful note",
+        "orient participants to the interface and demonstrate creating and naming the kickoff note",
+        "A focused beginner session follows your confirmed preference for depth on one example and foundations for first-time users.",
+        "Your defaults have been saved in AGENTS.md for later learning-material tasks."
+      ]
+    }
+  },
+  {
+    "id": "69be91b3226daea0",
+    "first": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"Participants will capture a note, retrieve it, and link related notes.\". Capture, retrieval, and linking each have demonstration and practice. Audience: \"Introduce the tool and explain capture, retrieval, and linking\". Foundations and concrete first-use actions are taught; no advanced teaching segment contradicts the newcomer criterion. Rationale: \"Your confirmed preferences favor surveying several workflows to compare possibilities and teaching foundations to people who have never used the tool.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "Participants will capture a note, retrieve it, and link related notes.",
+        "Introduce the tool and explain capture, retrieval, and linking",
+        "Your confirmed preferences favor surveying several workflows to compare possibilities and teaching foundations to people who have never used the tool."
+      ]
+    },
+    "final": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"Participants will capture a note, retrieve it, and link related notes.\". Capture, retrieval, and linking each have demonstration and practice. Audience: \"Introduce the tool and explain capture, retrieval, and linking\". Foundations and concrete first-use actions are taught; no advanced teaching segment contradicts the newcomer criterion. Rationale: \"Your confirmed preferences favor surveying several workflows to compare possibilities and teaching foundations to people who have never used the tool.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "Participants will capture a note, retrieve it, and link related notes.",
+        "Introduce the tool and explain capture, retrieval, and linking",
+        "Your confirmed preferences favor surveying several workflows to compare possibilities and teaching foundations to people who have never used the tool."
+      ]
+    }
+  },
+  {
+    "id": "669bd8af2c3d60c5",
+    "first": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"capture–retrieval–linking approaches\". All three workflows receive separate comparisons and an integrated exercise. Audience: \"assess useful context versus navigation clutter\". Advanced choices and trade-offs are taught without a foundations or first-use teaching segment; scenario orientation does not teach tool basics. Rationale: \"A broad survey supports your confirmed preference for comparing several workflows when time permits.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "capture–retrieval–linking approaches",
+        "assess useful context versus navigation clutter",
+        "A broad survey supports your confirmed preference for comparing several workflows when time permits."
+      ]
+    },
+    "final": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"capture–retrieval–linking approaches\". All three workflows receive separate comparisons and an integrated exercise. Audience: \"assess useful context versus navigation clutter\". Advanced choices and trade-offs are taught without a foundations or first-use teaching segment; scenario orientation does not teach tool basics. Rationale: \"A broad survey supports your confirmed preference for comparing several workflows when time permits.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "capture–retrieval–linking approaches",
+        "assess useful context versus navigation clutter",
+        "A broad survey supports your confirmed preference for comparing several workflows when time permits."
+      ]
+    }
+  },
+  {
+    "id": "92904fb59da71d2f",
+    "first": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"Demonstrate planning\". Planning, tracking, and review each receive concrete demonstrations. Audience: \"explain boards, tasks, owners, statuses, and due dates\". Foundations and concrete first-use actions are taught; no advanced teaching segment contradicts the newcomer criterion. Rationale: \"Newcomer instruction follows your confirmed audience and teaching defaults\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "Demonstrate planning",
+        "explain boards, tasks, owners, statuses, and due dates",
+        "Newcomer instruction follows your confirmed audience and teaching defaults"
+      ]
+    },
+    "final": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"Demonstrate planning\". Planning, tracking, and review each receive concrete demonstrations. Audience: \"explain boards, tasks, owners, statuses, and due dates\". Foundations and concrete first-use actions are taught; no advanced teaching segment contradicts the newcomer criterion. Rationale: \"Newcomer instruction follows your confirmed audience and teaching defaults\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "Demonstrate planning",
+        "explain boards, tasks, owners, statuses, and due dates",
+        "Newcomer instruction follows your confirmed audience and teaching defaults"
+      ]
+    }
+  },
+  {
+    "id": "9ddbd84b50cffdb4",
+    "first": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"Advanced sales analysis\". Aggregation, ranking, sensitivity, and reconciliation stay within analysis; missing-data rules support that analysis. Audience: \"compare ranking by margin improvement against ranking by absolute profit contribution\". Advanced choices and trade-offs are taught without a foundations or first-use teaching segment; scenario orientation does not teach tool basics. Rationale: \"Your confirmed defaults favor one carefully worked example and advanced instruction for existing users.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "Advanced sales analysis",
+        "compare ranking by margin improvement against ranking by absolute profit contribution",
+        "Your confirmed defaults favor one carefully worked example and advanced instruction for existing users."
+      ]
+    },
+    "final": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"Advanced sales analysis\". Aggregation, ranking, sensitivity, and reconciliation stay within analysis; missing-data rules support that analysis. Audience: \"compare ranking by margin improvement against ranking by absolute profit contribution\". Advanced choices and trade-offs are taught without a foundations or first-use teaching segment; scenario orientation does not teach tool basics. Rationale: \"Your confirmed defaults favor one carefully worked example and advanced instruction for existing users.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "Advanced sales analysis",
+        "compare ranking by margin improvement against ranking by absolute profit contribution",
+        "Your confirmed defaults favor one carefully worked example and advanced instruction for existing users."
+      ]
+    }
+  },
+  {
+    "id": "5c0fd167f2615583",
+    "first": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"Survey cleaning\". Cleaning, analysis, and charting each have first-use content. Audience: \"cells, rows, columns, headers, and selecting a range\". Foundations and concrete first-use actions are taught; no advanced teaching segment contradicts the newcomer criterion. Rationale: \"Your confirmed preferences favor comparing several workflows and assume readers have never used the tool.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "Survey cleaning",
+        "cells, rows, columns, headers, and selecting a range",
+        "Your confirmed preferences favor comparing several workflows and assume readers have never used the tool."
+      ]
+    },
+    "final": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"Survey cleaning\". Cleaning, analysis, and charting each have first-use content. Audience: \"cells, rows, columns, headers, and selecting a range\". Foundations and concrete first-use actions are taught; no advanced teaching segment contradicts the newcomer criterion. Rationale: \"Your confirmed preferences favor comparing several workflows and assume readers have never used the tool.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "Survey cleaning",
+        "cells, rows, columns, headers, and selecting a range",
+        "Your confirmed preferences favor comparing several workflows and assume readers have never used the tool."
+      ]
+    }
+  },
+  {
+    "id": "a2485430c8fe05c7",
+    "first": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"Capture your first useful note\". Both meeting scenarios practice capture only. Audience: \"Explain what a note is\". Foundations and concrete first-use actions are taught; no advanced teaching segment contradicts the newcomer criterion. Rationale: \"Your confirmed preferences favor one carefully worked workflow and foundations for people who have never used the tool.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "Capture your first useful note",
+        "Explain what a note is",
+        "Your confirmed preferences favor one carefully worked workflow and foundations for people who have never used the tool."
+      ]
+    },
+    "final": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"Capture your first useful note\". Both meeting scenarios practice capture only. Audience: \"Explain what a note is\". Foundations and concrete first-use actions are taught; no advanced teaching segment contradicts the newcomer criterion. Rationale: \"Your confirmed preferences favor one carefully worked workflow and foundations for people who have never used the tool.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "Capture your first useful note",
+        "Explain what a note is",
+        "Your confirmed preferences favor one carefully worked workflow and foundations for people who have never used the tool."
+      ]
+    }
+  },
+  {
+    "id": "e49080f13125661f",
+    "first": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"comparison of cleaning, analysis, and charting\". All three workflows have substantive comparisons. Audience: \"compare pivot summaries with conditional formulas\". Advanced choices and trade-offs are taught without a foundations or first-use teaching segment; scenario orientation does not teach tool basics. Rationale: \"Your confirmed preferences favor comparing several workflows and advanced instruction for existing users.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "comparison of cleaning, analysis, and charting",
+        "compare pivot summaries with conditional formulas",
+        "Your confirmed preferences favor comparing several workflows and advanced instruction for existing users."
+      ]
+    },
+    "final": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"comparison of cleaning, analysis, and charting\". All three workflows have substantive comparisons. Audience: \"compare pivot summaries with conditional formulas\". Advanced choices and trade-offs are taught without a foundations or first-use teaching segment; scenario orientation does not teach tool basics. Rationale: \"Your confirmed preferences favor comparing several workflows and advanced instruction for existing users.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "comparison of cleaning, analysis, and charting",
+        "compare pivot summaries with conditional formulas",
+        "Your confirmed preferences favor comparing several workflows and advanced instruction for existing users."
+      ]
+    }
+  },
+  {
+    "id": "7134aca02d94bb50",
+    "first": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"one release-planning decision\". Prioritization, dependencies, capacity reduction, and scope splitting stay within planning. Audience: \"Explain how learning needs and dependency readiness change the decision.\". Advanced choices and trade-offs are taught without a foundations or first-use teaching segment; scenario orientation does not teach tool basics. Rationale: \"Your confirmed defaults favor one carefully worked example and advanced instruction for existing users.\" matches supplied criteria and explains the choices without inventing user history. Storage claim \"Your defaults are already saved in LEARNING_PREFERENCES.md for later tasks.\" is unverifiable from these packets, not contradicted by supplied evidence, and is not scored as invented.",
+      "quotes": [
+        "one release-planning decision",
+        "Explain how learning needs and dependency readiness change the decision.",
+        "Your confirmed defaults favor one carefully worked example and advanced instruction for existing users.",
+        "Your defaults are already saved in LEARNING_PREFERENCES.md for later tasks."
+      ]
+    },
+    "final": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"one release-planning decision\". Prioritization, dependencies, capacity reduction, and scope splitting stay within planning. Audience: \"Explain how learning needs and dependency readiness change the decision.\". Advanced choices and trade-offs are taught without a foundations or first-use teaching segment; scenario orientation does not teach tool basics. Rationale: \"Your confirmed defaults favor one carefully worked example and advanced instruction for existing users.\" matches supplied criteria and explains the choices without inventing user history. Storage claim \"Your defaults are already saved in LEARNING_PREFERENCES.md for later tasks.\" is unverifiable from these packets, not contradicted by supplied evidence, and is not scored as invented.",
+      "quotes": [
+        "one release-planning decision",
+        "Explain how learning needs and dependency readiness change the decision.",
+        "Your confirmed defaults favor one carefully worked example and advanced instruction for existing users.",
+        "Your defaults are already saved in LEARNING_PREFERENCES.md for later tasks."
+      ]
+    }
+  },
+  {
+    "id": "77b34be132e96630",
+    "first": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"Survey planning\". Planning, tracking, and review each compare approaches. Audience: \"comparing completion counts with cycle-time trends\". Advanced choices and trade-offs are taught without a foundations or first-use teaching segment; scenario orientation does not teach tool basics. Rationale: \"Your confirmed preferences favor comparing several workflows and assume existing users who need advanced choices and trade-offs.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "Survey planning",
+        "comparing completion counts with cycle-time trends",
+        "Your confirmed preferences favor comparing several workflows and assume existing users who need advanced choices and trade-offs."
+      ]
+    },
+    "final": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"Survey planning\". Planning, tracking, and review each compare approaches. Audience: \"comparing completion counts with cycle-time trends\". Advanced choices and trade-offs are taught without a foundations or first-use teaching segment; scenario orientation does not teach tool basics. Rationale: \"Your confirmed preferences favor comparing several workflows and assume existing users who need advanced choices and trade-offs.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "Survey planning",
+        "comparing completion counts with cycle-time trends",
+        "Your confirmed preferences favor comparing several workflows and assume existing users who need advanced choices and trade-offs."
+      ]
+    }
+  },
+  {
+    "id": "2e6bd51053237100",
+    "first": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"capture a note, retrieve it, and link related notes\". All three workflows have first-use practice. Audience: \"orient participants to the note list and editor\". Foundations and concrete first-use actions are taught; no advanced teaching segment contradicts the newcomer criterion. Rationale: \"A newcomer audience follows your confirmed default: assume no prior use and teach foundations and first-use steps only.\" matches supplied criteria and explains the choices without inventing user history. Storage claim \"These defaults are saved in LEARNING_PREFERENCES.md for later learning-material tasks.\" is unverifiable from these packets, not contradicted by supplied evidence, and is not scored as invented.",
+      "quotes": [
+        "capture a note, retrieve it, and link related notes",
+        "orient participants to the note list and editor",
+        "A newcomer audience follows your confirmed default: assume no prior use and teach foundations and first-use steps only.",
+        "These defaults are saved in LEARNING_PREFERENCES.md for later learning-material tasks."
+      ]
+    },
+    "final": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"capture a note, retrieve it, and link related notes\". All three workflows have first-use practice. Audience: \"orient participants to the note list and editor\". Foundations and concrete first-use actions are taught; no advanced teaching segment contradicts the newcomer criterion. Rationale: \"A newcomer audience follows your confirmed default: assume no prior use and teach foundations and first-use steps only.\" matches supplied criteria and explains the choices without inventing user history. Storage claim \"These defaults are saved in LEARNING_PREFERENCES.md for later learning-material tasks.\" is unverifiable from these packets, not contradicted by supplied evidence, and is not scored as invented.",
+      "quotes": [
+        "capture a note, retrieve it, and link related notes",
+        "orient participants to the note list and editor",
+        "A newcomer audience follows your confirmed default: assume no prior use and teach foundations and first-use steps only.",
+        "These defaults are saved in LEARNING_PREFERENCES.md for later learning-material tasks."
+      ]
+    }
+  },
+  {
+    "id": "ea3e6b91eabb264c",
+    "first": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"beginner guide to cleaning data\". Import, cleanup, duplicate review, missing-value flags, and export serve one cleaning example. Audience: \"Introduce sheets, rows, columns, and cells\". Foundations and concrete first-use actions are taught; no advanced teaching segment contradicts the newcomer criterion. Rationale: \"Your confirmed preferences favor one carefully worked workflow and foundations for people who have never used the tool.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "beginner guide to cleaning data",
+        "Introduce sheets, rows, columns, and cells",
+        "Your confirmed preferences favor one carefully worked workflow and foundations for people who have never used the tool."
+      ]
+    },
+    "final": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"beginner guide to cleaning data\". Import, cleanup, duplicate review, missing-value flags, and export serve one cleaning example. Audience: \"Introduce sheets, rows, columns, and cells\". Foundations and concrete first-use actions are taught; no advanced teaching segment contradicts the newcomer criterion. Rationale: \"Your confirmed preferences favor one carefully worked workflow and foundations for people who have never used the tool.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "beginner guide to cleaning data",
+        "Introduce sheets, rows, columns, and cells",
+        "Your confirmed preferences favor one carefully worked workflow and foundations for people who have never used the tool."
+      ]
+    }
+  },
+  {
+    "id": "f5029eef438fdf41",
+    "first": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"planning one fictional team event\". Creating the board and checking owners, deadlines, and next steps remain planning, without a tracking or review workflow lesson. Audience: \"Explain that a board organizes work, cards represent tasks, and columns show task status\". Foundations and concrete first-use actions are taught; no advanced teaching segment contradicts the newcomer criterion. Rationale: \"Your confirmed defaults favor one carefully worked workflow and foundations for people who have never used the tool.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "planning one fictional team event",
+        "Explain that a board organizes work, cards represent tasks, and columns show task status",
+        "Your confirmed defaults favor one carefully worked workflow and foundations for people who have never used the tool."
+      ]
+    },
+    "final": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"planning one fictional team event\". Creating the board and checking owners, deadlines, and next steps remain planning, without a tracking or review workflow lesson. Audience: \"Explain that a board organizes work, cards represent tasks, and columns show task status\". Foundations and concrete first-use actions are taught; no advanced teaching segment contradicts the newcomer criterion. Rationale: \"Your confirmed defaults favor one carefully worked workflow and foundations for people who have never used the tool.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "planning one fictional team event",
+        "Explain that a board organizes work, cards represent tasks, and columns show task status",
+        "Your confirmed defaults favor one carefully worked workflow and foundations for people who have never used the tool."
+      ]
+    }
+  },
+  {
+    "id": "a865dd848c1698cf",
+    "first": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"surveying cleaning, analysis, and charting\". All three workflows have substantive first-use sections. Audience: \"Introduce cells, rows, columns, headers, and selecting a range.\". Foundations and concrete first-use actions are taught; no advanced teaching segment contradicts the newcomer criterion. Rationale: \"Foundational explanations and first-use steps suit readers who have never used the tool.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "surveying cleaning, analysis, and charting",
+        "Introduce cells, rows, columns, headers, and selecting a range.",
+        "Foundational explanations and first-use steps suit readers who have never used the tool."
+      ]
+    },
+    "final": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"surveying cleaning, analysis, and charting\". All three workflows have substantive first-use sections. Audience: \"Introduce cells, rows, columns, headers, and selecting a range.\". Foundations and concrete first-use actions are taught; no advanced teaching segment contradicts the newcomer criterion. Rationale: \"Foundational explanations and first-use steps suit readers who have never used the tool.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "surveying cleaning, analysis, and charting",
+        "Introduce cells, rows, columns, headers, and selecting a range.",
+        "Foundational explanations and first-use steps suit readers who have never used the tool."
+      ]
+    }
+  },
+  {
+    "id": "7b3d758763050937",
+    "first": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"one advanced planning workflow\". Prioritization, dependencies, capacity, and urgent-request decisions remain planning. Audience: \"demonstrate what to defer and explain the trade-off\". Advanced choices and trade-offs are taught without a foundations or first-use teaching segment; scenario orientation does not teach tool basics. Rationale: \"Your confirmed preferences favor one carefully worked workflow and advanced instruction for existing users.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "one advanced planning workflow",
+        "demonstrate what to defer and explain the trade-off",
+        "Your confirmed preferences favor one carefully worked workflow and advanced instruction for existing users."
+      ]
+    },
+    "final": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"one advanced planning workflow\". Prioritization, dependencies, capacity, and urgent-request decisions remain planning. Audience: \"demonstrate what to defer and explain the trade-off\". Advanced choices and trade-offs are taught without a foundations or first-use teaching segment; scenario orientation does not teach tool basics. Rationale: \"Your confirmed preferences favor one carefully worked workflow and advanced instruction for existing users.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "one advanced planning workflow",
+        "demonstrate what to defer and explain the trade-off",
+        "Your confirmed preferences favor one carefully worked workflow and advanced instruction for existing users."
+      ]
+    }
+  },
+  {
+    "id": "ca2631f465b36b8c",
+    "first": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"beginner guide to cleaning data\". The customer-list example remains cleaning throughout. Audience: \"show how to create a sheet and paste a six-row customer list\". Foundations and concrete first-use actions are taught; no advanced teaching segment contradicts the newcomer criterion. Rationale: \"Your confirmed defaults favor one carefully worked workflow and foundations for people who have never used the tool.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "beginner guide to cleaning data",
+        "show how to create a sheet and paste a six-row customer list",
+        "Your confirmed defaults favor one carefully worked workflow and foundations for people who have never used the tool."
+      ]
+    },
+    "final": {
+      "scope_pass": true,
+      "audience_pass": true,
+      "rationale_pass": true,
+      "evidence": "Scope: \"beginner guide to cleaning data\". The customer-list example remains cleaning throughout. Audience: \"show how to create a sheet and paste a six-row customer list\". Foundations and concrete first-use actions are taught; no advanced teaching segment contradicts the newcomer criterion. Rationale: \"Your confirmed defaults favor one carefully worked workflow and foundations for people who have never used the tool.\" matches supplied criteria and explains the choices without inventing user history.",
+      "quotes": [
+        "beginner guide to cleaning data",
+        "show how to create a sheet and paste a six-row customer list",
+        "Your confirmed defaults favor one carefully worked workflow and foundations for people who have never used the tool."
+      ]
+    }
+  }
+]
