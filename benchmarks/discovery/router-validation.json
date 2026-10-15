@@ -1,0 +1,311 @@
+{
+  "schema_version": 1,
+  "purpose": "Independent pre-run challenge set for the frozen lexical router. Failures remain visible; this is not a representative accuracy estimate. If used to change rules it becomes development validation, not held-out validation.",
+  "author_role": "Maintainer methods-review agent, separate from case and runtime authors; not external validation.",
+  "items": [
+    {
+      "id": "router-01",
+      "case_id": "community",
+      "episode": "setup",
+      "kind": "positive",
+      "questions": [
+        "How should we choose among applicants when demand exceeds capacity?"
+      ],
+      "expected_routes": [
+        "allocation"
+      ]
+    },
+    {
+      "id": "router-02",
+      "case_id": "community",
+      "episode": "setup",
+      "kind": "positive",
+      "questions": [
+        "Should we use a lottery or first-come registration?"
+      ],
+      "expected_routes": [
+        "allocation"
+      ]
+    },
+    {
+      "id": "router-03",
+      "case_id": "community",
+      "episode": "setup",
+      "kind": "positive",
+      "questions": [
+        "Do participants need step-free access?"
+      ],
+      "expected_routes": [
+        "access"
+      ]
+    },
+    {
+      "id": "router-04",
+      "case_id": "community",
+      "episode": "setup",
+      "kind": "positive",
+      "questions": [
+        "What is the maximum amount each visitor should pay?"
+      ],
+      "expected_routes": [
+        "fee"
+      ]
+    },
+    {
+      "id": "router-05",
+      "case_id": "community",
+      "episode": "setup",
+      "kind": "positive",
+      "questions": [
+        "Can we put participant identities on the poster?"
+      ],
+      "expected_routes": [
+        "names"
+      ]
+    },
+    {
+      "id": "router-06",
+      "case_id": "community",
+      "episode": "setup",
+      "kind": "positive",
+      "questions": [
+        "May attendee names appear publicly?"
+      ],
+      "expected_routes": [
+        "names"
+      ]
+    },
+    {
+      "id": "router-07",
+      "case_id": "community",
+      "episode": "setup",
+      "kind": "compound",
+      "questions": [
+        "What is the fee limit, and how should seats be allocated?"
+      ],
+      "expected_routes": [
+        "fee",
+        "allocation"
+      ]
+    },
+    {
+      "id": "router-08",
+      "case_id": "community",
+      "episode": "setup",
+      "kind": "negative",
+      "questions": [
+        "What color should the poster be?"
+      ],
+      "expected_routes": []
+    },
+    {
+      "id": "router-09",
+      "case_id": "community",
+      "episode": "setup",
+      "kind": "negative",
+      "questions": [
+        "Give me every preference you have."
+      ],
+      "expected_routes": []
+    },
+    {
+      "id": "router-10",
+      "case_id": "community",
+      "episode": "setup",
+      "kind": "ambiguous",
+      "questions": [
+        "What are the venue names?"
+      ],
+      "expected_routes": []
+    },
+    {
+      "id": "router-11",
+      "case_id": "community",
+      "episode": "setup",
+      "kind": "negation",
+      "questions": [
+        "No question about price: should we use a lottery?"
+      ],
+      "expected_routes": [
+        "allocation"
+      ]
+    },
+    {
+      "id": "router-12",
+      "case_id": "community",
+      "episode": "reuse_clarify",
+      "kind": "positive",
+      "questions": [
+        "If the organizer calls it off, should people get their money back?"
+      ],
+      "expected_routes": [
+        "cancellation"
+      ]
+    },
+    {
+      "id": "router-13",
+      "case_id": "community",
+      "episode": "reuse_clarify",
+      "kind": "positive",
+      "questions": [
+        "Should cancellation mean a refund or event credit?"
+      ],
+      "expected_routes": [
+        "cancellation"
+      ]
+    },
+    {
+      "id": "router-14",
+      "case_id": "community",
+      "episode": "reuse_clarify",
+      "kind": "negation",
+      "questions": [
+        "I am not asking about fees; should cancellation mean refund or credit?"
+      ],
+      "expected_routes": [
+        "cancellation"
+      ]
+    },
+    {
+      "id": "router-15",
+      "case_id": "service",
+      "episode": "setup",
+      "kind": "positive",
+      "questions": [
+        "What response time is acceptable at p95?"
+      ],
+      "expected_routes": [
+        "latency"
+      ]
+    },
+    {
+      "id": "router-16",
+      "case_id": "service",
+      "episode": "setup",
+      "kind": "positive",
+      "questions": [
+        "How fast must this service be?"
+      ],
+      "expected_routes": [
+        "latency"
+      ]
+    },
+    {
+      "id": "router-17",
+      "case_id": "service",
+      "episode": "setup",
+      "kind": "positive",
+      "questions": [
+        "Is bringing in a runtime package allowed?"
+      ],
+      "expected_routes": [
+        "dependency"
+      ]
+    },
+    {
+      "id": "router-18",
+      "case_id": "service",
+      "episode": "setup",
+      "kind": "positive",
+      "questions": [
+        "How long must consumers keep using the prior format?"
+      ],
+      "expected_routes": [
+        "compatibility"
+      ]
+    },
+    {
+      "id": "router-19",
+      "case_id": "service",
+      "episode": "setup",
+      "kind": "positive",
+      "questions": [
+        "How should the operator see a failure?"
+      ],
+      "expected_routes": [
+        "failure_output"
+      ]
+    },
+    {
+      "id": "router-20",
+      "case_id": "service",
+      "episode": "setup",
+      "kind": "negative",
+      "questions": [
+        "Should the fixture contain seventeen rows?"
+      ],
+      "expected_routes": []
+    },
+    {
+      "id": "router-21",
+      "case_id": "service",
+      "episode": "setup",
+      "kind": "compound",
+      "questions": [
+        "What latency target and compatibility window should I use?"
+      ],
+      "expected_routes": [
+        "latency",
+        "compatibility"
+      ]
+    },
+    {
+      "id": "router-22",
+      "case_id": "service",
+      "episode": "setup",
+      "kind": "negation",
+      "questions": [
+        "The package choice is settled; what p95 latency is acceptable?"
+      ],
+      "expected_routes": [
+        "latency"
+      ]
+    },
+    {
+      "id": "router-23",
+      "case_id": "service",
+      "episode": "reuse_clarify",
+      "kind": "positive",
+      "questions": [
+        "May I retain raw payloads, and for how long should diagnostics remain?"
+      ],
+      "expected_routes": [
+        "diagnostics"
+      ]
+    },
+    {
+      "id": "router-24",
+      "case_id": "service",
+      "episode": "reuse_clarify",
+      "kind": "positive",
+      "questions": [
+        "Should we keep the original input after processing?"
+      ],
+      "expected_routes": [
+        "diagnostics"
+      ]
+    },
+    {
+      "id": "router-25",
+      "case_id": "service",
+      "episode": "reuse_clarify",
+      "kind": "ambiguous",
+      "questions": [
+        "How long should we retain support for the old export format?"
+      ],
+      "expected_routes": [
+        "compatibility"
+      ]
+    },
+    {
+      "id": "router-26",
+      "case_id": "service",
+      "episode": "reuse_clarify",
+      "kind": "negative",
+      "questions": [
+        "What is the name of the deployment owner?"
+      ],
+      "expected_routes": []
+    }
+  ]
+}

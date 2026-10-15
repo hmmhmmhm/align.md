@@ -1,0 +1,865 @@
+{
+  "verified": false,
+  "errors": [
+    "Source changed during execution"
+  ],
+  "non_scored_smoke": true,
+  "arms": {
+    "A": {
+      "planned_trajectories": 1,
+      "recorded_trajectories": 1,
+      "execution_failures": 0,
+      "totals": {
+        "actor_turns": 3,
+        "user_characters": 271,
+        "harness_protocol_characters": 1458,
+        "setup_initial_user_characters": 110,
+        "user_whitespace_words": 48,
+        "assistant_characters": 503,
+        "final_protocol_characters": 224,
+        "tokens_input_tokens": 129830,
+        "tokens_cached_input_tokens": 113408,
+        "tokens_cache_write_input_tokens": 0,
+        "tokens_output_tokens": 1006,
+        "tokens_reasoning_output_tokens": 0,
+        "setup_reply_user_characters": 44,
+        "task_initial_user_characters": 117,
+        "intervention_turns": 1,
+        "preference_units": 1,
+        "repeated_preference_units": 0,
+        "passed_episodes": 2,
+        "planned_episodes": 2,
+        "provided_preference_units": 0,
+        "off_interface_audit_turns": 3,
+        "off_interface_request_candidates": 0,
+        "setup_intervention_turns": 1,
+        "task_intervention_turns": 0,
+        "router_calls": 1,
+        "router_duration_seconds": 6.316,
+        "setup_preference_units": 1,
+        "setup_repeated_preference_units": 0,
+        "task_preference_units": 0,
+        "task_repeated_preference_units": 0,
+        "repeated_question_units": 0,
+        "new_question_units": 1,
+        "neutral_intervention_turns": 0,
+        "neutral_passed_episodes": 0,
+        "failed_or_missing_episodes": 0,
+        "duration_seconds": 48.39,
+        "usage_missing_turns": 0,
+        "correction_rounds": 0,
+        "protocol_errors": 0
+      }
+    },
+    "B": {
+      "planned_trajectories": 1,
+      "recorded_trajectories": 1,
+      "execution_failures": 0,
+      "totals": {
+        "actor_turns": 3,
+        "user_characters": 271,
+        "harness_protocol_characters": 1458,
+        "setup_initial_user_characters": 110,
+        "user_whitespace_words": 48,
+        "assistant_characters": 462,
+        "final_protocol_characters": 240,
+        "tokens_input_tokens": 168387,
+        "tokens_cached_input_tokens": 152320,
+        "tokens_cache_write_input_tokens": 0,
+        "tokens_output_tokens": 1131,
+        "tokens_reasoning_output_tokens": 14,
+        "setup_reply_user_characters": 44,
+        "task_initial_user_characters": 117,
+        "intervention_turns": 1,
+        "preference_units": 1,
+        "repeated_preference_units": 0,
+        "passed_episodes": 2,
+        "planned_episodes": 2,
+        "provided_preference_units": 0,
+        "off_interface_audit_turns": 3,
+        "off_interface_request_candidates": 0,
+        "setup_intervention_turns": 1,
+        "task_intervention_turns": 0,
+        "router_calls": 1,
+        "router_duration_seconds": 6.381,
+        "setup_preference_units": 1,
+        "setup_repeated_preference_units": 0,
+        "task_preference_units": 0,
+        "task_repeated_preference_units": 0,
+        "repeated_question_units": 0,
+        "new_question_units": 1,
+        "neutral_intervention_turns": 0,
+        "neutral_passed_episodes": 0,
+        "failed_or_missing_episodes": 0,
+        "duration_seconds": 59.679,
+        "usage_missing_turns": 0,
+        "correction_rounds": 0,
+        "protocol_errors": 0
+      }
+    },
+    "C": {
+      "planned_trajectories": 1,
+      "recorded_trajectories": 1,
+      "execution_failures": 0,
+      "totals": {
+        "actor_turns": 3,
+        "user_characters": 271,
+        "harness_protocol_characters": 1458,
+        "setup_initial_user_characters": 110,
+        "user_whitespace_words": 48,
+        "assistant_characters": 559,
+        "final_protocol_characters": 251,
+        "tokens_input_tokens": 183071,
+        "tokens_cached_input_tokens": 159744,
+        "tokens_cache_write_input_tokens": 0,
+        "tokens_output_tokens": 1107,
+        "tokens_reasoning_output_tokens": 0,
+        "setup_reply_user_characters": 44,
+        "task_initial_user_characters": 117,
+        "intervention_turns": 1,
+        "preference_units": 1,
+        "repeated_preference_units": 0,
+        "passed_episodes": 2,
+        "planned_episodes": 2,
+        "provided_preference_units": 0,
+        "off_interface_audit_turns": 3,
+        "off_interface_request_candidates": 0,
+        "setup_intervention_turns": 1,
+        "task_intervention_turns": 0,
+        "router_calls": 1,
+        "router_duration_seconds": 7.684,
+        "setup_preference_units": 1,
+        "setup_repeated_preference_units": 0,
+        "task_preference_units": 0,
+        "task_repeated_preference_units": 0,
+        "repeated_question_units": 0,
+        "new_question_units": 1,
+        "neutral_intervention_turns": 0,
+        "neutral_passed_episodes": 0,
+        "failed_or_missing_episodes": 0,
+        "duration_seconds": 53.399,
+        "usage_missing_turns": 0,
+        "correction_rounds": 0,
+        "protocol_errors": 0
+      }
+    }
+  },
+  "trajectories": [
+    {
+      "id": "NON_SCORED_SMOKE__C__r1",
+      "arm": "C",
+      "case_id": "NON_SCORED_SMOKE",
+      "repeat": 1,
+      "status": "completed",
+      "metrics": {
+        "actor_turns": 3,
+        "user_characters": 271,
+        "harness_protocol_characters": 1458,
+        "setup_initial_user_characters": 110,
+        "user_whitespace_words": 48,
+        "assistant_characters": 559,
+        "final_protocol_characters": 251,
+        "tokens_input_tokens": 183071,
+        "tokens_cached_input_tokens": 159744,
+        "tokens_cache_write_input_tokens": 0,
+        "tokens_output_tokens": 1107,
+        "tokens_reasoning_output_tokens": 0,
+        "setup_reply_user_characters": 44,
+        "task_initial_user_characters": 117,
+        "intervention_turns": 1,
+        "preference_units": 1,
+        "repeated_preference_units": 0,
+        "passed_episodes": 2,
+        "planned_episodes": 2,
+        "provided_preference_units": 0,
+        "off_interface_audit_turns": 3,
+        "off_interface_request_candidates": 0,
+        "setup_intervention_turns": 1,
+        "task_intervention_turns": 0,
+        "router_calls": 1,
+        "router_duration_seconds": 7.684,
+        "setup_preference_units": 1,
+        "setup_repeated_preference_units": 0,
+        "task_preference_units": 0,
+        "task_repeated_preference_units": 0,
+        "repeated_question_units": 0,
+        "new_question_units": 1,
+        "neutral_intervention_turns": 0,
+        "neutral_passed_episodes": 0,
+        "failed_or_missing_episodes": 0,
+        "duration_seconds": 53.399,
+        "usage_missing_turns": 0,
+        "correction_rounds": 0,
+        "protocol_errors": 0
+      },
+      "episodes": [
+        {
+          "id": "setup",
+          "passed": true,
+          "actor_turns": 2,
+          "provided_preferences": [],
+          "required_questions": [
+            "smoke_tone"
+          ],
+          "answered_questions": [
+            "smoke_tone"
+          ],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "rationale_present": true,
+            "actual": {
+              "ready": true,
+              "rationale": "The user explicitly chose a plain tone and asked to save it for later tasks. I recorded that preference in ALIGN.md as a current criterion for responses in this project. The file was previously empty, so there was no existing tone preference to reconcile or replace. This records only the confirmed tone choice; it does not infer preferences about response length, formality, or technical detail. The requested output is ready. Future tasks should read ALIGN.md and apply the saved plain tone while following any more specific instructions the user provides."
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 1,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "transport",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "rationale_present": true,
+            "actual": {
+              "tone": "plain",
+              "body": "Smoke only.",
+              "rationale": "The saved tone is plain. ALIGN.md explicitly records that the user requested this tone for responses in this project, including later tasks, and authorized saving it on 2026-10-15. That current criterion directly answers the tone choice, so no additional clarification is needed. The body preserves the exact wording and punctuation requested for this task. Adding stylistic language would change the supplied text without serving the request. The existing preference remains unchanged because this task applies it rather than revises it. The completed JSON is ready for use; no further action or preference update is required."
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 0,
+            "repeated_preference_units": 0
+          }
+        }
+      ],
+      "cumulative": [
+        {
+          "episode": "setup",
+          "intervention_turns": 1,
+          "preference_units": 1,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "transport",
+          "intervention_turns": 1,
+          "preference_units": 1,
+          "repeated_preference_units": 0,
+          "passed": true
+        }
+      ],
+      "models": [
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "id": "NON_SCORED_SMOKE__B__r1",
+      "arm": "B",
+      "case_id": "NON_SCORED_SMOKE",
+      "repeat": 1,
+      "status": "completed",
+      "metrics": {
+        "actor_turns": 3,
+        "user_characters": 271,
+        "harness_protocol_characters": 1458,
+        "setup_initial_user_characters": 110,
+        "user_whitespace_words": 48,
+        "assistant_characters": 462,
+        "final_protocol_characters": 240,
+        "tokens_input_tokens": 168387,
+        "tokens_cached_input_tokens": 152320,
+        "tokens_cache_write_input_tokens": 0,
+        "tokens_output_tokens": 1131,
+        "tokens_reasoning_output_tokens": 14,
+        "setup_reply_user_characters": 44,
+        "task_initial_user_characters": 117,
+        "intervention_turns": 1,
+        "preference_units": 1,
+        "repeated_preference_units": 0,
+        "passed_episodes": 2,
+        "planned_episodes": 2,
+        "provided_preference_units": 0,
+        "off_interface_audit_turns": 3,
+        "off_interface_request_candidates": 0,
+        "setup_intervention_turns": 1,
+        "task_intervention_turns": 0,
+        "router_calls": 1,
+        "router_duration_seconds": 6.381,
+        "setup_preference_units": 1,
+        "setup_repeated_preference_units": 0,
+        "task_preference_units": 0,
+        "task_repeated_preference_units": 0,
+        "repeated_question_units": 0,
+        "new_question_units": 1,
+        "neutral_intervention_turns": 0,
+        "neutral_passed_episodes": 0,
+        "failed_or_missing_episodes": 0,
+        "duration_seconds": 59.679,
+        "usage_missing_turns": 0,
+        "correction_rounds": 0,
+        "protocol_errors": 0
+      },
+      "episodes": [
+        {
+          "id": "setup",
+          "passed": true,
+          "actor_turns": 2,
+          "provided_preferences": [],
+          "required_questions": [
+            "smoke_tone"
+          ],
+          "answered_questions": [
+            "smoke_tone"
+          ],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "rationale_present": true,
+            "actual": {
+              "ready": true,
+              "rationale": "The user explicitly chose a plain tone and asked that this preference be saved for later tasks. PREFERENCES.md was empty, so there was no existing tone criterion to reconcile or replace. I recorded plain tone as a confirmed, lasting preference, using the user's stated scope rather than treating it as a one-time exception. I did not infer additional preferences about response length, formality, or formatting from that choice. The requested ready field is true because the tone question has been answered and the preference saved. Future tasks should reuse this criterion unless the user changes it or requests a scoped exception."
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 1,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "transport",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "rationale_present": true,
+            "actual": {
+              "tone": "plain",
+              "body": "Smoke only.",
+              "rationale": "The saved tone is plain, as recorded under confirmed preferences in PREFERENCES.md. That entry explicitly says the user authorized retaining this preference for later tasks, so it provides sufficient evidence to apply it here without asking again. The body is exactly the requested text, including its capitalization and final period. Keeping that wording preserves the requested brevity while honoring the saved tone; expanding or rephrasing it would change the specified content. No new preference or exception is needed. The completed JSON is ready for use, and the existing saved preference remains applicable to future tasks."
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 0,
+            "repeated_preference_units": 0
+          }
+        }
+      ],
+      "cumulative": [
+        {
+          "episode": "setup",
+          "intervention_turns": 1,
+          "preference_units": 1,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "transport",
+          "intervention_turns": 1,
+          "preference_units": 1,
+          "repeated_preference_units": 0,
+          "passed": true
+        }
+      ],
+      "models": [
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "id": "NON_SCORED_SMOKE__A__r1",
+      "arm": "A",
+      "case_id": "NON_SCORED_SMOKE",
+      "repeat": 1,
+      "status": "completed",
+      "metrics": {
+        "actor_turns": 3,
+        "user_characters": 271,
+        "harness_protocol_characters": 1458,
+        "setup_initial_user_characters": 110,
+        "user_whitespace_words": 48,
+        "assistant_characters": 503,
+        "final_protocol_characters": 224,
+        "tokens_input_tokens": 129830,
+        "tokens_cached_input_tokens": 113408,
+        "tokens_cache_write_input_tokens": 0,
+        "tokens_output_tokens": 1006,
+        "tokens_reasoning_output_tokens": 0,
+        "setup_reply_user_characters": 44,
+        "task_initial_user_characters": 117,
+        "intervention_turns": 1,
+        "preference_units": 1,
+        "repeated_preference_units": 0,
+        "passed_episodes": 2,
+        "planned_episodes": 2,
+        "provided_preference_units": 0,
+        "off_interface_audit_turns": 3,
+        "off_interface_request_candidates": 0,
+        "setup_intervention_turns": 1,
+        "task_intervention_turns": 0,
+        "router_calls": 1,
+        "router_duration_seconds": 6.316,
+        "setup_preference_units": 1,
+        "setup_repeated_preference_units": 0,
+        "task_preference_units": 0,
+        "task_repeated_preference_units": 0,
+        "repeated_question_units": 0,
+        "new_question_units": 1,
+        "neutral_intervention_turns": 0,
+        "neutral_passed_episodes": 0,
+        "failed_or_missing_episodes": 0,
+        "duration_seconds": 48.39,
+        "usage_missing_turns": 0,
+        "correction_rounds": 0,
+        "protocol_errors": 0
+      },
+      "episodes": [
+        {
+          "id": "setup",
+          "passed": true,
+          "actor_turns": 2,
+          "provided_preferences": [],
+          "required_questions": [
+            "smoke_tone"
+          ],
+          "answered_questions": [
+            "smoke_tone"
+          ],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "rationale_present": true,
+            "actual": {
+              "ready": true,
+              "rationale": "The user explicitly chose a plain tone and asked that this preference be saved for later tasks. I recorded it as a confirmed standing preference in the dedicated user criteria memory section of AGENTS.md, so future conversations can reuse it without asking again. This records only the requested tone preference; it does not assume preferences about response length, formatting, or other communication choices. The requested preparation is complete, so ready is set to true. In later tasks, use plain language and consult the saved criterion, updating it if the user explicitly changes their preference."
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 1,
+            "preference_units": 1,
+            "repeated_preference_units": 0
+          }
+        },
+        {
+          "id": "transport",
+          "passed": true,
+          "actor_turns": 1,
+          "provided_preferences": [],
+          "required_questions": [],
+          "answered_questions": [],
+          "terminal_check": {
+            "passed": true,
+            "failed_fields": [],
+            "extra_fields": [],
+            "rationale_present": true,
+            "actual": {
+              "tone": "plain",
+              "body": "Smoke only.",
+              "rationale": "The saved user criteria in AGENTS.md explicitly identify plain as the standing tone preference and confirm permission to retain it for future tasks. I used that confirmed preference for the tone field and preserved the requested body exactly, including its capitalization and final period. The wording is brief and direct, consistent with the saved tone. Adding context or stylistic flourishes would change the supplied text, so the body remains as specified. No consequential choice remains unresolved, and no new preference needs to be saved. The completed JSON is ready for use without further input."
+            }
+          },
+          "_derived": {
+            "first_submission_passed": true,
+            "intervention_turns": 0,
+            "preference_units": 0,
+            "repeated_preference_units": 0
+          }
+        }
+      ],
+      "cumulative": [
+        {
+          "episode": "setup",
+          "intervention_turns": 1,
+          "preference_units": 1,
+          "repeated_preference_units": 0,
+          "passed": true
+        },
+        {
+          "episode": "transport",
+          "intervention_turns": 1,
+          "preference_units": 1,
+          "repeated_preference_units": 0,
+          "passed": true
+        }
+      ],
+      "models": [
+        "gpt-6-astra"
+      ]
+    }
+  ],
+  "paired": [
+    {
+      "comparison": "C_vs_B",
+      "profile": "NON_SCORED_SMOKE",
+      "repeat": 1,
+      "arms": {
+        "C": {
+          "status": "completed",
+          "metrics": {
+            "actor_turns": 3,
+            "user_characters": 271,
+            "harness_protocol_characters": 1458,
+            "setup_initial_user_characters": 110,
+            "user_whitespace_words": 48,
+            "assistant_characters": 559,
+            "final_protocol_characters": 251,
+            "tokens_input_tokens": 183071,
+            "tokens_cached_input_tokens": 159744,
+            "tokens_cache_write_input_tokens": 0,
+            "tokens_output_tokens": 1107,
+            "tokens_reasoning_output_tokens": 0,
+            "setup_reply_user_characters": 44,
+            "task_initial_user_characters": 117,
+            "intervention_turns": 1,
+            "preference_units": 1,
+            "repeated_preference_units": 0,
+            "passed_episodes": 2,
+            "planned_episodes": 2,
+            "provided_preference_units": 0,
+            "off_interface_audit_turns": 3,
+            "off_interface_request_candidates": 0,
+            "setup_intervention_turns": 1,
+            "task_intervention_turns": 0,
+            "router_calls": 1,
+            "router_duration_seconds": 7.684,
+            "setup_preference_units": 1,
+            "setup_repeated_preference_units": 0,
+            "task_preference_units": 0,
+            "task_repeated_preference_units": 0,
+            "repeated_question_units": 0,
+            "new_question_units": 1,
+            "neutral_intervention_turns": 0,
+            "neutral_passed_episodes": 0,
+            "failed_or_missing_episodes": 0,
+            "duration_seconds": 53.399,
+            "usage_missing_turns": 0,
+            "correction_rounds": 0,
+            "protocol_errors": 0
+          },
+          "cumulative": [
+            {
+              "episode": "setup",
+              "intervention_turns": 1,
+              "preference_units": 1,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "transport",
+              "intervention_turns": 1,
+              "preference_units": 1,
+              "repeated_preference_units": 0,
+              "passed": true
+            }
+          ]
+        },
+        "B": {
+          "status": "completed",
+          "metrics": {
+            "actor_turns": 3,
+            "user_characters": 271,
+            "harness_protocol_characters": 1458,
+            "setup_initial_user_characters": 110,
+            "user_whitespace_words": 48,
+            "assistant_characters": 462,
+            "final_protocol_characters": 240,
+            "tokens_input_tokens": 168387,
+            "tokens_cached_input_tokens": 152320,
+            "tokens_cache_write_input_tokens": 0,
+            "tokens_output_tokens": 1131,
+            "tokens_reasoning_output_tokens": 14,
+            "setup_reply_user_characters": 44,
+            "task_initial_user_characters": 117,
+            "intervention_turns": 1,
+            "preference_units": 1,
+            "repeated_preference_units": 0,
+            "passed_episodes": 2,
+            "planned_episodes": 2,
+            "provided_preference_units": 0,
+            "off_interface_audit_turns": 3,
+            "off_interface_request_candidates": 0,
+            "setup_intervention_turns": 1,
+            "task_intervention_turns": 0,
+            "router_calls": 1,
+            "router_duration_seconds": 6.381,
+            "setup_preference_units": 1,
+            "setup_repeated_preference_units": 0,
+            "task_preference_units": 0,
+            "task_repeated_preference_units": 0,
+            "repeated_question_units": 0,
+            "new_question_units": 1,
+            "neutral_intervention_turns": 0,
+            "neutral_passed_episodes": 0,
+            "failed_or_missing_episodes": 0,
+            "duration_seconds": 59.679,
+            "usage_missing_turns": 0,
+            "correction_rounds": 0,
+            "protocol_errors": 0
+          },
+          "cumulative": [
+            {
+              "episode": "setup",
+              "intervention_turns": 1,
+              "preference_units": 1,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "transport",
+              "intervention_turns": 1,
+              "preference_units": 1,
+              "repeated_preference_units": 0,
+              "passed": true
+            }
+          ]
+        }
+      },
+      "preference_unit_result": "tie",
+      "first_observed_preference_cost_lead_episode": null
+    },
+    {
+      "comparison": "C_vs_A",
+      "profile": "NON_SCORED_SMOKE",
+      "repeat": 1,
+      "arms": {
+        "C": {
+          "status": "completed",
+          "metrics": {
+            "actor_turns": 3,
+            "user_characters": 271,
+            "harness_protocol_characters": 1458,
+            "setup_initial_user_characters": 110,
+            "user_whitespace_words": 48,
+            "assistant_characters": 559,
+            "final_protocol_characters": 251,
+            "tokens_input_tokens": 183071,
+            "tokens_cached_input_tokens": 159744,
+            "tokens_cache_write_input_tokens": 0,
+            "tokens_output_tokens": 1107,
+            "tokens_reasoning_output_tokens": 0,
+            "setup_reply_user_characters": 44,
+            "task_initial_user_characters": 117,
+            "intervention_turns": 1,
+            "preference_units": 1,
+            "repeated_preference_units": 0,
+            "passed_episodes": 2,
+            "planned_episodes": 2,
+            "provided_preference_units": 0,
+            "off_interface_audit_turns": 3,
+            "off_interface_request_candidates": 0,
+            "setup_intervention_turns": 1,
+            "task_intervention_turns": 0,
+            "router_calls": 1,
+            "router_duration_seconds": 7.684,
+            "setup_preference_units": 1,
+            "setup_repeated_preference_units": 0,
+            "task_preference_units": 0,
+            "task_repeated_preference_units": 0,
+            "repeated_question_units": 0,
+            "new_question_units": 1,
+            "neutral_intervention_turns": 0,
+            "neutral_passed_episodes": 0,
+            "failed_or_missing_episodes": 0,
+            "duration_seconds": 53.399,
+            "usage_missing_turns": 0,
+            "correction_rounds": 0,
+            "protocol_errors": 0
+          },
+          "cumulative": [
+            {
+              "episode": "setup",
+              "intervention_turns": 1,
+              "preference_units": 1,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "transport",
+              "intervention_turns": 1,
+              "preference_units": 1,
+              "repeated_preference_units": 0,
+              "passed": true
+            }
+          ]
+        },
+        "A": {
+          "status": "completed",
+          "metrics": {
+            "actor_turns": 3,
+            "user_characters": 271,
+            "harness_protocol_characters": 1458,
+            "setup_initial_user_characters": 110,
+            "user_whitespace_words": 48,
+            "assistant_characters": 503,
+            "final_protocol_characters": 224,
+            "tokens_input_tokens": 129830,
+            "tokens_cached_input_tokens": 113408,
+            "tokens_cache_write_input_tokens": 0,
+            "tokens_output_tokens": 1006,
+            "tokens_reasoning_output_tokens": 0,
+            "setup_reply_user_characters": 44,
+            "task_initial_user_characters": 117,
+            "intervention_turns": 1,
+            "preference_units": 1,
+            "repeated_preference_units": 0,
+            "passed_episodes": 2,
+            "planned_episodes": 2,
+            "provided_preference_units": 0,
+            "off_interface_audit_turns": 3,
+            "off_interface_request_candidates": 0,
+            "setup_intervention_turns": 1,
+            "task_intervention_turns": 0,
+            "router_calls": 1,
+            "router_duration_seconds": 6.316,
+            "setup_preference_units": 1,
+            "setup_repeated_preference_units": 0,
+            "task_preference_units": 0,
+            "task_repeated_preference_units": 0,
+            "repeated_question_units": 0,
+            "new_question_units": 1,
+            "neutral_intervention_turns": 0,
+            "neutral_passed_episodes": 0,
+            "failed_or_missing_episodes": 0,
+            "duration_seconds": 48.39,
+            "usage_missing_turns": 0,
+            "correction_rounds": 0,
+            "protocol_errors": 0
+          },
+          "cumulative": [
+            {
+              "episode": "setup",
+              "intervention_turns": 1,
+              "preference_units": 1,
+              "repeated_preference_units": 0,
+              "passed": true
+            },
+            {
+              "episode": "transport",
+              "intervention_turns": 1,
+              "preference_units": 1,
+              "repeated_preference_units": 0,
+              "passed": true
+            }
+          ]
+        }
+      },
+      "preference_unit_result": "tie",
+      "first_observed_preference_cost_lead_episode": null
+    }
+  ],
+  "comparisons": {
+    "C_vs_B": {
+      "relative_preference_unit_reduction": 0.0,
+      "relative_reply_reduction": 0.0,
+      "mean_reply_reduction": 0.0,
+      "numeric_thresholds_met": false,
+      "neutral_intervention_guardrail": true,
+      "decision_rule_met_before_manual_audits": false,
+      "decision_rule_met": false
+    },
+    "C_vs_A": {
+      "relative_preference_unit_reduction": 0.0,
+      "relative_reply_reduction": 0.0,
+      "mean_reply_reduction": 0.0,
+      "numeric_thresholds_met": false,
+      "neutral_intervention_guardrail": true,
+      "decision_rule_met_before_manual_audits": false,
+      "decision_rule_met": false
+    }
+  },
+  "C_quality_guardrail": true,
+  "off_interface_audit_pending": [
+    {
+      "trial": "NON_SCORED_SMOKE__C__r1",
+      "turn": 1,
+      "messages": [
+        "I\u2019ll read the project\u2019s alignment guidance, then ask about your preferred tone and save your answer using the align skill.\n"
+      ]
+    },
+    {
+      "trial": "NON_SCORED_SMOKE__C__r1",
+      "turn": 2,
+      "messages": [
+        "I\u2019ll save plain tone as your preference for later tasks and write output.json with ready set to true.\n"
+      ]
+    },
+    {
+      "trial": "NON_SCORED_SMOKE__C__r1",
+      "turn": 3,
+      "messages": [
+        "I\u2019ll read the saved criteria and use the align skill to check the tone preference.\n"
+      ]
+    },
+    {
+      "trial": "NON_SCORED_SMOKE__B__r1",
+      "turn": 1,
+      "messages": [
+        "I\u2019ll read the saved preferences before asking about tone.\n"
+      ]
+    },
+    {
+      "trial": "NON_SCORED_SMOKE__B__r1",
+      "turn": 2,
+      "messages": [
+        "I\u2019ll save your preference for a plain tone and write output.json with ready set to true.\n"
+      ]
+    },
+    {
+      "trial": "NON_SCORED_SMOKE__B__r1",
+      "turn": 3,
+      "messages": [
+        "I\u2019ll read your saved preferences and use the recorded tone in output.json.\n"
+      ]
+    },
+    {
+      "trial": "NON_SCORED_SMOKE__A__r1",
+      "turn": 1,
+      "messages": [
+        "I\u2019ll read the project instructions, then ask about your preferred tone and save your answer.\n"
+      ]
+    },
+    {
+      "trial": "NON_SCORED_SMOKE__A__r1",
+      "turn": 2,
+      "messages": [
+        "I\u2019ll save plain tone as your preference for future tasks and write output.json with ready set to true.\n"
+      ]
+    },
+    {
+      "trial": "NON_SCORED_SMOKE__A__r1",
+      "turn": 3,
+      "messages": [
+        "I\u2019ll read the saved tone preference and write output.json with the requested body.\n"
+      ]
+    }
+  ],
+  "favorable_effort_claim_permitted": false,
+  "scripted_proxy_decision_rule_met": false,
+  "claim_gate": "Automatic replay does not clear substantive quality, question-routing correctness, unsupported lasting preferences, external reads, or privacy completeness. These require separate treatment-blind audit. Hashes establish integrity, not preregistration time or authenticity.",
+  "interpretation": "Synthetic criterion checks and scripted interaction counts only; no measured human satisfaction, effort, or population inference."
+}

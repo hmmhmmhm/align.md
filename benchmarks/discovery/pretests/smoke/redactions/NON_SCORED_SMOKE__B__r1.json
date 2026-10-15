@@ -1,0 +1,20 @@
+{
+  "counts": {
+    "private_reasoning_records": 4,
+    "encrypted_content_fields": 2
+  },
+  "private_record_sha256": "3b45bdd6f602c6248ef65579c682ce79723bbf47950e1be4c65ee7e34cb60e46",
+  "published_record_sha256": "892dc557e447788b6d808dd3c513afb1877a54377a18887c7629b44f02dc2f14",
+  "session_traces": [
+    {
+      "file": "session-traces/NON_SCORED_SMOKE__B__r1/rollout-2026-10-15T10-16-45-01a13d22-13b1-7fc3-915d-6542556e6e6a.jsonl.gz",
+      "private_original_sha256": "a164caf9592a974ba3cf8760827bd2d916bce09b90d66bc46c6b08664d2d26a0",
+      "published_sha256": "6a382761139b4aad762cb28cbeca3f407e129852f7cb8f271f0118d04642c154"
+    },
+    {
+      "file": "session-traces/NON_SCORED_SMOKE__B__r1/rollout-2026-10-15T10-17-26-01a13d22-b289-7ec2-8d7a-2f7daf2ff7e1.jsonl.gz",
+      "private_original_sha256": "61505af235755564e24b636ac53b66f91dd41c4c829ba78d912ae58a714f655a",
+      "published_sha256": "9c082d2781d9c7873d2b66e4bb74be31a5d9c173119a23e5547f3453608dbe1f"
+    }
+  ]
+}

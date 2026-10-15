@@ -1,0 +1,30 @@
+{
+  "matches_manifest": true,
+  "source_files": {
+    "benchmarks/discovery/README.md": "1e3544cf0638cf55fc04a924474366c0a9f927070a23a5184e5333e762e5392a",
+    "benchmarks/discovery/cases.json": "c22785e9f16a9e76ed38584e2ead861e6a8f1d09b1421ff1d39092b96cab3883",
+    "benchmarks/discovery/lexical-router-pretest.json": "cf1ff77f2c9e5514e5551e44bede3a4f8da8de89cb3acbfe8e0f4cfb4f3d1d89",
+    "benchmarks/discovery/method-review.md": "eef2dc28c9ac5e82f8908bc50f2dcd8380340e647e599ef95fc686d7ad84bda1",
+    "benchmarks/discovery/prepare_reviews.py": "1635efa8a8c3b9ce79c21e3639caacc631a91e2807c67c9749c7732977efa32c",
+    "benchmarks/discovery/review-rubric.md": "5d01134af48cc08e540e16853982e8057fd3d1a0154f6b3ad680769bf192a201",
+    "benchmarks/discovery/review.py": "128c317e45eff2677c0c65f1905a44711a9928067ab40c6884a6d7d5e329da5c",
+    "benchmarks/discovery/router-validation.json": "827f2d6494f9d13cadf54b0e766365d6775f05774ced4363033b987bd07111bf",
+    "benchmarks/discovery/run.py": "d5ece70cd69f3f05f20a4406ade523b04955e68aedb539654b176c583e81fea3",
+    "benchmarks/discovery/test_review.py": "d2b3ce3460464b1cd31763cc7250f6fc95186e60e0c9cbf6cd6793e02f4d63c9",
+    "benchmarks/discovery/test_runner.py": "3bc88069bdc747fb04cc96eea0c764be4599d49aa9bb123c5fdd072bd544b75b",
+    "benchmarks/discovery/test_verify.py": "ad26d0faa9761005032a9498c426af66ae37699f2f766af26f8ee5aa2b726aac",
+    "benchmarks/discovery/verify.py": "27d8fa4442487374577bff67ccd655330a35e4ee5719ae042243113d02ff6022",
+    "benchmarks/reporting/audit_privacy.py": "293d947e4547edfb0b8464a396ce51d9d0c5211649eb505222d6bea8214df00f",
+    "benchmarks/reporting/redact_private.py": "0e271b1e17b8761178b2ec6ddf452d72e98660db051f13b9c8234d9b811462bb",
+    "benchmarks/run.py": "2b672c854dd36f068ef46a47f16824d582a58da6eb621688cdd66a2037ccc7e9",
+    "skills/align/LICENSE": "7409423471f34f663bede2c6c66da34098f70909a8fe24202984a4173e245e3a",
+    "skills/align/SKILL.md": "4067af3e2f3575d24ef448fe178966da05840ef2bd138ae174a05358d3750bdb",
+    "skills/align/agents/openai.yaml": "f288f538000d52cb67126c47a3d9dc3e909044ba7d3aa9287cc4b6af28bb83b1",
+    "skills/align/assets/instruction-block.md": "308c913b02b2f981f26962fea5ec06a28ebaf0fc6d3b3926483c48114362d5cc",
+    "skills/align/references/environment.md": "697fe856d27042ebb51a596de9f907990a88b34d66b98d19131eee6df4b98cfa",
+    "skills/align/references/installation.md": "8c2d99983d9ef7e9e7714ae1dbbcc83ba1a9783b9cdcddedbf596e249c365c2f",
+    "skills/align/references/recurring.md": "8d8fec24b409d75bd629022091706bc536cb22a7084df49a5bab584b8fcd8555",
+    "skills/align/scripts/connect_project.py": "3e481114d701856ee6985a5425a7ce75fbb9a8b1eed322f11ae18e19b3795715"
+  },
+  "privacy_scope": "Source archive excluded from runtime privacy scan; byte hashes match the already public committed source manifest."
+}

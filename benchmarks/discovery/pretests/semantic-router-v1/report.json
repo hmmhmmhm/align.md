@@ -1,0 +1,308 @@
+{
+  "non_scored_development_validation": true,
+  "created_at": "2026-10-15T01:18:29.485993+00:00",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "medium",
+  "source_files": {
+    "benchmarks/discovery/README.md": "1e3544cf0638cf55fc04a924474366c0a9f927070a23a5184e5333e762e5392a",
+    "benchmarks/discovery/cases.json": "c22785e9f16a9e76ed38584e2ead861e6a8f1d09b1421ff1d39092b96cab3883",
+    "benchmarks/discovery/check_router.py": "17716207a9530cb0ea7370d930a3e63d98fb4fdc3356fbcf787a42508b287468",
+    "benchmarks/discovery/lexical-router-pretest.json": "cf1ff77f2c9e5514e5551e44bede3a4f8da8de89cb3acbfe8e0f4cfb4f3d1d89",
+    "benchmarks/discovery/method-review.md": "eef2dc28c9ac5e82f8908bc50f2dcd8380340e647e599ef95fc686d7ad84bda1",
+    "benchmarks/discovery/prepare_reviews.py": "1635efa8a8c3b9ce79c21e3639caacc631a91e2807c67c9749c7732977efa32c",
+    "benchmarks/discovery/review-rubric.md": "5d01134af48cc08e540e16853982e8057fd3d1a0154f6b3ad680769bf192a201",
+    "benchmarks/discovery/review.py": "128c317e45eff2677c0c65f1905a44711a9928067ab40c6884a6d7d5e329da5c",
+    "benchmarks/discovery/router-validation.json": "827f2d6494f9d13cadf54b0e766365d6775f05774ced4363033b987bd07111bf",
+    "benchmarks/discovery/run.py": "d6801b84f2f38e14ea6792ba80c1bd19a9d129651d37e64c31aab009008fb541",
+    "benchmarks/discovery/test_review.py": "d2b3ce3460464b1cd31763cc7250f6fc95186e60e0c9cbf6cd6793e02f4d63c9",
+    "benchmarks/discovery/test_runner.py": "a418ab34427f3e69553d3921ce52157fb4c9a67dfc1d07ae91973efd936e2269",
+    "benchmarks/discovery/test_verify.py": "a178fe874ab34088009950627fa40a62181b64087f7e0bdbbd1f53af4092f91d",
+    "benchmarks/discovery/verify.py": "6ee968db7175a4d12deefbe92a1b33151af01b12ca105a3989a6524f4bf8eb06",
+    "benchmarks/reporting/audit_privacy.py": "293d947e4547edfb0b8464a396ce51d9d0c5211649eb505222d6bea8214df00f",
+    "benchmarks/reporting/redact_private.py": "0e271b1e17b8761178b2ec6ddf452d72e98660db051f13b9c8234d9b811462bb",
+    "benchmarks/run.py": "2b672c854dd36f068ef46a47f16824d582a58da6eb621688cdd66a2037ccc7e9",
+    "skills/align/LICENSE": "7409423471f34f663bede2c6c66da34098f70909a8fe24202984a4173e245e3a",
+    "skills/align/SKILL.md": "4067af3e2f3575d24ef448fe178966da05840ef2bd138ae174a05358d3750bdb",
+    "skills/align/agents/openai.yaml": "f288f538000d52cb67126c47a3d9dc3e909044ba7d3aa9287cc4b6af28bb83b1",
+    "skills/align/assets/instruction-block.md": "308c913b02b2f981f26962fea5ec06a28ebaf0fc6d3b3926483c48114362d5cc",
+    "skills/align/references/environment.md": "697fe856d27042ebb51a596de9f907990a88b34d66b98d19131eee6df4b98cfa",
+    "skills/align/references/installation.md": "8c2d99983d9ef7e9e7714ae1dbbcc83ba1a9783b9cdcddedbf596e249c365c2f",
+    "skills/align/references/recurring.md": "8d8fec24b409d75bd629022091706bc536cb22a7084df49a5bab584b8fcd8555",
+    "skills/align/scripts/connect_project.py": "3e481114d701856ee6985a5425a7ce75fbb9a8b1eed322f11ae18e19b3795715"
+  },
+  "source_unchanged": false,
+  "total": 26,
+  "matched": 26,
+  "outcomes": [
+    {
+      "id": "router-01",
+      "valid": true,
+      "selected_routes": [
+        "allocation"
+      ],
+      "expected_routes": [
+        "allocation"
+      ],
+      "matched": true
+    },
+    {
+      "id": "router-02",
+      "valid": true,
+      "selected_routes": [
+        "allocation"
+      ],
+      "expected_routes": [
+        "allocation"
+      ],
+      "matched": true
+    },
+    {
+      "id": "router-03",
+      "valid": true,
+      "selected_routes": [
+        "access"
+      ],
+      "expected_routes": [
+        "access"
+      ],
+      "matched": true
+    },
+    {
+      "id": "router-04",
+      "valid": true,
+      "selected_routes": [
+        "fee"
+      ],
+      "expected_routes": [
+        "fee"
+      ],
+      "matched": true
+    },
+    {
+      "id": "router-05",
+      "valid": true,
+      "selected_routes": [
+        "names"
+      ],
+      "expected_routes": [
+        "names"
+      ],
+      "matched": true
+    },
+    {
+      "id": "router-06",
+      "valid": true,
+      "selected_routes": [
+        "names"
+      ],
+      "expected_routes": [
+        "names"
+      ],
+      "matched": true
+    },
+    {
+      "id": "router-07",
+      "valid": true,
+      "selected_routes": [
+        "fee",
+        "allocation"
+      ],
+      "expected_routes": [
+        "fee",
+        "allocation"
+      ],
+      "matched": true
+    },
+    {
+      "id": "router-08",
+      "valid": true,
+      "selected_routes": [],
+      "expected_routes": [],
+      "matched": true
+    },
+    {
+      "id": "router-09",
+      "valid": true,
+      "selected_routes": [],
+      "expected_routes": [],
+      "matched": true
+    },
+    {
+      "id": "router-10",
+      "valid": true,
+      "selected_routes": [],
+      "expected_routes": [],
+      "matched": true
+    },
+    {
+      "id": "router-11",
+      "valid": true,
+      "selected_routes": [
+        "allocation"
+      ],
+      "expected_routes": [
+        "allocation"
+      ],
+      "matched": true
+    },
+    {
+      "id": "router-12",
+      "valid": true,
+      "selected_routes": [
+        "cancellation"
+      ],
+      "expected_routes": [
+        "cancellation"
+      ],
+      "matched": true
+    },
+    {
+      "id": "router-13",
+      "valid": true,
+      "selected_routes": [
+        "cancellation"
+      ],
+      "expected_routes": [
+        "cancellation"
+      ],
+      "matched": true
+    },
+    {
+      "id": "router-14",
+      "valid": true,
+      "selected_routes": [
+        "cancellation"
+      ],
+      "expected_routes": [
+        "cancellation"
+      ],
+      "matched": true
+    },
+    {
+      "id": "router-15",
+      "valid": true,
+      "selected_routes": [
+        "latency"
+      ],
+      "expected_routes": [
+        "latency"
+      ],
+      "matched": true
+    },
+    {
+      "id": "router-16",
+      "valid": true,
+      "selected_routes": [
+        "latency"
+      ],
+      "expected_routes": [
+        "latency"
+      ],
+      "matched": true
+    },
+    {
+      "id": "router-17",
+      "valid": true,
+      "selected_routes": [
+        "dependency"
+      ],
+      "expected_routes": [
+        "dependency"
+      ],
+      "matched": true
+    },
+    {
+      "id": "router-18",
+      "valid": true,
+      "selected_routes": [
+        "compatibility"
+      ],
+      "expected_routes": [
+        "compatibility"
+      ],
+      "matched": true
+    },
+    {
+      "id": "router-19",
+      "valid": true,
+      "selected_routes": [
+        "failure_output"
+      ],
+      "expected_routes": [
+        "failure_output"
+      ],
+      "matched": true
+    },
+    {
+      "id": "router-20",
+      "valid": true,
+      "selected_routes": [],
+      "expected_routes": [],
+      "matched": true
+    },
+    {
+      "id": "router-21",
+      "valid": true,
+      "selected_routes": [
+        "latency",
+        "compatibility"
+      ],
+      "expected_routes": [
+        "latency",
+        "compatibility"
+      ],
+      "matched": true
+    },
+    {
+      "id": "router-22",
+      "valid": true,
+      "selected_routes": [
+        "latency"
+      ],
+      "expected_routes": [
+        "latency"
+      ],
+      "matched": true
+    },
+    {
+      "id": "router-23",
+      "valid": true,
+      "selected_routes": [
+        "diagnostics"
+      ],
+      "expected_routes": [
+        "diagnostics"
+      ],
+      "matched": true
+    },
+    {
+      "id": "router-24",
+      "valid": true,
+      "selected_routes": [
+        "diagnostics"
+      ],
+      "expected_routes": [
+        "diagnostics"
+      ],
+      "matched": true
+    },
+    {
+      "id": "router-25",
+      "valid": true,
+      "selected_routes": [
+        "compatibility"
+      ],
+      "expected_routes": [
+        "compatibility"
+      ],
+      "matched": true
+    },
+    {
+      "id": "router-26",
+      "valid": true,
+      "selected_routes": [],
+      "expected_routes": [],
+      "matched": true
+    }
+  ]
+}

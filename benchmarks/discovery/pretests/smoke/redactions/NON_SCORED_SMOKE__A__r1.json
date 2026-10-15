@@ -1,0 +1,17 @@
+{
+  "counts": {},
+  "private_record_sha256": "44ce5384a91f4f215fbec2bd3fc58920a5034808acca04eb7411011c91ef4ab2",
+  "published_record_sha256": "71634f52493b5ac4562df222be5697b713fdd593d92b24cc55786e55ab6b224c",
+  "session_traces": [
+    {
+      "file": "session-traces/NON_SCORED_SMOKE__A__r1/rollout-2026-10-15T10-17-24-01a13d22-aa97-77b3-9c8b-8da560fbbc23.jsonl.gz",
+      "private_original_sha256": "1cbce90be04dedb0809bd6cf9068528f0fc7d5fa53c8f76af4b2680da2ddf225",
+      "published_sha256": "bddc1ade1bc789a89cfed0377ac72778618553c33c7b83406de87fa7073ed77a"
+    },
+    {
+      "file": "session-traces/NON_SCORED_SMOKE__A__r1/rollout-2026-10-15T10-16-45-01a13d22-13b0-7ab1-acd3-cc439a8ae27f.jsonl.gz",
+      "private_original_sha256": "cb522520ac9ca2265f1c1d90079ad110fa1c7725a80780fa1523675814b581b6",
+      "published_sha256": "9420553d79f78a523ed3989a67c3a9d35be162fd6d20f3bf557edb9ce5171f7e"
+    }
+  ]
+}

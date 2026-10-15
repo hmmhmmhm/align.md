@@ -39,6 +39,8 @@ jobs:
             benchmarks/results/2026-10-15-astra-v1/judgments-v2
       - name: Check scripted intervention harness and reporting
         run: python3 -m unittest discover -s benchmarks/effort -p 'test_*.py'
+      - name: Check preference discovery harness and review
+        run: python3 -m unittest discover -s benchmarks/discovery -p 'test_*.py'
       - name: Verify retained intervention infrastructure failure
         run: |
           python3 benchmarks/effort/verify.py benchmarks/effort/results/2026-10-15-astra-v1-failed \

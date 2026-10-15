@@ -1,0 +1,717 @@
+{
+  "version": 1,
+  "name": "Scattered preference evidence and transfer",
+  "common_instructions": "The current and primary client is Codex. AGENTS.md is canonical. The environment is already provisioned. Work only inside this project. Do not use networks, install packages, change global settings, publish, send messages, or initialize Git. Every condition may save authorized preferences. Read existing evidence, reuse answers, distinguish confirmed criteria from assumptions, preserve the scope of exceptions, and ask about unresolved consequential choices. Fresh conversations have no previous transcript; project files persist. Write output.json with the fields requested in the task and a rationale string of 80 to 180 words explaining the decision, relevant evidence, and practical next steps. Neutral calculation tasks instead require a rationale of 25 to 80 words. End each turn with exactly one JSON object: {\"action\":\"ask\",\"questions\":[\"Your natural-language question\"]} or {\"action\":\"submit\"}. Ask all questions through that interface; do not ask in commentary. You may batch questions. The fixed simulated user can answer concrete questions about the supplied project, but has no answer to broad requests for all preferences. At most two additional user replies are available per episode, including corrections. Save lasting criteria only with explicit permission. Fix ordinary execution errors directly.",
+  "protocol": {
+    "repetitions": 2,
+    "max_replies_per_episode": 2,
+    "seed": 20261016,
+    "primary_comparison": [
+      "C",
+      "B"
+    ],
+    "secondary_comparison": [
+      "C",
+      "A"
+    ],
+    "scored_run_status": "not_run",
+    "rationale_field": "rationale",
+    "rationale_review": {
+      "reviewers": 2,
+      "scale": [
+        0,
+        1
+      ],
+      "dimensions": [
+        "criterion_fit",
+        "useful_explanation"
+      ],
+      "pass_minimum_each_dimension_each_reviewer": 1,
+      "reviewers_blind_to_condition": true
+    },
+    "decision_rule": {
+      "quality": "All planned C episodes pass exact checks and both blinded reviewers give at least 1 in every applicable dimension; C has no execution failure, unresolved routing error, or uncounted question.",
+      "reply_relative_reduction_min": 0.2,
+      "reply_mean_reduction_min": 1.0,
+      "repeated_preference_units_must_not_increase": true,
+      "paired_baseline_passes_must_be_preserved": true,
+      "neutral_intervention_turns_must_not_increase": true
+    }
+  },
+  "conditions": {
+    "A": {
+      "label": "Persistent AGENTS memory",
+      "instructions": "Read AGENTS.md at the start of every episode. Maintain concise authorized current user criteria in a dedicated memory section there. Reuse those criteria across tasks. Separate confirmed criteria from assumptions, keep one-off exceptions scoped, replace a standing criterion when explicitly directed, and ask only about unresolved consequential choices."
+    },
+    "B": {
+      "label": "Separate persistent notes",
+      "instructions": "Read PREFERENCES.md at the start of every episode. Maintain concise authorized current user criteria there. Reuse those criteria across tasks. Separate confirmed criteria from assumptions, keep one-off exceptions scoped, replace a standing criterion when explicitly directed, and ask only about unresolved consequential choices. PREFERENCES.md starts empty."
+    },
+    "C": {
+      "label": "Maintained ALIGN method",
+      "instructions": "Read ALIGN.md at the start of every episode. Use the frozen align skill and recurring-use instructions to maintain authorized current criteria, distinguish assumptions and scoped exceptions, apply criteria across tasks, and clarify unresolved consequential choices. ALIGN.md starts empty. The method is pinned to this benchmark snapshot; do not check for updates."
+    }
+  },
+  "cases": [
+    {
+      "id": "community",
+      "title": "Community event planning",
+      "files": {
+        "notes/producer-chat.txt": "Producer, 2026-09-02: The upstairs room was cheap, but two visitors could not get in. We should book step-free rooms for every public event from now on.\nCoordinator: I will check the access sheet next time.\n",
+        "notes/retro.txt": "I liked the October poster. Please keep attendee names off public materials in future; staff can still have a private roster. The orange ink was just what the printer had that afternoon.\n",
+        "notes/budget-email.txt": "Our usual ceiling is ten dollars per attendee. That keeps these events within reach. Save that rule for later planning. Last month the snacks cost 46 dollars in total.\n"
+      },
+      "episodes": [
+        {
+          "id": "setup",
+          "kind": "setup",
+          "prompt": "Prepare our first community workshop plan from the notes in this project. You may save the explicitly stated standing criteria and my answers without another confirmation. There are 24 seats and 39 applicants. The application window closes Friday. Choose between an application-window lottery and first-come allocation. Venue offers: Cedar is step-free, 24 seats, attendee fee $8; Loft has stairs, 40 seats, fee $6; Harbor is step-free, 40 seats, fee $14. Each offer is a complete per-attendee price, with no other charge. Produce venue (name), attendee_fee (number), allocation (\"lottery\" or \"first-come\"), public_attendee_names (boolean), and rationale. Include how staff should allocate seats and communicate the outcome.",
+          "initial_preference_units": [
+            "access",
+            "fee",
+            "names"
+          ],
+          "question_routes": [
+            {
+              "id": "access",
+              "patterns": [
+                "\\b(accessib\\w*|step.?free|stairs|wheelchair|venue)\\b"
+              ],
+              "answer": "Use step-free venues for all our public events. Save this as a standing criterion.",
+              "preference_units": [
+                "access"
+              ]
+            },
+            {
+              "id": "fee",
+              "patterns": [
+                "\\b(fee\\w*|price\\w*|ticket\\w*|afford\\w*|cost|budget)\\b"
+              ],
+              "answer": "The standing attendee fee ceiling is 10 dollars. Save this as the current criterion. A named one-event exception does not replace it.",
+              "preference_units": [
+                "fee"
+              ]
+            },
+            {
+              "id": "names",
+              "patterns": [
+                "\\b(names?|privacy|private|public.{0,15}(list|attendee)|attendee.{0,15}list)\\b"
+              ],
+              "answer": "Never publish attendee names. A private staff roster is fine. Save this as a standing criterion.",
+              "preference_units": [
+                "names"
+              ]
+            },
+            {
+              "id": "allocation",
+              "patterns": [
+                "\\b(wait.?list|oversubscri\\w*|lottery|first.?come|allocat\\w*|seat\\w*|registration)\\b"
+              ],
+              "answer": "When an event has too many applicants, use a lottery after the application window closes. Save that as our standing allocation rule.",
+              "preference_units": [
+                "allocation"
+              ]
+            }
+          ],
+          "expected": {
+            "venue": "Cedar",
+            "attendee_fee": 8,
+            "allocation": "lottery",
+            "public_attendee_names": false
+          },
+          "required_routes": [
+            "allocation"
+          ],
+          "field_preferences": {
+            "venue": "access",
+            "attendee_fee": "fee",
+            "allocation": "allocation",
+            "public_attendee_names": "names"
+          }
+        },
+        {
+          "id": "exception",
+          "kind": "task",
+          "prompt": "Plan this one ceramics workshop. The sponsor specifically authorized an $18 attendee fee for this event only; keep our usual fee ceiling for later events. There are 20 seats and 31 applicants. Choose Clay Hall (step-free, 20 seats, $18, includes the required kiln) or Brick Studio (stairs, 20 seats, $9, includes kiln). The kiln is required. Produce venue, attendee_fee, allocation, public_attendee_names, and rationale with registration and communication steps.",
+          "initial_preference_units": [
+            "fee"
+          ],
+          "question_routes": [
+            {
+              "id": "access",
+              "patterns": [
+                "\\b(accessib\\w*|step.?free|stairs|wheelchair|venue)\\b"
+              ],
+              "answer": "Use step-free venues for all our public events. Save this as a standing criterion.",
+              "preference_units": [
+                "access"
+              ]
+            },
+            {
+              "id": "fee",
+              "patterns": [
+                "\\b(fee\\w*|price\\w*|ticket\\w*|afford\\w*|cost|budget)\\b"
+              ],
+              "answer": "The standing attendee fee ceiling is 10 dollars. Save this as the current criterion. A named one-event exception does not replace it.",
+              "preference_units": [
+                "fee"
+              ]
+            },
+            {
+              "id": "names",
+              "patterns": [
+                "\\b(names?|privacy|private|public.{0,15}(list|attendee)|attendee.{0,15}list)\\b"
+              ],
+              "answer": "Never publish attendee names. A private staff roster is fine. Save this as a standing criterion.",
+              "preference_units": [
+                "names"
+              ]
+            },
+            {
+              "id": "allocation",
+              "patterns": [
+                "\\b(wait.?list|oversubscri\\w*|lottery|first.?come|allocat\\w*|seat\\w*|registration)\\b"
+              ],
+              "answer": "When an event has too many applicants, use a lottery after the application window closes. Save that as our standing allocation rule.",
+              "preference_units": [
+                "allocation"
+              ]
+            }
+          ],
+          "expected": {
+            "venue": "Clay Hall",
+            "attendee_fee": 18,
+            "allocation": "lottery",
+            "public_attendee_names": false
+          },
+          "required_routes": [],
+          "field_preferences": {
+            "venue": "access",
+            "attendee_fee": "fee",
+            "allocation": "allocation",
+            "public_attendee_names": "names"
+          }
+        },
+        {
+          "id": "transfer_change",
+          "kind": "task",
+          "prompt": "We are now arranging a public neighborhood repair clinic. For all future events, raise our standing attendee fee ceiling to $20; save this replacement. Other criteria stay as they are. There are 30 seats and 44 applicants. Offers: Annex is step-free, 30 seats, $16, and has the required repair benches; Steps has stairs, 30 seats, $7, and the benches; Cedar is step-free, 30 seats, $8, but has no benches. Produce venue, attendee_fee, allocation, public_attendee_names, and rationale describing application handling and what changed in the standing policy.",
+          "initial_preference_units": [
+            "fee"
+          ],
+          "question_routes": [
+            {
+              "id": "access",
+              "patterns": [
+                "\\b(accessib\\w*|step.?free|stairs|wheelchair|venue)\\b"
+              ],
+              "answer": "Use step-free venues for all our public events. Save this as a standing criterion.",
+              "preference_units": [
+                "access"
+              ]
+            },
+            {
+              "id": "fee",
+              "patterns": [
+                "\\b(fee\\w*|price\\w*|ticket\\w*|afford\\w*|cost|budget)\\b"
+              ],
+              "answer": "The standing attendee fee ceiling is 20 dollars. Save this as the current criterion. A named one-event exception does not replace it.",
+              "preference_units": [
+                "fee"
+              ]
+            },
+            {
+              "id": "names",
+              "patterns": [
+                "\\b(names?|privacy|private|public.{0,15}(list|attendee)|attendee.{0,15}list)\\b"
+              ],
+              "answer": "Never publish attendee names. A private staff roster is fine. Save this as a standing criterion.",
+              "preference_units": [
+                "names"
+              ]
+            },
+            {
+              "id": "allocation",
+              "patterns": [
+                "\\b(wait.?list|oversubscri\\w*|lottery|first.?come|allocat\\w*|seat\\w*|registration)\\b"
+              ],
+              "answer": "When an event has too many applicants, use a lottery after the application window closes. Save that as our standing allocation rule.",
+              "preference_units": [
+                "allocation"
+              ]
+            }
+          ],
+          "expected": {
+            "venue": "Annex",
+            "attendee_fee": 16,
+            "allocation": "lottery",
+            "public_attendee_names": false
+          },
+          "required_routes": [],
+          "field_preferences": {
+            "venue": "access",
+            "attendee_fee": "fee",
+            "allocation": "allocation",
+            "public_attendee_names": "names"
+          }
+        },
+        {
+          "id": "reuse_clarify",
+          "kind": "task",
+          "prompt": "Prepare a public evening reading with 18 seats and 25 applicants. Offers: Garden is step-free, 18 seats, $18, and available that evening; Loft has stairs, 18 seats, $9, and is available; Cedar is step-free, 18 seats, $8, but unavailable that evening. We also need to settle what attendees receive if we cancel: an original-payment refund or credit for another event. Either is technically possible,. Produce venue, attendee_fee, allocation, public_attendee_names, cancellation_remedy (\"refund\" or \"credit\"), and rationale with a usable plan.",
+          "initial_preference_units": [],
+          "question_routes": [
+            {
+              "id": "access",
+              "patterns": [
+                "\\b(accessib\\w*|step.?free|stairs|wheelchair|venue)\\b"
+              ],
+              "answer": "Use step-free venues for all our public events. Save this as a standing criterion.",
+              "preference_units": [
+                "access"
+              ]
+            },
+            {
+              "id": "fee",
+              "patterns": [
+                "\\b(fee\\w*|price\\w*|ticket\\w*|afford\\w*|cost|budget)\\b"
+              ],
+              "answer": "The standing attendee fee ceiling is 20 dollars. Save this as the current criterion. A named one-event exception does not replace it.",
+              "preference_units": [
+                "fee"
+              ]
+            },
+            {
+              "id": "names",
+              "patterns": [
+                "\\b(names?|privacy|private|public.{0,15}(list|attendee)|attendee.{0,15}list)\\b"
+              ],
+              "answer": "Never publish attendee names. A private staff roster is fine. Save this as a standing criterion.",
+              "preference_units": [
+                "names"
+              ]
+            },
+            {
+              "id": "allocation",
+              "patterns": [
+                "\\b(wait.?list|oversubscri\\w*|lottery|first.?come|allocat\\w*|seat\\w*|registration)\\b"
+              ],
+              "answer": "When an event has too many applicants, use a lottery after the application window closes. Save that as our standing allocation rule.",
+              "preference_units": [
+                "allocation"
+              ]
+            },
+            {
+              "id": "cancellation",
+              "patterns": [
+                "\\b(cancel\\w*|refund\\w*|credit\\w*|reimburse\\w*)\\b"
+              ],
+              "answer": "If we cancel an event, refund the attendee fee to the original payment method. Save this for future events; do not substitute event credit.",
+              "preference_units": [
+                "cancellation"
+              ]
+            }
+          ],
+          "expected": {
+            "venue": "Garden",
+            "attendee_fee": 18,
+            "allocation": "lottery",
+            "public_attendee_names": false,
+            "cancellation_remedy": "refund"
+          },
+          "required_routes": [
+            "cancellation"
+          ],
+          "field_preferences": {
+            "venue": "access",
+            "attendee_fee": "fee",
+            "allocation": "allocation",
+            "public_attendee_names": "names",
+            "cancellation_remedy": "cancellation"
+          }
+        },
+        {
+          "id": "neutral",
+          "kind": "neutral",
+          "prompt": "Reconcile a stationery count. We received 12 boxes with 8 blank cards each. Staff used 17 cards for labels and found 3 damaged cards, separate from the used ones. Write received_cards, remaining_usable_cards, and rationale showing the arithmetic. This is an inventory calculation and needs no event-planning choices.",
+          "initial_preference_units": [],
+          "question_routes": [
+            {
+              "id": "access",
+              "patterns": [
+                "\\b(accessib\\w*|step.?free|stairs|wheelchair|venue)\\b"
+              ],
+              "answer": "Use step-free venues for all our public events. Save this as a standing criterion.",
+              "preference_units": [
+                "access"
+              ]
+            },
+            {
+              "id": "fee",
+              "patterns": [
+                "\\b(fee\\w*|price\\w*|ticket\\w*|afford\\w*|cost|budget)\\b"
+              ],
+              "answer": "The standing attendee fee ceiling is 20 dollars. Save this as the current criterion. A named one-event exception does not replace it.",
+              "preference_units": [
+                "fee"
+              ]
+            },
+            {
+              "id": "names",
+              "patterns": [
+                "\\b(names?|privacy|private|public.{0,15}(list|attendee)|attendee.{0,15}list)\\b"
+              ],
+              "answer": "Never publish attendee names. A private staff roster is fine. Save this as a standing criterion.",
+              "preference_units": [
+                "names"
+              ]
+            },
+            {
+              "id": "allocation",
+              "patterns": [
+                "\\b(wait.?list|oversubscri\\w*|lottery|first.?come|allocat\\w*|seat\\w*|registration)\\b"
+              ],
+              "answer": "When an event has too many applicants, use a lottery after the application window closes. Save that as our standing allocation rule.",
+              "preference_units": [
+                "allocation"
+              ]
+            }
+          ],
+          "expected": {
+            "received_cards": 96,
+            "remaining_usable_cards": 76
+          },
+          "required_routes": [],
+          "field_preferences": {}
+        }
+      ]
+    },
+    {
+      "id": "service",
+      "title": "Internal export service",
+      "files": {
+        "notes/review-thread.txt": "Maintainer: We added a package to parse a tiny fixed format last time and spent longer maintaining it than writing the parser. Use the standard library when it meets the stated requirements; ask for an exception when a runtime dependency is needed.\n",
+        "notes/migration-retro.txt": "The old export disappeared too soon. Keep old formats working for 30 days after a change on future jobs. We can save this as our policy. The old incident happened on a Tuesday; that was incidental.\n",
+        "notes/operator-chat.txt": "A fancy progress animation would not help our operators. For tools in this project, give them a plain result and a useful next step on failure. Save that preference. Yesterday the test fixture had 17 rows.\n"
+      },
+      "episodes": [
+        {
+          "id": "setup",
+          "kind": "setup",
+          "prompt": "Prepare a parser implementation plan from the project notes. Save the explicitly stated standing criteria and my answers without another confirmation. We must process the fixed supplied input format with no external service. Two verified designs both parse correctly: stdlib has p95 latency 320 ms and no runtime dependency; fastpkg has p95 latency 180 ms and adds one runtime package. Produce design (\"stdlib\" or \"fastpkg\"), old_export_support_days (number), failure_output (\"actionable-text\" or \"animated-only\"), and rationale explaining acceptance checks and rollout.",
+          "initial_preference_units": [
+            "dependency",
+            "compatibility",
+            "failure_output"
+          ],
+          "question_routes": [
+            {
+              "id": "dependency",
+              "patterns": [
+                "\\b(dependenc\\w*|package\\w*|librar\\w*|third.party|vendor\\w*)\\b"
+              ],
+              "answer": "Prefer the standard library when it meets the stated requirements. Adding a runtime dependency needs a specific exception. Save this standing rule.",
+              "preference_units": [
+                "dependency"
+              ]
+            },
+            {
+              "id": "compatibility",
+              "patterns": [
+                "\\b(compatib\\w*|legacy|old.{0,15}(export|format)|migration|deprecat\\w*|support.{0,15}window)\\b"
+              ],
+              "answer": "Keep the old export format working for 30 days after a format change. Save this current standing policy.",
+              "preference_units": [
+                "compatibility"
+              ]
+            },
+            {
+              "id": "latency",
+              "patterns": [
+                "\\b(latency|response.{0,10}time|p95|performance|milliseconds?|\\d+\\s?ms)\\b"
+              ],
+              "answer": "For this internal service, p95 at or below 400 ms is acceptable. Choose the simplest design meeting that target. Save the target and priority for later work.",
+              "preference_units": [
+                "latency"
+              ]
+            },
+            {
+              "id": "failure_output",
+              "patterns": [
+                "\\b(fail\\w*|error.{0,12}(message|output)|operator\\w*|animation|progress.{0,10}(display|output))\\b"
+              ],
+              "answer": "Use plain text that explains the failure and a useful next step. Save this standing preference.",
+              "preference_units": [
+                "failure_output"
+              ]
+            }
+          ],
+          "expected": {
+            "design": "stdlib",
+            "old_export_support_days": 30,
+            "failure_output": "actionable-text"
+          },
+          "required_routes": [
+            "latency"
+          ],
+          "field_preferences": {
+            "design": "latency",
+            "old_export_support_days": "compatibility",
+            "failure_output": "failure_output"
+          }
+        },
+        {
+          "id": "exception",
+          "kind": "task",
+          "prompt": "Plan this one archive importer. I authorize the archivekit runtime package for this importer only because its required archive format is unsupported by the standard library. Keep our normal dependency policy for other work. The verified archivekit implementation meets the service target. It changes the export format. Produce design (\"archivekit\" or \"stdlib\"), old_export_support_days, failure_output, and rationale with rollout and failure-handling steps.",
+          "initial_preference_units": [
+            "dependency"
+          ],
+          "question_routes": [
+            {
+              "id": "dependency",
+              "patterns": [
+                "\\b(dependenc\\w*|package\\w*|librar\\w*|third.party|vendor\\w*)\\b"
+              ],
+              "answer": "Prefer the standard library when it meets the stated requirements. Adding a runtime dependency needs a specific exception. Save this standing rule.",
+              "preference_units": [
+                "dependency"
+              ]
+            },
+            {
+              "id": "compatibility",
+              "patterns": [
+                "\\b(compatib\\w*|legacy|old.{0,15}(export|format)|migration|deprecat\\w*|support.{0,15}window)\\b"
+              ],
+              "answer": "Keep the old export format working for 30 days after a format change. Save this current standing policy.",
+              "preference_units": [
+                "compatibility"
+              ]
+            },
+            {
+              "id": "latency",
+              "patterns": [
+                "\\b(latency|response.{0,10}time|p95|performance|milliseconds?|\\d+\\s?ms)\\b"
+              ],
+              "answer": "For this internal service, p95 at or below 400 ms is acceptable. Choose the simplest design meeting that target. Save the target and priority for later work.",
+              "preference_units": [
+                "latency"
+              ]
+            },
+            {
+              "id": "failure_output",
+              "patterns": [
+                "\\b(fail\\w*|error.{0,12}(message|output)|operator\\w*|animation|progress.{0,10}(display|output))\\b"
+              ],
+              "answer": "Use plain text that explains the failure and a useful next step. Save this standing preference.",
+              "preference_units": [
+                "failure_output"
+              ]
+            }
+          ],
+          "expected": {
+            "design": "archivekit",
+            "old_export_support_days": 30,
+            "failure_output": "actionable-text"
+          },
+          "required_routes": [],
+          "field_preferences": {
+            "design": "dependency",
+            "old_export_support_days": "compatibility",
+            "failure_output": "failure_output"
+          }
+        },
+        {
+          "id": "transfer_change",
+          "kind": "task",
+          "prompt": "Plan a plain-text report converter, a different component in the same project. Replace our standing export compatibility window with 7 days for all future format changes and save that policy. The new converter changes the export format. stdlib handles every required report and has measured p95 350 ms; reportkit handles every report at 190 ms but adds a runtime package. Both have the same output fidelity. Produce design (\"stdlib\" or \"reportkit\"), old_export_support_days, failure_output, and rationale with acceptance and migration steps.",
+          "initial_preference_units": [
+            "compatibility"
+          ],
+          "question_routes": [
+            {
+              "id": "dependency",
+              "patterns": [
+                "\\b(dependenc\\w*|package\\w*|librar\\w*|third.party|vendor\\w*)\\b"
+              ],
+              "answer": "Prefer the standard library when it meets the stated requirements. Adding a runtime dependency needs a specific exception. Save this standing rule.",
+              "preference_units": [
+                "dependency"
+              ]
+            },
+            {
+              "id": "compatibility",
+              "patterns": [
+                "\\b(compatib\\w*|legacy|old.{0,15}(export|format)|migration|deprecat\\w*|support.{0,15}window)\\b"
+              ],
+              "answer": "Keep the old export format working for 7 days after a format change. Save this current standing policy.",
+              "preference_units": [
+                "compatibility"
+              ]
+            },
+            {
+              "id": "latency",
+              "patterns": [
+                "\\b(latency|response.{0,10}time|p95|performance|milliseconds?|\\d+\\s?ms)\\b"
+              ],
+              "answer": "For this internal service, p95 at or below 400 ms is acceptable. Choose the simplest design meeting that target. Save the target and priority for later work.",
+              "preference_units": [
+                "latency"
+              ]
+            },
+            {
+              "id": "failure_output",
+              "patterns": [
+                "\\b(fail\\w*|error.{0,12}(message|output)|operator\\w*|animation|progress.{0,10}(display|output))\\b"
+              ],
+              "answer": "Use plain text that explains the failure and a useful next step. Save this standing preference.",
+              "preference_units": [
+                "failure_output"
+              ]
+            }
+          ],
+          "expected": {
+            "design": "stdlib",
+            "old_export_support_days": 7,
+            "failure_output": "actionable-text"
+          },
+          "required_routes": [],
+          "field_preferences": {
+            "design": "dependency",
+            "old_export_support_days": "compatibility",
+            "failure_output": "failure_output"
+          }
+        },
+        {
+          "id": "reuse_clarify",
+          "kind": "task",
+          "prompt": "Plan a scheduled CSV normalization job in the same project. It changes the export format. stdlib handles all required CSV cases at p95 330 ms; csvplus handles them at 170 ms but adds a runtime package. Both produce the same normalized rows. We must settle diagnostics before implementation: raw payload capture is optional, and the storage system supports either 7-day or 30-day retention. Produce design (\"stdlib\" or \"csvplus\"), old_export_support_days, failure_output, retain_raw_payloads (boolean), diagnostic_retention_days (number), and rationale with deployment and diagnostic steps.",
+          "initial_preference_units": [],
+          "question_routes": [
+            {
+              "id": "dependency",
+              "patterns": [
+                "\\b(dependenc\\w*|package\\w*|librar\\w*|third.party|vendor\\w*)\\b"
+              ],
+              "answer": "Prefer the standard library when it meets the stated requirements. Adding a runtime dependency needs a specific exception. Save this standing rule.",
+              "preference_units": [
+                "dependency"
+              ]
+            },
+            {
+              "id": "compatibility",
+              "patterns": [
+                "\\b(compatib\\w*|legacy|old.{0,15}(export|format)|migration|deprecat\\w*|support.{0,15}window)\\b"
+              ],
+              "answer": "Keep the old export format working for 7 days after a format change. Save this current standing policy.",
+              "preference_units": [
+                "compatibility"
+              ]
+            },
+            {
+              "id": "latency",
+              "patterns": [
+                "\\b(latency|response.{0,10}time|p95|performance|milliseconds?|\\d+\\s?ms)\\b"
+              ],
+              "answer": "For this internal service, p95 at or below 400 ms is acceptable. Choose the simplest design meeting that target. Save the target and priority for later work.",
+              "preference_units": [
+                "latency"
+              ]
+            },
+            {
+              "id": "diagnostics",
+              "patterns": [
+                "\\b(retain\\w*|retention|diagnostic\\w*|log\\w*|raw.{0,12}(input|payload)|payload\\w*)\\b"
+              ],
+              "answer": "Keep diagnostic error codes and timestamps for 7 days. Do not retain raw input payloads. Save these as standing rules for future jobs.",
+              "preference_units": [
+                "diagnostics"
+              ]
+            },
+            {
+              "id": "failure_output",
+              "patterns": [
+                "\\b(fail\\w*|error.{0,12}(message|output)|operator\\w*|animation|progress.{0,10}(display|output))\\b"
+              ],
+              "answer": "Use plain text that explains the failure and a useful next step. Save this standing preference.",
+              "preference_units": [
+                "failure_output"
+              ]
+            }
+          ],
+          "expected": {
+            "design": "stdlib",
+            "old_export_support_days": 7,
+            "failure_output": "actionable-text",
+            "retain_raw_payloads": false,
+            "diagnostic_retention_days": 7
+          },
+          "required_routes": [
+            "diagnostics"
+          ],
+          "field_preferences": {
+            "design": "dependency",
+            "old_export_support_days": "compatibility",
+            "failure_output": "failure_output",
+            "retain_raw_payloads": "diagnostics",
+            "diagnostic_retention_days": "diagnostics"
+          }
+        },
+        {
+          "id": "neutral",
+          "kind": "neutral",
+          "prompt": "Compute a batch accounting result. A job receives 240 rows; 18 are duplicates and 12 different rows fail validation. Every other row succeeds. Each successful row generates 2 output records. Write successful_rows, output_records, and rationale showing the arithmetic. This is an accounting calculation and needs no implementation or preference decision.",
+          "initial_preference_units": [],
+          "question_routes": [
+            {
+              "id": "dependency",
+              "patterns": [
+                "\\b(dependenc\\w*|package\\w*|librar\\w*|third.party|vendor\\w*)\\b"
+              ],
+              "answer": "Prefer the standard library when it meets the stated requirements. Adding a runtime dependency needs a specific exception. Save this standing rule.",
+              "preference_units": [
+                "dependency"
+              ]
+            },
+            {
+              "id": "compatibility",
+              "patterns": [
+                "\\b(compatib\\w*|legacy|old.{0,15}(export|format)|migration|deprecat\\w*|support.{0,15}window)\\b"
+              ],
+              "answer": "Keep the old export format working for 7 days after a format change. Save this current standing policy.",
+              "preference_units": [
+                "compatibility"
+              ]
+            },
+            {
+              "id": "latency",
+              "patterns": [
+                "\\b(latency|response.{0,10}time|p95|performance|milliseconds?|\\d+\\s?ms)\\b"
+              ],
+              "answer": "For this internal service, p95 at or below 400 ms is acceptable. Choose the simplest design meeting that target. Save the target and priority for later work.",
+              "preference_units": [
+                "latency"
+              ]
+            },
+            {
+              "id": "failure_output",
+              "patterns": [
+                "\\b(fail\\w*|error.{0,12}(message|output)|operator\\w*|animation|progress.{0,10}(display|output))\\b"
+              ],
+              "answer": "Use plain text that explains the failure and a useful next step. Save this standing preference.",
+              "preference_units": [
+                "failure_output"
+              ]
+            }
+          ],
+          "expected": {
+            "successful_rows": 210,
+            "output_records": 420
+          },
+          "required_routes": [],
+          "field_preferences": {}
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "classifier_behavior_functions_unchanged": {
+    "router_prompt": true,
+    "parse_selection": true,
+    "route_questions": true
+  },
+  "observed_models": [
+    "gpt-6-astra"
+  ],
+  "observed_efforts": [
+    "medium"
+  ],
+  "classifier_tool_events": 0,
+  "privacy_audit": {
+    "files_checked": 55,
+    "flagged_file_count": 0,
+    "passed": true
+  }
+}
