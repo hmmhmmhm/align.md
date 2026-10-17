@@ -8,8 +8,8 @@
       "expected_routing": "required",
       "prompt": "내 취향 좀 기억하고 작업해.",
       "files": {
-        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n",
-        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
+        "README.md": "# Japanese study plan\nA personal plan for learning basic Japanese. Goals and study preferences have not been agreed yet.\n",
+        "notes.md": "No decisions recorded yet.\n"
       }
     },
     {
@@ -19,8 +19,8 @@
       "expected_routing": "required",
       "prompt": "Learn my preferences so I do not have to keep repeating them.",
       "files": {
-        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n",
-        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
+        "README.md": "# Neighborhood newsletter\nA monthly email draft about local events. The reader and editorial preferences are not settled.\n",
+        "notes.md": "No decisions recorded yet.\n"
       }
     },
     {
@@ -30,8 +30,8 @@
       "expected_routing": "required",
       "prompt": "好みを覚えて、次の作業にも活かしてほしい。",
       "files": {
-        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n",
-        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
+        "README.md": "# Garden notebook\nA notebook for planning a small balcony garden. No budget or care schedule has been chosen.\n",
+        "notes.md": "No decisions recorded yet.\n"
       }
     },
     {
@@ -41,8 +41,8 @@
       "expected_routing": "explicit",
       "prompt": "얼라인즈로 나랑 기준좀 마춰보자",
       "files": {
-        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n",
-        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
+        "README.md": "# Portfolio redesign\nEarly notes for a personal design portfolio. The visual direction is undecided.\n",
+        "notes.md": "No decisions recorded yet.\n"
       }
     },
     {
@@ -52,8 +52,8 @@
       "expected_routing": "explicit",
       "prompt": "Use alings.md to sync my expectations with you.",
       "files": {
-        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n",
-        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
+        "README.md": "# Research reading notes\nA folder for organizing notes about public transit research. No inclusion criteria are set.\n",
+        "notes.md": "No decisions recorded yet.\n"
       }
     },
     {
@@ -63,8 +63,8 @@
       "expected_routing": "explicit",
       "prompt": "ALGIN.mdで自分の基準を整理したい。",
       "files": {
-        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n",
-        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
+        "README.md": "# Family recipe book\nDraft notes for a family recipe collection. Format and voice are undecided.\n",
+        "notes.md": "No decisions recorded yet.\n"
       }
     },
     {
@@ -74,8 +74,8 @@
       "expected_routing": "required",
       "prompt": "질문할땐 좀 묶어서 해줘 담부턴. 사소한건 걍 알아서 하고. 이걸 프로젝트 기준에 넣자",
       "files": {
-        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n",
-        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
+        "README.md": "# Home organization checklist\nA checklist for organizing a home office. No recurring schedule is authorized.\n",
+        "notes.md": "No decisions recorded yet.\n"
       }
     },
     {
@@ -85,8 +85,8 @@
       "expected_routing": "required",
       "prompt": "less ping-pong pls. batch questions next time, use ur judgment on little stuff. save that for this project.",
       "files": {
-        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n",
-        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
+        "README.md": "# Small command-line utility\nAn early idea for a local file-renaming utility. Implementation has not started.\n",
+        "notes.md": "No decisions recorded yet.\n"
       }
     },
     {
@@ -96,8 +96,8 @@
       "expected_routing": "required",
       "prompt": "細かいことは任せたいし、質問はまとめてほしい。次からの方針に入れといて。",
       "files": {
-        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n",
-        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
+        "README.md": "# Essay drafts\nA collection of personal essay drafts. Editing preferences have not been recorded.\n",
+        "notes.md": "No decisions recorded yet.\n"
       }
     },
     {

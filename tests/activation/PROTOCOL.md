@@ -67,3 +67,8 @@ metric that checks returned method content regardless of the shell group's final
 exit code. A failed read with no method content still does not count. Explicit
 `$align` requests can also inject the method natively; record that separately
 from shell reads. This correction changes measurement, not the actor or case labels.
+
+Before the additional run, its nine positive/name-typo fixtures were broadened
+beyond the baseline workshop site: study planning, a newsletter, gardening,
+a portfolio, research notes, recipes, home organization, a CLI utility and essays.
+These are synthetic project briefs, not observations of actual user populations.
