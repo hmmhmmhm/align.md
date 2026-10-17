@@ -173,7 +173,7 @@
       "expected_routing": "avoid",
       "prompt": "README에 적힌 제목으로 바꿔줘.",
       "files": {
-        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n\nApproved page heading: Find your next workshop. Replace only the h1 text when asked to apply this heading.\n",
+        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n\nApproved page heading: `Find your next workshop`. Replace only the h1 text when asked to apply this heading.\n",
         "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
       }
     },
@@ -184,7 +184,7 @@
       "expected_routing": "avoid",
       "prompt": "Use the heading already specified in README.",
       "files": {
-        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n\nApproved page heading: Find your next workshop. Replace only the h1 text when asked to apply this heading.\n",
+        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n\nApproved page heading: `Find your next workshop`. Replace only the h1 text when asked to apply this heading.\n",
         "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
       }
     },
@@ -195,7 +195,7 @@
       "expected_routing": "avoid",
       "prompt": "READMEに書いてある見出しに変えて。",
       "files": {
-        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n\nApproved page heading: Find your next workshop. Replace only the h1 text when asked to apply this heading.\n",
+        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n\nApproved page heading: `Find your next workshop`. Replace only the h1 text when asked to apply this heading.\n",
         "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
       }
     }

@@ -51,3 +51,19 @@ already present in project context. Run each twice. Six cases require implicit
 selection, three are explicit misspelled-name requests, and nine should avoid
 selection. This is additional synthetic coverage, not an independently authored
 holdout. Do not count it as unseen validation if it is later used for tuning.
+
+Raw command-output hashes in `read_evidence` are computed before path redaction.
+The replay recomputes actual method reads from published event text and compares
+commands and event positions; it does not equate raw and redacted output hashes.
+A publication manifest hashes the final public trial files separately.
+
+## Measurement correction during the baseline run
+
+The first `explicit-ko` repeat 2 returned the complete method, then `git status`
+in the same shell command exited 128 because the fixture has no Git repository.
+The preregistered successful-command metric undercounts this real read. Preserve
+that original metric and all records. Add a separately named `body_visible`
+metric that checks returned method content regardless of the shell group's final
+exit code. A failed read with no method content still does not count. Explicit
+`$align` requests can also inject the method natively; record that separately
+from shell reads. This correction changes measurement, not the actor or case labels.

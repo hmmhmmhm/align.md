@@ -10,16 +10,47 @@ from pathlib import Path
 
 def sha(data):return hashlib.sha256(data).hexdigest()
 
+def body_visible(events):
+    # A later command in a shell group can fail after cat has already returned the method.
+    return any(e.get('type')=='item.completed' and e.get('item',{}).get('type')=='command_execution'
+               and '# Align\n' in e['item'].get('aggregated_output','')
+               and '## Read before asking' in e['item'].get('aggregated_output','') for e in events)
+
 def summarize(records, cases):
     rows={}
     for d in records:
         case=cases[d['case_id']]
         for key in (case['expected_routing'],case['expected_routing']+'/'+case['language']):
-            r=rows.setdefault(key,{'completed':0,'read':0,'runtime_failures':0})
+            r=rows.setdefault(key,{'completed':0,'read':0,'body_visible':0,'runtime_failures':0})
             if d['completed']:
-                r['completed']+=1;r['read']+=bool(d['read_evidence'])
+                r['completed']+=1;r['read']+=bool(d['read_evidence']);r['body_visible']+=body_visible(d.get('events',[]))
             else:r['runtime_failures']+=1
     return rows
+
+def file_checks(record, case):
+    """Check narrow file invariants separately from skill discovery."""
+    before=record['before'];after=record['after'];topic=case['topic']
+    issues=[]
+    if topic in ('one_off','rehearsal','repeat','uncertain','direction','context','history_typo','explicit','short','brand_typo','concept_only','alignment_homonym'):
+        if before!=after:issues.append('Unexpected file mutation while clarifying, explaining or rehearsing')
+    if topic=='vague' and ('ALIGNS.md' in after or 'ALIGN.md' in after):
+        issues.append('Vague request produced a lasting agreement')
+    if topic in ('typo','declined'):
+        expected={**before,'index.html':dict(before['index.html'])}
+        expected['index.html']['text']=before['index.html']['text'].replace('Wrokshop','Workshop')
+        expected['index.html']['sha256']=sha(expected['index.html']['text'].encode())
+        if expected!=after:issues.append('Typo-only request changed more than the specified text')
+    if topic=='clear_violation':
+        if 'analytics.js' in after.get('index.html',{}).get('text',''):issues.append('Tracking reference remains')
+        for key in ('ALIGNS.md','AGENTS.md'):
+            if before.get(key)!=after.get(key):issues.append('Existing agreement or instructions changed: '+key)
+    if topic=='context_available':
+        if '<h1>Find your next workshop</h1>' not in after.get('index.html',{}).get('text',''):issues.append('Approved heading not applied')
+        for key in set(before)|set(after):
+            if key!='index.html' and before.get(key)!=after.get(key):issues.append('Unrelated file changed: '+key)
+    if topic in ('remember','casual_context') and 'ALIGNS.md' not in after:
+        issues.append('Explicit lasting preference not saved')
+    return issues
 
 def verify(root):
     m=json.loads((root/'manifest.json').read_text());errors=[]
@@ -35,7 +66,9 @@ def verify(root):
         d=json.loads(p.read_text());records.append(d)
         if d['prompt']!=cases[d['case_id']]['prompt']:errors.append('Prompt mismatch: '+d['id'])
         evidence=runner.observe_read(d['events'])
-        if evidence!=d['read_evidence'] or bool(evidence)!=d['method_read_observed']:errors.append('Read evidence mismatch: '+d['id'])
+        # Stored output digests refer to private raw output, before literal path redaction.
+        signature=lambda xs:[(x['event_index'],x['command']) for x in xs]
+        if signature(evidence)!=signature(d['read_evidence']) or bool(evidence)!=d['method_read_observed']:errors.append('Read evidence mismatch: '+d['id'])
         completed=d['returncode']==0 and not d['timeout'] and any(e.get('type')=='turn.completed' for e in d['events'])
         if completed!=d['completed']:errors.append('Completion mismatch: '+d['id'])
         if completed and {c.get('model') for c in d['context']}!={m['model']}:errors.append('Model context missing or inconsistent: '+d['id'])
@@ -49,7 +82,8 @@ def verify(root):
     for outcome in outcomes:
         if outcome.get('error'):errors.append('Runtime error: '+outcome['id']+': '+outcome['error'])
     return {'planned':len(expected),'records':len(records),'completed':sum(d['completed'] for d in records),
-            'all_completed':complete,'missing':missing,'errors':errors,'counts':summarize(records,cases)}
+            'all_completed':complete,'missing':missing,'errors':errors,'counts':summarize(records,cases),
+            'file_check_findings':{d['id']:found for d in records if d['completed'] and (found:=file_checks(d,cases[d['case_id']]))}}
 
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('run',type=Path);p.add_argument('--require-complete',action='store_true');args=p.parse_args()
