@@ -19,6 +19,8 @@ def connect(project, primary, others=(), apply=False):
     canonical = root / FILES[primary]
     clients = list(dict.fromkeys([primary, *others]))
     conflicts = []
+    if (root / "ALIGN.md").exists():
+        conflicts.append("Legacy ALIGN.md exists; review and migrate it to ALIGNS.md before updating instructions")
     for name in ("AGENTS.override.md", ".claude/CLAUDE.md"):
         path = root / name
         affected = "codex" if name == "AGENTS.override.md" else "claude-code"

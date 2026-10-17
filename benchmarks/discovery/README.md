@@ -1,6 +1,6 @@
 # Scattered preference evidence and transfer
 
-This preregistered synthetic benchmark asks whether the complete ALIGN method
+This preregistered synthetic benchmark asks whether the complete ALIGNS method
 helps an agent apply scattered user criteria across tasks with fewer scripted
 interventions than strong persistent memory instructions. C versus separate
 notes B is the primary comparison. C versus AGENTS memory A is secondary.
@@ -23,7 +23,7 @@ artifact, including initial setup. There are no human participants.
 | --- | --- |
 | A | Explicitly read and maintain authorized current criteria in AGENTS.md. |
 | B | Explicitly read and maintain the same criteria in PREFERENCES.md. |
-| C | Read ALIGN.md and use the frozen ALIGN skill and recurring-use method. |
+| C | Read ALIGNS.md and use the frozen ALIGNS skill and recurring-use method. |
 
 A and B receive the same substantive memory instructions. Both must distinguish
 confirmed criteria from assumptions, preserve the scope of exceptions, replace

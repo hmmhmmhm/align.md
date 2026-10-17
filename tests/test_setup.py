@@ -37,8 +37,19 @@ class SetupTests(unittest.TestCase):
         self.assertEqual((self.root / 'CLAUDE.md').read_bytes(), first)
         setup.connect(self.root, 'codex', ['claude-code'], True)
         self.assertEqual(agents.read_bytes(), first)
-        self.assertFalse((self.root / 'ALIGN.md').exists())
+        self.assertFalse((self.root / 'ALIGNS.md').exists())
         self.assertFalse((self.root / '.git').exists())
+
+    def test_legacy_agreement_does_not_get_orphaned(self):
+        agreement = self.root / 'ALIGN.md'
+        agreement.write_text('Keep my confirmed criteria')
+        (self.root / 'AGENTS.md').write_text('Read ALIGN.md.')
+        result = setup.connect(self.root, 'codex', apply=True)
+        self.assertFalse(result['applied'])
+        self.assertTrue(result['conflicts'])
+        self.assertEqual((self.root / 'AGENTS.md').read_text(), 'Read ALIGN.md.')
+        self.assertEqual(agreement.read_text(), 'Keep my confirmed criteria')
+        self.assertFalse((self.root / 'ALIGNS.md').exists())
 
     def test_claude_primary(self):
         setup.connect(self.root, 'claude-code', ['codex'], True)

@@ -26,7 +26,7 @@ for i,arm in enumerate(('A','B')):
  axes[2].plot([0,1,2,3],ys,color=colors[i],marker='o' if i==0 else 's',linestyle='-' if i==0 else '--',label=labels[i],linewidth=2,markersize=7 if i==0 else 5)
 axes[2].set_title('Cumulative replies with setup',loc='left',fontsize=12);axes[2].set_xticks([0,1,2,3],['Setup','Workshop','Guide','Demo']);axes[2].set_ylim(0,max(t['A']['replies'],t['B']['replies']+4,4)*1.35);axes[2].yaxis.set_major_locator(MaxNLocator(integer=True));axes[2].legend(frameon=False,fontsize=9,loc='upper left');axes[2].set_ylabel('User replies, pooled across 4 profiles')
 fig.suptitle('Confirmed personalization at the start of a task sequence',x=.065,y=.97,ha='left',fontsize=18)
-fig.text(.065,.845,'24 synthetic episodes · four opposing profiles · three tasks · one repetition\nBoth arms may ask and save preferences. B also receives ALIGN.md and the align skill.\nFinal exact preference fit: 12/12 in both arms.',fontsize=11,color='#424b53')
+fig.text(.065,.845,'24 synthetic episodes · four opposing profiles · three tasks · one repetition\nBoth arms may ask and save preferences. B also receives ALIGNS.md and the align skill.\nFinal exact preference fit: 12/12 in both arms.',fontsize=11,color='#424b53')
 fig.text(.065,.035,'Setup is a modeled confirmation reply per profile, not an observed interview. No human time was measured.\nThis information-gap comparison does not isolate file format or prove a general method advantage.',fontsize=10,color='#424b53')
 a.output.parent.mkdir(parents=True,exist_ok=True)
 fig.savefig(str(a.output)+'.svg');fig.savefig(str(a.output)+'.png',dpi=180)

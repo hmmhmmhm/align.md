@@ -140,7 +140,7 @@ class RouterTests(unittest.TestCase):
             auth.write_text('{}')
             args = SimpleNamespace(private_output=base / 'private', staging=base / 'stage', auth=auth, model='gpt-6-astra', codex=Path('/fake/codex'), timeout=5)
             args.private_output.mkdir()
-            doc = run.smoke_document({'common_instructions': 'Do the task.', 'conditions': {'A': 'Use AGENTS.md.', 'B': 'Use PREFERENCES.md.', 'C': 'Use ALIGN.md.'}, 'protocol': {'repetitions': 1}})
+            doc = run.smoke_document({'common_instructions': 'Do the task.', 'conditions': {'A': 'Use AGENTS.md.', 'B': 'Use PREFERENCES.md.', 'C': 'Use ALIGNS.md.'}, 'protocol': {'repetitions': 1}})
             doc['protocol']['max_replies_per_episode'] = 2
             calls = []
             def invoke(command, env, cwd, prompt, timeout):

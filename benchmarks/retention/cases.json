@@ -22,7 +22,7 @@
           "text": "Prefer one carefully worked workflow over a survey of several workflows when either fits the budget. Depth on one example helps my work. Assume the audience already uses the tool. Spend the available teaching time on advanced choices and trade-offs; omit introductory instruction. These are my defaults for later learning-material tasks."
         }
       ],
-      "retention_confirmation": "Yes, save those two defaults in ALIGN.md for later tasks."
+      "retention_confirmation": "Yes, save those two defaults in ALIGNS.md for later tasks."
     },
     {
       "id": "P2",
@@ -44,7 +44,7 @@
           "text": "Prefer one carefully worked workflow over a survey of several workflows when either fits the budget. Depth on one example helps my work. Assume the audience has never used the tool. Spend the available teaching time on foundations and first-use steps; omit advanced instruction. These are my defaults for later learning-material tasks."
         }
       ],
-      "retention_confirmation": "Yes, save those two defaults in ALIGN.md for later tasks."
+      "retention_confirmation": "Yes, save those two defaults in ALIGNS.md for later tasks."
     },
     {
       "id": "P3",
@@ -66,7 +66,7 @@
           "text": "Prefer a survey of several workflows over depth on one when either fits the budget. I need to compare possibilities. Assume the audience already uses the tool. Spend the available teaching time on advanced choices and trade-offs; omit introductory instruction. These are my defaults for later learning-material tasks."
         }
       ],
-      "retention_confirmation": "Yes, save those two defaults in ALIGN.md for later tasks."
+      "retention_confirmation": "Yes, save those two defaults in ALIGNS.md for later tasks."
     },
     {
       "id": "P4",
@@ -88,7 +88,7 @@
           "text": "Prefer a survey of several workflows over depth on one when either fits the budget. I need to compare possibilities. Assume the audience has never used the tool. Spend the available teaching time on foundations and first-use steps; omit advanced instruction. These are my defaults for later learning-material tasks."
         }
       ],
-      "retention_confirmation": "Yes, save those two defaults in ALIGN.md for later tasks."
+      "retention_confirmation": "Yes, save those two defaults in ALIGNS.md for later tasks."
     }
   ],
   "tasks": [

@@ -23,7 +23,7 @@ references. Personal agreements belong to users, not to a release migration.
 
 Follow the client's supported update route in docs/usage.md. Native auto-update
 settings, or an agreed refresh when alignment starts, bring users the revised
-method. An update must not alter project ALIGN.md files, confirmation times,
+method. An update must not alter project ALIGNS.md files, confirmation times,
 client permissions, or unrelated packages. Keep a usable installed version if
 refresh fails. Report reload requirements instead of claiming immediate activation.
 
@@ -34,7 +34,7 @@ checkout over uncommitted changes or install a duplicate plugin.
 ## Design reference
 
 [Superpowers](https://github.com/obra/superpowers) demonstrates native plugin
-distribution and a session bootstrap. ALIGN uses that separation between discovery
+distribution and a session bootstrap. ALIGNS uses that separation between discovery
 and method, with a static Claude reminder and project instructions for recurring
 triggers. It does not start an interview on every session or update through a
 networked hook.

@@ -48,7 +48,7 @@ def run_chain(profile,arm,args,doc):
  runtime=Path(tempfile.mkdtemp(prefix='retention-',dir='/tmp')).resolve();home=runtime/'home';ch=home/'.codex';ch.mkdir(parents=True);(ch/'auth.json').symlink_to(args.auth)
  ws=runtime/'fixture';ws.mkdir();(ws/'AGENTS.md').write_text(COMMON)
  if arm=='B':
-  (ws/'ALIGN.md').write_text('# Confirmed learning-material preferences\n\n'+ '\n\n'.join(profile['answers'].values())+'\n\nConfirmed in prior conversation. These defaults apply to later learning-material tasks.\n\n## Revisit alignment\nPrimary client: Codex. Use the local align skill for consequential gaps. The local method is pinned for this study; do not update it.\n')
+  (ws/'ALIGNS.md').write_text('# Confirmed learning-material preferences\n\n'+ '\n\n'.join(profile['answers'].values())+'\n\nConfirmed in prior conversation. These defaults apply to later learning-material tasks.\n\n## Revisit alignment\nPrimary client: Codex. Use the local align skill for consequential gaps. The local method is pinned for this study; do not update it.\n')
   (ws/'AGENTS.md').write_text(COMMON+'\n'+(ROOT/'skills/align/assets/instruction-block.md').read_text())
   shutil.copytree(ROOT/'skills/align',ws/'.agents/skills/align')
  raw=args.private_output/ident;raw.mkdir();record={'id':ident,'profile':profile['id'],'arm':arm,'status':'running','before':legacy.snapshot(ws),'episodes':[]}

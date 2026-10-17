@@ -1,6 +1,6 @@
 {
   "verification_sha256": "3f0ef3f9af166893aac9666696a591145bb0b4c62c2442f758b8d8d1b50bee09",
-  "plot_script_sha256": "dc887ef36d14eead9a503b7b8f4ed630bea0ab5b19d7196c6cc6eb12653e9ad4",
+  "plot_script_sha256": "4c962a8932ba758cb7a032f8bb1a0acfec5e4a4607caa426d88364917acd65c8",
   "matplotlib_version": "3.11.2",
   "totals": {
     "A": {

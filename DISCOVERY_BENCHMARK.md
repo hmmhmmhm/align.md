@@ -1,6 +1,6 @@
 # Synthetic preference evidence and transfer
 
-ALIGN did not reduce scripted replies in this synthetic experiment. All three conditions
+ALIGNS did not reduce scripted replies in this synthetic experiment. All three conditions
 used 20 additional replies and passed all 20 final exact artifact checks.
 The prespecified benefit rule was not met.
 
@@ -25,7 +25,7 @@ Setup costs and output quality are included.
 | --- | --- |
 | A | Explicit instructions to read and maintain authorized criteria in AGENTS.md. |
 | B | The same memory practice in a separate PREFERENCES.md. |
-| C | ALIGN.md plus the frozen ALIGN skill and recurring-use method. |
+| C | ALIGNS.md plus the frozen ALIGNS skill and recurring-use method. |
 
 C versus B was primary; C versus A was secondary. All conditions received the
 same project records, permissions, available answers, model settings, and reply
@@ -52,7 +52,7 @@ replays the complete matrix. Each condition contains four setup episodes and
 16 later episodes. First submission means the first deliverable after any
 clarification, not necessarily the first turn.
 
-| Measure | A: AGENTS | B: notes | C: ALIGN |
+| Measure | A: AGENTS | B: notes | C: ALIGNS |
 | --- | ---: | ---: | ---: |
 | Exact checks passing on first submission | 8/20 | 8/20 | 8/20 |
 | Exact checks passing on final submission | 20/20 | 20/20 | 20/20 |
@@ -200,7 +200,7 @@ Each condition received 10,218 initial user-message characters and 2,430 source
 file characters across its four trajectories. Replies contained 2,406, 2,354,
 and 2,534 characters for A, B, and C. The condition instructions contained
 1,412, 1,428, and 1,452 characters respectively; C also had 6,168 characters of
-ALIGN instruction blocks. Static file counts count each initial file once per
+ALIGNS instruction blocks. Static file counts count each initial file once per
 trajectory, not every model reread. All conditions had 14,580 added protocol
 characters in actor prompts. The
 [plotted values and text breakdown](assets/benchmarks/discovery-comparison.json)
@@ -211,8 +211,8 @@ or measures of reading effort.
 
 The actor and question classifier used `gpt-6-astra` at medium reasoning effort
 through Codex CLI `0.162.0-alpha.17.2`. The
-[freeze commit](https://github.com/hmmhmmhm/align.md/commit/0975de3a3ee967dc6d1c2aeb5c0893ec61c5ac83)
-and [public CI receipt](https://github.com/hmmhmmhm/align.md/actions/runs/38665066430),
+[freeze commit](https://github.com/hmmhmmhm/aligns.md/commit/0975de3a3ee967dc6d1c2aeb5c0893ec61c5ac83)
+and [public CI receipt](https://github.com/hmmhmmhm/aligns.md/actions/runs/38665066430),
 created at 2026-10-15 01:20:01 UTC, preceded the
 [run manifest](benchmarks/discovery/results/2026-10-15-astra-v1/manifest.json)
 at 01:20:23.747517 UTC. The source verification confirms the frozen files did

@@ -104,7 +104,7 @@ def main():
     fig.subplots_adjust(left=.075, right=.98, top=.79, bottom=.24, wspace=.35)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     for ext in ('svg', 'png'):
-        metadata = {'Creator': 'ALIGN discovery reporting plot.py'} if ext == 'svg' else {'Software': 'ALIGN discovery reporting plot.py'}
+        metadata = {'Creator': 'ALIGNS discovery reporting plot.py'} if ext == 'svg' else {'Software': 'ALIGNS discovery reporting plot.py'}
         fig.savefig(args.output.with_suffix('.'+ext), dpi=180, facecolor='white', metadata=metadata)
     args.output.with_suffix('.json').write_text(json.dumps({
         'verification_sha256': hashlib.sha256(args.verification.read_bytes()).hexdigest(),

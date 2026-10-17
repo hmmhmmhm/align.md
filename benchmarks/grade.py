@@ -25,8 +25,8 @@ def check_file(check, before, after):
 
 
 def criteria_only(files, common):
-    if 'ALIGN.md' in files:
-        return files['ALIGN.md']['text']
+    if 'ALIGNS.md' in files:
+        return files['ALIGNS.md']['text']
     text = files.get('AGENTS.md', {}).get('text', '')
     return text.removeprefix(common).lstrip()
 
@@ -35,16 +35,16 @@ def criteria_evidence(files, common):
     """Retain every criteria source, including conflicting newly created files."""
     block = (Path(__file__).resolve().parents[1] / 'skills/align/assets/instruction-block.md').read_text()
     instruction = files.get('AGENTS.md', {}).get('text', '')
-    residue = instruction.replace(common, '', 1).replace('Read ALIGN.md before work. It contains current project criteria.', '', 1).replace(block, '', 1).strip()
+    residue = instruction.replace(common, '', 1).replace('Read ALIGNS.md before work. It contains current project criteria.', '', 1).replace(block, '', 1).strip()
     documents = [residue] if residue else []
-    if 'ALIGN.md' in files:
-        documents.append(files['ALIGN.md']['text'])
+    if 'ALIGNS.md' in files:
+        documents.append(files['ALIGNS.md']['text'])
     return {'documents': documents, 'common_instructions_intact': common in instruction}
 
 
 def review_files(files):
     return {name: value['text'] for name, value in files.items()
-            if name not in ('AGENTS.md', 'ALIGN.md') and not name.startswith('.agents/')}
+            if name not in ('AGENTS.md', 'ALIGNS.md') and not name.startswith('.agents/')}
 
 
 def grade(record, case):

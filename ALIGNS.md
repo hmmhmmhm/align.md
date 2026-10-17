@@ -10,14 +10,14 @@ Alignment is an essential part of working with AI. It deserves
 a dedicated document because expectations differ between users
 and evolve over time.
 
-## Role of ALIGN.md
+## Role of ALIGNS.md
 
-ALIGN.md holds the user's current goals, priorities, preferences,
+ALIGNS.md holds the user's current goals, priorities, preferences,
 constraints, and decision criteria.
 
 Keep these separate from harness configuration and general agent
-instructions. AGENTS.md should explain when and how to use ALIGN.md,
-while ALIGN.md remains the source of alignment criteria.
+instructions. AGENTS.md should explain when and how to use ALIGNS.md,
+while ALIGNS.md remains the source of alignment criteria.
 
 ## Scope
 
@@ -52,7 +52,7 @@ status rather than assuming universal coverage.
 
 Check whether the target project uses Git.
 
-Keep only current alignment criteria in ALIGN.md. When Git is
+Keep only current alignment criteria in ALIGNS.md. When Git is
 available, use its history to track changes instead of maintaining
 a separate alignment log.
 
@@ -67,6 +67,14 @@ new evidence.
 Record the last full alignment time only after the user confirms
 the document. Record partial confirmations separately without
 implying a full review.
+
+## Project name
+
+User-confirmed naming update: 2026-10-17 (Asia/Seoul). Partial confirmation only.
+Use ALIGNS.md for the project and agreement file, and hmmhmmhm/aligns.md for the
+repository. Keep `$align` as the action name. The acquired aligns.md domain will
+be connected separately after DNS propagation. Preserve historical benchmark
+evidence and its hashes when updating current branding.
 
 ## Presentation and Licensing
 
@@ -96,7 +104,7 @@ Make reflection an available habit, without imposing diaries or reminders.
 Check the primary CLI at setup and whether it is the current client. Keep its
 native instruction file canonical, safely linking other compatible entrypoints
 when needed. Preserve distinct and nested instructions. Record the skill's
-invocation and update policy in project ALIGN.md documents.
+invocation and update policy in project ALIGNS.md documents.
 
 ## History-informed alignment
 
@@ -111,16 +119,16 @@ Use taste invariants during self-alignment: scoped, revisable criteria supported
 by the user's decisions across situations. Examine exceptions and conflicting
 evidence. Do not infer immutable personality traits, treat team feedback as
 personal consent, or promote repetition into an agreement. Keep the maintained
-method in the skill and confirmed current criteria in ALIGN.md.
+method in the skill and confirmed current criteria in ALIGNS.md.
 
 ## Revisit Alignment
 
 Primary client: Codex. Canonical instruction file: AGENTS.md.
-Use `$align`, or ask “Use the align skill to review this project's ALIGN.md.”
+Use `$align`, or ask “Use the align skill to review this project's ALIGNS.md.”
 This development repository discovers its local skill through
 `.agents/skills/align`, linked to `skills/align`. Method changes are maintained
 in this repository's Git history; do not install a second plugin copy here or
 automatically pull over local development changes.
-Source and user installation guide: https://github.com/hmmhmmhm/align.md .
+Source and user installation guide: https://github.com/hmmhmmhm/aligns.md .
 
 Last aligned: 2026-10-12 09:24 (Asia/Seoul).

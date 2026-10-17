@@ -10,13 +10,13 @@ multiple-choice questions. Its generation evaluation checks preference
 violations, invented preferences, inconsistency, and unhelpful responses. The
 authors also manually checked a sample of model judgments. This supports
 evaluating criterion fulfillment and useful output together. Its reported
-validation does not validate a new ALIGN evaluator.
+validation does not validate a new ALIGNS evaluator.
 
 [PersonaMem's official repository](https://github.com/bowen-upenn/PersonaMem)
 provides a benchmark of evolving user profiles and personalized responses
 across synthetic, multi-session histories. It offers a precedent for testing
 changing preferences and applying them to later situations. Its synthetic
-histories are not observations of actual users adopting ALIGN.
+histories are not observations of actual users adopting ALIGNS.
 
 [Zhou et al.](https://arxiv.org/abs/2603.11245v2) compared simulated agent users
 with real participants and found overly cooperative simulator behavior and
@@ -34,7 +34,7 @@ mainly a test of structured elicitation, retention, and application after the
 relevant dimensions are supplied. It offers little evidence about discovering
 unspoken criteria or deciding which tradeoffs deserve clarification.
 
-That is a valid strong control. It asks whether the full ALIGN setup adds value
+That is a valid strong control. It asks whether the full ALIGNS setup adds value
 when an agent already receives competent memory instructions. It can also
 leave little room for improvement. A tie should remain a published tie; it
 does not establish that all forms of alignment support are equivalent.

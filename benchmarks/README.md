@@ -1,4 +1,4 @@
-# ALIGN behavioral benchmark
+# ALIGNS behavioral benchmark
 
 This is a maintainer-authored synthetic benchmark of small project decisions. It tests whether an agent follows existing criteria, handles changes carefully, and avoids unnecessary clarification. It does not establish benefits for real users, independent replication, or general agent capability.
 
@@ -11,12 +11,12 @@ Every condition receives the exact same `common_instructions`, case criteria, ta
 | Condition | Project context |
 | --- | --- |
 | A | Common instructions and current criteria in AGENTS.md. No align skill. |
-| B | Common instructions in AGENTS.md, with a neutral instruction to read ALIGN.md; identical current criteria in ALIGN.md. No align skill. |
+| B | Common instructions in AGENTS.md, with a neutral instruction to read ALIGNS.md; identical current criteria in ALIGNS.md. No align skill. |
 | C | B plus the frozen current align skill, its normal discovery metadata, and the repository's recommended managed instruction block. |
 
 B minus A estimates the effect of separating the criteria into a referenced file. C minus B estimates the complete recommended align setup under this harness, including its recurring-use instructions. C minus A is the combined comparison. Added context length, skill discovery, and the managed instruction block are part of the treatment; this design cannot isolate their individual effects. The harness must record any extra discovery text used in C. It must not add exclusive user preferences to C or explicitly invoke the skill in only one condition's task prompt.
 
-No points depend on creating ALIGN.md, using a heading, reading a skill, or naming an output in the skill's preferred style. User-requested task outputs have ordinary filenames so their contents can be inspected. Current criteria may remain in the condition's existing instruction file; graders evaluate their meaning.
+No points depend on creating ALIGNS.md, using a heading, reading a skill, or naming an output in the skill's preferred style. User-requested task outputs have ordinary filenames so their contents can be inspected. Current criteria may remain in the condition's existing instruction file; graders evaluate their meaning.
 
 ## Cases and scoring
 
@@ -53,3 +53,10 @@ Do not change the skill, cases, or rubric in response to scored results and reta
 The benchmark can expose concrete regressions, unnecessary questions, lost preferences across cold sessions, and differences on the declared tasks. Many tasks may be easy enough for all three conditions to pass. A tie is useful evidence of no observed additional benefit on those tasks.
 
 This small local behavioral pilot does not test installation on a clean machine, long autonomous execution, live external actions, multi-user agreement, or long-term user effort. The rehearsal case tests a discussion about autonomy, not an autonomous afternoon. The benchmark uses one selected model and client unless a later run explicitly expands that scope. Public source examples that informed this protocol are listed in [references.md](references.md).
+
+## Project rename
+
+Current reports use ALIGNS.md. Archived runs, transcripts, review packets, and
+source snapshots retain the original ALIGN.md spelling and bytes so their hashes
+and recorded observations remain verifiable. Display-name changes do not change
+benchmark scores or imply a rerun of the renamed package.

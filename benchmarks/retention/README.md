@@ -2,7 +2,7 @@
 
 This study asks whether carrying confirmed preferences into a fresh conversation
 reduces the need to restate them. It compares two packages with deliberately
-different information. It cannot establish that ALIGN.md is better than another
+different information. It cannot establish that ALIGNS.md is better than another
 file, a memory system, or supplying the same preferences in the task prompt.
 Earlier information-equivalent benchmark results remain separate and unchanged.
 
@@ -17,7 +17,7 @@ The task order is workshop, guide, demo. Trajectory execution order is shuffled
 with the seed in cases.json. The model is gpt-6-astra at medium reasoning effort.
 
 A uses generic AGENTS.md and the current request. B has the same instructions
-and request, plus confirmed preferences in ALIGN.md, the maintained align skill,
+and request, plus confirmed preferences in ALIGNS.md, the maintained align skill,
 and its instruction block. Both start an isolated home and workspace per profile and retain their files
 across three fresh conversations. Both receive the same generic guidance and
 permission to save confirmed preferences and read them in later sessions.

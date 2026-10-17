@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.0
+
+- Rename the project, agreement file, repository, and site to ALIGNS.md.
+- Keep `$align` as the skill invocation.
+- Preserve existing criteria when migrating a legacy `ALIGN.md`; never replace it with a new agreement.
+- Retain original benchmark transcripts and source snapshots under their recorded names for verification.
+
 ## 0.3.0
 
 - Add optional recent/full PR and project conversation review with disclosed time estimates.

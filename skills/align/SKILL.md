@@ -1,23 +1,31 @@
 ---
 name: align
-description: Establish and maintain personal project alignment in ALIGN.md, including selected PR or conversation history review for scoped taste invariants. Use when goals or priorities are unclear, important decisions diverge from the user's expectations, repeated corrections expose a missing criterion, or a long autonomous run needs judgment calibration. Apply existing agreements without reopening routine decisions.
+description: Establish and maintain personal project alignment in ALIGNS.md, including selected PR or conversation history review for scoped taste invariants. Use when goals or priorities are unclear, important decisions diverge from the user's expectations, repeated corrections expose a missing criterion, or a long autonomous run needs judgment calibration. Apply existing agreements without reopening routine decisions.
 license: MIT
 metadata:
-  version: "0.3.0"
+  version: "0.4.0"
 ---
 
 # Align
 
 Help a user and their agent agree on what good work means and keep decisions
 consistent with that agreement. The maintained skill supplies the method;
-project-root `ALIGN.md` holds the user's current criteria. Updating the skill
+project-root `ALIGNS.md` holds the user's current criteria. Updating the skill
 must never replace, reconfirm, or migrate those criteria automatically.
 Use the user's language and project conventions. Do not import preferences
 from the skill's source repository.
 
+## Existing installations
+
+The agreement filename is now `ALIGNS.md`. If a project still has `ALIGN.md`,
+read it as the existing agreement. When migration is authorized, rename the file
+and update its instruction references without changing its criteria or confirmation
+date. If both files exist, compare them with the user before choosing or merging;
+never silently overwrite either. `$align` remains the invocation.
+
 ## Read before asking
 
-Identify the target project, applicable instructions, existing `ALIGN.md`,
+Identify the target project, applicable instructions, existing `ALIGNS.md`,
 relevant conversation, and changes that could affect the current decision.
 Check whether Git is available and this is a work tree. Use available history
 and uncommitted work; a timestamp does not prove all later work was reviewed.
@@ -35,7 +43,7 @@ Inspect the actual instruction entrypoints before proposing any changes.
 | Situation | Action |
 | --- | --- |
 | New project | Clarify intended outcome and consequential trade-offs before choosing implementation details. |
-| Existing work without ALIGN.md | Describe what exists, then ask what should stay or change. Existing code is not evidence of consent. |
+| Existing work without ALIGNS.md | Describe what exists, then ask what should stay or change. Existing code is not evidence of consent. |
 | Routine task within the agreement | Apply the criteria and proceed. No interview or gratuitous report. |
 | Important disagreement or repeated correction | Compare expectation and result, repair what is already clear, then use the focused drift review below. |
 | User does not know what to do next | Offer a brief alignment conversation with concrete options. Do not invent a roadmap or start work without a direction. |
@@ -76,14 +84,14 @@ parts as draft. A correction to one result is not automatically a lasting rule.
 
 Preserve unrelated content. Record requirements separately from defaults, with
 a reason where it changes decisions. Keep detailed tasks and the skill's full
-method out of ALIGN.md. At initial setup or a requested full review, include a
+method out of ALIGNS.md. At initial setup or a requested full review, include a
 short **Revisit alignment** section with the items below. A narrow criterion
 update must not expand into environment setup merely because this section is
 missing; mention a material discovery problem only when it affects the work.
 
 - A working invocation for this client, plus the portable request
-  “Use the align skill to review this project's ALIGN.md with me.”
-- The trusted source `https://github.com/hmmhmmhm/align.md`, installed route and
+  “Use the align skill to review this project's ALIGNS.md with me.”
+- The trusted source `https://github.com/hmmhmmhm/aligns.md`, installed route and
   supported update method. Never claim an unverified installation or auto-update.
 - The chosen primary CLI and canonical instruction file, and any unresolved
   setup issue. Keep this current instead of accumulating setup history.
@@ -106,7 +114,7 @@ Do not invent a date for an undated agreement.
 ## Connect future sessions
 
 Use the environment reference to connect the canonical instruction file to
-ALIGN.md and to the installed skill. Prefer a short maintained trigger block
+ALIGNS.md and to the installed skill. Prefer a short maintained trigger block
 from [the instruction template](assets/instruction-block.md), not a copy of
 this workflow. Add it once and preserve other instructions. For additional
 clients, use safe relative symlinks when their format and loading rules allow;

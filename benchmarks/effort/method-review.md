@@ -18,11 +18,11 @@ the harness or its future outputs.
 
 ## Comparison and counting
 
-The main comparison is the complete ALIGN setup against a strong baseline
+The main comparison is the complete ALIGNS setup against a strong baseline
 explicitly allowed and instructed to maintain persistent notes. Both need the
 same user information, consent to save it, tools, model, and opportunity to ask.
 An ordinary instruction baseline is useful context, but a win over it alone
-does not establish benefit over competent memory use. Extra ALIGN instructions
+does not establish benefit over competent memory use. Extra ALIGNS instructions
 and their context cost belong to the treatment.
 
 The tasks expose preference keys and require small structured outputs. They
@@ -63,7 +63,7 @@ Freeze the oracle before scoring. It should answer the keys actually asked,
 using the same private values and disclosure rules in every condition. A new
 preference becomes available at the same episode in every arm. Temporary
 exceptions must expire at the same point. The oracle must not infer treatment
-labels or give ALIGN more cooperative answers.
+labels or give ALIGNS more cooperative answers.
 
 Deterministic output checks make failures inspectable. The task schema, valid
 keys, correction order, turn budget, and malformed-response policy need to be
@@ -98,7 +98,7 @@ result to unseen users and projects.
 
 Recruit people who routinely use coding agents and let them work on repeated
 tasks over several sessions. A feasible crossover template has two comparable
-projects per participant, one per condition. Randomize and balance ALIGN-first
+projects per participant, one per condition. Randomize and balance ALIGNS-first
 and baseline-first order, and separately balance which project receives which
 condition. Start each project with clean agent memory and record its full setup
 cost. Use the same strong memory baseline and keep all scheduled followups
@@ -131,7 +131,7 @@ Before a confirmatory study, preregister the primary cumulative-time endpoint,
 success margin, practically meaningful benefit, sample-size justification,
 missing-data rules, and analysis at the participant/project level. Include
 confidence intervals and the full workload and success results. Do not select a
-sample size or endpoint after seeing which favors ALIGN.
+sample size or endpoint after seeing which favors ALIGNS.
 
 ## Research behind these limits
 
@@ -149,4 +149,4 @@ what private information the oracle reveals.
 simulation with real participants and reported overly cooperative simulated
 behavior and more favorable feedback. Their results give a direct reason to
 require human validation before translating scripted interaction savings into
-claims about actual user effort. None of these sources evaluates ALIGN.
+claims about actual user effort. None of these sources evaluates ALIGNS.

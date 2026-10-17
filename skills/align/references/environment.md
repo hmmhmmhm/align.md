@@ -3,7 +3,7 @@
 At setup, inspect relevant existing files before proposing a layout. Ask which
 CLI is primary and whether it is the current one only if context does not answer.
 For equally used clients, propose AGENTS.md as the neutral canonical file. Record
-the choice in ALIGN.md; do not ask again until the user changes tools or evidence
+the choice in ALIGNS.md; do not ask again until the user changes tools or evidence
 shows the mapping is broken.
 
 ## Inspect, propose, connect, verify
@@ -22,7 +22,7 @@ only additional clients the user actually uses. For example, with Codex primary
 and no existing CLAUDE.md, `CLAUDE.md -> AGENTS.md` can share the instructions.
 The inverse can work for a Claude-primary project. Use relative links inside the
 project so the checkout stays portable. Link instruction files, never link
-ALIGN.md to the upstream skill or the source repository's personal agreement.
+ALIGNS.md to the upstream skill or the source repository's personal agreement.
 
 If another entrypoint already has distinct content, show what would need merging
 and preserve it until that concrete replacement is authorized. Do not use force

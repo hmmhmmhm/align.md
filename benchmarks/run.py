@@ -61,8 +61,8 @@ def prepare_fixture(workspace, case, common, arm):
     if arm == 'A':
         (workspace / 'AGENTS.md').write_text(common + '\n\n' + case['criteria'])
     else:
-        (workspace / 'AGENTS.md').write_text(common + '\n\nRead ALIGN.md before work. It contains current project criteria.\n')
-        (workspace / 'ALIGN.md').write_text(case['criteria'])
+        (workspace / 'AGENTS.md').write_text(common + '\n\nRead ALIGNS.md before work. It contains current project criteria.\n')
+        (workspace / 'ALIGNS.md').write_text(case['criteria'])
     if arm == 'C':
         with (workspace / 'AGENTS.md').open('a') as handle:
             handle.write('\n' + (ROOT / 'skills/align/assets/instruction-block.md').read_text())

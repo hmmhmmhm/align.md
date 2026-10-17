@@ -33,7 +33,7 @@ PROTOCOL = '''\nResponse protocol: your final response must be exactly one JSON 
 {"action":"ask","keys":["preference_id"]} or {"action":"submit"}.
 Ask only about unresolved preference IDs from the task. You may ask multiple IDs.
 On submit, write the requested artifact before responding. You may keep durable
-notes in project files, including AGENTS.md, ALIGN.md, or another file, under the
+notes in project files, including AGENTS.md, ALIGNS.md, or another file, under the
 same user permission in every condition. Each episode starts a fresh conversation;
 project files remain available. Do not access files outside this workspace except
 bundled skills and runtime tools. Do not search for benchmark sources or answers.
@@ -138,7 +138,7 @@ def run_trajectory(case, arm, repeat, args, doc):
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(content)
     if arm in ('B', 'C'):
-        (workspace / ('PREFERENCES.md' if arm == 'B' else 'ALIGN.md')).write_text('')
+        (workspace / ('PREFERENCES.md' if arm == 'B' else 'ALIGNS.md')).write_text('')
     if arm == 'C':
         shutil.copytree(ROOT / 'skills/align', workspace / '.agents/skills/align')
         with (workspace / 'AGENTS.md').open('a') as handle:

@@ -192,8 +192,11 @@ def verify(run, judges=None, packets=None, root=ROOT):
                 if arm == 'A':
                     initial['AGENTS.md'] = common + '\n\n' + case['criteria']
                 else:
-                    initial['AGENTS.md'] = common + '\n\nRead ALIGN.md before work. It contains current project criteria.\n'
-                    initial['ALIGN.md'] = case['criteria']
+                    # Use the frozen protocol, not today's branding, to replay old evidence.
+                    runner = (frozen_root / 'benchmarks/run.py').read_text()
+                    agreement = 'ALIGNS.md' if "workspace / 'ALIGNS.md'" in runner else 'ALIGN.md'
+                    initial['AGENTS.md'] = common + f'\n\nRead {agreement} before work. It contains current project criteria.\n'
+                    initial[agreement] = case['criteria']
                 if arm == 'C':
                     initial['AGENTS.md'] += '\n' + (frozen_root / 'skills/align/assets/instruction-block.md').read_text()
                 for name, value in initial.items():

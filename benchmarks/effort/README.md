@@ -1,6 +1,6 @@
 # Scripted user intervention burden
 
-This prospective pilot asks whether ALIGN reduces repeated preference questions and corrections across fresh conversations. It counts setup and maintenance work as well as later replies. The main comparison is an agent explicitly instructed to keep useful project notes. A tie against that baseline is a valid result.
+This prospective pilot asks whether ALIGNS reduces repeated preference questions and corrections across fresh conversations. It counts setup and maintenance work as well as later replies. The main comparison is an agent explicitly instructed to keep useful project notes. A tie against that baseline is a valid result.
 
 This protocol was written before scored execution. Published runs and their results are recorded separately. The [earlier behavioral pilot](../../BENCHMARK.md) has a different design and remains separate. Its scores cannot answer this pilot's question.
 
@@ -12,7 +12,7 @@ This protocol was written before scored execution. Published runs and their resu
 | --- | --- |
 | A: ordinary writable project | Ordinary instructions; the agent may save authorized preferences in any project file. |
 | B: explicit persistent notes | Instructions to read and maintain PREFERENCES.md, reuse answers, and distinguish temporary exceptions from lasting changes. |
-| C: maintained ALIGN setup | The frozen align skill, its recurring-use instructions, and an initially empty ALIGN.md. |
+| C: maintained ALIGNS setup | The frozen align skill, its recurring-use instructions, and an initially empty ALIGNS.md. |
 
 The shared prompt identifies Codex as the current and primary client and AGENTS.md as canonical. The environment is already provisioned. Installation, client discovery, and method-update effort are outside this pilot; preference elicitation and maintenance costs are included. All conditions may save the same answers with the same consent. None starts with the user's hidden preference values. C's extra instructions and method context are part of the treatment. The comparison cannot isolate the filename, skill, and additional instructions. B is the primary comparator; C versus A is secondary.
 
@@ -92,6 +92,6 @@ Publish the complete matrix, prompts, fixed replies, output snapshots, protocol 
 
 ## Real-user validation
 
-A claim about actual user effort needs consenting people doing work they care about. A later study should compare the complete ALIGN setup with explicit persistent notes using randomized or counterbalanced project assignments. Give each condition comparable task difficulty and enough sessions to include setup, ordinary reuse, exceptions, and changing preferences. Avoid asking a participant to repeat identical tasks from memory across conditions.
+A claim about actual user effort needs consenting people doing work they care about. A later study should compare the complete ALIGNS setup with explicit persistent notes using randomized or counterbalanced project assignments. Give each condition comparable task difficulty and enough sessions to include setup, ordinary reuse, exceptions, and changing preferences. Avoid asking a participant to repeat identical tasks from memory across conditions.
 
 Record active user time separately from model wait time, user-authored corrections, repeated explanations, setup and maintenance time, and abandoned tasks. Ask participants about workload and preference after each condition. Independent reviewers should evaluate deliverable quality without condition labels where practical. Define the sample size, primary outcome, stopping rule, and quality criterion before recruiting, and report missing data and failures. This repository pilot does not recruit participants or supply that evidence.

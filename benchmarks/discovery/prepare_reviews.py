@@ -13,7 +13,7 @@ def sha(value):
 
 def blind(value):
     if isinstance(value, str):
-        for name in ('AGENTS.md', 'PREFERENCES.md', 'ALIGN.md'):
+        for name in ('AGENTS.md', 'PREFERENCES.md', 'ALIGNS.md'):
             value = value.replace(name, 'project-notes.md')
         return value
     if isinstance(value, list):

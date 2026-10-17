@@ -1,6 +1,6 @@
 # Use align over time
 
-The skill contains the evolving alignment method. Your project's ALIGN.md
+The skill contains the evolving alignment method. Your project's ALIGNS.md
 contains your criteria. Install the skill once through one route, connect your
 project instructions, and use it again when there is something worth aligning.
 
@@ -8,7 +8,7 @@ project instructions, and use it again when there is something worth aligning.
 
 Copy the [installation request](install-request.txt), or say:
 
-> Set up the maintained align skill from https://github.com/hmmhmmhm/align.md for
+> Set up the maintained align skill from https://github.com/hmmhmmhm/aligns.md for
 > my primary CLI. Connect it to this project and enable supported method updates.
 
 The agent checks what is already installed, which client you mainly use and
@@ -21,8 +21,8 @@ cannot bypass the client's permissions or install into another person's account.
 With a Codex CLI that supports custom plugin marketplaces:
 
 ```sh
-codex plugin marketplace add hmmhmmhm/align.md --ref main
-codex plugin add align-md@align-md
+codex plugin marketplace add hmmhmmhm/aligns.md --ref main
+codex plugin add aligns-md@aligns-md
 ```
 
 Open a new session if the skill is not yet visible. Select **align** or use
@@ -32,8 +32,8 @@ it is not a claim of inclusion in OpenAI's official directory.
 To refresh the marketplace snapshot and installed package:
 
 ```sh
-codex plugin marketplace upgrade align-md
-codex plugin add align-md@align-md
+codex plugin marketplace upgrade aligns-md
+codex plugin add aligns-md@aligns-md
 ```
 
 The official documentation does not promise an automatic refresh interval for
@@ -46,8 +46,8 @@ This Codex package is hook-free; recurring triggers live in project instructions
 Inside Claude Code:
 
 ```text
-/plugin marketplace add hmmhmmhm/align.md
-/plugin install align@align-md
+/plugin marketplace add hmmhmmhm/aligns.md
+/plugin install align@aligns-md
 ```
 
 Invoke `/align:align`. The plugin includes a static SessionStart reminder for
@@ -55,8 +55,8 @@ startup, resume, clear and compact. It performs no networking, file changes or
 project-data collection. It does not start an alignment interview on every task.
 
 For native automatic updates, open `/plugin`, select **Marketplaces**, choose
-**align-md**, and enable auto-update. Third-party marketplaces do not enable it
-by default. Manual refresh is `/plugin update align@align-md`. Use
+**aligns-md**, and enable auto-update. Third-party marketplaces do not enable it
+by default. Manual refresh is `/plugin update align@aligns-md`. Use
 `/reload-plugins` or a new session to load changed files when required.
 
 ## Portable skill installation
@@ -64,7 +64,7 @@ by default. Manual refresh is `/plugin update align@align-md`. Use
 From the target project:
 
 ```sh
-npx skills add hmmhmmhm/align.md --skill align
+npx skills add hmmhmmhm/aligns.md --skill align
 ```
 
 The skills CLI lets you select the client and scope. For example, add
@@ -89,7 +89,7 @@ for updates. Avoid duplicate plugin and folder installs for the same client.
 At setup, choose a supported native auto-update setting, **update when alignment
 starts**, or manual updates. The copied installation request authorizes the first
 two as supported by the client. Record the actual mode and installation scope in
-ALIGN.md. For update-when-alignment-starts, the project instruction tells the agent
+ALIGNS.md. For update-when-alignment-starts, the project instruction tells the agent
 to perform one targeted refresh before an alignment session, not every task.
 
 Offline failures fall back to the installed version. Local edits, pinned versions,
@@ -118,9 +118,9 @@ Add `--apply` to carry out a conflict-free, authorized plan. It refuses conflict
 and shadowing files. The agent must still verify which instructions its client
 actually loads. Installation and a valid symlink alone do not prove activation.
 
-Generated ALIGN.md documents include the working skill invocation, trusted
+Generated ALIGNS.md documents include the working skill invocation, trusted
 source, update policy, primary CLI and canonical instruction file. They do not
-copy the entire method. This repository's own ALIGN.md is not a universal set
+copy the entire method. This repository's own ALIGNS.md is not a universal set
 of preferences for users to inherit.
 
 ## Use it at meaningful moments
@@ -176,6 +176,19 @@ PR scans and project-scoped JSONL parsing. They make no model calls. The agent
 reviews the evidence and proposes changes for confirmation. Time estimates show
 their assumptions and are refined from actual volume and processing speed.
 Raw evidence stays in a chosen private working file outside Git. It is not added
-to ALIGN.md or published with the skill.
+to ALIGNS.md or published with the skill.
 
 See [history review and collector commands](../skills/align/references/history.md).
+
+## Upgrading from ALIGN.md
+
+The project and agreement file are now named ALIGNS.md. The skill command is still
+`$align`. Read the existing `ALIGN.md` before migrating it. Once the rename is
+authorized, move it to `ALIGNS.md` and update references in the project instruction
+files. Preserve its criteria and confirmation date. If both files exist, resolve
+the differences before changing either.
+
+The repository is now `hmmhmmhm/aligns.md`; the Codex plugin and marketplace are
+`aligns-md`. Replace old marketplace registrations with the installation entries
+above when upgrading, and remove the old registration after the new one works.
+Do not keep duplicate plugin installations.

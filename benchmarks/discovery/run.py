@@ -257,7 +257,7 @@ def run_trajectory(case, arm, repeat, args, doc):
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(content)
     if arm in ('B', 'C'):
-        (workspace / ('PREFERENCES.md' if arm == 'B' else 'ALIGN.md')).write_text('')
+        (workspace / ('PREFERENCES.md' if arm == 'B' else 'ALIGNS.md')).write_text('')
     if arm == 'C':
         shutil.copytree(ROOT / 'skills/align', workspace / '.agents/skills/align')
         with (workspace / 'AGENTS.md').open('a') as handle:

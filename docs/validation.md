@@ -5,7 +5,7 @@ These checks distinguish package installation from
 agent behavior; they do not claim that every supported client behaves identically.
 
 The [public benchmark](../BENCHMARK.md) compares the same criteria in AGENTS.md,
-a referenced ALIGN.md, and the complete maintained skill setup. Its protocol,
+a referenced ALIGNS.md, and the complete maintained skill setup. Its protocol,
 actor evidence, model judgments, context correction, and offline verification
 are separate from the earlier development checks below.
 
@@ -37,8 +37,8 @@ initialize Git, stage files, commit, or publish.
 | Existing unchanged agreement | Preserved criteria and timestamp; continued with a newsletter outline without an alignment interview. |
 | One-off energetic announcement | Preserved the normal calm voice and timestamp; asked only for missing announcement facts. |
 | Explicit lasting voice change | Updated the preference and its partial confirmation time; preserved the full-alignment timestamp. |
-| Repeated review after a lasting change | Preserved ALIGN.md and AGENTS.md byte-for-byte, recognized the authorized uncommitted change, and continued with no additional questions. |
-| Full reconfirmation | Updated only the full-confirmation timestamp in ALIGN.md; retained unrelated agent instructions. |
+| Repeated review after a lasting change | Preserved ALIGNS.md and AGENTS.md byte-for-byte, recognized the authorized uncommitted change, and continued with no additional questions. |
+| Full reconfirmation | Updated only the full-confirmation timestamp in ALIGNS.md; retained unrelated agent instructions. |
 
 [Requests, responses, and resulting agreements](../tests/behavior-results.md)
 provide the evidence. The newsletter baseline was accuracy before speed, a
@@ -81,7 +81,7 @@ for hypothetical cases.
   updates. Installation alone does not demonstrate automatic invocation.
 - A project-scoped copy of the earlier GitHub installation was upgraded with
   `npx skills update align -p`. All revised skill files matched the published
-  source; a separate personal ALIGN.md remained byte-for-byte unchanged.
+  source; a separate personal ALIGNS.md remained byte-for-byte unchanged.
 - Codex plugin command syntax was checked against the installed CLI. Native
   plugin manifests and declared paths were checked locally. Native installation,
   Claude SessionStart delivery, and automatic refresh were not exercised in real

@@ -10,7 +10,7 @@ all submitted plans under the frozen content rubric.
 The initialized package received information that the baseline initially
 lacked. It also received the align skill and its retrieval instructions. This
 result describes that package in a narrow synthetic workload. It does not
-isolate ALIGN.md's file name, establish superiority over equally informed
+isolate ALIGNS.md's file name, establish superiority over equally informed
 AGENTS.md or another memory system, or measure human effort. The earlier
 [information-equivalent preference-transfer study](DISCOVERY_BENCHMARK.md)
 remains a separate tie.
@@ -28,7 +28,7 @@ These are synthetic profiles, not human participants.
 
 A starts with generic AGENTS.md and the current task. B starts with the same
 instructions and task, plus confirmed preferences from an authored earlier
-conversation in ALIGN.md, the align skill, and its instruction block. Both
+conversation in ALIGNS.md, the align skill, and its instruction block. Both
 retain workspace files across tasks and may ask questions or save confirmed
 preferences. A can therefore acquire and reuse the criteria during the run.
 Neither receives the earlier conversation itself.
@@ -140,8 +140,8 @@ text. It verifies evidence provenance, not the correctness of model judgments.
 ## Execution, recovery, and resources
 
 Actors used Codex CLI 0.162.0-alpha.17.2 with gpt-6-astra and medium reasoning.
-The [freeze commit](https://github.com/hmmhmmhm/align.md/commit/c07a880fd10d2f007c5bf1851070062819284571)
-and its [CI receipt](https://github.com/hmmhmmhm/align.md/actions/runs/38676751600),
+The [freeze commit](https://github.com/hmmhmmhm/aligns.md/commit/c07a880fd10d2f007c5bf1851070062819284571)
+and its [CI receipt](https://github.com/hmmhmmhm/aligns.md/actions/runs/38676751600),
 created at 03:31:58 UTC on 2026-10-15, preceded the original run manifest at
 03:32:04 UTC. Frozen source hashes remain unchanged.
 
@@ -154,7 +154,7 @@ Native completion establishes model-turn completion; it cannot reconstruct
 missing process receipts.
 
 After the user resumed, the [recovery procedure](benchmarks/retention/recovery/README.md)
-was [committed and pushed](https://github.com/hmmhmmhm/align.md/commit/d6b7bc5)
+was [committed and pushed](https://github.com/hmmhmmhm/aligns.md/commit/d6b7bc5)
 before further actor calls. It reconstructed the completed responses from
 native traces, continued P2/A from its exact saved workspace at the guide,
 and ran the five untouched chains. No completed response was rerun or replaced.

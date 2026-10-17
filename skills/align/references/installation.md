@@ -1,26 +1,26 @@
 # Installation and method updates
 
-Trusted source: https://github.com/hmmhmmhm/align.md . Use its current installation
+Trusted source: https://github.com/hmmhmmhm/aligns.md . Use its current installation
 instructions and inspect the selected package. Prefer the user's existing skill
 manager. Do not install multiple copies of `align` for the same client.
 
 ## Choose a route
 
-- **Codex plugin:** add the repository's `align-md` marketplace and install
-  `align-md@align-md`. Invoke `$align` or select the installed skill. The package
+- **Codex plugin:** add the repository's `aligns-md` marketplace and install
+  `aligns-md@aligns-md`. Invoke `$align` or select the installed skill. The package
   has no Codex lifecycle hook. Project instructions supply recurring triggers.
-- **Claude Code plugin:** add `hmmhmmhm/align.md` as a marketplace, install
-  `align@align-md`, and invoke `/align:align`. This installation includes a
+- **Claude Code plugin:** add `hmmhmmhm/aligns.md` as a marketplace, install
+  `align@aligns-md`, and invoke `/align:align`. This installation includes a
   static SessionStart reminder. It reads no project data, makes no network
   requests, and changes no files. A third-party marketplace's native auto-update
   is off by default; enable it only within the user's installation/update request.
-- **Portable skills CLI:** `npx skills add hmmhmmhm/align.md --skill align`.
+- **Portable skills CLI:** `npx skills add hmmhmmhm/aligns.md --skill align`.
   Select only the intended agent and project/user scope. Use `--agent codex`
   or `--agent claude-code` when known; use `-g` for user scope, not by default.
   Other clients must be supported by the current installer and verified locally.
 
 For exact client commands and current limitations, consult
-https://github.com/hmmhmmhm/align.md/blob/main/docs/usage.md . If no installer,
+https://github.com/hmmhmmhm/aligns.md/blob/main/docs/usage.md . If no installer,
 network access, or compatible client is available, state the gap and give the
 next step; never report installation as complete without checking discovery.
 Manual folder copies are a fallback and have no automatic upstream update.
@@ -28,7 +28,7 @@ Manual folder copies are a fallback and have no automatic upstream update.
 ## Set update policy once
 
 Distinguish the installed method from the user's agreement. Record the chosen
-route, scope, invocation and update policy in ALIGN.md's Revisit alignment section.
+route, scope, invocation and update policy in ALIGNS.md's Revisit alignment section.
 Offer the supported native auto-update option. For clients without a verified
 native option, offer **update when alignment starts**: the agent performs one
 targeted refresh before the next alignment session, using the recorded route.
@@ -55,8 +55,8 @@ Current targeted refresh commands (check support in the installed client):
 
 ```sh
 # Codex plugin route, our one-plugin marketplace
-codex plugin marketplace upgrade align-md
-codex plugin add align-md@align-md
+codex plugin marketplace upgrade aligns-md
+codex plugin add aligns-md@aligns-md
 
 # skills CLI, preserve the actual installation scope
 npx skills update align -p
@@ -65,8 +65,8 @@ npx skills update align -g
 ```
 
 Claude Code uses its marketplace auto-update setting or `/plugin update
-align@align-md`, followed by `/reload-plugins` or a new session when required.
+align@aligns-md`, followed by `/reload-plugins` or a new session when required.
 This is conditional delivery through the host, not a guarantee that every
-installed copy updates while idle. Never upload ALIGN.md, conversations, or
+installed copy updates while idle. Never upload ALIGNS.md, conversations, or
 reflection answers to improve the shared method. A user can separately choose
 to submit feedback with only the information they authorize.

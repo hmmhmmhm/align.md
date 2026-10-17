@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="assets/align-header.png" alt="ALIGN.md on a yellow and cyan background with a connected node diagram" width="100%">
+  <img src="assets/aligns-header.png" alt="ALIGNS.md on a yellow and cyan background with a connected node diagram" width="100%">
 </p>
 
-<h1 align="center">ALIGN.md</h1>
+<h1 align="center">ALIGNS.md</h1>
 
 <p align="center">
   <strong lang="en">English</strong> · <a href="docs/translated-readme/ko.md" lang="ko">한국어</a> · <a href="docs/translated-readme/ja.md" lang="ja">日本語</a>
@@ -10,14 +10,14 @@
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
-  <a href="https://github.com/hmmhmmhm/align.md/stargazers"><img src="https://img.shields.io/github/stars/hmmhmmhm/align.md?style=flat&amp;logo=github" alt="GitHub stars"></a>
+  <a href="https://github.com/hmmhmmhm/aligns.md/stargazers"><img src="https://img.shields.io/github/stars/hmmhmmhm/aligns.md?style=flat&amp;logo=github" alt="GitHub stars"></a>
   <a href="#install-align"><img src="https://img.shields.io/badge/Format-Markdown-222222.svg?logo=markdown" alt="Format: Markdown"></a>
-  <a href="https://skills.sh/hmmhmmhm/align.md/align"><img src="https://skills.sh/b/hmmhmmhm/align.md" alt="Available on skills.sh"></a>
+  <a href="https://skills.sh/hmmhmmhm/aligns.md/align"><img src="https://skills.sh/b/hmmhmmhm/aligns.md" alt="Available on skills.sh"></a>
 </p>
 
 ## Define what good means
 
-ALIGN.md records the goals and trade-offs you want your agent to use. The **align** skill helps you agree on those criteria and revisit them as the work changes.
+ALIGNS.md records the goals and trade-offs you want your agent to use. The **align** skill helps you agree on those criteria and revisit them as the work changes.
 
 <p align="center">
   <img src="assets/define-what-good-means.png" alt="Several paths converge on a shared reference point" width="100%">
@@ -25,7 +25,7 @@ ALIGN.md records the goals and trade-offs you want your agent to use. The **alig
 
 ## Keep expectations separate
 
-Keep personal criteria in ALIGN.md and the reusable alignment method in the skill. Connect the agreement through your primary agent instruction file, such as AGENTS.md or CLAUDE.md. Use Git history when available. Updating the skill never rewrites your agreement.
+Keep personal criteria in ALIGNS.md and the reusable alignment method in the skill. Connect the agreement through your primary agent instruction file, such as AGENTS.md or CLAUDE.md. Use Git history when available. Updating the skill never rewrites your agreement.
 
 <p align="center">
   <img src="assets/keep-expectations-separate.png" alt="Three distinct connected panels represent execution, instructions, and expectations" width="100%">
@@ -33,7 +33,7 @@ Keep personal criteria in ALIGN.md and the reusable alignment method in the skil
 
 ## Fewer follow-up questions
 
-Across 12 synthetic tasks, an agent starting with generic instructions needed nine clarification replies. With confirmed preferences already in ALIGN.md and the align skill available, it needed none. Both conditions met the final criteria on all 12 tasks. The chart also includes four assumed setup replies for the ALIGN condition. [Results and method](RETENTION_BENCHMARK.md).
+Across 12 synthetic tasks, an agent starting with generic instructions needed nine clarification replies. With confirmed preferences already in ALIGNS.md and the align skill available, it needed none. Both conditions met the final criteria on all 12 tasks. The chart also includes four assumed setup replies for the ALIGNS condition. [Results and method](RETENTION_BENCHMARK.md).
 
 <p align="center">
   <a href="RETENTION_BENCHMARK.md"><img src="assets/benchmarks/retention-comparison.svg" alt="Synthetic benchmark: nine task replies with generic instructions versus zero with saved preferences and align; four assumed setup replies included separately; final fit 12 of 12 in both conditions" width="100%"></a>
@@ -53,17 +53,17 @@ Paste this request into your agent. It sets up the maintained skill and an updat
 policy, then connects it to your project.
 
 ```text
-Set up the maintained align skill from https://github.com/hmmhmmhm/align.md for this project. Read its current installation guide, check the existing installation and agent instructions, and use the supported installation route for my primary CLI. Ask which CLI I mainly use, and whether it is this one, only if that is unclear.
+Set up the maintained align skill from https://github.com/hmmhmmhm/aligns.md for this project. Read its current installation guide, check the existing installation and agent instructions, and use the supported installation route for my primary CLI. Ask which CLI I mainly use, and whether it is this one, only if that is unclear.
 
 Enable supported automatic method updates. If the client has no native auto-update option, use a targeted update at the start of each alignment session, preserving the installation scope. Keep a working installed version when offline. Explain which update mode is active; do not add a scheduler or update unrelated packages.
 
-Use the skill to establish or review ALIGN.md and connect the primary instruction file to it. Preserve existing rules and distinct files; propose safe links for any other clients I use. Record the invocation and update policy in ALIGN.md. Reuse clear answers, and suggest a focused alignment check after important judgment mismatches, before untested long autonomous work, or when I am unsure of the next direction. Method updates must never rewrite my personal criteria or count as agreement.
+Use the skill to establish or review ALIGNS.md and connect the primary instruction file to it. Preserve existing rules and distinct files; propose safe links for any other clients I use. Record the invocation and update policy in ALIGNS.md. Reuse clear answers, and suggest a focused alignment check after important judgment mismatches, before untested long autonomous work, or when I am unsure of the next direction. Method updates must never rewrite my personal criteria or count as agreement.
 ```
 
 Or install the portable skill directly:
 
 ```sh
-npx skills add hmmhmmhm/align.md --skill align
+npx skills add hmmhmmhm/aligns.md --skill align
 ```
 
 Then ask: **Use the align skill to set up ongoing alignment for this project.**
@@ -80,5 +80,5 @@ updater or universal automatic activation is assumed.
 [MIT](LICENSE). Copyright (c) 2026 hmmhmmhm.
 
 <p align="center">
-  <img src="assets/align-footer.png" alt="ALIGN.md on a green background with overlapping coordinate grids" width="100%">
+  <img src="assets/aligns-footer.png" alt="ALIGNS.md on a green background with overlapping coordinate grids" width="100%">
 </p>

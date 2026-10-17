@@ -38,8 +38,8 @@
       "instructions": "Read PREFERENCES.md at the start of every episode. Maintain concise current preferences there when the user authorizes saving them. Apply those notes on later tasks. Keep temporary exceptions out of standing preferences and update a lasting preference when explicitly requested. Ask only for missing consequential choices. PREFERENCES.md starts empty."
     },
     "C": {
-      "label": "Maintained ALIGN setup",
-      "instructions": "Read ALIGN.md at the start of every episode. Use the installed align skill and recurring-use instructions to set up and maintain the project agreement. ALIGN.md starts empty. The method is pinned to this benchmark snapshot; do not check for updates."
+      "label": "Maintained ALIGNS setup",
+      "instructions": "Read ALIGNS.md at the start of every episode. Use the installed align skill and recurring-use instructions to set up and maintain the project agreement. ALIGNS.md starts empty. The method is pinned to this benchmark snapshot; do not check for updates."
     }
   },
   "cases": [

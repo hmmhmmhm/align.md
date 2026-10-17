@@ -1,5 +1,5 @@
 interface:
-  display_name: "ALIGN.md"
+  display_name: "ALIGNS.md"
   short_description: "Keep project decisions aligned with your judgment"
   default_prompt: "Use $align to review our criteria and clarify the next important decision."
 policy:

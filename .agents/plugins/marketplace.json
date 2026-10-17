@@ -1,8 +1,8 @@
 {
-  "name": "align-md",
-  "interface": {"displayName": "ALIGN.md"},
+  "name": "aligns-md",
+  "interface": {"displayName": "ALIGNS.md"},
   "plugins": [{
-    "name": "align-md",
+    "name": "aligns-md",
     "source": {"source": "local", "path": "./"},
     "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
     "category": "Productivity"

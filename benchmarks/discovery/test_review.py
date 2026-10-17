@@ -47,7 +47,7 @@ class ReviewTest(unittest.TestCase):
             review.validate(result, [self.packet()])
 
     def test_blinding_only_normalizes_note_names(self):
-        self.assertEqual(prepare.blind({'text': 'AGENTS.md and ALIGN.md say 10.'}),
+        self.assertEqual(prepare.blind({'text': 'AGENTS.md and ALIGNS.md say 10.'}),
                          {'text': 'project-notes.md and project-notes.md say 10.'})
 
 

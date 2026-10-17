@@ -5,7 +5,7 @@ tie and keeps its frozen sources, results, and interpretation. The reviewers and
 case authors are agents working for the maintainer. This is not an independent
 replication or a study with human participants.
 
-The primary comparison is the complete ALIGN setup against a competent agent
+The primary comparison is the complete ALIGNS setup against a competent agent
 with explicit persistent notes. The ordinary-instruction arm is secondary.
 All arms receive the same task prompts, observations, answer availability,
 correction policy, model settings, episode limits, and file persistence. The

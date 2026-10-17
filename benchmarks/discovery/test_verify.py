@@ -156,7 +156,7 @@ class ReplayTests(unittest.TestCase):
 
     def test_router_receipt_tampering(self):
         row, case, doc = fixture()
-        row['turns'][0]['router_receipt']['prompt'] += 'Prefer ALIGN'
+        row['turns'][0]['router_receipt']['prompt'] += 'Prefer ALIGNS'
         self.assertTrue(self.replay(row, case, doc)[1])
         row, case, doc = fixture()
         row['turns'][0]['router_receipt']['selection']['route_ids'] = []

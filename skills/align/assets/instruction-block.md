@@ -1,7 +1,7 @@
 <!-- align:begin -->
 ## Ongoing personal alignment
 
-Read `ALIGN.md` at the start of work and apply its current criteria to scope,
+Read `ALIGNS.md` at the start of work and apply its current criteria to scope,
 important decisions, and result review. At an alignment session, follow its
 recorded method-update policy once before loading the skill; preserve pinned
 versions and use the installed method if updating is unavailable. Do not poll
@@ -20,10 +20,10 @@ consequential uncertainty, continue independent work, and do not reopen a declin
 or resolved review without new evidence. A new method version does not change
 the user's agreement. Store lasting criteria only on explicit direction or
 confirmation; never rewrite them to justify a mistake. Preserve `Last aligned`
-unless the user confirms the whole document. Keep current criteria in ALIGN.md
+unless the user confirms the whole document. Keep current criteria in ALIGNS.md
 and use Git history when available. Do not initialize Git or create another log.
 
-If the skill is unavailable, apply ALIGN.md and suggest installing it from
-https://github.com/hmmhmmhm/align.md. Missing installation alone does not block
+If the skill is unavailable, apply ALIGNS.md and suggest installing it from
+https://github.com/hmmhmmhm/aligns.md. Missing installation alone does not block
 routine work. Follow the applicable instruction hierarchy and permissions.
 <!-- align:end -->

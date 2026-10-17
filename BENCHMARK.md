@@ -2,7 +2,7 @@
 
 The complete align setup gained 3 or 4 rubric points out of 108 over both
 baselines in this synthetic pilot, depending on the model reviewer. The gains
-came from two scenarios. Separating criteria into ALIGN.md alone produced no
+came from two scenarios. Separating criteria into ALIGNS.md alone produced no
 score change. This small result does not establish general reliability or a
 reduction in user effort.
 
@@ -21,7 +21,7 @@ later method versions.
 | Condition | Setup |
 | --- | --- |
 | A | Criteria and ordinary operating rules in AGENTS.md; no align skill. |
-| B | The same criteria in ALIGN.md, referenced neutrally from AGENTS.md; no align skill. |
+| B | The same criteria in ALIGNS.md, referenced neutrally from AGENTS.md; no align skill. |
 | C | B plus the installed align skill and its recommended recurring-use instruction block. |
 
 A is a strong instruction baseline. B tests separating the criteria into a
@@ -40,7 +40,7 @@ semantic checks independently; their scores are retained separately.
 | Condition | File checks | Semantic, judge 1 | Semantic, judge 2 | Combined, judge 1 | Combined, judge 2 |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | A: AGENTS.md | 33/33 | 67/75 | 70/75 | 100/108 | 103/108 |
-| B: separate ALIGN.md | 33/33 | 67/75 | 70/75 | 100/108 | 103/108 |
+| B: separate ALIGNS.md | 33/33 | 67/75 | 70/75 | 100/108 | 103/108 |
 | C: maintained setup | 33/33 | 70/75 | 74/75 | 103/108 | 107/108 |
 
 Fully passed scenarios were A 30/36, B 30/36, C 31/36 under judge 1, and
@@ -136,7 +136,7 @@ The [correction record](benchmarks/results/2026-10-15-astra-v1/context-correctio
 adds the exact frozen shared instructions to every packet. Separate code
 checks confirmed that all 108 packet IDs, rubrics, responses, file evidence,
 and other fields stayed unchanged. The correction was recorded in
-[commit f24ac8a](https://github.com/hmmhmmhm/align.md/commit/f24ac8a0f769e63ea64a60eb98dc9717161f920c)
+[commit f24ac8a](https://github.com/hmmhmmhm/aligns.md/commit/f24ac8a0f769e63ea64a60eb98dc9717161f920c)
 before two fresh reviewers were assigned all 225 semantic checks again. The
 [original reviews](benchmarks/results/2026-10-15-astra-v1/judgments) remain
 available. Actor outputs and deterministic checks were not rerun or changed.
@@ -144,7 +144,7 @@ The [original-review report](benchmarks/results/2026-10-15-astra-v1/report-origi
 preserves its scores with an explicit context warning; they are not mixed into
 the primary totals above.
 The correction's
-[CI receipt](https://github.com/hmmhmmhm/align.md/actions/runs/38658653720)
+[CI receipt](https://github.com/hmmhmmhm/aligns.md/actions/runs/38658653720)
 was created at 2026-10-15 00:12:07 UTC. The
 [corrected review manifest](benchmarks/results/2026-10-15-astra-v1/judgments-v2/manifest.json)
 was created at 00:12:27 UTC.
@@ -185,9 +185,9 @@ the frozen checks do not assess ZIP contents.
 
 ## Inspect or reproduce
 
-The [freeze commit](https://github.com/hmmhmmhm/align.md/commit/90faecb7ec00bf4065f6b53152bc4f89d7285f81)
+The [freeze commit](https://github.com/hmmhmmhm/aligns.md/commit/90faecb7ec00bf4065f6b53152bc4f89d7285f81)
 preceded the scored actor run. Its
-[CI receipt](https://github.com/hmmhmmhm/align.md/actions/runs/38656260670)
+[CI receipt](https://github.com/hmmhmmhm/aligns.md/actions/runs/38656260670)
 was created at 2026-10-14 23:47:56 UTC; the actor manifest was created at
 23:48:06 UTC. The
 [run manifest](benchmarks/results/2026-10-15-astra-v1/manifest.json)
@@ -214,7 +214,7 @@ Offline verification uses that archive, so future skill changes do not alter
 this historical result. Current-checkout differences are reported separately.
 CI runs its tests and verifies both the retained original review and the
 corrected review, including the locations of quoted evidence. Passing these checks does not certify a model's interpretations
-or establish a benefit from ALIGN.
+or establish a benefit from ALIGNS.
 
 An online rerun needs access to the recorded alpha CLI and model. The model
 alias does not identify immutable serving weights; availability and later

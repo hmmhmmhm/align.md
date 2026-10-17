@@ -65,13 +65,13 @@ def main():
         ax.set_axisbelow(True)
         ax.grid(axis='y', color='#E0E5EB', linewidth=.7)
         ax.tick_params(axis='x', length=0, pad=10)
-    fig.suptitle('ALIGN scripted intervention pilot', x=.06, ha='left', fontsize=18, weight='bold')
+    fig.suptitle('ALIGNS scripted intervention pilot', x=.06, ha='left', fontsize=18, weight='bold')
     fig.text(.06, .91, 'Two authored profiles, two repetitions per condition. B is the primary comparator.', fontsize=11)
     fig.text(.06, .045, 'Fixed user scripts and exact artifact checks. No human satisfaction or time was measured.', fontsize=10, color='#475565')
     fig.subplots_adjust(left=.075, right=.98, top=.79, bottom=.20, wspace=.32)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     for ext in ('svg', 'png'):
-        fig.savefig(args.output.with_suffix('.'+ext), dpi=180, facecolor='white', metadata={'Creator': 'ALIGN effort reporting plot.py'} if ext == 'svg' else {'Software': 'ALIGN effort reporting plot.py'})
+        fig.savefig(args.output.with_suffix('.'+ext), dpi=180, facecolor='white', metadata={'Creator': 'ALIGNS effort reporting plot.py'} if ext == 'svg' else {'Software': 'ALIGNS effort reporting plot.py'})
     args.output.with_suffix('.json').write_text(json.dumps({
         'report_sha256': hashlib.sha256(args.report.read_bytes()).hexdigest(),
         'python': sys.version.split()[0], 'matplotlib': matplotlib.__version__, 'data': rows,
