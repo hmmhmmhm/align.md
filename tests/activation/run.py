@@ -105,13 +105,13 @@ def main():
     p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);p.add_argument('--private-output',type=Path,required=True)
     p.add_argument('--model',default='gpt-6-astra');p.add_argument('--repeats',type=int,default=2)
     p.add_argument('--workers',type=int,choices=(1,2,3),default=3);p.add_argument('--timeout',type=int,default=180)
-    p.add_argument('--codex',default=shutil.which('codex'));p.add_argument('--case',action='append');args=p.parse_args()
+    p.add_argument('--codex',default=shutil.which('codex'));p.add_argument('--case',action='append');p.add_argument('--cases',type=Path,default=HERE/'cases.json');args=p.parse_args()
     args.output=args.output.resolve();args.private_output=args.private_output.resolve()
     if args.private_output.is_relative_to(ROOT):p.error('Private output must be outside repository')
     if args.output.exists() or args.private_output.exists():p.error('Use new paths; never overwrite or silently retry trials')
-    cases_doc=json.loads((HERE/'cases.json').read_text());cases=[c for c in cases_doc['cases'] if not args.case or c['id'] in args.case]
+    cases_doc=json.loads(args.cases.read_text());cases=[c for c in cases_doc['cases'] if not args.case or c['id'] in args.case]
     args.output.mkdir(parents=True);args.private_output.mkdir(parents=True,mode=0o700)
-    source=args.output/'source';shutil.copytree(ROOT/'skills/align',source/'skill');shutil.copy(HERE/'cases.json',source/'cases.json');shutil.copy(__file__,source/'run.py')
+    source=args.output/'source';shutil.copytree(ROOT/'skills/align',source/'skill');shutil.copy(args.cases,source/'cases.json');shutil.copy(__file__,source/'run.py')
     hashes={str(x.relative_to(source)):digest(x.read_bytes()) for x in sorted(source.rglob('*')) if x.is_file()}
     order=[(c,r) for c in cases for r in range(1,args.repeats+1)];random.Random(20261017).shuffle(order)
     write(args.output/'manifest.json',{'started_at':datetime.now(timezone.utc).isoformat(),'source_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),

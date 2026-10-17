@@ -41,3 +41,13 @@ cases must be fixed before candidate results are inspected.
 
 Sources: [OpenAI skill evaluation guidance](https://developers.openai.com/blog/eval-skills)
 and [skill activation](https://developers.openai.com/plugins/concepts/skills).
+
+## Additional wording set
+
+Freeze 18 additional cases in `holdout-cases.json` before changing any description
+or running those cases. They cover very short preference requests, misspelled
+product names, casual phrasing, alignment homonyms, declined review, and answers
+already present in project context. Run each twice. Six cases require implicit
+selection, three are explicit misspelled-name requests, and nine should avoid
+selection. This is additional synthetic coverage, not an independently authored
+holdout. Do not count it as unseen validation if it is later used for tuning.

@@ -1,0 +1,203 @@
+{
+  "common_instructions": "Work only in this project. Do not publish, contact people, access personal logs, install packages, or change global settings. Do not use network services. Use local project files and the current request.\n",
+  "cases": [
+    {
+      "id": "short-ko",
+      "topic": "short",
+      "language": "ko",
+      "expected_routing": "required",
+      "prompt": "내 취향 좀 기억하고 작업해.",
+      "files": {
+        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n",
+        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
+      }
+    },
+    {
+      "id": "short-en",
+      "topic": "short",
+      "language": "en",
+      "expected_routing": "required",
+      "prompt": "Learn my preferences so I do not have to keep repeating them.",
+      "files": {
+        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n",
+        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
+      }
+    },
+    {
+      "id": "short-ja",
+      "topic": "short",
+      "language": "ja",
+      "expected_routing": "required",
+      "prompt": "好みを覚えて、次の作業にも活かしてほしい。",
+      "files": {
+        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n",
+        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
+      }
+    },
+    {
+      "id": "brand_typo-ko",
+      "topic": "brand_typo",
+      "language": "ko",
+      "expected_routing": "explicit",
+      "prompt": "얼라인즈로 나랑 기준좀 마춰보자",
+      "files": {
+        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n",
+        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
+      }
+    },
+    {
+      "id": "brand_typo-en",
+      "topic": "brand_typo",
+      "language": "en",
+      "expected_routing": "explicit",
+      "prompt": "Use alings.md to sync my expectations with you.",
+      "files": {
+        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n",
+        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
+      }
+    },
+    {
+      "id": "brand_typo-ja",
+      "topic": "brand_typo",
+      "language": "ja",
+      "expected_routing": "explicit",
+      "prompt": "ALGIN.mdで自分の基準を整理したい。",
+      "files": {
+        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n",
+        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
+      }
+    },
+    {
+      "id": "casual_context-ko",
+      "topic": "casual_context",
+      "language": "ko",
+      "expected_routing": "required",
+      "prompt": "질문할땐 좀 묶어서 해줘 담부턴. 사소한건 걍 알아서 하고. 이걸 프로젝트 기준에 넣자",
+      "files": {
+        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n",
+        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
+      }
+    },
+    {
+      "id": "casual_context-en",
+      "topic": "casual_context",
+      "language": "en",
+      "expected_routing": "required",
+      "prompt": "less ping-pong pls. batch questions next time, use ur judgment on little stuff. save that for this project.",
+      "files": {
+        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n",
+        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
+      }
+    },
+    {
+      "id": "casual_context-ja",
+      "topic": "casual_context",
+      "language": "ja",
+      "expected_routing": "required",
+      "prompt": "細かいことは任せたいし、質問はまとめてほしい。次からの方針に入れといて。",
+      "files": {
+        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n",
+        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
+      }
+    },
+    {
+      "id": "alignment_homonym-ko",
+      "topic": "alignment_homonym",
+      "language": "ko",
+      "expected_routing": "avoid",
+      "prompt": "정렬 알고리즘에서 병합 정렬이 뭔지 두 문장으로 알려줘.",
+      "files": {
+        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n",
+        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
+      }
+    },
+    {
+      "id": "alignment_homonym-en",
+      "topic": "alignment_homonym",
+      "language": "en",
+      "expected_routing": "avoid",
+      "prompt": "Explain sequence alignment in two sentences. No project changes.",
+      "files": {
+        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n",
+        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
+      }
+    },
+    {
+      "id": "alignment_homonym-ja",
+      "topic": "alignment_homonym",
+      "language": "ja",
+      "expected_routing": "avoid",
+      "prompt": "文字列のアラインメントとは何か、2文で説明して。プロジェクトは変更しないで。",
+      "files": {
+        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n",
+        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
+      }
+    },
+    {
+      "id": "declined-ko",
+      "topic": "declined",
+      "language": "ko",
+      "expected_routing": "avoid",
+      "prompt": "이번엔 기준 다시 맞추자는 얘기 하지 말고 index.html의 Wrokshop 오타만 고쳐.",
+      "files": {
+        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n",
+        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
+      }
+    },
+    {
+      "id": "declined-en",
+      "topic": "declined",
+      "language": "en",
+      "expected_routing": "avoid",
+      "prompt": "Do not revisit my preferences now. Only fix Wrokshop in index.html.",
+      "files": {
+        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n",
+        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
+      }
+    },
+    {
+      "id": "declined-ja",
+      "topic": "declined",
+      "language": "ja",
+      "expected_routing": "avoid",
+      "prompt": "今回は方針のすり合わせはしなくていい。index.htmlのWrokshopという誤字だけ直して。",
+      "files": {
+        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n",
+        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
+      }
+    },
+    {
+      "id": "context_available-ko",
+      "topic": "context_available",
+      "language": "ko",
+      "expected_routing": "avoid",
+      "prompt": "README에 적힌 제목으로 바꿔줘.",
+      "files": {
+        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n\nApproved page heading: Find your next workshop. Replace only the h1 text when asked to apply this heading.\n",
+        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
+      }
+    },
+    {
+      "id": "context_available-en",
+      "topic": "context_available",
+      "language": "en",
+      "expected_routing": "avoid",
+      "prompt": "Use the heading already specified in README.",
+      "files": {
+        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n\nApproved page heading: Find your next workshop. Replace only the h1 text when asked to apply this heading.\n",
+        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
+      }
+    },
+    {
+      "id": "context_available-ja",
+      "topic": "context_available",
+      "language": "ja",
+      "expected_routing": "avoid",
+      "prompt": "READMEに書いてある見出しに変えて。",
+      "files": {
+        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n\nApproved page heading: Find your next workshop. Replace only the h1 text when asked to apply this heading.\n",
+        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
+      }
+    }
+  ]
+}
