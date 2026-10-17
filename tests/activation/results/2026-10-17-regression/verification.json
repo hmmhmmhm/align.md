@@ -1,0 +1,59 @@
+{
+  "planned": 30,
+  "records": 30,
+  "completed": 30,
+  "all_completed": true,
+  "missing": [],
+  "errors": [],
+  "counts": {
+    "required": {
+      "completed": 24,
+      "read": 24,
+      "body_visible": 24,
+      "runtime_failures": 0
+    },
+    "required/en": {
+      "completed": 8,
+      "read": 8,
+      "body_visible": 8,
+      "runtime_failures": 0
+    },
+    "required/ja": {
+      "completed": 8,
+      "read": 8,
+      "body_visible": 8,
+      "runtime_failures": 0
+    },
+    "required/ko": {
+      "completed": 8,
+      "read": 8,
+      "body_visible": 8,
+      "runtime_failures": 0
+    },
+    "avoid": {
+      "completed": 6,
+      "read": 0,
+      "body_visible": 0,
+      "runtime_failures": 0
+    },
+    "avoid/en": {
+      "completed": 2,
+      "read": 0,
+      "body_visible": 0,
+      "runtime_failures": 0
+    },
+    "avoid/ja": {
+      "completed": 2,
+      "read": 0,
+      "body_visible": 0,
+      "runtime_failures": 0
+    },
+    "avoid/ko": {
+      "completed": 2,
+      "read": 0,
+      "body_visible": 0,
+      "runtime_failures": 0
+    }
+  },
+  "file_check_findings": {}
+}

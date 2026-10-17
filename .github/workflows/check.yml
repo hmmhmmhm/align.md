@@ -14,6 +14,12 @@ jobs:
           python-version: '3.12'
       - name: Check skill package
         run: python3 -m unittest discover -s tests -p 'test_*.py'
+      - name: Check natural-language discovery replay
+        run: |
+          python3 -m unittest discover -s tests/activation -p 'test_*.py'
+          python3 tests/activation/verify.py tests/activation/results/2026-10-17-baseline --require-complete
+          python3 tests/activation/verify.py tests/activation/results/2026-10-17-additional --require-complete
+          python3 tests/activation/verify.py tests/activation/results/2026-10-17-regression --require-complete --require-clean-files
       - name: Check benchmark harness
         run: python3 -m unittest discover -s benchmarks -p 'test_*.py'
       - name: Check offline reporting

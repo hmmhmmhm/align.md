@@ -1,0 +1,10 @@
+{
+  "checked_files": 104,
+  "checks": [
+    "host_home",
+    "temporary_runtime",
+    "credential_value"
+  ],
+  "findings": [],
+  "scope": "Automated scan for literal host paths and common credential shapes. Full session metadata and auth files are not published."
+}

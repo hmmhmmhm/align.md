@@ -1,0 +1,107 @@
+{
+  "planned": 84,
+  "records": 84,
+  "completed": 84,
+  "all_completed": true,
+  "missing": [],
+  "errors": [],
+  "counts": {
+    "avoid": {
+      "completed": 24,
+      "read": 0,
+      "body_visible": 0,
+      "runtime_failures": 0
+    },
+    "avoid/en": {
+      "completed": 8,
+      "read": 0,
+      "body_visible": 0,
+      "runtime_failures": 0
+    },
+    "avoid/ja": {
+      "completed": 8,
+      "read": 0,
+      "body_visible": 0,
+      "runtime_failures": 0
+    },
+    "avoid/ko": {
+      "completed": 8,
+      "read": 0,
+      "body_visible": 0,
+      "runtime_failures": 0
+    },
+    "required": {
+      "completed": 42,
+      "read": 42,
+      "body_visible": 42,
+      "runtime_failures": 0
+    },
+    "required/en": {
+      "completed": 14,
+      "read": 14,
+      "body_visible": 14,
+      "runtime_failures": 0
+    },
+    "required/ja": {
+      "completed": 14,
+      "read": 14,
+      "body_visible": 14,
+      "runtime_failures": 0
+    },
+    "required/ko": {
+      "completed": 14,
+      "read": 14,
+      "body_visible": 14,
+      "runtime_failures": 0
+    },
+    "explicit": {
+      "completed": 6,
+      "read": 5,
+      "body_visible": 6,
+      "runtime_failures": 0
+    },
+    "explicit/en": {
+      "completed": 2,
+      "read": 2,
+      "body_visible": 2,
+      "runtime_failures": 0
+    },
+    "explicit/ja": {
+      "completed": 2,
+      "read": 2,
+      "body_visible": 2,
+      "runtime_failures": 0
+    },
+    "explicit/ko": {
+      "completed": 2,
+      "read": 1,
+      "body_visible": 2,
+      "runtime_failures": 0
+    },
+    "boundary": {
+      "completed": 12,
+      "read": 6,
+      "body_visible": 6,
+      "runtime_failures": 0
+    },
+    "boundary/en": {
+      "completed": 4,
+      "read": 2,
+      "body_visible": 2,
+      "runtime_failures": 0
+    },
+    "boundary/ja": {
+      "completed": 4,
+      "read": 2,
+      "body_visible": 2,
+      "runtime_failures": 0
+    },
+    "boundary/ko": {
+      "completed": 4,
+      "read": 2,
+      "body_visible": 2,
+      "runtime_failures": 0
+    }
+  },
+  "file_check_findings": {}
+}

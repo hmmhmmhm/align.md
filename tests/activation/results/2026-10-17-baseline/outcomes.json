@@ -1,0 +1,422 @@
+[
+  {
+    "id": "clear_violation-ja__r1",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "history_typo-en__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "remember-ja__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "one_off-ko__r2",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "remember-en__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "explicit-ja__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "typo-ko__r2",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "vague-en__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "rehearsal-ko__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "typo-en__r1",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "repeat-ko__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "history_typo-ja__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "rehearsal-ja__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "repeat-ko__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "uncertain-ja__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "concept_only-ko__r1",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "remember-ja__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "rehearsal-en__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "direction-ko__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "repeat-en__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "remember-ko__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "one_off-ko__r1",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "css_alignment-ja__r1",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "remember-ko__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "uncertain-en__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "clear_violation-ja__r2",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "context-ko__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "history_typo-ja__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "direction-ja__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "typo-ja__r2",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "direction-en__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "css_alignment-ko__r2",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "history_typo-en__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "uncertain-en__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "history_typo-ko__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "one_off-en__r2",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "typo-ja__r1",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "uncertain-ko__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "context-ko__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "explicit-ko__r2",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "repeat-ja__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "explicit-en__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "context-en__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "concept_only-en__r2",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "rehearsal-ko__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "uncertain-ko__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "css_alignment-ja__r2",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "direction-ja__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "explicit-ja__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "vague-en__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "one_off-ja__r1",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "css_alignment-en__r2",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "clear_violation-ko__r2",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "explicit-ko__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "clear_violation-ko__r1",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "direction-ko__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "typo-en__r2",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "repeat-en__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "css_alignment-ko__r1",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "history_typo-ko__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "concept_only-ja__r1",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "clear_violation-en__r2",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "uncertain-ja__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "rehearsal-en__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "one_off-en__r1",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "explicit-en__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "context-en__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "concept_only-ja__r2",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "repeat-ja__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "concept_only-ko__r2",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "css_alignment-en__r1",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "typo-ko__r1",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "context-ja__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "vague-ja__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "one_off-ja__r2",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "vague-ja__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "vague-ko__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "concept_only-en__r1",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "vague-ko__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "remember-en__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "context-ja__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "clear_violation-en__r1",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "direction-en__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "rehearsal-ja__r2",
+    "completed": true,
+    "read": true
+  }
+]

@@ -1,0 +1,90 @@
+{
+  "planned": 36,
+  "records": 36,
+  "completed": 36,
+  "all_completed": true,
+  "missing": [],
+  "errors": [],
+  "counts": {
+    "avoid": {
+      "completed": 18,
+      "read": 0,
+      "body_visible": 0,
+      "runtime_failures": 0
+    },
+    "avoid/en": {
+      "completed": 6,
+      "read": 0,
+      "body_visible": 0,
+      "runtime_failures": 0
+    },
+    "avoid/ja": {
+      "completed": 6,
+      "read": 0,
+      "body_visible": 0,
+      "runtime_failures": 0
+    },
+    "avoid/ko": {
+      "completed": 6,
+      "read": 0,
+      "body_visible": 0,
+      "runtime_failures": 0
+    },
+    "explicit": {
+      "completed": 6,
+      "read": 6,
+      "body_visible": 6,
+      "runtime_failures": 0
+    },
+    "explicit/en": {
+      "completed": 2,
+      "read": 2,
+      "body_visible": 2,
+      "runtime_failures": 0
+    },
+    "explicit/ja": {
+      "completed": 2,
+      "read": 2,
+      "body_visible": 2,
+      "runtime_failures": 0
+    },
+    "explicit/ko": {
+      "completed": 2,
+      "read": 2,
+      "body_visible": 2,
+      "runtime_failures": 0
+    },
+    "required": {
+      "completed": 12,
+      "read": 12,
+      "body_visible": 12,
+      "runtime_failures": 0
+    },
+    "required/en": {
+      "completed": 4,
+      "read": 4,
+      "body_visible": 4,
+      "runtime_failures": 0
+    },
+    "required/ja": {
+      "completed": 4,
+      "read": 4,
+      "body_visible": 4,
+      "runtime_failures": 0
+    },
+    "required/ko": {
+      "completed": 4,
+      "read": 4,
+      "body_visible": 4,
+      "runtime_failures": 0
+    }
+  },
+  "file_check_findings": {
+    "short-en__r1": [
+      "Unexpected file mutation while clarifying, explaining or rehearsing"
+    ],
+    "short-en__r2": [
+      "Unexpected file mutation while clarifying, explaining or rehearsing"
+    ]
+  }
+}

@@ -24,6 +24,14 @@ class EvidenceTests(unittest.TestCase):
   self.assertTrue(verifier.body_visible(events))
   item['aggregated_output']='cat: .agents/skills/align/SKILL.md: No such file'
   self.assertFalse(verifier.body_visible(events))
+ def test_pref_request_without_criteria_flags_early_document(self):
+  record={'before':{},'after':{'ALIGNS.md':{'text':'Draft of restrictions','sha256':'x'}}}
+  self.assertTrue(verifier.file_checks(record,{'topic':'short'}))
+  self.assertEqual(verifier.file_checks(record,{'topic':'remember'}),[])
+ def test_one_off_preserves_existing_agreement(self):
+  prior={'ALIGNS.md':{'text':'Keep a calm voice','sha256':'x'}}
+  self.assertEqual(verifier.file_checks({'before':prior,'after':prior},{'topic':'one_off'}),[])
+  self.assertTrue(verifier.file_checks({'before':prior,'after':{}},{'topic':'one_off'}))
  def test_failures_are_not_counted_as_successful_nonreads(self):
   cases={'x':{'expected_routing':'avoid','language':'ko'}}
   records=[{'case_id':'x','completed':False,'read_evidence':[]},{'case_id':'x','completed':True,'read_evidence':[{}]}]

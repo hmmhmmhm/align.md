@@ -1,0 +1,152 @@
+[
+  {
+    "id": "clear_violation-ja__r1",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "short-ja__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "remember-ko__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "clear_violation-ko__r1",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "context-en__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "context-ko__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "casual_context-ja__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "short-en__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "short-ko__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "casual_context-ko__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "casual_context-en__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "remember-ko__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "clear_violation-ja__r2",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "casual_context-ko__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "clear_violation-en__r2",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "context-ja__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "clear_violation-en__r1",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "casual_context-ja__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "context-ko__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "remember-ja__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "clear_violation-ko__r2",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "remember-ja__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "context-ja__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "remember-en__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "short-en__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "context-en__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "short-ja__r2",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "remember-en__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "casual_context-en__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "short-ko__r1",
+    "completed": true,
+    "read": true
+  }
+]

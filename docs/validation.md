@@ -116,3 +116,15 @@ and conversation parsing were tested with fixtures, not personal logs.
 These checks establish collector behavior. They do not measure preference
 inference accuracy, real-world time savings, or compatibility with every client
 transcript version. Analysis speed defaults remain disclosed assumptions.
+
+## Natural-language discovery, 0.5.0 and 0.5.1
+
+[The discovery report](../tests/activation/RESULTS.md) covers short and informal
+requests in English, Korean and Japanese, including misspelled product names
+and requests that should not start alignment. It separates observed method
+loading from file behavior and retains both original and corrected measurements.
+
+The report includes a premature agreement-draft case and the narrow 0.5.1
+correction. Frozen fixtures, actor traces, source hashes and an offline replay
+are in [tests/activation](../tests/activation/). These are synthetic Codex runs
+on one model, not evidence from real users or every supported client.

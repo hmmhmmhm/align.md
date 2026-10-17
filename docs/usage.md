@@ -149,6 +149,11 @@ before implementation. Handle small fixes using the existing conventions."
 The skill records a lasting preference only when you request or confirm it.
 An answer about one task stays with that task unless you say otherwise.
 
+If you ask the agent to learn your preferences without naming any, it first
+asks for a concrete criterion. It keeps proposals in the conversation unless
+you request a file draft. A clear request to save a lasting preference does not
+need another confirmation.
+
 ## Confirmation and removal
 
 Explicit lasting preferences can update the relevant criteria. One-off exceptions

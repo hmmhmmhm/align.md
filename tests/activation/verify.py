@@ -54,6 +54,10 @@ def file_checks(record, case):
 
 def verify(root):
     m=json.loads((root/'manifest.json').read_text());errors=[]
+    publication=root/'publication.json'
+    if publication.exists():
+        for name,expected in json.loads(publication.read_text())['files'].items():
+            if not (root/name).is_file() or sha((root/name).read_bytes())!=expected:errors.append('Publication hash mismatch: '+name)
     for name,expected in m['source_hashes'].items():
         p=root/'source'/name
         if not p.is_file() or sha(p.read_bytes())!=expected:errors.append('Source hash mismatch: '+name)
@@ -86,6 +90,6 @@ def verify(root):
             'file_check_findings':{d['id']:found for d in records if d['completed'] and (found:=file_checks(d,cases[d['case_id']]))}}
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('run',type=Path);p.add_argument('--require-complete',action='store_true');args=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('run',type=Path);p.add_argument('--require-complete',action='store_true');p.add_argument('--require-clean-files',action='store_true');args=p.parse_args()
     result=verify(args.run);print(json.dumps(result,ensure_ascii=False,indent=2))
-    raise SystemExit(1 if result['errors'] or (args.require_complete and not result['all_completed']) else 0)
+    raise SystemExit(1 if result['errors'] or (args.require_complete and not result['all_completed']) or (args.require_clean_files and result['file_check_findings']) else 0)

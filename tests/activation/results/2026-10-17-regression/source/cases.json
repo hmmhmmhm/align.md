@@ -1,0 +1,173 @@
+{
+  "common_instructions": "Work only in this project. Do not publish, contact people, access personal logs, install packages, or change global settings. Do not use network services. Use local project files and the current request.\n",
+  "cases": [
+    {
+      "id": "short-ko",
+      "topic": "short",
+      "language": "ko",
+      "expected_routing": "required",
+      "prompt": "내 취향 좀 기억하고 작업해.",
+      "files": {
+        "README.md": "# Japanese study plan\nA personal plan for learning basic Japanese. Goals and study preferences have not been agreed yet.\n",
+        "notes.md": "No decisions recorded yet.\n"
+      }
+    },
+    {
+      "id": "short-en",
+      "topic": "short",
+      "language": "en",
+      "expected_routing": "required",
+      "prompt": "Learn my preferences so I do not have to keep repeating them.",
+      "files": {
+        "README.md": "# Neighborhood newsletter\nA monthly email draft about local events. The reader and editorial preferences are not settled.\n",
+        "notes.md": "No decisions recorded yet.\n"
+      }
+    },
+    {
+      "id": "short-ja",
+      "topic": "short",
+      "language": "ja",
+      "expected_routing": "required",
+      "prompt": "好みを覚えて、次の作業にも活かしてほしい。",
+      "files": {
+        "README.md": "# Garden notebook\nA notebook for planning a small balcony garden. No budget or care schedule has been chosen.\n",
+        "notes.md": "No decisions recorded yet.\n"
+      }
+    },
+    {
+      "id": "casual_context-ko",
+      "topic": "casual_context",
+      "language": "ko",
+      "expected_routing": "required",
+      "prompt": "질문할땐 좀 묶어서 해줘 담부턴. 사소한건 걍 알아서 하고. 이걸 프로젝트 기준에 넣자",
+      "files": {
+        "README.md": "# Home organization checklist\nA checklist for organizing a home office. No recurring schedule is authorized.\n",
+        "notes.md": "No decisions recorded yet.\n"
+      }
+    },
+    {
+      "id": "casual_context-en",
+      "topic": "casual_context",
+      "language": "en",
+      "expected_routing": "required",
+      "prompt": "less ping-pong pls. batch questions next time, use ur judgment on little stuff. save that for this project.",
+      "files": {
+        "README.md": "# Small command-line utility\nAn early idea for a local file-renaming utility. Implementation has not started.\n",
+        "notes.md": "No decisions recorded yet.\n"
+      }
+    },
+    {
+      "id": "casual_context-ja",
+      "topic": "casual_context",
+      "language": "ja",
+      "expected_routing": "required",
+      "prompt": "細かいことは任せたいし、質問はまとめてほしい。次からの方針に入れといて。",
+      "files": {
+        "README.md": "# Essay drafts\nA collection of personal essay drafts. Editing preferences have not been recorded.\n",
+        "notes.md": "No decisions recorded yet.\n"
+      }
+    },
+    {
+      "id": "remember-ko",
+      "language": "ko",
+      "topic": "remember",
+      "expected_routing": "required",
+      "prompt": "앞으로 이 프로젝트는 화려함보다 내가 유지보수하기 쉬운 걸 우선해줘. 내 취향으로 남겨둬.",
+      "files": {
+        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n",
+        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
+      }
+    },
+    {
+      "id": "remember-en",
+      "language": "en",
+      "topic": "remember",
+      "expected_routing": "required",
+      "prompt": "For this project, always prefer something I can maintain over something impressive. Keep that as my preference.",
+      "files": {
+        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n",
+        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
+      }
+    },
+    {
+      "id": "remember-ja",
+      "language": "ja",
+      "topic": "remember",
+      "expected_routing": "required",
+      "prompt": "このプロジェクトでは、見栄えより自分で保守しやすいことを優先して。今後の方針として残しておいて。",
+      "files": {
+        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n",
+        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
+      }
+    },
+    {
+      "id": "context-ko",
+      "language": "ko",
+      "topic": "context",
+      "expected_routing": "required",
+      "prompt": "내가 대충 말해서 너랑 자꾸 엇갈리나봐. 뭘 물어보고 어디까지 알아서 할지 나랑 정하자.",
+      "files": {
+        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n",
+        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
+      }
+    },
+    {
+      "id": "context-en",
+      "language": "en",
+      "topic": "context",
+      "expected_routing": "required",
+      "prompt": "I tend to give you half the context. Let us agree when you should ask me and when you should just use your judgment.",
+      "files": {
+        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n",
+        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
+      }
+    },
+    {
+      "id": "context-ja",
+      "language": "ja",
+      "topic": "context",
+      "expected_routing": "required",
+      "prompt": "説明を省きがちで、意図がうまく伝わらない。どこで聞き返して、どこから任せるか決めておきたい。",
+      "files": {
+        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n",
+        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n"
+      }
+    },
+    {
+      "id": "clear_violation-ko",
+      "language": "ko",
+      "topic": "clear_violation",
+      "expected_routing": "avoid",
+      "prompt": "추적 안 쓰기로 문서에 이미 정했잖아. index.html의 analytics.js 참조를 빼. 다시 질문하지 말고.",
+      "files": {
+        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n",
+        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n",
+        "ALIGNS.md": "# Project alignment\nUse a calm, plain voice. Do not use analytics or tracking.\n\nLast aligned: 2026-10-12 09:00 (Asia/Seoul).\n"
+      }
+    },
+    {
+      "id": "clear_violation-en",
+      "language": "en",
+      "topic": "clear_violation",
+      "expected_routing": "avoid",
+      "prompt": "We already agreed in the project file: no tracking. Remove the analytics.js reference from index.html. No new interview.",
+      "files": {
+        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n",
+        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n",
+        "ALIGNS.md": "# Project alignment\nUse a calm, plain voice. Do not use analytics or tracking.\n\nLast aligned: 2026-10-12 09:00 (Asia/Seoul).\n"
+      }
+    },
+    {
+      "id": "clear_violation-ja",
+      "language": "ja",
+      "topic": "clear_violation",
+      "expected_routing": "avoid",
+      "prompt": "追跡は使わないと文書でもう決めたよね。index.htmlのanalytics.js参照を削除して。聞き直さないで。",
+      "files": {
+        "README.md": "# Workshop guide\nA small static guide to local workshops. This project is at an early stage.\n",
+        "index.html": "<!doctype html><html><head><style>.card h1 { text-align: left; }</style></head><body><article class=\"card\"><h1>Wrokshop guide</h1><p>Find a local workshop.</p></article><script src=\"analytics.js\"></script></body></html>\n",
+        "ALIGNS.md": "# Project alignment\nUse a calm, plain voice. Do not use analytics or tracking.\n\nLast aligned: 2026-10-12 09:00 (Asia/Seoul).\n"
+      }
+    }
+  ]
+}

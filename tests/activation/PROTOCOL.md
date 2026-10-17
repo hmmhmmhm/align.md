@@ -28,8 +28,9 @@ leave the agreement intact, confirmed narrow updates preserve the full timestamp
 known errors are fixed without another interview, and hypothetical rehearsal
 never starts an autonomous loop. Do not equate loading the skill with good behavior.
 
-The owner-side evaluator reviews all outputs. This is not an independent or blinded
-behavioral score. Public records retain prompts, outputs, commands, changes and
+The owner-side evaluator inspects selected responses and every flagged mutation.
+Every completed trial receives file-invariant checks. This is not an independent
+or blinded behavioral score. Public records retain prompts, outputs, commands, changes and
 source hashes with literal local paths redacted. Raw evidence stays outside Git.
 Do not publish host account identifiers or credentials. A pre-run pilot establishes
 that the runtime works but is excluded from the fixed case results.
@@ -91,3 +92,8 @@ per case: vague requests to learn preferences, explicit questioning preferences,
 explicit maintainability preferences, unresolved questioning preferences, and
 known errors to repair directly. This is targeted regression on observed cases,
 not a fresh held-out improvement estimate. Retain the v0.5.0 evidence unchanged.
+
+Behavioral reporting uses file-invariant checks across every completed trial and
+owner inspection of selected responses, including every flagged mutation. It is
+not a comprehensive independent semantic score. All responses remain available
+for external review. The v0.5.0 failures remain visible in the offline replay.
