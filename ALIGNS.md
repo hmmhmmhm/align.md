@@ -48,6 +48,21 @@ status rather than assuming universal coverage.
 - Never rewrite agreements to justify an agent's own results.
 - Continue independent work while a decision awaits clarification.
 
+## Questions when context is missing
+
+User-confirmed scope update: 2026-10-17 (Asia/Seoul). Partial confirmation only.
+
+When my request is brief, use the existing conversation and project documents
+first. Ask only for missing information that would materially change the result
+or scope, grouping related questions. Make minor reversible choices and already
+delegated decisions within the authorized scope. Do not repeat answered questions.
+
+The shared skill should help users agree on when to ask and when to proceed.
+Repeated misunderstandings can prompt a focused review of that preference.
+Keep task-specific answers separate from lasting criteria, and save the latter
+only on explicit direction or confirmation. Never infer a user's ability or
+personality from how little context they provide.
+
 ## State and History
 
 Check whether the target project uses Git.

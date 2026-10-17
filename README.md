@@ -43,6 +43,8 @@ Across 12 synthetic tasks, an agent starting with generic instructions needed ni
 
 Return to alignment when an important decision misses your intent, repeated corrections reveal a missing criterion, or you are unsure what to do next. You can also review selected PR feedback and accessible project conversations to find recurring criteria, called taste invariants, with their scope and exceptions. Choose recent or full history after seeing the estimated time. Before a long autonomous run, rehearse a few hypothetical choices. Clear errors get fixed directly; settled questions stay settled.
 
+Brief requests work too. The agent checks existing context, then asks only about gaps that would materially change the result. You can agree on when it should ask and when it should proceed. Only confirmed lasting preferences go into ALIGNS.md.
+
 <p align="center">
   <img src="assets/continuous-self-alignment.png" alt="A path gradually corrects its deviations from a steady reference line" width="100%">
 </p>

@@ -15,6 +15,13 @@ When earlier feedback could clarify criteria, offer selected PR or project
 conversation review with recent/full scope and estimated time. Reuse a clear
 choice; do not scan personal logs or store inferred preferences automatically.
 
+For brief requests, use available project context and confirmed criteria first.
+Ask about missing information only when it materially changes the result or
+scope; group related questions. Proceed with minor reversible choices and
+already delegated judgments within authorized scope. Repeated context-related
+misunderstandings can warrant a focused align review of when to ask. Do not
+infer a lasting preference from brevity or from a task-specific answer.
+
 Reuse existing answers. Fix clear execution errors directly. Ask only about
 consequential uncertainty, continue independent work, and do not reopen a declined
 or resolved review without new evidence. A new method version does not change

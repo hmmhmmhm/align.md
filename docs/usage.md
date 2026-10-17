@@ -136,6 +136,19 @@ hypothetical rehearsal does not execute actions or authorize the real loop.
 The skill installs no daily reminders, schedule or diary. Reflection stays local
 unless you separately choose to share it.
 
+## Decide when the agent should ask
+
+A short request can leave room for judgment. The agent first checks the project
+and earlier decisions. It asks when missing context would materially change
+the result or scope, and proceeds with minor reversible choices within its
+authority. Related questions are grouped; answered questions stay answered.
+
+If misunderstandings keep causing rework, use align to agree on when you want
+questions. For example: "For open-ended design requests, show me a brief outline
+before implementation. Handle small fixes using the existing conventions."
+The skill records a lasting preference only when you request or confirm it.
+An answer about one task stays with that task unless you say otherwise.
+
 ## Confirmation and removal
 
 Explicit lasting preferences can update the relevant criteria. One-off exceptions

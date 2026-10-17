@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.5.0
+
+- Check existing context before asking about a brief request.
+- Group questions about consequential gaps and proceed within delegated scope.
+- Use repeated context-related misunderstandings to review when the user wants questions.
+- Keep task answers separate from confirmed lasting preferences.
+
 ## 0.4.0
 
 - Rename the project, agreement file, repository, and site to ALIGNS.md.

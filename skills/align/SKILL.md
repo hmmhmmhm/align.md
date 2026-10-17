@@ -3,7 +3,7 @@ name: align
 description: Establish and maintain personal project alignment in ALIGNS.md, including selected PR or conversation history review for scoped taste invariants. Use when goals or priorities are unclear, important decisions diverge from the user's expectations, repeated corrections expose a missing criterion, or a long autonomous run needs judgment calibration. Apply existing agreements without reopening routine decisions.
 license: MIT
 metadata:
-  version: "0.4.0"
+  version: "0.5.0"
 ---
 
 # Align
@@ -66,6 +66,25 @@ keep personal preferences separate from team requirements and one-off exceptions
 Repeated feedback is evidence to discuss, not permission to save a permanent rule.
 Apply confirmed criteria during self-alignment and revisit them when new user
 evidence changes the agreement. Do not claim a personality trait is immutable.
+
+## When context is missing
+
+A short request may delegate judgment. Read relevant project context and apply
+confirmed criteria before asking for more detail. Do not infer a user's ability,
+personality, or preferred questioning style from message length.
+
+Ask when a missing fact could materially change the result or scope. Briefly
+explain what depends on the answer, and group related questions in one round.
+Offer concrete options when useful. Within authorized scope, proceed with minor,
+reversible choices and judgments already delegated; state assumptions when they
+matter. An unanswered question is not consent. Continue independent work while
+a consequential choice remains open.
+
+If repeated misunderstandings suggest a mismatch in when to ask, use the
+[context review](references/recurring.md#when-missing-context-causes-rework).
+Keep task facts in task context. Record a lasting questioning preference in
+ALIGNS.md only when explicitly requested or confirmed, with its scope. Do not
+require a preference interview for every short request.
 
 ## Agree through conversation
 

@@ -22,6 +22,22 @@ interview. Repeated mistakes may justify checking whether criteria, instruction
 loading, missing context, or execution caused the problem. Do not make the user
 answer for the agent's failure or manufacture new preferences from error counts.
 
+## When missing context causes rework
+
+First check whether the agent overlooked available information or an existing
+criterion. Repair that mistake directly. If an unresolved choice still changes
+the outcome, ask about that choice without restarting alignment.
+
+When repeated misunderstandings reveal uncertainty about when to ask, propose
+a scoped preference: "For open-ended design requests, should I show a brief
+outline first, or make a reversible draft and explain my assumptions?" Reuse
+an existing answer. Do not repeat a declined review without new evidence.
+
+Separate the answer needed for this task from a rule for future tasks. A target
+audience for one page does not establish the audience for every project. Save
+only a clearly authorized lasting preference, including when it applies. A
+preference for fewer questions does not expand action permissions.
+
 ## When earlier decisions can clarify a criterion
 
 Use [history review](history.md) when the user wants to learn from previous work,
