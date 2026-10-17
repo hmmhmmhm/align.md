@@ -1,0 +1,10 @@
+{
+  "checks": [
+    "host_home",
+    "mac_runtime",
+    "bearer_token",
+    "api_key",
+    "github_token"
+  ],
+  "findings": []
+}

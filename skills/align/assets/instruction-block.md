@@ -7,9 +7,13 @@ recorded method-update policy once before loading the skill; preserve pinned
 versions and use the installed method if updating is unavailable. Do not poll
 for updates on every task. Use the installed **align** skill for
 focused clarification when important judgment diverges, repeated corrections
-suggest a missing criterion, the user is unsure of the next direction, or a long
-autonomous run has untested boundaries. Offer hypothetical rehearsal for the
-last case; do not execute scenarios or launch a loop as part of the rehearsal.
+suggest a missing criterion, the user is unsure of the next direction, or a loop
+or goal exposes unresolved scope, completion, or stopping criteria. Compare the
+request, configured objective, actual state, and results. Fix known errors directly.
+Before a long run with untested boundaries, offer hypothetical rehearsal without
+executing scenarios or launching the run. A review does not authorize a restart,
+budget increase, or override of a user stop. The skill acts during active turns;
+it cannot wake a stopped agent.
 
 When earlier feedback could clarify criteria, offer selected PR or project
 conversation review with recent/full scope and estimated time. Reuse a clear

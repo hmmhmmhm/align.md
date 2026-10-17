@@ -3,7 +3,7 @@ name: align
 description: Establish and maintain personal project alignment in ALIGNS.md, including selected PR or conversation history review for scoped taste invariants. Use when goals or priorities are unclear, important decisions diverge from the user's expectations, repeated corrections expose a missing criterion, or a long autonomous run needs judgment calibration. Apply existing agreements without reopening routine decisions.
 license: MIT
 metadata:
-  version: "0.5.1"
+  version: "0.5.2"
 ---
 
 # Align
@@ -48,6 +48,7 @@ Inspect the actual instruction entrypoints before proposing any changes.
 | Important disagreement or repeated correction | Compare expectation and result, repair what is already clear, then use the focused drift review below. |
 | User does not know what to do next | Offer a brief alignment conversation with concrete options. Do not invent a roadmap or start work without a direction. |
 | Long autonomous or repeated run | Check agreed boundaries and offer a short hypothetical rehearsal if consequential judgments are untested. |
+| Loop or goal configured, stopped, or marked complete against expectations | Compare the request, configured objective, actual state, and results. Repair known errors; clarify only unresolved scope, completion, or stopping criteria. |
 
 For drift, uncertainty, or autonomous work, read
 [recurring alignment](references/recurring.md). A suggestion is not a new

@@ -20,6 +20,10 @@ jobs:
           python3 tests/activation/verify.py tests/activation/results/2026-10-17-baseline --require-complete
           python3 tests/activation/verify.py tests/activation/results/2026-10-17-additional --require-complete
           python3 tests/activation/verify.py tests/activation/results/2026-10-17-regression --require-complete --require-clean-files
+          python3 tests/activation/verify.py tests/activation/results/2026-10-17-loop-baseline --require-complete --require-clean-files
+          python3 tests/activation/verify.py tests/activation/results/2026-10-17-loop-regression --require-complete --require-clean-files
+          python3 tests/activation/verify.py tests/activation/results/2026-10-17-loop-final --require-complete --require-clean-files
+          python3 tests/activation/verify.py tests/activation/results/2026-10-17-general-v052 --require-complete --require-clean-files
       - name: Check benchmark harness
         run: python3 -m unittest discover -s benchmarks -p 'test_*.py'
       - name: Check offline reporting

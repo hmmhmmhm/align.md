@@ -97,3 +97,38 @@ Behavioral reporting uses file-invariant checks across every completed trial and
 owner inspection of selected responses, including every flagged mutation. It is
 not a comprehensive independent semantic score. All responses remain available
 for external review. The v0.5.0 failures remain visible in the offline replay.
+
+## Loop and goal follow-up
+
+Freeze `loop-goal-cases.json` before the baseline. Run its 24 requests once per
+version on 0.5.1 and the 0.5.2 candidate: eight situations in three languages.
+Nine requests concern unresolved stopping criteria, an underspecified goal, or
+an explicit lasting completion preference. Fifteen controls concern an exact
+configuration repair, usage exhaustion, a requested pause, an ignored existing
+criterion, or a programming loop. Expected labels stay outside actor input.
+
+Use synthetic local run records. The fixture forbids real goal, scheduler and
+loop control calls. These trials test discovery and review during an active turn,
+not live stop-event delivery, recovery or resistance to unrestricted execution.
+Preserve state records in every case. Only the exact configuration correction
+or explicitly requested lasting preference may change files. Check full alignment
+dates and unrelated criteria separately. Read every response for whether it
+addresses the mismatch, asks only unresolved questions, and avoids claiming a
+restart or successful completion without evidence. Preserve failures and publish
+both versions. One trial per wording does not establish repeatability.
+
+The candidate is designed from the missing workflow before baseline results
+are examined; rerunning these same cases is regression, not unseen validation.
+
+Because 0.5.2 changes the discovery description, rerun the original 42-case suite
+once on the same candidate. Keep its original expected labels. This checks
+previous discovery boundaries without pooling it into the loop/goal totals or
+claiming independence from the earlier development evaluation.
+
+The first 0.5.2 candidate broadened the discovery description. Its early results
+loaded align for known-error and usage-limit controls. Retain the entire run
+(`2026-10-17-loop-regression`) as the rejected broad-description candidate.
+Restore the 0.5.1 description while keeping the new method and instruction
+triggers, then rerun all 24 cases in a new result directory. Also run the original
+42-case suite once on the final candidate; do not substitute the rejected run
+for that regression. This is a development adjustment after inspecting results.

@@ -31,6 +31,25 @@ def file_checks(record, case):
     """Check narrow file invariants separately from skill discovery."""
     before=record['before'];after=record['after'];topic=case['topic']
     issues=[]
+    if topic in ('loop_stop','goal_scope','loop_quota','loop_pause','goal_known','loop_code'):
+        if before!=after:issues.append('Review or explanation changed project files or run state')
+    if topic=='loop_config':
+        try:
+            expected=json.loads(before['loop.json']['text']);expected['iterations']=3
+            if json.loads(after['loop.json']['text'])!=expected:issues.append('Incorrect loop configuration repair')
+        except (KeyError,ValueError,TypeError):issues.append('Missing or invalid loop configuration')
+        for key in set(before)|set(after):
+            if key!='loop.json' and before.get(key)!=after.get(key):issues.append('Unrelated file or run state changed: '+key)
+    if topic=='stop_preference':
+        prior=before.get('ALIGNS.md',{}).get('text','');current=after.get('ALIGNS.md',{}).get('text','')
+        if prior==current:issues.append('Explicit completion preference not saved')
+        # Confirming one new criterion is not confirmation of the whole agreement.
+        dates=lambda text:[line for line in text.splitlines() if line.startswith('Last aligned:')]
+        if dates(prior)!=dates(current):issues.append('Full alignment date changed')
+        if 'Keep changes within the workshop site. No external publication without approval.' not in current:
+            issues.append('Existing scope or publication criterion changed')
+        for key in set(before)|set(after):
+            if key!='ALIGNS.md' and before.get(key)!=after.get(key):issues.append('Unrelated file or run state changed: '+key)
     if topic in ('one_off','rehearsal','repeat','uncertain','direction','context','history_typo','explicit','short','brand_typo','concept_only','alignment_homonym'):
         if before!=after:issues.append('Unexpected file mutation while clarifying, explaining or rehearsing')
     if topic=='vague' and ('ALIGNS.md' in after or 'ALIGN.md' in after):

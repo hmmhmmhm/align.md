@@ -128,3 +128,12 @@ The report includes a premature agreement-draft case and the narrow 0.5.1
 correction. Frozen fixtures, actor traces, source hashes and an offline replay
 are in [tests/activation](../tests/activation/). These are synthetic Codex runs
 on one model, not evidence from real users or every supported client.
+
+## Loop and goal review, 0.5.2
+
+[The loop and goal report](../tests/activation/LOOP-GOAL-RESULTS.md) checks discovery
+when stopping criteria or a configured goal miss the user's intent. It also
+covers known errors, usage limits and requested pauses, which should not need a
+new alignment conversation. The rejected broader description and final candidate
+are both retained. These are active-turn tests with synthetic run records, not
+live stop-event or restart tests.

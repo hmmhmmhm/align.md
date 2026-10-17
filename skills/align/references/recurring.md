@@ -69,6 +69,41 @@ pause that action and continue independent authorized work. A rehearsal is not
 permission for the real run. Never create or start a recurring job merely because
 this skill mentions loops. Honor separately established execution permissions.
 
+## When a loop or goal does not match the user's intent
+
+Use this review when setup, continuation, stopping, or a completion claim exposes
+an unresolved judgment mismatch. Read the user's request, existing criteria,
+configured objective and boundaries, available run status, stop reason, and
+actual results. Distinguish a status label from evidence that the task is done.
+Use the current run's available evidence; broader personal log review still
+requires the source and scope choice described in history review.
+
+If the cause is already clear, correct it within the user's authorization and
+the client's supported controls. A miscopied iteration count, ignored completion
+criterion, runtime error, usage limit, or requested pause does not by itself need
+an alignment interview. Report unfinished work accurately. Do not mark it complete
+to dismiss a stopped run or rewrite the agreement to match the result.
+
+For an unresolved mismatch, name the specific gap and ask only what changes the
+next decision. For example: "The goal treats a draft as enough. Does completion
+also require verified links?" or "The run prioritizes speed. Should maintenance
+cost guide the remaining work?" Use existing answers; save a lasting stopping or
+completion rule only when explicitly requested or confirmed. Keep task-specific
+settings separate from durable criteria and preserve the full alignment date.
+
+Reviewing the mismatch does not restart a run, increase its budget, expand scope,
+override a user stop, or bypass a runtime limit. Reuse authorization that still
+applies; do not ask for it again. A user-requested pause requires a request to
+resume, and any change outside existing authorization needs a separate decision.
+Follow the client's state-transition rules and continue independent authorized
+work when possible. Do not simulate successful control operations by editing
+unrelated state files.
+
+The skill can respond only when the agent has an active turn and can observe the
+mismatch. It does not monitor a stopped process or wake itself after a limit or
+crash. On the next active turn, inspect the available state before proposing a
+review or recovery. Do not promise automatic invocation at every stop event.
+
 ## When the user is unsure what to do next
 
 Offer a short session: “We could use align to decide what would make this project

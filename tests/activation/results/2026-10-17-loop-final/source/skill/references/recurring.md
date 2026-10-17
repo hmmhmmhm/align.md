@@ -1,0 +1,127 @@
+# Recurring alignment
+
+Keep alignment close to real decisions. The goal is a small useful habit, not
+another ceremony on every task. Read only the applicable situation below.
+
+## After a decision misses the user's intent
+
+1. State the actual mismatch and its evidence without defending the result.
+2. Read the relevant criterion and fix the work if the intended correction is
+   already clear. A missed existing instruction is an execution error, not
+   evidence that the agreement needs changing.
+3. If an important criterion is absent or ambiguous, ask a concrete question:
+   “I chose speed over maintainability. Which should guide this project?” or
+   “Should this apply only to this change, or to similar decisions in future?”
+   Ask the second question only if scope is genuinely unclear.
+4. Propose the smallest useful clarification, including where it would apply.
+   Store it only on an explicit lasting request or confirmation. Continue work
+   independent of the unresolved choice.
+
+A typo, broken test, or known bug normally needs repair rather than an alignment
+interview. Repeated mistakes may justify checking whether criteria, instruction
+loading, missing context, or execution caused the problem. Do not make the user
+answer for the agent's failure or manufacture new preferences from error counts.
+
+## When missing context causes rework
+
+First check whether the agent overlooked available information or an existing
+criterion. Repair that mistake directly. If an unresolved choice still changes
+the outcome, ask about that choice without restarting alignment.
+
+When repeated misunderstandings reveal uncertainty about when to ask, propose
+a scoped preference: "For open-ended design requests, should I show a brief
+outline first, or make a reversible draft and explain my assumptions?" Reuse
+an existing answer. Do not repeat a declined review without new evidence.
+
+Separate the answer needed for this task from a rule for future tasks. A target
+audience for one page does not establish the audience for every project. Save
+only a clearly authorized lasting preference, including when it applies. A
+preference for fewer questions does not expand action permissions.
+
+## When earlier decisions can clarify a criterion
+
+Use [history review](history.md) when the user wants to learn from previous work,
+or offer it once when repeated consequential corrections suggest an unstated
+criterion. Explain the available PR and conversation sources, recent/full scope
+and estimated time before collecting. Look for taste invariants with a defined
+scope, supporting evidence and counterexamples. Apply already confirmed criteria;
+ask only about inferred or conflicting ones. A missed instruction still needs a
+repair, not another preference interview.
+
+## Before a long autonomous loop
+
+Read existing permission, scope, budget, checkpoint and stopping agreements.
+If these already cover the run, use them. Otherwise propose 1-3 short **hypothetical**
+cases that exercise consequential uncertainty, with a recommendation and the
+choice it depends on. For example:
+
+- The simple approach misses the deadline. Reduce scope, accept complexity,
+  or return for a decision?
+- The next step would publish a result, spend money, or change external data.
+  Which steps are already authorized, and where must the agent stop?
+- Several attempts fail or the budget is nearly used. What evidence should
+  end the loop or trigger a checkpoint?
+
+Do not execute the scenarios or touch production to rehearse them. Discuss only
+risks relevant to the intended run; do not impose a universal checklist. If the
+user is unavailable and the next consequential action has no agreed boundary,
+pause that action and continue independent authorized work. A rehearsal is not
+permission for the real run. Never create or start a recurring job merely because
+this skill mentions loops. Honor separately established execution permissions.
+
+## When a loop or goal does not match the user's intent
+
+Use this review when setup, continuation, stopping, or a completion claim exposes
+an unresolved judgment mismatch. Read the user's request, existing criteria,
+configured objective and boundaries, available run status, stop reason, and
+actual results. Distinguish a status label from evidence that the task is done.
+Use the current run's available evidence; broader personal log review still
+requires the source and scope choice described in history review.
+
+If the cause is already clear, correct it within the user's authorization and
+the client's supported controls. A miscopied iteration count, ignored completion
+criterion, runtime error, usage limit, or requested pause does not by itself need
+an alignment interview. Report unfinished work accurately. Do not mark it complete
+to dismiss a stopped run or rewrite the agreement to match the result.
+
+For an unresolved mismatch, name the specific gap and ask only what changes the
+next decision. For example: "The goal treats a draft as enough. Does completion
+also require verified links?" or "The run prioritizes speed. Should maintenance
+cost guide the remaining work?" Use existing answers; save a lasting stopping or
+completion rule only when explicitly requested or confirmed. Keep task-specific
+settings separate from durable criteria and preserve the full alignment date.
+
+Reviewing the mismatch does not restart a run, increase its budget, expand scope,
+override a user stop, or bypass a runtime limit. Reuse authorization that still
+applies; do not ask for it again. A user-requested pause requires a request to
+resume, and any change outside existing authorization needs a separate decision.
+Follow the client's state-transition rules and continue independent authorized
+work when possible. Do not simulate successful control operations by editing
+unrelated state files.
+
+The skill can respond only when the agent has an active turn and can observe the
+mismatch. It does not monitor a stopped process or wake itself after a limit or
+crash. On the next active turn, inspect the available state before proposing a
+review or recovery. Do not promise automatic invocation at every stop event.
+
+## When the user is unsure what to do next
+
+Offer a short session: “We could use align to decide what would make this project
+worth continuing. Is the priority finishing, learning, or reducing maintenance?”
+Use options that fit this project, not a fixed three-part questionnaire. If the
+user accepts, compare a few concrete directions against existing criteria and
+record only confirmed priorities. Do not turn uncertainty into a task backlog,
+a personality assessment, or a claim about unspoken motives.
+
+## A habit without repeated interruptions
+
+Suggest revisiting at a meaningful decision, after important feedback, before
+an uncovered autonomous run, or when the user explicitly asks to reflect. Reuse
+accepted answers and reviewed evidence across the current session. If nothing
+changed, keep the document and timestamp intact and proceed. A declined or
+resolved suggestion stays closed until relevant new evidence appears.
+
+An optional closing question after substantial alignment work is “Is there one
+choice here you would want handled differently next time?” Omit it when already
+answered or when it would only request another confirmation. Daily reminders
+or a diary are optional user choices, not defaults or installation side effects.

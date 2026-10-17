@@ -136,6 +136,21 @@ hypothetical rehearsal does not execute actions or authorize the real loop.
 The skill installs no daily reminders, schedule or diary. Reflection stays local
 unless you separately choose to share it.
 
+## When a loop or goal goes off course
+
+Ask: "The loop stopped at a draft again. I expected something usable. Help us
+agree on when it should finish." Or: "This goal misses what I was trying to
+achieve. Review the scope before continuing."
+
+The agent compares the request, configured goal, run state and actual results.
+It asks about unresolved criteria and fixes clear errors using existing
+authorization. Usage limits and requested pauses do not need a new preference
+interview. A review does not itself restart a run or change its budget.
+
+This works when the agent has an active turn and can observe the mismatch.
+The skill is not a stop-event listener and cannot wake a crashed or suspended
+agent. The next active turn can inspect the state and review what went wrong.
+
 ## Decide when the agent should ask
 
 A short request can leave room for judgment. The agent first checks the project

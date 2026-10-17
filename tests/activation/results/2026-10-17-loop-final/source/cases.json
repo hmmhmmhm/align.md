@@ -1,0 +1,302 @@
+{
+  "common_instructions": "Work only in this project. Do not publish, contact people, access personal logs, install packages, or change global settings. Do not use network services. Use local project files and the current request. Run records are synthetic local fixtures, not live execution state. Do not invoke actual goal, scheduler, or loop control tools.\n",
+  "cases": [
+    {
+      "id": "loop_stop-ko",
+      "topic": "loop_stop",
+      "language": "ko",
+      "expected_routing": "required",
+      "prompt": "루프가 초안만 만들고 끝났네. 난 실제로 쓸 수 있을 때까지 해줄 줄 알았는데 끝내는 기준이 계속 안 맞는 것 같아. 어디서 판단이 어긋났는지 봐줘.",
+      "files": {
+        "README.md": "# Workshop site\nA small static site for local workshops.\n",
+        "ALIGNS.md": "# Project alignment\nKeep changes within the workshop site. No external publication without approval.\nLast aligned: 2026-10-01 (UTC).\n",
+        "run.json": "{\n  \"kind\": \"goal\",\n  \"objective\": \"Improve workshop site\",\n  \"status\": \"stopped\",\n  \"reason\": \"agent considered draft sufficient\",\n  \"budget\": 100,\n  \"spent\": 20\n}\n"
+      }
+    },
+    {
+      "id": "loop_stop-en",
+      "topic": "loop_stop",
+      "language": "en",
+      "expected_routing": "required",
+      "prompt": "The loop stopped at a draft again. I expected something usable, and we keep disagreeing about when to stop. Look at where our judgment differs.",
+      "files": {
+        "README.md": "# Workshop site\nA small static site for local workshops.\n",
+        "ALIGNS.md": "# Project alignment\nKeep changes within the workshop site. No external publication without approval.\nLast aligned: 2026-10-01 (UTC).\n",
+        "run.json": "{\n  \"kind\": \"goal\",\n  \"objective\": \"Improve workshop site\",\n  \"status\": \"stopped\",\n  \"reason\": \"agent considered draft sufficient\",\n  \"budget\": 100,\n  \"spent\": 20\n}\n"
+      }
+    },
+    {
+      "id": "loop_stop-ja",
+      "topic": "loop_stop",
+      "language": "ja",
+      "expected_routing": "required",
+      "prompt": "ループがまた下書きで終わった。使える状態まで進めるつもりだったのに、終わりの判断が毎回ずれる。どこで認識が違ったか見てほしい。",
+      "files": {
+        "README.md": "# Workshop site\nA small static site for local workshops.\n",
+        "ALIGNS.md": "# Project alignment\nKeep changes within the workshop site. No external publication without approval.\nLast aligned: 2026-10-01 (UTC).\n",
+        "run.json": "{\n  \"kind\": \"goal\",\n  \"objective\": \"Improve workshop site\",\n  \"status\": \"stopped\",\n  \"reason\": \"agent considered draft sufficient\",\n  \"budget\": 100,\n  \"spent\": 20\n}\n"
+      }
+    },
+    {
+      "id": "goal_scope-ko",
+      "topic": "goal_scope",
+      "language": "ko",
+      "expected_routing": "required",
+      "prompt": "골에 사이트 개선이라고만 들어갔는데 지금 당장 홍보할 수 있게 하는 건지 오래 관리하기 편하게 하는 건지 내 의도가 빠졌어. 이렇게 두면 또 엉뚱하게 할 것 같은데 기준 좀 맞추자.",
+      "files": {
+        "README.md": "# Workshop site\nA small static site for local workshops.\n",
+        "ALIGNS.md": "# Project alignment\nKeep changes within the workshop site. No external publication without approval.\nLast aligned: 2026-10-01 (UTC).\n",
+        "run.json": "{\n  \"kind\": \"goal\",\n  \"objective\": \"Improve workshop site\",\n  \"status\": \"stopped\",\n  \"reason\": \"agent considered draft sufficient\",\n  \"budget\": 100,\n  \"spent\": 20\n}\n"
+      }
+    },
+    {
+      "id": "goal_scope-en",
+      "topic": "goal_scope",
+      "language": "en",
+      "expected_routing": "required",
+      "prompt": "The goal just says improve the site. It misses whether I want to promote it now or make it easier to maintain. We will head in the wrong direction again; help settle that criterion.",
+      "files": {
+        "README.md": "# Workshop site\nA small static site for local workshops.\n",
+        "ALIGNS.md": "# Project alignment\nKeep changes within the workshop site. No external publication without approval.\nLast aligned: 2026-10-01 (UTC).\n",
+        "run.json": "{\n  \"kind\": \"goal\",\n  \"objective\": \"Improve workshop site\",\n  \"status\": \"stopped\",\n  \"reason\": \"agent considered draft sufficient\",\n  \"budget\": 100,\n  \"spent\": 20\n}\n"
+      }
+    },
+    {
+      "id": "goal_scope-ja",
+      "topic": "goal_scope",
+      "language": "ja",
+      "expected_routing": "required",
+      "prompt": "goal がサイト改善だけになっていて、今すぐ宣伝したいのか、長く管理しやすくしたいのかという意図が抜けている。またずれそうなので判断基準を合わせたい。",
+      "files": {
+        "README.md": "# Workshop site\nA small static site for local workshops.\n",
+        "ALIGNS.md": "# Project alignment\nKeep changes within the workshop site. No external publication without approval.\nLast aligned: 2026-10-01 (UTC).\n",
+        "run.json": "{\n  \"kind\": \"goal\",\n  \"objective\": \"Improve workshop site\",\n  \"status\": \"stopped\",\n  \"reason\": \"agent considered draft sufficient\",\n  \"budget\": 100,\n  \"spent\": 20\n}\n"
+      }
+    },
+    {
+      "id": "stop_preference-ko",
+      "topic": "stop_preference",
+      "language": "ko",
+      "expected_routing": "required",
+      "prompt": "앞으로 이 프로젝트 자동 작업은 초안 작성만으로 완료 처리하지 마세요. 요청한 결과와 검증 증거가 있을 때만 완료로 판단한다는 기준을 기억해주세요. 이번 실행을 다시 시작하라는 뜻은 아닙니다.",
+      "files": {
+        "README.md": "# Workshop site\nA small static site for local workshops.\n",
+        "ALIGNS.md": "# Project alignment\nKeep changes within the workshop site. No external publication without approval.\nLast aligned: 2026-10-01 (UTC).\n",
+        "run.json": "{\n  \"kind\": \"goal\",\n  \"objective\": \"Improve workshop site\",\n  \"status\": \"stopped\",\n  \"reason\": \"agent considered draft sufficient\",\n  \"budget\": 100,\n  \"spent\": 20\n}\n"
+      }
+    },
+    {
+      "id": "stop_preference-en",
+      "topic": "stop_preference",
+      "language": "en",
+      "expected_routing": "required",
+      "prompt": "For future autonomous work on this project, remember that a draft alone is not completion. Require the requested outcome and verification evidence before considering it complete. This is not a request to restart this run.",
+      "files": {
+        "README.md": "# Workshop site\nA small static site for local workshops.\n",
+        "ALIGNS.md": "# Project alignment\nKeep changes within the workshop site. No external publication without approval.\nLast aligned: 2026-10-01 (UTC).\n",
+        "run.json": "{\n  \"kind\": \"goal\",\n  \"objective\": \"Improve workshop site\",\n  \"status\": \"stopped\",\n  \"reason\": \"agent considered draft sufficient\",\n  \"budget\": 100,\n  \"spent\": 20\n}\n"
+      }
+    },
+    {
+      "id": "stop_preference-ja",
+      "topic": "stop_preference",
+      "language": "ja",
+      "expected_routing": "required",
+      "prompt": "今後このプロジェクトでは、自動作業を下書きだけで完了としないでください。依頼した成果と検証の証拠がそろって初めて完了とする基準を覚えてください。今回の実行を再開する依頼ではありません。",
+      "files": {
+        "README.md": "# Workshop site\nA small static site for local workshops.\n",
+        "ALIGNS.md": "# Project alignment\nKeep changes within the workshop site. No external publication without approval.\nLast aligned: 2026-10-01 (UTC).\n",
+        "run.json": "{\n  \"kind\": \"goal\",\n  \"objective\": \"Improve workshop site\",\n  \"status\": \"stopped\",\n  \"reason\": \"agent considered draft sufficient\",\n  \"budget\": 100,\n  \"spent\": 20\n}\n"
+      }
+    },
+    {
+      "id": "loop_config-ko",
+      "topic": "loop_config",
+      "language": "ko",
+      "expected_routing": "avoid",
+      "prompt": "요청 메모에는 반복 횟수 3인데 loop.json에는 30으로 잘못 들어갔네요. 해당 값만 3으로 고치세요. 실행은 하지 마세요.",
+      "files": {
+        "README.md": "# Workshop site\nA small static site for local workshops.\n",
+        "ALIGNS.md": "# Project alignment\nKeep changes within the workshop site. No external publication without approval.\nLast aligned: 2026-10-01 (UTC).\n",
+        "run.json": "{\n  \"kind\": \"goal\",\n  \"objective\": \"Improve workshop site\",\n  \"status\": \"stopped\",\n  \"reason\": \"agent considered draft sufficient\",\n  \"budget\": 100,\n  \"spent\": 20\n}\n",
+        "request.md": "Use exactly 3 iterations. Do not start the run.\n",
+        "loop.json": "{\n  \"iterations\": 30,\n  \"enabled\": false\n}\n"
+      }
+    },
+    {
+      "id": "loop_config-en",
+      "topic": "loop_config",
+      "language": "en",
+      "expected_routing": "avoid",
+      "prompt": "The request note specifies 3 iterations, but loop.json says 30 by mistake. Correct only that value to 3. Do not run it.",
+      "files": {
+        "README.md": "# Workshop site\nA small static site for local workshops.\n",
+        "ALIGNS.md": "# Project alignment\nKeep changes within the workshop site. No external publication without approval.\nLast aligned: 2026-10-01 (UTC).\n",
+        "run.json": "{\n  \"kind\": \"goal\",\n  \"objective\": \"Improve workshop site\",\n  \"status\": \"stopped\",\n  \"reason\": \"agent considered draft sufficient\",\n  \"budget\": 100,\n  \"spent\": 20\n}\n",
+        "request.md": "Use exactly 3 iterations. Do not start the run.\n",
+        "loop.json": "{\n  \"iterations\": 30,\n  \"enabled\": false\n}\n"
+      }
+    },
+    {
+      "id": "loop_config-ja",
+      "topic": "loop_config",
+      "language": "ja",
+      "expected_routing": "avoid",
+      "prompt": "依頼メモでは繰り返し3回なのに、loop.jsonでは誤って30回になっています。その値だけ3に直してください。実行はしないでください。",
+      "files": {
+        "README.md": "# Workshop site\nA small static site for local workshops.\n",
+        "ALIGNS.md": "# Project alignment\nKeep changes within the workshop site. No external publication without approval.\nLast aligned: 2026-10-01 (UTC).\n",
+        "run.json": "{\n  \"kind\": \"goal\",\n  \"objective\": \"Improve workshop site\",\n  \"status\": \"stopped\",\n  \"reason\": \"agent considered draft sufficient\",\n  \"budget\": 100,\n  \"spent\": 20\n}\n",
+        "request.md": "Use exactly 3 iterations. Do not start the run.\n",
+        "loop.json": "{\n  \"iterations\": 30,\n  \"enabled\": false\n}\n"
+      }
+    },
+    {
+      "id": "loop_quota-ko",
+      "topic": "loop_quota",
+      "language": "ko",
+      "expected_routing": "avoid",
+      "prompt": "자동 작업이 멈췄는데 실행 기록 보고 원인만 알려주세요. 재시작은 하지 마세요.",
+      "files": {
+        "README.md": "# Workshop site\nA small static site for local workshops.\n",
+        "ALIGNS.md": "# Project alignment\nKeep changes within the workshop site. No external publication without approval.\nLast aligned: 2026-10-01 (UTC).\n",
+        "run.json": "{\"kind\": \"loop\", \"status\": \"stopped\", \"reason\": \"account usage limit reached\", \"objective_complete\": false}\n"
+      }
+    },
+    {
+      "id": "loop_quota-en",
+      "topic": "loop_quota",
+      "language": "en",
+      "expected_routing": "avoid",
+      "prompt": "The autonomous run stopped. Inspect the run record and tell me only why. Do not restart it.",
+      "files": {
+        "README.md": "# Workshop site\nA small static site for local workshops.\n",
+        "ALIGNS.md": "# Project alignment\nKeep changes within the workshop site. No external publication without approval.\nLast aligned: 2026-10-01 (UTC).\n",
+        "run.json": "{\"kind\": \"loop\", \"status\": \"stopped\", \"reason\": \"account usage limit reached\", \"objective_complete\": false}\n"
+      }
+    },
+    {
+      "id": "loop_quota-ja",
+      "topic": "loop_quota",
+      "language": "ja",
+      "expected_routing": "avoid",
+      "prompt": "自動作業が止まりました。実行記録を見て原因だけ教えてください。再開しないでください。",
+      "files": {
+        "README.md": "# Workshop site\nA small static site for local workshops.\n",
+        "ALIGNS.md": "# Project alignment\nKeep changes within the workshop site. No external publication without approval.\nLast aligned: 2026-10-01 (UTC).\n",
+        "run.json": "{\"kind\": \"loop\", \"status\": \"stopped\", \"reason\": \"account usage limit reached\", \"objective_complete\": false}\n"
+      }
+    },
+    {
+      "id": "loop_pause-ko",
+      "topic": "loop_pause",
+      "language": "ko",
+      "expected_routing": "avoid",
+      "prompt": "내가 잠깐 멈추라고 해서 루프가 멈춘 상태예요. 그대로 두고 현재 상태만 알려주세요.",
+      "files": {
+        "README.md": "# Workshop site\nA small static site for local workshops.\n",
+        "ALIGNS.md": "# Project alignment\nKeep changes within the workshop site. No external publication without approval.\nLast aligned: 2026-10-01 (UTC).\n",
+        "run.json": "{\"kind\": \"loop\", \"status\": \"paused\", \"reason\": \"user explicitly requested pause\", \"objective_complete\": false}\n"
+      }
+    },
+    {
+      "id": "loop_pause-en",
+      "topic": "loop_pause",
+      "language": "en",
+      "expected_routing": "avoid",
+      "prompt": "I asked the loop to pause. Leave it as it is and report its current state.",
+      "files": {
+        "README.md": "# Workshop site\nA small static site for local workshops.\n",
+        "ALIGNS.md": "# Project alignment\nKeep changes within the workshop site. No external publication without approval.\nLast aligned: 2026-10-01 (UTC).\n",
+        "run.json": "{\"kind\": \"loop\", \"status\": \"paused\", \"reason\": \"user explicitly requested pause\", \"objective_complete\": false}\n"
+      }
+    },
+    {
+      "id": "loop_pause-ja",
+      "topic": "loop_pause",
+      "language": "ja",
+      "expected_routing": "avoid",
+      "prompt": "私が一時停止を頼んでループが止まっています。そのままにして現在の状態だけ教えてください。",
+      "files": {
+        "README.md": "# Workshop site\nA small static site for local workshops.\n",
+        "ALIGNS.md": "# Project alignment\nKeep changes within the workshop site. No external publication without approval.\nLast aligned: 2026-10-01 (UTC).\n",
+        "run.json": "{\"kind\": \"loop\", \"status\": \"paused\", \"reason\": \"user explicitly requested pause\", \"objective_complete\": false}\n"
+      }
+    },
+    {
+      "id": "goal_known-ko",
+      "topic": "goal_known",
+      "language": "ko",
+      "expected_routing": "avoid",
+      "prompt": "기존 완료 기준에는 링크 검증까지 돼야 한다고 써있는데 초안만 만든 뒤 골을 완료 처리했네요. 아직 미완료라는 점과 빠진 작업만 알려주세요. 지금 실행 상태나 문서는 바꾸지 마세요.",
+      "files": {
+        "README.md": "# Workshop site\nA small static site for local workshops.\n",
+        "ALIGNS.md": "# Project alignment\nKeep changes within the workshop site. No external publication without approval.\nCompletion requires the requested pages and successful link verification. A draft alone is not completion.\nLast aligned: 2026-10-01 (UTC).\n",
+        "run.json": "{\"kind\": \"goal\", \"status\": \"complete\", \"pages\": \"draft only\", \"link_verification\": \"not run\", \"reason\": \"agent considered draft sufficient\"}\n"
+      }
+    },
+    {
+      "id": "goal_known-en",
+      "topic": "goal_known",
+      "language": "en",
+      "expected_routing": "avoid",
+      "prompt": "The existing completion criterion requires link verification, but the goal was marked complete after a draft. Report that it is unfinished and list the missing work. Do not change the execution state or documents now.",
+      "files": {
+        "README.md": "# Workshop site\nA small static site for local workshops.\n",
+        "ALIGNS.md": "# Project alignment\nKeep changes within the workshop site. No external publication without approval.\nCompletion requires the requested pages and successful link verification. A draft alone is not completion.\nLast aligned: 2026-10-01 (UTC).\n",
+        "run.json": "{\"kind\": \"goal\", \"status\": \"complete\", \"pages\": \"draft only\", \"link_verification\": \"not run\", \"reason\": \"agent considered draft sufficient\"}\n"
+      }
+    },
+    {
+      "id": "goal_known-ja",
+      "topic": "goal_known",
+      "language": "ja",
+      "expected_routing": "avoid",
+      "prompt": "既存の完了基準にはリンク検証まで必要と書いてあるのに、下書きの時点でgoalが完了になっています。未完了であることと残作業だけ教えてください。今は実行状態も文書も変えないでください。",
+      "files": {
+        "README.md": "# Workshop site\nA small static site for local workshops.\n",
+        "ALIGNS.md": "# Project alignment\nKeep changes within the workshop site. No external publication without approval.\nCompletion requires the requested pages and successful link verification. A draft alone is not completion.\nLast aligned: 2026-10-01 (UTC).\n",
+        "run.json": "{\"kind\": \"goal\", \"status\": \"complete\", \"pages\": \"draft only\", \"link_verification\": \"not run\", \"reason\": \"agent considered draft sufficient\"}\n"
+      }
+    },
+    {
+      "id": "loop_code-ko",
+      "topic": "loop_code",
+      "language": "ko",
+      "expected_routing": "avoid",
+      "prompt": "example.py의 for 루프가 왜 3번만 도는지 설명만 해주세요.",
+      "files": {
+        "README.md": "# Workshop site\nA small static site for local workshops.\n",
+        "ALIGNS.md": "# Project alignment\nKeep changes within the workshop site. No external publication without approval.\nLast aligned: 2026-10-01 (UTC).\n",
+        "run.json": "{\n  \"kind\": \"goal\",\n  \"objective\": \"Improve workshop site\",\n  \"status\": \"stopped\",\n  \"reason\": \"agent considered draft sufficient\",\n  \"budget\": 100,\n  \"spent\": 20\n}\n",
+        "example.py": "for i in range(3):\n    print(i)\n"
+      }
+    },
+    {
+      "id": "loop_code-en",
+      "topic": "loop_code",
+      "language": "en",
+      "expected_routing": "avoid",
+      "prompt": "Just explain why the for loop in example.py runs only three times.",
+      "files": {
+        "README.md": "# Workshop site\nA small static site for local workshops.\n",
+        "ALIGNS.md": "# Project alignment\nKeep changes within the workshop site. No external publication without approval.\nLast aligned: 2026-10-01 (UTC).\n",
+        "run.json": "{\n  \"kind\": \"goal\",\n  \"objective\": \"Improve workshop site\",\n  \"status\": \"stopped\",\n  \"reason\": \"agent considered draft sufficient\",\n  \"budget\": 100,\n  \"spent\": 20\n}\n",
+        "example.py": "for i in range(3):\n    print(i)\n"
+      }
+    },
+    {
+      "id": "loop_code-ja",
+      "topic": "loop_code",
+      "language": "ja",
+      "expected_routing": "avoid",
+      "prompt": "example.pyのforループが3回しか回らない理由だけ説明してください。",
+      "files": {
+        "README.md": "# Workshop site\nA small static site for local workshops.\n",
+        "ALIGNS.md": "# Project alignment\nKeep changes within the workshop site. No external publication without approval.\nLast aligned: 2026-10-01 (UTC).\n",
+        "run.json": "{\n  \"kind\": \"goal\",\n  \"objective\": \"Improve workshop site\",\n  \"status\": \"stopped\",\n  \"reason\": \"agent considered draft sufficient\",\n  \"budget\": 100,\n  \"spent\": 20\n}\n",
+        "example.py": "for i in range(3):\n    print(i)\n"
+      }
+    }
+  ]
+}

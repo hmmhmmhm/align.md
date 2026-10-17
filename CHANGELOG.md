@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.5.2
+
+- Review unresolved criteria when a loop or goal is configured, stops, or is marked complete against user expectations.
+- Separate judgment mismatches from known errors, usage limits and requested pauses. Preserve restart permissions and completion evidence.
+- Clarify that discovery requires an active agent turn; the skill cannot wake a stopped process.
+- Retain loop/goal discovery evidence, including a rejected description that loaded the method for unnecessary cases.
+
 ## 0.5.1
 
 - Ask for an actual criterion before creating an agreement from a vague request to learn preferences. Keep unrequested drafts in the conversation.

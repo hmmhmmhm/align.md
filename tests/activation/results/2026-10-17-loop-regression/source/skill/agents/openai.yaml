@@ -1,0 +1,6 @@
+interface:
+  display_name: "ALIGNS.md"
+  short_description: "Keep project decisions aligned with your judgment"
+  default_prompt: "Use $align to review our criteria and clarify the next important decision."
+policy:
+  allow_implicit_invocation: true

@@ -39,3 +39,13 @@ completion and method-output evidence. It also checks narrow file invariants.
 It does not judge every response's usefulness or establish another client's
 runtime behavior. Public paths are redacted; original command-output hashes
 refer to private raw text before that substitution.
+
+For loop and goal setup, stopping and completion cases, see
+[the follow-up report](LOOP-GOAL-RESULTS.md) and `loop-goal-cases.json`.
+The report retains the rejected description candidate as well as the final
+method, and distinguishes discovery from actual runtime control.
+
+```sh
+python3 tests/activation/verify.py tests/activation/results/2026-10-17-loop-final --require-complete --require-clean-files
+python3 tests/activation/verify.py tests/activation/results/2026-10-17-general-v052 --require-complete --require-clean-files
+```

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "loop_code-en__r1",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "goal_known-en__r1",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "goal_scope-en__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "loop_quota-ko__r1",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "loop_code-ko__r1",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "goal_known-ko__r1",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "goal_known-ja__r1",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "loop_quota-en__r1",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "loop_stop-en__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "loop_config-ja__r1",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "stop_preference-ko__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "loop_code-ja__r1",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "stop_preference-en__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "loop_config-ko__r1",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "loop_stop-ja__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "loop_pause-ja__r1",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "loop_config-en__r1",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "loop_pause-en__r1",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "loop_pause-ko__r1",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "loop_quota-ja__r1",
+    "completed": true,
+    "read": false
+  },
+  {
+    "id": "goal_scope-ja__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "loop_stop-ko__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "stop_preference-ja__r1",
+    "completed": true,
+    "read": true
+  },
+  {
+    "id": "goal_scope-ko__r1",
+    "completed": true,
+    "read": true
+  }
+]
