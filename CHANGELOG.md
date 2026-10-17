@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.1
+
+- Ask for an actual criterion before creating an agreement from a vague request to learn preferences. Keep unrequested drafts in the conversation.
+- Continue saving explicit lasting preferences without another confirmation.
+- Add reproducible multilingual discovery checks with retained requests, execution evidence and offline replay.
+
 ## 0.5.0
 
 - Check existing context before asking about a brief request.

@@ -72,3 +72,22 @@ Before the additional run, its nine positive/name-typo fixtures were broadened
 beyond the baseline workshop site: study planning, a newsletter, gardening,
 a portfolio, research notes, recipes, home organization, a CLI utility and essays.
 These are synthetic project briefs, not observations of actual user populations.
+
+## Behavior correction and regression scope
+
+The additional run's `short-en` repeat 2 loaded the skill, then created an
+unrequested agreement draft before learning a concrete preference. It copied
+operational restrictions into the agreement, marked editorial choices open, and
+kept `Last aligned: Not yet confirmed.` No personal preference was fabricated.
+This is premature scaffolding, not a discovery failure.
+
+Version 0.5.1 adds one narrow instruction: ask for a concrete criterion before
+creating this agreement, keep unrequested drafts in the conversation, and do not
+use copied tool restrictions as substitute preferences. Explicit lasting criteria
+can still be saved immediately. The name and description remain unchanged.
+
+Freeze `regression-cases.json` with 15 existing cases before running v0.5.1 twice
+per case: vague requests to learn preferences, explicit questioning preferences,
+explicit maintainability preferences, unresolved questioning preferences, and
+known errors to repair directly. This is targeted regression on observed cases,
+not a fresh held-out improvement estimate. Retain the v0.5.0 evidence unchanged.

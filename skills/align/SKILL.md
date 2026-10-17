@@ -3,7 +3,7 @@ name: align
 description: Establish and maintain personal project alignment in ALIGNS.md, including selected PR or conversation history review for scoped taste invariants. Use when goals or priorities are unclear, important decisions diverge from the user's expectations, repeated corrections expose a missing criterion, or a long autonomous run needs judgment calibration. Apply existing agreements without reopening routine decisions.
 license: MIT
 metadata:
-  version: "0.5.0"
+  version: "0.5.1"
 ---
 
 # Align
@@ -85,6 +85,12 @@ If repeated misunderstandings suggest a mismatch in when to ask, use the
 Keep task facts in task context. Record a lasting questioning preference in
 ALIGNS.md only when explicitly requested or confirmed, with its scope. Do not
 require a preference interview for every short request.
+
+If the user asks you to learn or remember their preferences but has supplied no
+concrete criterion, ask for one before creating an agreement. Keep proposals in
+the conversation unless a file draft was requested. Do not fill ALIGNS.md with
+copied tool restrictions or setup metadata to stand in for missing preferences.
+An explicit lasting criterion can be saved directly; do not reconfirm it.
 
 ## Agree through conversation
 
